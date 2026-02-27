@@ -10,7 +10,8 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: '../backend/src/main/resources/static',
+    outDir: process.env.VITE_OUT_DIR || '../backend/src/main/resources/static',
     emptyOutDir: true,
   },
+  base: process.env.VITE_BASE || '/',
 });

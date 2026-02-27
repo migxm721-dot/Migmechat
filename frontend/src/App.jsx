@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import RoomList from './pages/RoomList';
 import ChatRoom from './pages/ChatRoom';
@@ -11,7 +11,7 @@ const styles = {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div style={styles.app}>
         <Header />
         <main style={styles.main}>
@@ -21,6 +21,6 @@ export default function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
