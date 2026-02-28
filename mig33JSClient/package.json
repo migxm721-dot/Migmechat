@@ -1,0 +1,53 @@
+{
+	"name": "mig33jsclient",
+	"version": "3.0.0",
+	"description": "mig.me's JS Client",
+	"author": "Web Team <devteam@mig33global.com>",
+	"homepage": "https://github.com/mig33/mig33JSClient",
+	"contributors": [
+		{
+			"name": "Dinesh Saravanan",
+			"email": "dinesh.saravanan@mig33global.com"
+		},
+		{
+			"name": "Lester Chan",
+			"email": "lester.chan@mig33global.com"
+		},
+		{
+			"name": "Evan Murdiwanto",
+			"email": "evan.murdiwanto@mig33global.com"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mig33/mig33JSClient.git"
+	},
+	"config": {
+		"precommit": {
+			"lint": true,
+			"validate": false,
+			"test": false
+		}
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"grunt": "",
+		"grunt-contrib-copy": "",
+		"grunt-contrib-concat": "",
+		"grunt-contrib-uglify": "",
+		"grunt-contrib-jshint": "",
+		"grunt-contrib-cssmin": "",
+		"grunt-contrib-clean": "",
+		"grunt-contrib-imagemin": "",
+		"grunt-contrib-requirejs": "",
+		"grunt-contrib-less": "",
+		"grunt-typescript": "",
+		"grunt-shell": "",
+		"precommit-hook": "",
+		"grunt-react":"",
+		"react-tools":""
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	}
+}

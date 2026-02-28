@@ -1,0 +1,1915 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+    wap:
+      name: common.migbo_wap
+    midlet:
+      name: decorator
+    touch:
+      name: common.touch
+
+#################
+## ERROR PAGES ##
+#################
+error:
+  decorators:
+    midlet:
+      name: none
+    ajax:
+      name: none
+    touch:
+      name: common.touch
+  view:
+    name: error
+  components:
+    - common.user
+
+invalid_member:
+  decorators:
+    midlet:
+      name: none
+    touch:
+      name: common.touch
+  view:
+    name: invalid_member
+  components:
+    - common.user
+
+invalid_admin:
+  decorators:
+    midlet:
+      name: none
+    touch:
+      name: common.touch
+  view:
+    name: invalid_admin
+  components:
+    - common.user
+
+invalid:
+  decorators:
+    midlet:
+      name: none
+    touch:
+      name: common.touch
+  view:
+    name: invalid
+  components:
+    - common.user
+
+## ERROR PAGES ##
+
+##############
+## LISTINGS ##
+##############
+
+list:
+  view:
+    name: list_user_groups
+  decorators:
+    midlet:
+      name: none
+    ajax:
+      name: common.ajax
+  components:
+    - common.user
+    - common.session_user_username_match ?
+    - common.user_permissions
+    - common.group_permissions
+    - max_members_for_new_group
+    - pending_groups
+    - joined_groups
+    - featured_groups
+    - active_user_groups
+
+list_my_groups:
+  view:
+    name: list_user_groups
+  decorators:
+    midlet:
+      name: none
+    ajax:
+      name: common.ajax
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - common.session_user_username_match ?
+    - user.private_profile ?
+    - common.user_permissions
+    - common.group_permissions
+    - max_members_for_new_group
+    - joined_groups
+    - owned_groups
+    - moderated_groups
+    - featured_groups
+    - friends_groups
+    - active_groups
+    - wall.group_wall_posts
+    - pending_groups
+    - mutual_groups
+
+list_joined_groups:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: none
+  view:
+    name: list_joined_groups
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - joined_groups
+
+list_moderated_groups:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: none
+  view:
+    name: list_moderated_groups
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - moderated_groups
+
+list_owned_groups:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: none
+  view:
+    name: list_owned_groups
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - owned_groups
+
+list_friends_groups:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: none
+  view:
+    name: list_friends_groups
+  components:
+    - common.user
+    - common.user_permissions
+    - friends_groups
+    - common.group_permissions
+
+list_groups_home:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: none
+  view:
+    name: list_groups_home
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - max_members_for_new_group
+    - featured_groups
+    - active_groups
+    - group_marketing_content
+
+list_featured_groups:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: none
+  view:
+    name: list_featured_groups
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - max_members_for_new_group
+    - official_groups
+
+list_active_groups:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: none
+  view:
+    name: list_active_groups
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - max_members_for_new_group
+    - active_groups
+
+list_user_created_groups:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: none
+  view:
+    name: list_user_created_groups
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - owned_groups
+
+list_pending_groups:
+  decorators:
+    midlet:
+      name: none
+    ajax:
+      name: common.ajax
+  view:
+    name: list_pending_groups
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - pending_groups
+
+search:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: none
+  view:
+    name: search_results
+  components:
+    - common.user
+    - max_members_for_new_group
+    - search
+
+## LISTINGS ##
+
+home:
+  view:
+    name: home
+  decorators:
+    midlet:
+      name: home
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - requires_group_id list_my_groups ?
+    - is_view_allowed ?
+    - photos_count
+    - polls
+    - polls_count
+    - join_request_exists
+    - forum.get_group_forum
+    - forum.get_group_forum_non_sticky_posts
+    - chatroom_categories
+    - chatrooms
+    - wall.group_wall_posts
+    - members
+    - linked_groups
+    - third_party_application.get_game_link
+
+group_info:
+  view:
+    name: group_info
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - members
+
+full_view:
+  view:
+    name: full_view
+  decorators:
+    midlet:
+      name: home
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - members
+
+join_group:
+  view:
+    name: join_group
+  components:
+    - common.user
+    - common.receiver_flood_control 1/5 100/60 200/3600 1000/86400
+    - group
+    - level
+    - join
+    - group
+
+leave:
+  function: show_leave
+  components:
+    - common.user
+    - group
+    - group.group_member ?
+
+leave_complete:
+  decorators:
+    midlet:
+      name: sub_page
+  function: redirect_leave
+  view:
+    name: leave
+  components:
+    - common.user
+    - group
+
+ignore:
+  function: show_ignore
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: ignore
+  components:
+    - common.user
+    - group
+
+group_like:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  function: group_like
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - voting
+
+list_mutual_groups:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: none
+  view:
+    name: list_mutual_groups
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - mutual_groups
+
+list_linked_groups:
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: list_linked_groups
+  components:
+    - common.user
+    - group
+    - common.user_permissions
+    - common.group_permissions
+    - linked_groups
+
+link_group:
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: link_group
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - common.user_permissions
+    - common.group_permissions
+    - link_group
+
+unlink_group:
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: list_linked_groups
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - common.user_permissions
+    - common.group_permissions
+    - unlink_group
+    - linked_groups
+
+##############
+## SETTINGS ##
+##############
+setting:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: setting
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+
+setting_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  function: setting_check
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - group.group_update_setting ?
+    - get_group_setting
+
+setting_pending:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: setting_pending
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+
+setting_update:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: setting
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - update_setting
+    - group
+
+setting_public_update:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: setting
+  components:
+    - common.user
+    - group
+    - level
+    - group.group_admin ?
+    - accept_all_requests
+    - update_setting
+    - group
+
+setting_private_update:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: setting
+  components:
+    - common.user
+    - group
+    - level
+    - group.group_admin ?
+    - reject_all_requests
+    - update_setting
+    - group
+
+edit_name:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: edit_name
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+
+edit_name_confirm_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: edit_name
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+
+edit_name_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: edit_name
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - change_name
+
+members:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: members
+  components:
+    - common.user
+    - common.group_permissions
+    - group
+    - group.group_type_member ?
+    - moderators_info
+    - members
+
+moderators:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: moderators
+  components:
+    - common.user
+    - common.group_permissions
+    - group
+    - group.group_type_member ?
+    - moderators_info
+    - moderators
+
+blacklisted_users:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: blacklisted_users
+  components:
+    - common.user
+    - common.group_permissions
+    - group
+    - group.group_member ?
+    - group.group_type_public ?
+    - get_blacklisted_users
+
+blacklist_user:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: blacklisted_users
+  components:
+    - common.user
+    - common.group_permissions
+    - group
+    - group.group_admin ?
+    - blacklist_user
+    - get_blacklisted_users
+
+remove_user_from_blacklist:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: blacklisted_users
+  components:
+    - common.user
+    - common.group_permissions
+    - group
+    - group.group_admin ?
+    - remove_user_from_blacklist
+    - get_blacklisted_users
+
+group_give_admin_rights:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: members
+  components:
+    - common.user
+    - common.group_permissions
+    - group
+    - group.group_admin ?
+    - give_admin_rights
+    - moderators_info
+    - members
+
+group_remove_admin_rights:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: members
+  components:
+    - common.user
+    - common.group_permissions
+    - group
+    - group.group_admin ?
+    - remove_admin_rights
+    - moderators_info
+    - members
+
+block_member:
+  function: show_block_member
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: members
+  components:
+    - common.user
+    - common.flood_control
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_admin ?
+    - moderators_info
+    - block_member
+    - members
+
+unblock_member:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: blocked_members
+  components:
+    - common.user
+    - common.flood_control
+    - group
+    - level
+    - captcha.is_captcha_required ?
+    - group.group_admin ?
+    - moderators_info
+    - unblock_member
+    - blocked_members
+
+blocked_members:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: blocked_members
+  components:
+    - common.user
+    - group
+    - group.group_member ?
+    - blocked_members
+
+############
+## CREATE ##
+############
+create_submit:
+  function: create_submit
+  components:
+    - common.user
+    - common.group_permissions
+    - create_info
+    - group.create_group ?
+
+create_group:
+  function: create
+  components:
+    - common.user
+
+create:
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: create_group
+  components:
+    - common.user
+    - common.group_permissions
+    - create_info
+
+create_group_submit:
+  function: show_create_group_submit
+  components:
+    - common.user
+    - common.group_permissions
+    - group.create_group ?
+
+create_group_create:
+  function: show_create_group_create
+  components:
+    - common.user
+    - common.group_permissions
+    - create
+    - forum.create_group_forum
+
+choose_avatar:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: choose_avatar
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - create_info
+    - photo.get_photos
+
+choose_avatar_submit:
+  function: choose_avatar_submit
+  view:
+    name: choose_avatar_submit
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - update_avatar
+    - create_info
+    - group
+## CREATE ##
+
+############
+## INVITE ##
+############
+invite_contact:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: sub_page
+  view:
+    name: invite_contact
+  components:
+    - common.user
+    - group
+    - group.group_member ?
+    - invite_contact
+
+invite_contacts:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  function: show_invite_contacts
+  view:
+    name: invite_contact_confirmed
+  components:
+    - common.user
+    - common.flood_control
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - invite_contact
+    - chatrooms
+
+## INVITE ##
+
+
+##############
+# REQUESTS
+##############
+join_requests:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: show_join_requests
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - get_join_requests
+
+request_join:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  function: redirect_after_request_join
+  components:
+    - common.user
+    - common.receiver_flood_control 100/60 200/3600 1000/86400
+    - group
+    - request_join
+
+accept_request:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: show_join_requests
+  components:
+    - common.user
+    - common.receiver_flood_control 1/5 100/60 200/3600 1000/86400
+    - group
+    - level
+    - group.group_admin ?
+    - accept_request
+    - get_join_requests
+
+reject_request:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: show_join_requests
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - reject_request
+    - get_join_requests
+
+accept_all_requests:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: show_join_requests
+  components:
+    - common.user
+    - common.receiver_flood_control 100/60 1000/3600
+    - group
+    - level
+    - group.group_admin ?
+    - accept_all_requests
+    - get_join_requests
+
+reject_all_requests:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: show_join_requests
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - reject_all_requests
+    - get_join_requests
+
+## REQUESTS ##
+
+
+##############
+# CHATROOMS
+##############
+
+list_chatrooms:
+  view:
+    name: list_chatrooms
+  decorators:
+    midlet:
+      name: sub_page
+  components:
+    - common.user
+    - group
+    - group.group_public_or_member ?
+    - chatrooms
+
+link_chatrooms:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: sub_page
+  view:
+    name: link_chatrooms
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - link_chatrooms_info
+    - create_info
+    - available_chatrooms_to_link
+
+link_chatrooms_submit:
+  function: link_chatrooms_submit
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: sub_page
+  view:
+    name: link_chatrooms
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - create_info
+    - link_chatrooms
+    - link_chatrooms_info
+    - available_chatrooms_to_link
+
+unlink_chatrooms:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: sub_page
+  view:
+    name: unlink_chatrooms
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - link_chatrooms_info
+    - create_info
+    - linked_chatrooms
+
+unlink_chatrooms_submit:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: sub_page
+  view:
+    name: unlink_chatrooms
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - create_info
+    - unlink_chatrooms
+    - link_chatrooms_info
+    - linked_chatrooms
+
+create_completed:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: create_completed
+  components:
+    - common.user
+    - create_info
+    - group
+
+unlink_chatroom:
+  function: show_unlink_chatroom
+  components:
+    - common.user
+    - group
+    - unlink_chatroom
+    - chatroom.chatrooms
+
+import_chatroom_banned_to_blacklist:
+  view:
+    name: import_chatroom_banned_to_blacklist
+  decorators:
+    midlet:
+      name: sub_page
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - chatrooms
+
+import_chatroom_banned_to_blacklist_submit:
+  view:
+    name: blacklisted_users
+  decorators:
+    midlet:
+      name: sub_page
+  components:
+    - common.user
+    - group
+    - chatrooms
+    - group.group_admin ?
+    - import_chatroom_banned_to_blacklist
+    - get_blacklisted_users
+
+### CHATROOMS ###
+
+##############
+# FORUM
+##############
+
+create_forum:
+  decorators:
+    midlet:
+      name: sub_page
+  function: redirect_after_create
+  view:
+    name: view_forum
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - forum.create_group_forum
+
+view_forum:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: view_forum
+  components:
+    - common.user
+    - group
+    - group.group_type_member ?
+    - forum.get_group_forum
+    - forum.get_group_forum_posts
+
+create_forum_post:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: create_forum_post
+  components:
+    - common.user
+    - group
+    - common.generic_captcha
+    - group.group_member ?
+
+create_forum_post_submit:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: view_forum_post
+  components:
+    - common.user
+    - common.flood_control
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_forum_create_post ?
+    - group.group_member ?
+    - forum.get_group_forum
+    - forum.create_group_forum_post
+
+search_forum_posts_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: view_forum
+  components:
+    - common.user
+    - group
+    - group.group_type_member ?
+    - forum.get_group_forum
+    - forum.search_group_forum_posts
+
+view_forum_post:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: view_forum_post
+  components:
+    - common.user
+    - group
+    - group.group_type_member ?
+    - forum.get_group_forum_post
+    - forum.get_group_forum_post_comments
+
+create_forum_post_comment_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  function: redirect_after_comment
+  components:
+    - common.user
+    - common.flood_control
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_forum_create_post_comment ?
+    - group.group_member ?
+    - forum.get_group_forum
+    - forum.create_group_forum_post_comment
+
+view_forum_post_comments:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: view_forum_post_comments
+  components:
+    - common.user
+    - group
+    - group.group_type_member ?
+    - forum.get_group_forum_post
+    - forum.get_group_forum_post_comments
+
+like_forum_post:
+  decorators:
+    midlet:
+      name: sub_page
+  function: like_forum_post
+  components:
+    - common.user
+    - common.flood_control
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - forum.like_group_forum_post
+
+dislike_forum_post:
+  decorators:
+    midlet:
+      name: sub_page
+  function: dislike_forum_post
+  components:
+    - common.user
+    - common.flood_control
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - forum.dislike_group_forum_post
+
+view_forums:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: view_forums
+  components:
+    - common.user
+    - forum.get_group_forums
+
+view_active_forum_posts:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: view_active_forum_posts
+  components:
+    - common.user
+    - group
+    - group.group_member ?
+    - forum.get_group_forum
+    - forum.get_active_group_forum_posts
+
+view_public_forums:
+  view:
+    name: view_public_forums
+  components:
+    - common.user
+    - forum.get_public_group_forums
+
+lock_unlock_post:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: view_forum_post
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - forum.lock_unlock_post
+    - forum.get_group_forum_post
+    - forum.get_group_forum_post_comments
+
+stick_unstick_post:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: view_forum_post
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - forum.stick_unstick_post
+    - forum.get_group_forum_post
+    - forum.get_group_forum_post_comments
+
+delete_forum_post:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: delete_forum_post
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - forum.get_group_forum_post
+
+delete_forum_post_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: view_forum
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - forum.delete_group_forum_post
+    - forum.get_group_forum
+    - forum.get_group_forum_posts
+    - group
+
+delete_forum_post_comment:
+  decorators:
+    midlet:
+      name: sub_page
+  function: redirect_after_delete
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - forum.delete_group_forum_post_comment
+
+### FORUM ###
+
+##############
+# RSS
+##############
+manage_feeds:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: manage_feeds
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - feeds
+    - feed_data
+
+news:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: news
+  components:
+    - common.user
+    - group
+    - group.group_type_member ?
+    - feeds
+    - feed_data
+
+edit_feed:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: edit_feed
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - feed
+
+edit_feed_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: manage_feeds
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - edit_feed
+    - feeds
+
+add_feed:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: manage_feeds
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - group.group_feed ?
+    - add_feed
+    - feeds
+    - feed_data
+
+delete_feed:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: manage_feeds
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - delete_feed
+    - feeds
+
+### RSS ###
+
+##############
+# PHOTOS
+##############
+upload_photo:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: photo_upload
+  components:
+    - common.user
+    - group
+    - level
+    - group.group_admin ?
+    - photos_usage
+
+upload_photo_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: photo_upload_success
+  components:
+    - common.user
+    - common.flood_control 10/60
+    - group
+    - level
+    - captcha.is_captcha_required ?
+    - group.group_admin ?
+    - group.group_photo_upload ?
+    - photos_usage
+    - upload_photo
+
+view_photo:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: photo_view
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - group.group_type_member ?
+    - photo
+    - photo_comments
+    - group.group_photo ?
+
+like_photo:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: photo_view
+  components:
+    - common.user
+    - common.flood_control
+    - common.user_permissions
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - like_photo
+    - photo
+    - photo_comments
+    - group.group_photo ?
+
+manage_photo:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: photo_manage
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - group.group_admin ?
+    - photo
+
+edit_photo_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: photo_view
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - group.group_admin ?
+    - edit_photo
+    - photo
+    - photo_comments
+    - group.group_photo ?
+
+delete_photo_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: photo_manage
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - group.group_admin ?
+    - delete_photo
+
+photos:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: photos
+  components:
+    - common.user
+    - group
+    - group.group_type_member ?
+    - photos
+
+publish_photo:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: photo_publish
+  components:
+    - common.user
+    - group
+    - level
+    - group.group_admin ?
+    - photos_usage
+    - photo.get_photos
+
+publish_photo_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: photo_publish
+  components:
+    - common.user
+    - common.flood_control
+    - group
+    - level
+    - captcha.is_captcha_required ?
+    - group.group_admin ?
+    - photos_usage
+    - publish_photo
+    - photo.get_photos
+
+comments_photo:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: photo_comments
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - group.group_type_member ?
+    - photo
+    - photo_comments
+    - group.group_photo ?
+
+comment_photo_post:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: photo_post_comment
+  components:
+    - common.user
+    - group
+    - group.group_member ?
+    - photo
+    - group.group_photo ?
+
+comment_photo_post_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  function: comment_photo_post_submit
+  components:
+    - common.user
+    - common.flood_control
+    - common.user_permissions
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - common.comment ?
+    - create_photo_comment
+    - photo
+    - photo_comments
+    - group.group_photo ?
+
+comment_photo_remove:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  function: comment_photo_action
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - group.group_admin ?
+    - remove_photo_comment
+    - photo
+    - photo_comments
+    - group.group_photo ?
+
+comment_photo_like:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  function: comment_photo_action
+  components:
+    - common.user
+    - common.flood_control
+    - common.user_permissions
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - like_photo_comment
+    - photo
+    - photo_comments
+    - group.group_photo ?
+
+comment_photo_dislike:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  function: comment_photo_action
+  components:
+    - common.user
+    - common.flood_control
+    - common.user_permissions
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - dislike_photo_comment
+    - photo
+    - photo_comments
+    - group.group_photo ?
+
+### PHOTOS ###
+
+##############
+# POLLS
+##############
+polls:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: polls
+  components:
+    - common.user
+    - group
+    - group.group_type_member ?
+    - polls
+
+view_poll:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: poll
+  components:
+    - common.user
+    - group
+    - group.group_type_member ?
+    - check_poll_voted
+    - poll
+
+create_poll:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: polls_create
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+
+create_poll_submit:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: poll
+  components:
+    - common.user
+    - common.flood_control
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_admin ?
+    - group.group_poll_create ?
+    - create_poll
+    - poll
+
+manage_poll:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: polls_manage
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - poll
+
+close_poll_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: poll
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - close_poll
+    - poll
+
+edit_poll_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: poll
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - edit_poll
+    - check_poll_voted
+    - poll
+
+delete_poll_submit:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: polls
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - delete_poll
+    - polls
+
+vote_poll_submit:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: poll
+  components:
+    - common.user
+    - group
+    - group.group_member ?
+    - check_poll_voted
+    - vote_poll
+    - poll
+
+### POLLS ###
+
+##############
+# ACTIVITY
+##############
+
+#activities:
+#  decorators:
+#    midlet:
+#      name: sub_page
+#    wap:
+#      name: sub_page
+#  view:
+#    name: activities
+#  validation:
+#    pre:
+#      - (wap) wap.wap_loggedin
+#      - group_member
+#  models:
+#    init:
+#      - common.user
+#      - group
+#    - activity
+
+### ACTIVITY ###
+
+##############
+# WALL
+##############
+
+group_wall_posts:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: group_wall_posts
+  components:
+    - common.user
+    - group
+    - group.group_type_member ?
+    - wall.group_wall_posts
+
+group_wall_post_submit:
+  function: group_wall_post_submit
+  components:
+    - common.user
+    - common.flood_control
+    - common.user_permissions
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_admin ?
+    - wall.group_wall_post ?
+    - wall.group_wall_create_post
+
+group_wall_remove_post:
+  function: group_wall_remove_post
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - wall.group_wall_remove_post
+
+group_wall_like_post:
+  function: group_wall_like_post
+  components:
+    - common.user
+    - common.flood_control
+    - common.user_permissions
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - wall.group_wall_post_like ?
+    - wall.group_wall_like_post
+
+group_wall_post_comments:
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: group_wall_post_comments
+  components:
+    - common.user
+    - common.user_permissions
+    - group
+    - group.group_type_member ?
+    - wall.group_wall_post
+    - wall.group_wall_post_comments
+
+group_wall_post_comment_submit:
+  function: group_wall_post_comment_submit
+  decorators:
+    midlet:
+      name: sub_page
+  view:
+    name: group_wall_post_comments
+  components:
+    - common.user
+    - common.user_permissions
+    - common.flood_control
+    - group
+    - captcha.is_captcha_required ?
+    - group.group_member ?
+    - wall.group_wall_post_comment ?
+    - wall.group_wall_create_comment
+    - wall.group_wall_post
+    - wall.group_wall_post_comments
+
+group_wall_remove_comment:
+  decorators:
+    midlet:
+      name: sub_page
+    touch:
+      name: sub_page
+  view:
+    name: group_wall_post_comments
+  components:
+    - common.user
+    - group
+    - group.group_admin ?
+    - wall.group_wall_remove_comment
+    - wall.group_wall_post
+    - wall.group_wall_post_comments
+### WALL ###
+
+notifications:
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: notifications
+  components:
+    - common.user
+    - common.user_permissions
+    - common.group_permissions
+    - pending_groups

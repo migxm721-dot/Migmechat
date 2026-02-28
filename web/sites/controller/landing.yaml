@@ -1,0 +1,18 @@
+all:
+  decorators:
+    midlet:
+      name: common.midlet
+
+page:
+  view:
+    name: opera_what_is_mig33
+  model:
+    - check_campaign
+
+opera_link_mig33:
+  view:
+    name: opera_link_mig33
+
+opera_what_is_mig33:
+  view:
+    name: opera_what_is_mig33

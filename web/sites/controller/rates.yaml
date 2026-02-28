@@ -1,0 +1,24 @@
+all:
+  decorators:
+    midlet:
+      name: decorator
+
+sms_rate:
+  view:
+    name: sms_rate
+  components:
+    - rates
+    - sms_rate
+
+sms_rates:
+  view:
+    name: sms_rates
+  components:
+    - rates
+    - sms_rates
+
+sms_rates_search:
+  view:
+    name: sms_rates_search
+  components:
+    - rates

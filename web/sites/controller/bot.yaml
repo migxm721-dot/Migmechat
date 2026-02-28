@@ -1,0 +1,341 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page page-game
+    touch:
+      name: common.touch
+    json:
+      name: common.json
+    wap:
+      name: common.migbo_wap
+
+about:
+  decorators:
+    midlet:
+      name: decorator
+  view:
+    name: about
+  components:
+    - common.user
+
+home:
+  decorators:
+    midlet:
+      name: decorator
+  view:
+    name: home
+  components:
+    - common.user
+
+bot_list:
+  decorators:
+    midlet:
+      name: bot_listing
+    mre:
+      name: bot_listing
+  view:
+    name: bot_list
+  components:
+    - common.user
+    - bot_list
+
+miggames_list:
+  decorators:
+    mre:
+      name: bot_listing
+  view:
+    name: miggames_list
+  components:
+    - common.user
+    - bot_list
+
+botgames_list:
+  decorators:
+    mre:
+      name: bot_listing
+  view:
+    name: botgames_list
+  components:
+    - common.user
+    - bot_list
+
+bot_help:
+  function: bot_help
+  view:
+    name: bot_help
+  components:
+    - common.user
+
+werewolf_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: werewolf_help
+  components:
+    - common.user
+    - bot_help
+
+roulette_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: roulette_help
+  components:
+    - common.user
+    - bot_help
+
+trivia_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: trivia_help
+  components:
+    - common.user
+    - bot_help
+
+vampire_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: vampire_help
+  components:
+    - common.user
+    - bot_help
+
+one_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: one_help
+  components:
+    - common.user
+    - bot_help
+
+rps_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: rps_help
+  components:
+    - common.user
+    - bot_help
+
+hot_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: hot_help
+  components:
+    - common.user
+    - bot_help
+
+dice_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: dice_help
+  components:
+    - common.user
+    - bot_help
+
+lowcard_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: lowcard_help
+  components:
+    - common.user
+    - bot_help
+
+football_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: football_help
+  components:
+    - common.user
+    - bot_help
+
+knockout_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: knockout_help
+  components:
+    - common.user
+    - bot_help
+
+blackjack_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: blackjack_help
+  components:
+    - common.user
+    - bot_help
+
+baccarat_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: baccarat_help
+  components:
+    - common.user
+    - bot_help
+
+girlfriend_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: girlfriend_help
+  components:
+    - common.user
+    - bot_help
+
+boyfriend_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: boyfriend_help
+  components:
+    - common.user
+    - bot_help
+
+guess_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: guess_help
+  components:
+    - common.user
+    - bot_help
+
+danger_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: danger_help
+  components:
+    - common.user
+    - bot_help
+
+migcricket_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: migcricket_help
+  components:
+    - common.user
+    - bot_help
+
+questions_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: questions_help
+  components:
+    - common.user
+    - bot_help
+
+taring_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: taring_help
+  components:
+    - common.user
+    - bot_help
+
+warriors_help:
+  decorators:
+    midlet:
+      name: bot_help
+    ajax:
+      name: common.ajax
+      body_class: page page-game-help
+  view:
+    name: warriors_help
+  components:
+    - common.user
+    - bot_help

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mig33_register_packager" default="build" basedir="./../">
+	<condition property="output" value="${basedir}/build/package">
+		<not>
+			<isset property="output"/>
+		</not>
+	</condition>
+	<target name="build"
+		depends="prepare,lint,push_resources,packager"/>
+	<target name="buildv2"
+		depends="prepare,lint,version_sync,compress,push_resources"/>
+
+	<target name="clean" description="Cleanup build artifacts">
+		<delete dir="${output}"/>
+		<delete dir="${basedir}/application/optimized_templates"/>
+		<delete dir="${basedir}/htdocs/${branch}"/>
+		<delete file="${basedir}/application/config/build.bak.php" />
+	</target>
+
+	<target name="prepare" depends="clean" description="Prepare for build">
+		<mkdir dir="${output}"/>
+	</target>
+
+	<target name="lint" description="Perform syntax check of sourcecode files">
+		<apply executable="php" failonerror="true">
+			<arg value="-l" />
+			<fileset dir="${basedir}/application">
+				<include name="**/*.php" />
+				<exclude name="**/tpl*.php" />
+				<modified />
+			</fileset>
+		</apply>
+	</target>
+
+	<target name="packager" description="Perform packing of files">
+		<exec executable="php" failonerror="true">
+			<arg path="${basedir}/build/deployment/packager.php" />
+			<arg value="-j" />
+			<arg value="/usr/bin/java" />
+			<arg value="-b" />
+			<arg path="${output}" />
+			<arg value="-v" />
+			<arg value="${branch}" />
+			<arg value="--use-cdn" />
+		</exec>
+	</target>
+
+	<target name="version_sync" description="Sync files over to target folder (meant for version 2)">
+		<exec executable="rsync">
+			<arg value="-arvz" />
+			<arg value="--exclude=cache/tpl*" />
+			<arg path="${basedir}/application" />
+			<arg path="${output}/" />
+		</exec>
+		<exec executable="rsync">
+			<arg value="-arvz" />
+			<arg path="${basedir}/htdocs" />
+			<arg path="${output}/" />
+		</exec>
+		<exec executable="rsync">
+			<arg value="-arvz" />
+			<arg value="--exclude=less" />
+			<arg path="${basedir}/htdocs/resources" />
+			<arg path="${output}/htdocs/resources/${branch}" />
+		</exec>
+	</target>
+
+	<target name="compress" description="Perform packing of files (meant for version 2)">
+		<exec executable="php" failonerror="true">
+			<arg path="${basedir}/build/deployment/packer.php" />
+			<arg value="-j" />
+			<arg value="/usr/bin/java" />
+			<arg value="-p" />
+			<arg path="${output}" />
+			<arg value="-v" />
+			<arg value="${branch}" />
+		</exec>
+	</target>
+
+	<target name="push_resources" description="Push uncompressed resources assets to S3">
+		<exec executable="php" failonerror="true">
+			<arg path="${basedir}/build/deployment/lib/push_to_cdn.php" />
+			<arg path="${basedir}/htdocs/resources" />
+			<arg value="resources" />
+		</exec>
+	</target>
+
+</project>

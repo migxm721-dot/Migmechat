@@ -1,0 +1,2640 @@
+<?xml version="1.0"?>
+
+<!--
+-
+- Sequel Pro XML dump
+- Version 3408
+-
+- http://www.sequelpro.com/
+- http://code.google.com/p/sequel-pro/
+-
+- Host: dev-db-2 (MySQL 5.1.50-rel11.4-log)
+- Database: fusion
+- Generation Time Time: 2012-12-08 16:36:23 +0800
+-
+-->
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="fusion_test">
+
+	<!--<table_structure name="system">-->
+		<!--<field field="PropertyName" type="varchar(128)" null="NO" key="PRI" default="" extra="" />-->
+		<!--<field field="PropertyValue" type="text" null="NO" key="" default="<null>" extra="" />-->
+
+		<!--<options name="system" engine="InnoDB" version="10" row_format="Compact" rows="265" avg_row_length="309" data_length="81920" max_data_length="0" index_length="0" data_free="0" create_time="2010-12-16 23:35:44" update_time="<null>" collation="utf8_general_ci" create_options="" comment="" />-->
+	<!--</table_structure>-->
+
+	<table_data name="system">
+
+	<row>
+		<field name="PropertyName">AccountTransaction:AutoApproveCreditCardRiskyCountries</field>
+		<field name="PropertyValue">107;153;137;231;14;204;230</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:AutoCreditCardRechargeBonusEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:CreditCardAutoApproveEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:CreditCardFirstNameLastNameCheckEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:CreditCardPaymentStrictCcCountryCheck</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:CreditCardPaymentStrictSslCheck</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:CreditCardRechargeBonusEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:GetSuggestedMerchantsFromCountryEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:GlobalCollectURL</field>
+		<field name="PropertyValue">https://ps.gcsip.nl/wdl/wdl</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:SuggestedMerchantsFromCountryCacheExpiry</field>
+		<field name="PropertyValue">3600</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AccountTransaction:SuggestMerchantFromSpecificLocationEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ActivationDisabledInterval</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AddContactDisabledForUnauthenticatedUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Ads:BuzzcityEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Alert:MigboSysAlertsForNewUser</field>
+		<field name="PropertyValue">[{&quot;follow_others_label&quot;:&quot;follow others&quot;,&quot;follow_others_linktype&quot;:&quot;follow_others&quot;,&quot;invite_friends_label&quot;:&quot;invite friends&quot;,&quot;invite_friends_linktype&quot;:&quot;invite_friends&quot;,&quot;alert_key&quot;:&quot;new_user_Welcome&quot;,&quot;alert_content&quot;:&quot;Welcome to mig33 - a community that's all about having fun. You can %{follow_others} from all around the world and %{invite_friends} to join you&quot;},{&quot;migstore_label&quot;:&quot;migStore&quot;,&quot;migstore_linktype&quot;:&quot;migstore&quot;,&quot;alert_key&quot;:&quot;new_user_Gift&quot;,&quot;alert_content&quot;:&quot;You can send a Gift to your special someone through the %{migstore} or by typing \&quot;/gift\&quot; in any chat room.&quot;},{&quot;play_for_free_label&quot;:&quot;play for FREE&quot;,&quot;play_for_free_linktype&quot;:&quot;play_for_free&quot;,&quot;alert_key&quot;:&quot;new_user_Game&quot;,&quot;alert_content&quot;:&quot;Looking for more excitement? Challenge your friends to tons of Games that you can %{play_for_free}. There's something for everyone!&quot;}]</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Alert:MigboSysAlertsForNewUserEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AllowedVerificationWindowInHours</field>
+		<field name="PropertyValue">96</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AndroidV3Enabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ANICallBackEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AnonymousCalling</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AnonymousCallSettingsURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/anonymouscall_setting.php</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AssetRelease</field>
+		<field name="PropertyValue">2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">AsyncGiftAllEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">avatarProfileCountersEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BanglalinkURLDownloadSMS</field>
+		<field name="PropertyValue">Download mig33 from http://wap.mig33.com/bl and install on your BL mobile. You will soon</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BanglalinkVoucherSMS</field>
+		<field name="PropertyValue">Your coupon is %n. Use this to buy content from mig33 store. Just</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BankTransferConfirmationSMS</field>
+		<field name="PropertyValue">mig33 has received your bank deposit of %1. Your new mig33 total balance</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BankTransferInstructionEmail</field>
+		<field name="PropertyValue">Give the Payment Reference number to your bank to complete the bank transfer</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BankTransferMerchantID</field>
+		<field name="PropertyValue">3723</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BankTransferReversalSMS</field>
+		<field name="PropertyValue">Your bank transfer of %1 has been reversed. %2 credit has been taken</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BannedChatRoomNames</field>
+		<field name="PropertyValue">lobby</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BannedPasswords</field>
+		<field name="PropertyValue">.adgjm;123456;abc123</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BannedUsernames</field>
+		<field name="PropertyValue">admin;owner;operator;miq33;migg;pcgan;crazygrape;ksandy;</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BclPersistedEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BCLPersistSucceedPercentage</field>
+		<field name="PropertyValue">100</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BillingBlock</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BlacklistedExternalEmailDomains</field>
+		<field name="PropertyValue">hushmail.com;yopmail.com;mailinator.com;binkmail.com;yopmail.fr;mailmetrash.com;728.7z.lt;mailnesia.com;rppkn.com;10minutemail.com;dispostable.com;cool.fr.nf;sharklasers.com;pappu3300.co.cc;pappu330.co.cc;pappu3300co.cc;teleworm.us;fokustik.tk;rtrtr.com;onewaymail.com;mailcatch.com;devnullmail.com;teleworm.us;guerrillamail.com;eyepaste.com;mailinator.com;mailinator2.com;mailinator.net;chammy.info;binkmail.com;bobmail.info;devnullmail.com;gawab.com;letthemeatspam.com;notmailinator.com;putthisinyourspamdatabase.com;tempimbox.com;thisisnotmyrealemail.com;tradermail.info;safetymail.info;sendspamhere.com;sogetthis.com;spam.la;spamherelots.com;spamthisplease.com;supergreatmail.com;suremail.info;veryrealemail.com;zippymail.info;guerrillamail.com;guerrillamail.org;guerrillamail.net;guerrillamailblock.com;sharklasers.com;nwldx.com;ms9.mailslite.com;fakemailgenerator.com;teleworm.com;onewaymail.com;mobi.web.id;ag.us.to;shitmail.org;crapmail.org;1ce.us;big1.us;garliclife.com;irish2me.com;lifebyfood.com;lr7.us;lr78.com;luv2.us;soodomail.com;soodonims.com;winemaven.info;xoxox.cc;yogamaven.com;spambox.us;trillianpro.com;nospam.wins.com.br;kurzepost.de;objectmail.com;proxymail.eu;rcpt.at;trash-mail.at;trashmail.at;trashmail.me;trashmail.net;wegwerfmail.de;wegwerfmail.net;wegwerfmail.org;yopmail.com;yopmail.fr;yopmail.net;cool.fr.nf;courriel.fr.nf;jetable.fr.nf;nospam.ze.tc;nomail.xl.cx;mega.zik.dj;moncourrier.fr.nf;monemail.fr.nf;monmail.fr.nf;speed.1s.fr;mailmetrash.com;tempinbox.com;beefmilk.com;dingbone.com;fatflap.com ;fudgerub.com;lookugly.com;smellfear.com;instantemailaddress.com;dacoolest.com;junk1e.com;throwawayemailaddress.com;tempail.com;iroid.com;dudmail.com;scatmail.com;trayna.com;spamdecoy.net;dharmatel.net;slave-auctions.net;deadchildren.org;throwawaymail.com;tempmail2.com;12minutemail.com;24hourmail.com;anonymbox.com;deadaddress.com;dispostable.com;eyepaste.com;filzmail.com;fornow.eu;freemail.ms;incognitomail.com;incognitomail.org;jetable.org;keepmymail.com;mailcatch.com;mailme24.com;mailexpire.com;meltmail.com;no-spam.ws;nospamfor.us;nowmymail.com;sneakemail.com;spam.su;spam-be-gone.com;spamavert.com;spamfree24.org;spamgourmet.com;sofimail.com;tempemail.net;mmmmail.com;fixmail.tk;gelitik.in;fakeinbox.com;jogibaba543.dudmail.com;inboxrss.com;hmamail.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BlockedSMSDestinations</field>
+		<field name="PropertyValue">27823972435;27823160222;393343947124;393333293599</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BlockListURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/block_list.php</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BuyCreditURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/recharge_index.php</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BuyEmoticonsURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/store.php?loc=emot</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BuzzSMS</field>
+		<field name="PropertyValue">This is a mig33 Buzz from %1! They have this to say:
+ %3
+http://m.mig33.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BuzzSMSCost</field>
+		<field name="PropertyValue">0.05</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BuzzSMSNoUserMessage</field>
+		<field name="PropertyValue">Buzz! Your mig33 friend, %1, wants you to login to mig33 to chat!
+http://m.mig33.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">BuzzURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/buzz.php?</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CallBillingBlock</field>
+		<field name="PropertyValue">60</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Campaign:Admob_campaign_2012_Enabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatMessageBlacklistSimple</field>
+		<field name="PropertyValue">mig33service;mig33global.info;mig33help.info;zat.su;helpmig33.tk;muk.su;tr.nu;wen.su;swiftbot;.lk;.fp;.cc;.mobi;mig33office.com;wen9.com;fiz.su;levelboaster.tk;wap.sh;merchentforum.tk;@mig33global;FUCK STEVEN GOH;steven.goh@gmail.com;steven.goh@pobox.com;+6585226176;steven.goh;fuck          </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:BannedNames</field>
+		<field name="PropertyValue">lobby;stadium</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoom:BlockPeriodByIPInSeconds</field>
+		<field name="PropertyValue">60</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:CategoriesAlwaysIncludedInLogin</field>
+		<field name="PropertyValue">1;2;3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">chatroom:CategoriesListCacheTimeInMillis</field>
+		<field name="PropertyValue">60000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">chatroom:ChatroomListCacheTimeInMillis</field>
+		<field name="PropertyValue">60000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoom:MaxNameLength</field>
+		<field name="PropertyValue">15</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">chatroom:MaxNewbieMig33Level</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:MsgQueueAddTimeoutMillis</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:MsgQueueAddTimeoutMillisAdmin</field>
+		<field name="PropertyValue">-1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:MsgQueueCheckSizeBeforePutMessageEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoom:MsgQueueViaListMaxSize</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:MultiIDControlEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:MultiIDControlIPWhitelist</field>
+		<field name="PropertyValue">60.241.190.22;211.25.207.14;10.3.3.99;10.3.3.99;120.20.94.138;116.197.5.139;202.93.215.120;67.215.235.251;10.237.1.250;202.93.215.90;184.82.97.202;82.145.211.6;74.217.68.1;74.217.68.2;74.217.68.3;74.217.68.4;74.217.68.5;74.217.68.6;74.217.68.7;74.217.68.8;74.217.68.9;74.217.68.10;184.22.221.156;107.6.88.90;76.72.165.125;175.41.130.115;46.137.251.98;178.33.19.34;74.117.234.64;184.22.18.6;107.6.89.194;182.50.152.234;216.27.7.250;74.117.234.110;</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:NegativeCacheEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:NueNewbieCategoriesEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Chatroom:UseSysPropDefinedLoginChatroomCategories</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatroomAdminAnnouncementEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomBansBeforeSuspension</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomCleanPages</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatroomHideProbability</field>
+		<field name="PropertyValue">0.6</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomInitialPageSize</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomIntroURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/chatroom/intro</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomKickCost</field>
+		<field name="PropertyValue">0.03</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomMaxAdminBansAllowed</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatroomNUEEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomOwnershipChangeEmail</field>
+		<field name="PropertyValue">Test</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomPageSize</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomSearchPrefixOnly</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomsMyGroupsURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/my/groups/?v=%1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChatRoomsToHide</field>
+		<field name="PropertyValue">lowcard;dice;danger</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CheckAndPopulateBCL</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChequePaymentInstructionEmail</field>
+		<field name="PropertyValue"></field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ChequePaymentMerchantID</field>
+		<field name="PropertyValue">3723</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Contacts:FollowOnAddContactEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Contacts:HandleFollowingEventsFromMigboEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Contacts:MigboIntegrationEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Contacts:OneWayMigboApiCallsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Contacts:PushNewFollowersAsPendingContactsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Contacts:UnfollowOnRemoveContactEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreateAccountEntryRestrictedAll</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreateAccountEntryRestrictedNonTopMerchant</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreateAccountEntryRestrictedTypes</field>
+		<field name="PropertyValue">14;2;41;47</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CredentialDuplicateCheckEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreditCardMerchantIDForMerchant</field>
+		<field name="PropertyValue">3754</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreditCardMerchantIDForUser</field>
+		<field name="PropertyValue">3753</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreditCardPaymentAmounts</field>
+		<field name="PropertyValue">5;10;15;20;50;75;100</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreditCardPaymentCurrency</field>
+		<field name="PropertyValue">USD</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreditCardPaymentNotificationEmail</field>
+		<field name="PropertyValue">ccard@mig33global.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreditCardPaymentStrictSslCheck</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CreditCardTrustedPaymentAmounts</field>
+		<field name="PropertyValue">5;10;15;20;50;70;100;150;200;250;300;500;600</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">CustomerCareEmail</field>
+		<field name="PropertyValue">contact@mig33.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DailyDigestWindowInDays</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DefaultChatPrivacySetting</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DefaultChatRooms</field>
+		<field name="PropertyValue">Free 2 Chat;Flirt;Friends;Meet Up;Chatterbox         </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DefaultChatRoomSize</field>
+		<field name="PropertyValue">25</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DefaultEmoteRateLimitExpr</field>
+		<field name="PropertyValue">20000/1D</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DefaultGameChatRooms</field>
+		<field name="PropertyValue">Dice 1;Dice 2;Dice 3;Dice 4;Dice 5;Dice 6;Dice 7;Dice 8;Dice 9;Dice 10;Low Card 1;Low Card 2;Low Card 3;Low Card 4;Low Card 5;Low Card 6;Low Card 7;Low Card 8;Low Card 9;Low Card 10;Football 1;DDCricket 1;DDCricket 2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DefaultGroupName</field>
+		<field name="PropertyValue">mig33 Contacts           </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DefaultNewbiesChatRooms</field>
+		<field name="PropertyValue">Happy Newbie 1;Happy Newbie 2;Happy Newbie 3;Happy Newbie 4;Happy Newbie 5;Kenalan Yuk 1;Kenalan</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DefaultThirdpartyappWhitelistIP</field>
+		<field name="PropertyValue">66.151.149.123</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DeveloperSvcCreateGroupOnCreateAppEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DeveloperSvcCreateTestUserAccountsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DeveloperSvcEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DeveloperSvcMasterUserDefaultMigLevel</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DeveloperSvcMaximumUserTestAccounts</field>
+		<field name="PropertyValue">20</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">disabledlocalbankdepositcountries</field>
+		<field name="PropertyValue">120;47;71;178</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">DisableElasticSearchQueries</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EditPhotoURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/photo/edit_photo?itid=</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EditProfileURL</field>
+		<field name="PropertyValue">http://metacafe.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EditProfileURL-backup</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/edit_profile.php</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EJBCacheDuration:Currencies</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EJBCacheDuration:MenuItems</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EmailAlertSMS</field>
+		<field name="PropertyValue">Hi %1, you have mail. Please login to mig33 to view your mail.</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EmailAlertSMSCost</field>
+		<field name="PropertyValue">0.05</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EmailVerificationWithoutUsernameEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Emote</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Emote:BanIndexRateLimit</field>
+		<field name="PropertyValue">10/60S</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Emote:KickIndexRateLimit</field>
+		<field name="PropertyValue">10/60S</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Emote:ListRateLimit</field>
+		<field name="PropertyValue">2/2M</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EmoticonsReloadIntervalInSeconds</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EnableEmailRegistration</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EnableEmailRegistrationLink</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EnableImageServerSIDCheck</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EnableLeaderboards</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EnableNewUserMerchantRegistrationLink</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EnforceMerchantPIN</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EnforceSessionOrigin</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EventQueueEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EventQueueSettings:PersistentRedisConnectionEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">EventSystemEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ExchangeRateDataSource</field>
+		<field name="PropertyValue">xe</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">FacebookApiKey</field>
+		<field name="PropertyValue">201383533238944</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">FacebookApiSecret</field>
+		<field name="PropertyValue">0cd13234ce70b22d83e5309b8baf4cc1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">FacebookDebugEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">FacebookEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">FacebookReplyTimeoutInMs</field>
+		<field name="PropertyValue">15000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ForgotPasswordNoSupportMsg</field>
+		<field name="PropertyValue">Please go to http://www.mig33.com/forgotpassword to reset your password.     </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ForgotPasswordSMSDelay</field>
+		<field name="PropertyValue">300</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ForgotPasswordSMSPassword</field>
+		<field name="PropertyValue">TOKEN:%1 Please follow this link and complete the necessary steps to reset your</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">FusionRestRateLimit:EventAlertBatch</field>
+		<field name="PropertyValue">1/15M</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GameReferralSMS</field>
+		<field name="PropertyValue">{0} ({1}) invited you to play [{2}] on mig33! PLAY NOW: http://m.mig33.com/ih/{3} </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewayRateLimit:Message</field>
+		<field name="PropertyValue">10/1M</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewayRateLimitByChatRoom:JoinChatRoom</field>
+		<field name="PropertyValue">4800/1M</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewayRateLimitByChatRoom:KickChatRoomParticipant</field>
+		<field name="PropertyValue">100/1M</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:BlockedFusionPackets</field>
+		<field name="PropertyValue"></field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:CaptchaIPBlacklist</field>
+		<field name="PropertyValue">10.3.3.92;10.3.3.29;10.3.3.27</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:GenericNativeCaptchaEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:InviteFriendCaptchaEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:InviteFriendCaptchaFallbackUrl</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/invite/refer_friend </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:InviteFriendCaptchaOdds</field>
+		<field name="PropertyValue">0.5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:MaxMigLevelForFusionPacketRateLimitByChatroom</field>
+		<field name="PropertyValue">20</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:RateLimitByChatroomNameAndRemoteAddress</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:RateLimitByRemoteAddressWhiteList</field>
+		<field name="PropertyValue">10.3.3.23</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:RateLimitedFusionPackets</field>
+		<field name="PropertyValue">CreateGroupChat;JoinChatRoom;KickChatRoomParticipant;RemoveContact;GroupChatInvite;SetStatusMessage;AcceptContactRequest;Message</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GatewaySettings:RateLimitedFusionPacketsByChatRoom</field>
+		<field name="PropertyValue">JoinChatRoom;Message;KickChatRoomParticipant</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GenerateSweepstakesCode</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GetSessionDataDisabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GetUserProfileLabelsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GiftAllRateLimitInSeconds</field>
+		<field name="PropertyValue">8</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GiftEmoteAllEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GiftEventEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GiftLowPriceThreholdInUSD</field>
+		<field name="PropertyValue">0.01</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GiftShowerEventsToSend</field>
+		<field name="PropertyValue">16</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GiftSingleRateLimitInSeconds</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GlobalCollectURL</field>
+		<field name="PropertyValue">https://ps.gcsip.nl/wdl/wdl</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GroupChat:ParticipantLimit</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GroupIDToGamesLink</field>
+		<field name="PropertyValue">209805::wap::http://devlab.projectgoth.com/sites/wap/opensocial/start_app?appid=themobilegamer.clubwars_oswap::PLAY CLUB WARS; 209805::midlet::http://devlab.projectgoth.com/sites/midlet/opensocial/start_app?appid=themobilegamer.clubwars_os::PLAY CLUB WARS</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GroupInvitationAlert</field>
+		<field name="PropertyValue">%inviter% has invited you to join the %groupname% group. Please visit the My</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GroupJoinURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/group/join?cid=</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GroupReferralSMS</field>
+		<field name="PropertyValue">Hi, %1 invites you into %4 group on mig33. Open http://m.mig33.com/join.php?m=%3&amp;g=%5 on your</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GroupSMSNotificationCost</field>
+		<field name="PropertyValue">0.05</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GroupThreadUpdatedEmailBody</field>
+		<field name="PropertyValue">&lt;poster_username&gt;</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GroupThreadUpdatedEmailSubject</field>
+		<field name="PropertyValue">New</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">GTalkEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">HomeURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/midlet/migworld/get_mobpage</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">HomeURLMigbo</field>
+		<field name="PropertyValue">http://blog.devlab.projectgoth.com/fanatik-test-page/</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">HTTPRequestGetSIDByRegexEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">iLoopURL</field>
+		<field name="PropertyValue">http://mblade.iloopmobile.com/saturn/gateway/webin/https?shortCode=99099&amp;operatorId=9919&amp;ret_override=http&amp;userToken=CC9E744F80C2939CC41F4E84CA4B9459</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ImageServerURL</field>
+		<field name="PropertyValue">http://imglab.projectgoth.com/</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">IncrementStoreItemSoldEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">IndoSatGroupID</field>
+		<field name="PropertyValue">20</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">IndoSatIPs</field>
+		<field name="PropertyValue">202.152.170;202.152.171;202.152.172;202.152.173;202.152.174;202.152.175;202.93.36;202.93.37;202.152.162;202.152.161;202.152.163.73202.152.163.72124.195.40;124.195.41;124.195.42;124.195.43;124.195.44;124.195.45;124.195.46;124.195.47;124.195.112;124.195.113;124.195.114;124.195.115;124.195.116;124.195.117;124.195.118;124.195.119;124.195.65;120.164.24;120.164.25;120.164.26;120.164.27;120.164.28;120.164.29;120.164.30;120.164.31;120.164.16;120.164.17;120.164.18;120.164.19;120.164.20;120.164.21;120.164.22;120.164.23;120.164.0;120.164.1;120.164.2;120.164.3;120.164.4;120.164.5;120.164.6;120.164.7;120.164.8;120.164.9;120.164.10;120.164.11;120.164.12;120.164.13;120.164.14;120.164.15;120.160;120.161;120.162;120.163</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">IndoSatPremiumSMSGatewayID</field>
+		<field name="PropertyValue">25</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">IndoSatServiceID</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">IndoSatShortCode</field>
+		<field name="PropertyValue">676</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">IndoSatURLDownloadSMS</field>
+		<field name="PropertyValue">Selamat datang ke klub mobile IM3 Groov3 di mig33! Untuk bergabung download sekarang</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">JobSchedulerSettings:ReputationDailyGatherAndProcessEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">JoinGroupDisabledForUnauthenticatedUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Language:LocalisationEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">LinkTPAHomeInListMidlet</field>
+		<field name="PropertyValue">blueleafgames.moonbase,moonbase,home</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">LogInstrumentationSample</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">logSingleGiftEmote</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">LookoutSMS</field>
+		<field name="PropertyValue">Your mig33 friend, %1, has come online! Why don't you login to mig33</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">LookoutSMSCost</field>
+		<field name="PropertyValue">0.05</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">LookOutURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/lookout.php?</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">LowBalanceAlertSMS</field>
+		<field name="PropertyValue">Your mig33 balance is running low. To continue using mig33's premium services, please</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">LowBalanceAlertThreshold</field>
+		<field name="PropertyValue">0.10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailAdmin</field>
+		<field name="PropertyValue">noreply</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailAdminPassword</field>
+		<field name="PropertyValue">sA83ngh9B</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailDomain</field>
+		<field name="PropertyValue">mig33.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailReservedAliases</field>
+		<field name="PropertyValue">support;contact;affiliate;marketing;corporate;finance;noreply;jobs;merchant;abuse;miglevel;migwars;mig33phone;admin</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailServer</field>
+		<field name="PropertyValue">mail.mig33.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailServerAdmin</field>
+		<field name="PropertyValue">mail_mgmt.sjc01.projectgoth.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailServerAdminPort</field>
+		<field name="PropertyValue">7026</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailServerChangePassword</field>
+		<field name="PropertyValue">cmd=cmd_user_login&amp;lcmd=user_change_pass&amp;username=mig33_admin@mig33.com&amp;password=hC88o38j7zlu6cgHZIT9CMk8913dELv&amp;lusername=%1&amp;lpassword=%2&amp;lpassword_again=%2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailServerGetStats</field>
+		<field name="PropertyValue">cmd=cmd_user_login&amp;lcmd=user_stats&amp;username=mig33_admin@mig33.com&amp;password=hC88o38j7zlu6cgHZIT9CMk8913dELv&amp;lusername=%1&amp;lpassword=%2&amp;lpassword_again=%2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MailURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/midlet/email/home</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxActivationAttempts</field>
+		<field name="PropertyValue">20</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxBankTransferAmount</field>
+		<field name="PropertyValue">5000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxBankTransferPerDay</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxBuzzPerDay</field>
+		<field name="PropertyValue">50</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxBuzzToNumberPerDay</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxChatRoomBans</field>
+		<field name="PropertyValue">6</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxChatRoomBookmarks</field>
+		<field name="PropertyValue">30</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxChatRoomNameLength</field>
+		<field name="PropertyValue">15</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxChatRoomsReturned</field>
+		<field name="PropertyValue">200</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxChequePaymentAmount</field>
+		<field name="PropertyValue">5000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxConcurrentSessionsBreachedLockdownEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxConcurrentSessionsPerUser</field>
+		<field name="PropertyValue">20</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardFailsPerCardDetailPerDay</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardFailsPerCardPer48Hours</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardFailsPerCardPerDay</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardFailsPerUserPerDay</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardPaymentAmount</field>
+		<field name="PropertyValue">500</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardTransactionsPerDay</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardTransactionsPerMonth</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardTransactionsPerWeek</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardUsersPer48Hours</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardUsersPerMonth</field>
+		<field name="PropertyValue">4</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxCreditCardUsersPerWeek</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxDistributionThreadPoolSize</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxEmailLength</field>
+		<field name="PropertyValue">1024</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxFusionContacts</field>
+		<field name="PropertyValue">10000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxImageUploadSize</field>
+		<field name="PropertyValue">512000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxMigLevelForFusionPacketRateLimitByChatroom</field>
+		<field name="PropertyValue">20</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxMobileContentDownloadSMSPerDay</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxPasswordLength</field>
+		<field name="PropertyValue">60</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxPasswordRequestPerDay</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxPendingContacts</field>
+		<field name="PropertyValue">15</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxRecentChatRooms</field>
+		<field name="PropertyValue">15</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxSMSCallbackHelpPerDay</field>
+		<field name="PropertyValue">2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxUsernameLength</field>
+		<field name="PropertyValue">20</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxUserPostsPerHour</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxUserReferralPerDay</field>
+		<field name="PropertyValue">9999999</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxUserReferralPerMobilePhone</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxUserReferralPerMobilePhone90Days</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxUserReferralRetryPerDay</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxVerificationCodeRequestPerDay</field>
+		<field name="PropertyValue">100</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxVoucherFailsPerDay</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxWesternUnionPaymentAmount</field>
+		<field name="PropertyValue">5000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MaxWesternUnionPaymentPerDay</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MechanicsEngine:ChatroomMessageTriggerEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MechanicsEngine:DefaultCategoryDailyMaximum</field>
+		<field name="PropertyValue">300</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MechanicsEngine:RewardCentreMaxQueueSize</field>
+		<field name="PropertyValue">10000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MediaSharingFriendsOnly</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Merchant:customer_search_disabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Merchant:TagDetailsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantActivatedUserSMS</field>
+		<field name="PropertyValue">Welcome. Username is %1 Password is %2 To call, SMS your friend's phone</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantCannotPlayGame</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantDashboardTopActiveUsersEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantHomeURL</field>
+		<field name="PropertyValue"></field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantLimitPerGame</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantLimitPerTimeSlot</field>
+		<field name="PropertyValue">20</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantLimitTimeSlot</field>
+		<field name="PropertyValue">24</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantMentorColorEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantRegistrationDisabledForUnauthenticatedUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantRegistrationWithoutMobileEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">merchantTagExpirationEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantTaggingEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantTagSettings:GetMerchantTagDetailsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MerchantTagValidPeriod</field>
+		<field name="PropertyValue">43200</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MERCHANT_CAMPAIGN:OFFER_VALID_CAMPAIGNS</field>
+		<field name="PropertyValue">inmobi_2012;admob_2012;buzzcity_2012;inmobi2;inmobi2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MERCHANT_CAMPAIGN:REGISTRATION_ENABLED_CAMPAIGNS</field>
+		<field name="PropertyValue">inmobi;admob;opera;inmobi2;inmobi2;inmobi2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MidletRegistrationDisabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MidletsNotSupportPhoneCall</field>
+		<field name="PropertyValue">J2MEv4.10.279j;J2MEv4.20.290j</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">mig33StoreURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/store.php</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">mig33WorldURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/migworld/details</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:ChatEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:ChatGuardsetEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:ElasticSearchDisabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:ElasticSearchHashtagsDisabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:ElasticSearchPostsDisabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:ElasticSearchUsersDisabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:Enabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:OAuthEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:PushStateDisabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Migbo:WatchListDisabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MigboAlertsURL</field>
+		<field name="PropertyValue">http://migbo-dev.projectgoth.com/%1/migalert</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MigboDataSvcURL</field>
+		<field name="PropertyValue">http://migbo-dev.projectgoth.com/%1/datasvc</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">migboFeedEnabledForMigCore</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MigboImagesURL</field>
+		<field name="PropertyValue">http://migbo-dev.projectgoth.com/resources/img</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">migboPostCreationEnabledForMigCore</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">migboPostFromStatusUpdateEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">migboSessionArchiveEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MigboUploadURL</field>
+		<field name="PropertyValue">http://migbo-dev.projectgoth.com/%1/post/hidden_post</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">migGamesURL</field>
+		<field name="PropertyValue">http://www.mig33.com/sites/%1/bot/bot_list</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MigLevel:MigboMidletTabMin</field>
+		<field name="PropertyValue">100</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MigLevel:NewUserMax</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinAccountEntryIDFor30DayScan</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinBalanceAfterTransfer</field>
+		<field name="PropertyValue">0.2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinBalanceToEnterPot</field>
+		<field name="PropertyValue">0.2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinBankTransferAmount</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinChatRoomSearchLength</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinChequePaymentAmount</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinLevelToCreate30PeopleChatRoom</field>
+		<field name="PropertyValue">16</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinLevelToCreate40PeopleChatRoom</field>
+		<field name="PropertyValue">18</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinLevelToCreateChatRoom</field>
+		<field name="PropertyValue">11</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinLevelToCreateUserPost</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinLevelToPublishScrapbook</field>
+		<field name="PropertyValue">2</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinMerchantMerchantTagAmountUSD</field>
+		<field name="PropertyValue">75</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinMerchantUserTagAmountUSD</field>
+		<field name="PropertyValue">0.25</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinMidletVersionForCaptcha</field>
+		<field name="PropertyValue">4.4</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">minMigLevelForMigboHome</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinSecondsBetweenLookoutSMS</field>
+		<field name="PropertyValue">28800</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinSystemSMSIDFor30DayScan</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MinVoucherValue</field>
+		<field name="PropertyValue">0.15</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MobileContentDownloadSMS</field>
+		<field name="PropertyValue">To download %1 open this link %2      </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MobileOriginatedSMSHelpText</field>
+		<field name="PropertyValue">SMS</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MsgStatusEvent:Enabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MsgStatusEvent:ReceiveFromMOBILE_MIDP_2MinVersion</field>
+		<field name="PropertyValue">480</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MsgStatusEvent:SendToMOBILE_MIDP_2MinVersion</field>
+		<field name="PropertyValue">480</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MyAccountURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/my_account.php?username=</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MyProfileURL</field>
+		<field name="PropertyValue">http://dailymotion.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">MyProfileURL-backup</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/profile/home?username=</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">NewUserMerchantRegistrationEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">NewUserRegistrationWizardURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/b/%1/nue</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">NonTopMerchantTagMinimumAmountOverrideEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">NonTopMerchantTagValidPeriod</field>
+		<field name="PropertyValue">43200</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Notifications.storeJson</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">NotificationsURL</field>
+		<field name="PropertyValue">http://migbo-dev.projectgoth.com/%1/migalert</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">NumerdiaPartnerId</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ObjectCacheLoadBalancing:FilterMask</field>
+		<field name="PropertyValue">63</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ObjectCacheLoadBalancing:SessionObjectMultiplier</field>
+		<field name="PropertyValue">1.0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:ExpiryDays</field>
+		<field name="PropertyValue">60</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:PushToMigboEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:ReceiveLimitAndroid3Plus</field>
+		<field name="PropertyValue">30</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:ReceiveLimitBlackberry</field>
+		<field name="PropertyValue">50</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:ReceiveLimitDefault</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:ReceiveLimitJ2ME</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:ReceiveLimitMRE</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:ReceiveOnGetContactsEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:ReceiveOnHaveLatestContactListEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:SendAuditLogExpiryDays</field>
+		<field name="PropertyValue">60</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:SendDailyLimit</field>
+		<field name="PropertyValue">1000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OfflineMsg:SendEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OnlyAddAuthenticatedContacts</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OpensocialEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OtherIMInvitationMessage</field>
+		<field name="PropertyValue">I'm using mig33 for instant messaging on my mobile. If you download it</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OtherIMLoginDisabledForUnauthenticatedUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">OverallGiftAllPermits</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">PageletURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIDLET_EnabledVendors</field>
+		<field name="PropertyValue"></field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIG33_AJAX_EnabledVendors</field>
+		<field name="PropertyValue">MOL</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIG33_CORPORATE_EnabledVendors</field>
+		<field name="PropertyValue">MOL</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:AsynchUpdate:Enabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:CreditReloadPath</field>
+		<field name="PropertyValue">/rcredit.php</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:CreditReloadPType</field>
+		<field name="PropertyValue">ID-PC-0001</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:EnabledToAllUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:GameCode</field>
+		<field name="PropertyValue">ID-0021-0001</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:GatewayPassword</field>
+		<field name="PropertyValue">mig33</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:GatewaySharedSecret</field>
+		<field name="PropertyValue">mig33.1017~</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:GatewayUsername</field>
+		<field name="PropertyValue">mig33</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:MerchantCode</field>
+		<field name="PropertyValue">ID-0021</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:OnlyForIndonesianUsers</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:QueryTransactionStatusPath</field>
+		<field name="PropertyValue">/rcredit.php</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:StrictHttpsCertCheck</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MIMOPAY:VendorBaseURL</field>
+		<field name="PropertyValue">https://staging.mimopay.com:8000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MinAmount</field>
+		<field name="PropertyValue">0.0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:AsynchUpdate:Enabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:EnabledToAllUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:HeartbeatPath</field>
+		<field name="PropertyValue">/api/login/s_module/heartbeat.asmx/GetHeartBeat</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:MaximumPendingPaymentsCount</field>
+		<field name="PropertyValue">100</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:MerchantID</field>
+		<field name="PropertyValue">201210090174</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:MerchantPIN</field>
+		<field name="PropertyValue">tvgo7731tvgo</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:MinAmount</field>
+		<field name="PropertyValue">0.10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:PurchasePath</field>
+		<field name="PropertyValue">/api/login/u_module/purchase.aspx</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:QueryTransactionStatusPath</field>
+		<field name="PropertyValue">/api/login/s_module/querytrxstatus.asmx/queryTrxStatus</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:MOL:VendorBaseURL</field>
+		<field name="PropertyValue">http://molv3.molsolutions.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:ThirdPartyPaymentEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:TOUCH_EnabledVendors</field>
+		<field name="PropertyValue"></field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Payments:WAP_EnabledVendors</field>
+		<field name="PropertyValue"></field>
+	</row>
+
+	<row>
+		<field name="PropertyName">PopularGroupsAndChatroomsEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">PrivacySettingsURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/privacy_settings.php</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">RakePercent</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">RateLimitEmailContact</field>
+		<field name="PropertyValue">1/1M;2/1D</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReceiveGroupInviteDisabledForUnauthenticatedUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">receiverCountryIDsExemptedFromSameCountryTagRule</field>
+		<field name="PropertyValue">NULL</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">RecentlyAccessedChatRoomInterval</field>
+		<field name="PropertyValue">10800</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">recordFootprintsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReferralCreditEmailBody</field>
+		<field name="PropertyValue">Your friend %1, +%2 activated their mig33 account. So you earned bonus AUD$%3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReferralCreditEmailBody2</field>
+		<field name="PropertyValue">. And, you will receive an email to confirm your entry into our</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReferralCreditEmailSubject</field>
+		<field name="PropertyValue">Your friend activated their mig33 account       </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReferralCreditSMS</field>
+		<field name="PropertyValue">Your friend %1, +%2 activated their mig33 account. So you earned bonus AUD$%3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReferralSMS</field>
+		<field name="PropertyValue">%1 +%2 invites u 2 chat 4 free on mig33. Open http://r.mig33.com/?m=%3 or</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReferralSMS320</field>
+		<field name="PropertyValue">Friend %1, +%2 invites u to chat on mig33. Free to join. Open</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:CommonPrefixCheckEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:DoSyncMigboProfileCacheInvalidationUponMobileAuth</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:EmailPath1Enabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:EmailPath2Enabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:EmailRegistrationGracePeriodInMinutes</field>
+		<field name="PropertyValue">60</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:EmailRegistrationRateLimitByDomain</field>
+		<field name="PropertyValue">1000/1D</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:EmailRegistrationRateLimitByDomainWhitelist</field>
+		<field name="PropertyValue">yahoo.com;hotmail.com;gmail.com;yahoo.co.id;live.com;ovi.com;facebook.com;ymail.com;rocketmail.com;nokiamail.com;windowslive.com;googlemail.com;rediffmail.com;yahoo.co.uk;mail.com;yahoo.in;hotmail.co.uk;webmail.co.za;mxit.im</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:EmailRegistrationRateLimitByIP</field>
+		<field name="PropertyValue">1000/1M</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:EmailRegistrationTimeLimitInMinutes</field>
+		<field name="PropertyValue">2880</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:MaxCommonPrefixRecentActivationsAllowed</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:MaxWordLengthForRandomizedMidletRegistrationCaptcha</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:MinWordLengthForMidletRegistrationCaptcha</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:MinWordLengthForRandomizedMidletRegistrationCaptcha</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:PostVerificationRedirectURL</field>
+		<field name="PropertyValue">{migbo}/%s/nue</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:RandomizeMidletRegistrationCaptchaEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:RegistrationContextEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:RegistrationDisabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:RegV2Enabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:RegV2Path</field>
+		<field name="PropertyValue">rand</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Registration:ResendVerificationEmailEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReportAbuseEmail</field>
+		<field name="PropertyValue"></field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReportChatRoomBanEmail</field>
+		<field name="PropertyValue">report_abuse@mig33.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ReputationImagePath</field>
+		<field name="PropertyValue">images/reputation/</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ResendVerificationCodeSMS</field>
+		<field name="PropertyValue">Welcome %2! Authentication code: %1        </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ScrapbookURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/photo/home?username=</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SearchProfileURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/community_main.php?</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Security:InternalIPs</field>
+		<field name="PropertyValue">127.0.0.1;10.3.1.0/24;10.3.3.0/24;10.3.4.0/24;211.25.207.10;211.25.207.14;61.8.225.97;61.8.217.97;42.61.25.58</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SendFromScrapbookURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/photo/home?f=sendfromphoto</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SendGroupInviteDisabledForUnauthenticatedUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SessionCacheSettings:UseReputationServiceForScoreRetrieval</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ShindigContentCacheingEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ShowAllThirdPartyApplications</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SMSBrand</field>
+		<field name="PropertyValue">http://wap.mig33.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SMSEngineUsePropertyFilePool</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:CreateSSOSessionFromFusionEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:EmailUnauthUserLoginDisabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:EncryptedSessionIDEncryptionEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:EncryptedSessionIDEncryptionKey</field>
+		<field name="PropertyValue">EeHDV5r|~OLODVD4;:4-fSQ%[w{C#&lt;tu</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:FusionEIDAndroidVersion</field>
+		<field name="PropertyValue">310</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:FusionUseEIDAsSIDEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:MaxFailedLoginAttempts</field>
+		<field name="PropertyValue">5</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:SessionArchiveEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:SessionExpiryInSeconds</field>
+		<field name="PropertyValue">2400</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:SSOSessionAllowedViews</field>
+		<field name="PropertyValue">0;1;2;3;4;5;6;7;8;10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSO:SupportAndroidVersion</field>
+		<field name="PropertyValue">310</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSODataSvcSvcURL</field>
+		<field name="PropertyValue">https://login.devlab.projectgoth.com:444/touch/datasvc</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSODataSvcURL</field>
+		<field name="PropertyValue">https://login.devlab.projectgoth.com/%1/datasvc</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SSOLoginEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">StoreItemPurchaseDisabledForUnauthenticatedUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SupportEmailAliases</field>
+		<field name="PropertyValue">contact@mig33.com;support@mig33.zendesk.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SuspendPhoneCallDestinationRateLimitOffender</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SuspendPhoneCallSourceRateLimitOffender</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SweepstakesCodeEmailBody</field>
+		<field name="PropertyValue">Thanks for bringing new friends to mig33. Your entry number for the prize</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">SweepstakesCodeEmailSubject</field>
+		<field name="PropertyValue">Your 'Live Draw' Ticket Number        </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">TCPTunnelling</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">Test:testname</field>
+		<field name="PropertyValue">testvalue</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ThemeURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/view_theme.php</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ThirdPartySites:Facebook:Status</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ThirdPartySites:Twitter:Status</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">TopMerchantTagValidPeriod</field>
+		<field name="PropertyValue">43200</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">TpaMinMigLevelMsg</field>
+		<field name="PropertyValue">Until %s, you need to be mig level %s or higher to play</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">TwoWaySMSNumber</field>
+		<field name="PropertyValue">447717989963</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UnauthUserAllowLoginInDays</field>
+		<field name="PropertyValue">90</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UnauthUserLoginBlockEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UnauthUserLoginBlockMessage</field>
+		<field name="PropertyValue">Authenticate yr account at http://m.mig33.com/auth by stating yr USER ID, MOBILE NO &amp;</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UpdateProfileDisabledForUnauthenticatedUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UploadFileDailyRateLimit</field>
+		<field name="PropertyValue">10</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UseMigboAsHomeForNonV46</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UseMigboAsHomeForV46</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UseRedisDataStore</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UseRedisStore:DisplayPictureStatusMessage</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserLikesReceiveDisabledForUnauthenticatedUsers</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserNotificationServiceSettings:MaxNotificationServiceQueueSize</field>
+		<field name="PropertyValue">1000</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserNotificationServiceSettings:MaxNotificationThreadBackoffInSeconds</field>
+		<field name="PropertyValue">120</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserNotificationURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/invite/invitation</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserProfileSettings:GetAdminLabelsVersion1</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserProfileSettings:GetUserAdminLabelsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserProfileSettings:GetUserLabelsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserProfileSettings:GetUserMerchantLabelsEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserProfileURL</field>
+		<field name="PropertyValue">http://youtube.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserProfileURL-backup</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/profile/home?username=</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserReferralActivationNotificationMeans</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserWallPostCommentCreationEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserWallPostCommentRemovalEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserWallPostCreationEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserWallPostLikeEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserWallPostRemovalEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserWallPostsCacheEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UserWallPostsRetrievalEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UseSysPropDefinedLoginChatroomCategories</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UssdApiEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UssdApiEnabled1</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">UssdMobileHijackingEnabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VASPortalURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/vas/get_vasworld</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VerificationCodeSMS</field>
+		<field name="PropertyValue">Welcome %2! Password: %3 Authentication code: %1. Authenticate now to get bonus credits!</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VerificationCodeWebSMS</field>
+		<field name="PropertyValue">Welcome to mig33. Username: %2 Password: %3 Authentication code: %1. Get mig33 on</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VerifyEmailActivateAccountLink</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/corporate/registration/email_verification?token=</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VerifyEmailActivateAccountLinkPath1</field>
+		<field name="PropertyValue">https://register.devlab.projectgoth.com/verify/</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VerifyEmailActivateAccountLinkPath2</field>
+		<field name="PropertyValue">https://register.devlab.projectgoth.com/verify/step2/</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">ViewImageURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/index.php?c=photos&amp;v=%1&amp;a=received&amp;sender={0}&amp;nid={1}</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VirtualGiftNotificationSMS</field>
+		<field name="PropertyValue">%senderusername% just gave you a %private%mig33 gift! Login to your account to see</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VirtualGiftReceivedURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/sites/%1/virtual_gift_received/view?vgid=</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VirtualGiftRewardUser</field>
+		<field name="PropertyValue">lesterchan</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VirtualGiftURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com/midlet/member/store.php?loc=vg&amp;ploc=7</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VoiceRouteWhitelistEnabled</field>
+		<field name="PropertyValue">0</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">VOIPCodec</field>
+		<field name="PropertyValue">3</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WallPostOnUpdateStatusDisabled</field>
+		<field name="PropertyValue">1</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WebServerURL</field>
+		<field name="PropertyValue">http://devlab.projectgoth.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WesternUnionCompanyCode</field>
+		<field name="PropertyValue">GLOBALCOLLECT NL           </field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WesternUnionCompanyName</field>
+		<field name="PropertyValue">GLOBALCOLLECT</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WesternUnionConfirmationSMS</field>
+		<field name="PropertyValue">mig33 has received your Western Union payment of %1. Your new mig33 total</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WesternUnionCountryCode</field>
+		<field name="PropertyValue">NL</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WesternUnionInstructionEmail</field>
+		<field name="PropertyValue">Fill out the green form at Western Union location, enter the recipient information</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WesternUnionMerchantID</field>
+		<field name="PropertyValue">3723</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WesternUnionReversalSMS</field>
+		<field name="PropertyValue">Your Western Union payment of %1 has been reversed. %2 credit has been</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WhitelistedRecipientEmailDomains</field>
+		<field name="PropertyValue">mig33.com;mig33.zendesk.com</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WhoisRateLimitExpr</field>
+		<field name="PropertyValue">2/1M;500000/1H;100000000/1D</field>
+	</row>
+
+	<row>
+		<field name="PropertyName">WordPressCURLTimeout</field>
+		<field name="PropertyValue">30</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

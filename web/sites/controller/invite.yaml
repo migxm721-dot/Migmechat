@@ -1,0 +1,175 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+
+invitation:
+  function: invitation
+  decorators:
+    midlet:
+      name: common.midlet
+      page_title: Friend Request
+  view:
+    name: invitation
+  components:
+    - common.user
+    - invitation
+    - contact_groups
+
+choose_contact_group:
+  function: choose_contact_group
+  view:
+    name: choose_contact_group
+  components:
+    - common.user
+    - contact_groups
+
+accept:
+  function: accept
+  components:
+    - common.user
+    - common.flood_control 15/60
+    - common.receiver_flood_control 15/60
+
+ignore:
+  function: ignore
+  components:
+    - common.user
+    - common.flood_control 15/60
+    - common.receiver_flood_control 15/60
+
+ignore_and_block:
+  function: ignore_and_block
+  components:
+    - common.user
+    - common.flood_control 15/60
+    - common.receiver_flood_control 15/60
+
+thank_you:
+  view:
+    name: thank_you
+  components:
+    - common.user
+    - invitation_count
+
+help:
+  function: help
+  view:
+    name: help
+  components:
+    - common.user
+
+invite_by_im:
+  function: invite_by_im
+  view:
+    name: invite_by_im
+  components:
+    - common.user
+    - im_contacts
+
+invite_by_im_submit:
+  function: invite_by_im_submit
+  view:
+    name: invite_by_im
+  components:
+    - common.user
+    - im_contacts
+
+invite_by_phone:
+  function: invite_by_phone
+  view:
+    name: invite_by_phone
+  components:
+    - common.user
+    - captcha.is_captcha_required ?
+
+invite_to_mig33:
+  function: invite_to_mig33
+  view:
+    name: refer_friend
+  components:
+    - common.user
+
+invite_to_mig33_email:
+  function: invite_to_mig33_email
+  view:
+    name: refer_friend_email
+  components:
+    - common.user
+
+invite_by_phone_post:
+  function: invite_by_phone_post
+  view:
+    name: invite_by_phone
+  components:
+    - common.user
+    - captcha.is_captcha_required ?
+
+refer_friend:
+  view:
+    name: refer_friend
+  components:
+    - common.user
+    - common.user_idd
+    - common.generic_captcha
+    - invite_friend
+
+refer_friend_sms:
+  view:
+    name: refer_friend_sms
+  components:
+    - common.user
+    - common.user_idd
+    - common.generic_captcha
+    - invite_friend
+
+refer_friend_email:
+  view:
+    name: refer_friend_email
+  components:
+    - common.user
+    - common.generic_captcha
+    - invite_friend
+
+refer_friend_submit:
+  view:
+    name: refer_friend
+  components:
+    - common.user
+    - invite.referfriend_input ?
+    - common.generic_captcha
+    - refer_friend
+
+refer_friend_email_submit:
+  view:
+    name: refer_friend_email
+  components:
+    - common.user
+    - invite.referfriendemail_input ?
+    - common.generic_captcha
+    - refer_friend_email
+
+refer_friend_facebook_submit:
+  decorators:
+    ajax:
+      name: common.migbo_popup
+  view:
+    name: refer_friend_facebook
+  components:
+    - common.user
+    - refer_friend_facebook
+
+invite_by_email:
+  function: invite_by_email
+  view:
+    name: invite_by_email
+  components:
+    - common.user
+    - common.flood_control 15/60
+    - captcha.is_captcha_required ?
+    - invite.invite_by_email

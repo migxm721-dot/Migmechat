@@ -1,0 +1,149 @@
+all:
+  decorators:
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+    json:
+      name: common.json
+    ajax:
+      name: common.ajax
+
+create_paypal_payment:
+  view:
+    name: create_paypal_payment
+  components:
+    - common.user
+    - account.get_balance
+    - is_3rd_party_payment_enabled ?
+    - create_paypal_payment
+
+create_paypal_payment_submit:
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - create_paypal_payment_submit ?
+    - create_paypal_payment_submit
+
+paypal_payment_authorize:
+  view:
+    name: paypal_payment_authorize
+  components:
+    - common.user
+    - account.get_balance
+    - is_3rd_party_payment_enabled ?
+    - paypal_payment_authorize
+
+paypal_payment_authorize_submit:
+  view:
+    name: paypal_payment_authorize_submit
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - paypal_payment_authorize_submit
+    - account.get_balance
+
+create_mol_payment:
+  view:
+    name: create_mol_payment
+  decorators:
+    corporate:
+      name: common.ajax
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - create_mol_payment
+
+create_mol_payment_submit:
+  view:
+    name: create_mol_payment_submit
+  decorators:
+    corporate:
+      name: common.ajax
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - create_mol_payment_submit ?
+    - create_mol_payment_submit
+
+mol_payment_success:
+  view:
+    name: mol_payment_success
+  decorators:
+    corporate:
+      name: external_site
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - mol_payment_success
+
+payment_disabled:
+  decorators:
+    ajax:
+      name: external_site
+    corporate:
+      name: external_site
+  view:
+    name: payment_disabled
+
+pending_transactions:
+  view:
+    name: pending_transactions
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - account.get_balance
+    - payment.pending_transactions
+
+external_loader:
+  view:
+    name: external_loader
+  decorators:
+    ajax:
+      name: external_site
+    corporate:
+      name: external_site
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - external_loader
+
+mimopay:
+  view:
+    name: mimopay
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - mimopay
+
+create_mimopay:
+  view:
+    name: create_mimopay
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+
+create_mimopay_submit:
+  view:
+    name: mimopay_success
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - create_mimopay_payment_submit ?
+    - create_mimopay_submit
+
+create_creditcard_payment:
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - is_creditcard_hml_payment_enabled ?
+    - create_creditcard_payment
+
+creditcard_payment_success:
+  view:
+    name: creditcard_payment_success
+  components:
+    - common.user
+    - is_3rd_party_payment_enabled ?
+    - is_creditcard_hml_payment_enabled ?
+    - creditcard_payment_success

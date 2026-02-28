@@ -1,0 +1,17 @@
+get_app_details:
+  function: get_app_details
+  encode: json
+  components:
+    - get_app_details
+
+get_login_challenge:
+  function: get_login_challenge
+  encode: json
+  components:
+    - get_login_challenge
+
+authenticate:
+  function: authenticate
+  encode: json
+  components:
+    - authenticate

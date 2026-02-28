@@ -1,0 +1,157 @@
+all:
+  decorators:
+    wap:
+      name: common.migbo_wap
+    ajax:
+      name: common.ajax
+    midlet:
+      name: decorator
+    touch:
+      name: common.touch
+
+home:
+  view:
+    name: view_photos
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - user.private_profile ?
+    - get_photos
+    - contact_detail
+
+view_photos:
+  view:
+    name: view_photos
+  components:
+    - common.user
+    - get_photos
+    - contact_detail
+
+view_photo:
+  view:
+    name: view_photo
+  components:
+    - common.user
+    - common.user_permissions
+    - user.private_profile ?
+    - get_photo
+    - contact_detail
+
+photo_edit_delete_error:
+  view:
+    name: edit_delete_error
+  components:
+    - common.user
+
+delete_photo:
+  view:
+    name: view_photos
+  components:
+    - common.user
+    - valid_owned_photo ?
+    - delete_photo
+    - get_photos
+    - contact_detail
+
+delete_photo_confirm:
+  view:
+    name: delete_photo
+  components:
+    - common.user
+    - valid_owned_photo ?
+    - get_photo
+    - contact_detail
+
+delete_photo_submit:
+  view:
+    name: delete_photo_success
+  components:
+    - common.user
+    - valid_owned_photo ?
+    - delete_photo
+    - contact_detail
+
+edit_photo:
+  view:
+    name: edit_photo
+  components:
+    - common.user
+    - valid_owned_photo ?
+    - get_photo
+    - contact_detail
+
+edit_photo_submit:
+  view:
+    name: view_photo
+  components:
+    - common.user
+    - valid_owned_photo ?
+    - update_photo
+    - get_photo
+    - contact_detail
+
+set_profile_picture:
+  view:
+    name: view_photo
+  components:
+    - common.user
+    - set_profile_picture ?
+    - set_profile_picture
+    - get_photo
+    - contact_detail
+
+photo_like:
+  function: photo_like
+  components:
+    - common.user
+    - common.flood_control
+    - captcha.is_captcha_required ?
+    - like_photo
+    - contact_detail
+
+photo_dislike:
+  function: photo_like
+  components:
+    - common.user
+    - common.flood_control
+    - captcha.is_captcha_required ?
+    - dislike_photo
+    - contact_detail
+
+user_auth:
+  view:
+    name: auth
+  components:
+    - common.user
+
+upload_photo:
+  view:
+    name: upload_photo
+  components:
+    - common.user
+    - user_auth ?
+
+upload_photo_submit:
+  view:
+    name: upload_photo_success
+  components:
+    - common.user
+    - common.flood_control 10/60
+    - captcha.is_captcha_required ?
+    - user_auth ?
+    - upload_photo
+
+received:
+  view:
+    name: received
+  components:
+    - common.user
+    - receive_photo
+
+received_confirmed:
+  view:
+    name: received_confirmed
+  components:
+    - common.user
+    - receive_photo_accept

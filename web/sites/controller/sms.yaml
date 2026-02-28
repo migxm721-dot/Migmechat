@@ -1,0 +1,66 @@
+all:
+  decorators:
+    wap:
+      name: common.migbo_wap
+    midlet:
+      name: common.midlet
+    ajax:
+      name: common.ajax
+      body_class: page
+    touch:
+      name: common.touch
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+    - registration.mobile_verified ?
+    - contacts.get_user_contact
+
+sms_cost:
+  view:
+    name: sms_cost
+  components:
+    - common.user
+    - registration.mobile_verified ?
+    - get_sms_cost
+
+send_sms:
+  view:
+    name: home
+  function: send_sms_redirect
+  components:
+    - common.user
+    - sms.sms ?
+    - send_sms
+
+pick_friend:
+  view:
+    name: pick_friend
+  components:
+    - common.user
+    - common.user_list_with_phone_number
+
+recent_sms_destinations:
+  view:
+    name: recent_sms_destinations
+  components:
+    - common.user
+    - user_sms_destination_records
+
+idd_info:
+  view:
+    name: idd_info
+  components:
+    - common.user
+    - common.idd_list
+
+sms_rate:
+  view:
+    name: sms_rate
+  components:
+    - common.user
+    - common.user_country
+    - call.call_rate_variables
+    - call.call_rate

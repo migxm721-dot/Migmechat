@@ -1,0 +1,266 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page avatar
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+
+home:
+  function: home
+  view:
+    name: home
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - common.user_permissions
+    - avatar
+    - user_avatar_setting
+    - (ajax,wap,blackberry,ios,touch) get_top_categories
+    - get_categories
+    - comment_count
+    - avatar.avatar_created ?
+
+stream:
+  components:
+    - common.user
+    - avatar
+    - user_avatar_setting
+    - build_avatar
+    - stream
+
+view:
+  decorators:
+    ajax:
+      name: common.ajax
+      page_title: "%USERNAME%'s Avatar"
+    midlet:
+      name: common.midlet
+      page_title: "%USERNAME%'s Avatar"
+  view:
+    name: view
+  components:
+    - common.user
+    - common.user_permissions
+    - profile.profile
+    - common.privacy
+    - avatar
+    - user_avatar_setting
+    - build_avatar
+    - current_item
+    - wall.avatar_wall_posts
+    - new_avatar_items
+
+equip:
+  function: level_check
+  view:
+    name: equip_unequip
+  components:
+    - common.user
+    - avatar
+    - equip_item
+    - clear_cache
+    - build_avatar
+    - (ajax,wap,blackberry,ios,touch) get_top_categories
+
+unequip:
+  function: level_check
+  view:
+    name: equip_unequip
+  components:
+    - common.user
+    - avatar
+    - unequip_item
+    - clear_cache
+    - build_avatar
+    - (ajax,wap,blackberry,ios,touch) get_top_categories
+
+equippable:
+  function: level_check
+  view:
+    name: equippable
+  components:
+    - common.user
+    - avatar
+    - category
+    - equippable
+    - (ajax,wap,blackberry,ios,touch) store.items_in_category
+    - (ajax,wap,blackberry,ios,touch) get_top_categories
+
+create:
+  function: create
+  view:
+    name: create
+  components:
+    - common.user
+    - avatar
+    - user_avatar_setting
+
+choose_body:
+  view:
+    name: choose_body
+  components:
+    - common.user
+    - avatar
+    - get_bodies
+
+choose_body_completed:
+  view:
+    name: choose_body_completed
+  components:
+    - common.user
+    - avatar
+    - save_body
+    - clear_cache
+    - build_avatar
+
+choose_face_category:
+  function: level_check
+  view:
+    name: choose_face_category
+  components:
+    - common.user
+    - avatar
+    - save_body
+    - clear_cache
+    - build_avatar
+    - get_categories
+
+choose_face_features:
+  function: level_check
+  view:
+    name: choose_face_features
+  components:
+    - common.user
+    - avatar
+    - category
+    - equippable
+
+equip_face_feature:
+  function: level_check
+  view:
+    name: equip_unequip_face_feature
+  components:
+    - common.user
+    - avatar
+    - equip_item
+    - clear_cache
+    - build_avatar
+
+unequip_face_feature:
+  function: level_check
+  view:
+    name: equip_unequip_face_feature
+  components:
+    - common.user
+    - avatar
+    - unequip_item
+    - clear_cache
+    - build_avatar
+
+set_profile:
+  function: home
+  view:
+    name: home
+  components:
+    - common.user
+    - avatar
+    - set_profile
+    - user_avatar_setting
+    - (ajax,wap,blackberry,ios,touch) get_top_categories
+    - get_categories
+    - avatar.avatar_created ?
+
+create_completed:
+  function: level_check
+  view:
+    name: create_completed
+  components:
+    - common.user
+    - avatar
+
+error:
+  view:
+    name: error
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+  components:
+    - common.user
+
+avatar_rate:
+  function: avatar_rate
+  components:
+    - common.user
+    - common.flood_control
+    - captcha.is_captcha_required ?
+    - rating
+
+comment_post_submit:
+  decorators:
+    ajax:
+      name: common.ajax
+      page_title: "%USERNAME%'s Avatar"
+    midlet:
+      name: common.midlet
+      page_title: "%USERNAME%'s Avatar"
+  view:
+    name: view
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - common.user_permissions
+    - profile.profile
+    - common.privacy
+    - captcha.is_captcha_required ?
+    - avatar
+    - current_item
+    - wall.avatar_wall_create_post
+    - wall.avatar_wall_posts
+
+comment_remove:
+  decorators:
+    ajax:
+      name: common.ajax
+      page_title: "%USERNAME%'s Avatar"
+    midlet:
+      name: common.midlet
+      page_title: "%USERNAME%'s Avatar"
+  view:
+    name: view
+  components:
+    - common.user
+    - common.user_permissions
+    - profile.profile
+    - common.privacy
+    - avatar
+    - current_item
+    - wall.avatar_wall_remove_post
+    - wall.avatar_wall_posts
+
+comment_like:
+  decorators:
+    ajax:
+      name: common.ajax
+      page_title: "%USERNAME%'s Avatar"
+    midlet:
+      name: common.midlet
+      page_title: "%USERNAME%'s Avatar"
+  view:
+    name: view
+  components:
+    - common.user
+    - common.flood_control
+    - common.user_permissions
+    - profile.profile
+    - common.privacy
+    - captcha.is_captcha_required ?
+    - avatar
+    - current_item
+    - wall.avatar_wall_like_post
+    - wall.avatar_wall_posts

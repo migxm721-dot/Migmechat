@@ -1,0 +1,9 @@
+MIDlet-1: mig33v4,MiG33.png,com.projectgoth.Roshan.Main
+MIDlet-Install-Notify: http://www.mig33.com/midlet/member/c_info.php?awtrack=deccanchargers
+MIDlet-Jar-Size: 204103
+MIDlet-Jar-URL: mig33v4.jar
+MIDlet-Name: mig33v4
+MIDlet-Vendor: Project Goth, Inc.
+MIDlet-Version: 4.05
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0

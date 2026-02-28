@@ -1,0 +1,578 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+    midlet:
+      name: common.midlet
+    json:
+      name: common.json
+
+block_list:
+  function: show_block_list
+  decorators:
+    midlet:
+      name: block_list_decorator
+  view:
+    name: block_list
+  components:
+    - common.user
+    - block_list
+
+search_block_list:
+  function: show_search_block_list
+  decorators:
+    midlet:
+      name: block_list_decorator
+  view:
+    name: search_block_list
+  components:
+    - common.user
+    - block_list
+
+unblock_all_users:
+  decorators:
+    midlet:
+      name: block_list_decorator
+  view:
+    name: block_list
+  components:
+    - common.user
+    - unblock_all_users
+    - block_list
+
+unblock_user:
+  decorators:
+    midlet:
+      name: block_list_decorator
+  view:
+    name: block_list
+  components:
+    - common.user
+    - unblock_user
+    - block_list
+
+chat:
+  view:
+    name: chat
+  components:
+    - common.user
+
+chat_privacy:
+  function: chat_privacy
+  view:
+    name: chat_privacy
+  components:
+    - common.user
+
+chat_privacy_post:
+  function: chat_privacy_post
+  view:
+    name: chat_privacy
+  components:
+    - common.user
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+    - get_profile_privacy_settings
+    - block_list
+
+profile_privacy_settings:
+  view:
+    name: profile_privacy_settings
+  components:
+    - common.user
+    - get_profile_privacy_settings
+    - (ajax,wap,midlet) block_list
+
+profile_privacy_settings_submit:
+  view:
+    name: profile_privacy_settings
+  components:
+    - common.user
+    - set_profile_privacy_settings
+    - get_profile_privacy_settings
+    - (ajax,wap,midlet) block_list
+
+view_update_settings:
+  view:
+    name: view_update_settings
+  components:
+    - common.user
+    - get_update_settings
+
+update_settings_submit:
+  view:
+    name: view_update_settings
+  components:
+    - common.user
+    - set_update_settings
+
+view_block_list:
+  view:
+    name: block_list
+  components:
+    - common.user
+    - block_list
+
+update_emoticons:
+  view:
+    name: update_emoticons
+  components:
+    - common.user
+    - get_emoticon_packs
+
+activate_deactivate_emoticons:
+  view:
+    name: update_emoticons
+  components:
+    - common.user
+    - set_emoticon_packs
+    - get_emoticon_packs
+
+activate_all_emoticons:
+  view:
+    name: update_emoticons
+  components:
+    - common.user
+    - activate_all_emoticon_packs
+    - get_emoticon_packs
+
+deactivate_all_emoticons:
+  view:
+    name: update_emoticons
+  components:
+    - common.user
+    - deactivate_all_emoticon_packs
+    - get_emoticon_packs
+
+change_password:
+  view:
+    name: change_password
+  function: new_settings
+  components:
+    - (ajax, ios, blackberry, touch) common.user
+    - (ajax, ios, blackberry, touch) security_question.get_security_question
+    - (ajax, ios, blackberry, touch) change_password_allowed ?
+    - (ajax, ios, blackberry, touch) change_access ?
+
+change_password_submit:
+  view:
+    name: change_password
+  function: new_settings
+  components:
+    - (ajax, ios, blackberry, touch) common.user
+    - (ajax, ios, blackberry, touch) security_question.get_security_question
+    - (ajax, ios, blackberry, touch) change_password_allowed ?
+    - (ajax, ios, blackberry, touch) change_access ?
+    - (ajax, ios, blackberry, touch) change_password_submit ?
+    - (ajax, ios, blackberry, touch) change_password
+
+account_password:
+  view:
+    name: account_password
+  components:
+    - common.user
+    - security_question.get_security_question
+    - common.is_migbo_user ?
+    - change_password_allowed ?
+    - change_access ?
+
+account_password_submit:
+  view:
+    name: account_password
+  components:
+    - common.user
+    - security_question.get_security_question
+    - common.is_migbo_user ?
+    - change_password_allowed ?
+    - change_access ?
+    - change_password_submit ?
+    - change_password
+
+change_mobile:
+  view:
+    name: change_mobile
+  function: new_settings
+  components:
+    - common.user
+
+change_mobile_submit:
+  view:
+    name: change_mobile
+  function: new_settings
+  components:
+    - common.user
+
+account_mobile:
+  view:
+    name: account_mobile
+  components:
+    - common.user
+
+account_mobile_submit:
+  view:
+    name: account_mobile
+  components:
+    - common.user
+
+change_tab_order:
+  view:
+    name: change_tab_order
+  components:
+    - common.user
+
+other:
+  view:
+    name: other
+  components:
+    - common.user
+
+# touch only
+privacy:
+  function: privacy
+  view:
+    name: privacy
+  components:
+    - common.user
+    - get_profile_privacy_settings
+    - block_list
+
+# touch only
+account:
+  view:
+    name: account
+  components:
+    - common.user
+
+services:
+  view:
+    name: services
+  components:
+    - common.user
+    - buzz.buzz_settings
+
+about:
+  view:
+    name: about
+  components:
+    - common.user
+
+services_submit:
+  view:
+    name: services
+  components:
+    - common.user
+    - buzz.buzz_settings
+    - email.update_setting
+
+privacy_submit:
+  function: privacy_submit
+  view:
+    name: privacy
+  components:
+    - common.user
+    - set_profile_privacy_settings
+    - get_profile_privacy_settings
+
+##
+# New settings pages with migbo look
+##
+
+account_profile:
+  view:
+    name: account_profile
+  components:
+    - common.user
+    - settings.account_profile
+
+account_profile_submit:
+  function: account_profile
+  view:
+    name: account_profile
+  components:
+    - common.user
+    - common.flood_control
+    - common.is_migbo_user ?
+    - settings.account_profile
+    - common.update_session
+    - settings.account_profile ?
+
+account_contact:
+#  validation:
+#    pre:
+#      - change_access
+  view:
+    name: account_contact
+  components:
+    - common.user
+    - settings.account_profile
+    - settings.account_contact
+
+account_email:
+  view:
+    name: account_email
+  components:
+    - common.user
+    - common.flood_control
+    - common.generic_captcha
+    - settings.change_access ?
+    - settings.account_profile
+    - security_question.get_security_question
+
+account_email_submit:
+  function: account_profile
+  view:
+    name: account_email
+  components:
+    - common.user
+    - common.flood_control
+    - settings.account_profile
+    - security_question.get_security_question
+    - settings.account_email ?
+    - common.generic_captcha
+
+account_email_resend:
+  function: account_email_resend
+  view:
+    name: account_contact
+  components:
+    - common.user return_here_upon_login
+    - common.flood_control
+    - common.is_migbo_user
+    - settings.account_profile
+    - settings.account_contact
+
+account_email_resend_noauth:
+  function: account_email_resend_noauth
+  view:
+    name: account_email_noauth
+  components:
+    - registration.get_email_hash
+    - common.flood_control 5/900
+    - registration.is_valid_email_hash ?
+    - registration.email_list
+
+account_email_verify:
+  function: account_email_verify
+  view:
+    name: account_email_verify
+  components:
+    - common.set_wap_view_if_mobile
+    - common.user allow_no_session
+    - none ?
+    - account_email_verify
+    - common.update_session
+
+account_personalized_url:
+  view:
+    name: account_personalized_url
+  components:
+    - common.user
+    - common.is_migbo_user ?
+    - account_personalized_url
+
+account_personalized_url_check:
+  encode: auto, json
+  function: account_personalized_url_check
+  components:
+    - common.user encode_payload
+    - common.is_migbo_user ?
+    - account_personalized_url
+
+account_personalized_url_submit:
+  function: account_personalized_url
+  view:
+    name: account_personalized_url
+  components:
+    - common.user
+    - common.is_migbo_user ?
+    - account_personalized_url
+
+account_personalized_url_route:
+  function: account_personalized_url_route
+  components:
+    - common.user
+    - common.is_migbo_user ?
+
+account_communication:
+  function: account_communication
+  view:
+    name: account_communication
+  components:
+    - common.user
+    - common.is_migbo_user ?
+    - settings.account_communication
+
+account_picture:
+  function: account_picture
+  view:
+    name: account_picture
+  components:
+    - common.user
+    - common.is_migbo_user ?
+    - settings.account_picture
+
+account_picture_post:
+  function: account_picture
+  encode: auto, json
+  components:
+    - common.user encode_payload
+    - common.is_migbo_user ?
+    - settings.account_picture
+
+# Since a lot of clients bank on the fact that updates_posts redirects to connect_apps
+# the existing updates_posts is internally redirected to connect_apps
+updates_posts:
+  function: redirect_connect_apps
+
+# The above fix creates a regression where the core functionality of updating post settings gets deprecated
+# Hence a new action is added to achieve the same functionality
+updates_posts_privacy:
+  function: updates_posts
+  view:
+    name: updates_posts
+  components:
+    - common.user return_here_upon_login
+    - common.is_migbo_user ?
+    - settings.updates_posts
+
+account_blocklist:
+  view:
+    name: account_blocklist
+  components:
+    - common.user
+    - common.is_migbo_user ?
+    - settings.block_list
+
+account_unblock_user:
+  view:
+    name: account_blocklist
+  components:
+    - common.user
+    - common.is_migbo_user ?
+    - settings.unblock_user
+    - settings.block_list
+
+connect_apps:
+  view:
+    name: connect_apps
+  components:
+    - common.user return_here_upon_login
+    - common.is_migbo_user ?
+    - settings.connect_apps
+
+account_thirdpartysites_twitter_auth:
+  function: account_thirdpartysites_auth_redirect
+  view:
+    name: account_thirdpartysites_auth_redirect
+  components:
+    - common.user
+    - settings.twitter_request_token
+
+account_thirdpartysites_twitter_callback:
+  view:
+    name: account_thirdpartysites_callback
+  components:
+    - common.user
+    - settings.twitter_access_token
+    - settings.thirdpartysites_submit_credentials
+
+account_thirdpartysites_facebook_auth:
+  function: account_thirdpartysites_auth_redirect
+  view:
+    name: account_thirdpartysites_auth_redirect
+  components:
+    - common.user
+    - settings.facebook_request_token
+
+account_thirdpartysites_facebook_callback:
+  view:
+    name: account_thirdpartysites_callback
+  components:
+    - common.user
+    - settings.facebook_access_token
+    - settings.thirdpartysites_submit_credentials
+
+account_thirdpartysites_unlink:
+  view:
+    name: account_thirdpartysites_unlink
+  components:
+    - common.user
+    - settings.thirdpartysites_unlink
+
+account_thirdpartysites_unlink_confirm:
+  view:
+    name: account_thirdpartysites_unlink_confirm
+  components:
+    - common.user
+
+nue_update_profile:
+  function: account_profile
+  view:
+    name: nue_update_profile
+  components:
+    - common.user
+    - common.is_migbo_user ?
+    - settings.account_profile
+    - common.update_session
+
+nue_update_avatar:
+  view:
+    name: nue_update_avatar
+  components:
+    - common.user
+
+nue_update_avatar_submit:
+  function: nue_update_avatar_submit
+  view:
+    name: nue_update_avatar_submit
+  components:
+    - common.user
+    - common.is_migbo_user ?
+    - avatar.avatar
+    - save_avatar
+    - set_profile_photo
+    - avatar.clear_cache
+    - avatar.build_avatar
+    - avatar.set_profile
+    - common.update_session
+
+security_question:
+  view:
+    name: create_security_question
+  components:
+    - common.user
+    - security_question.get_security_question
+    - security_question.create_security_question
+
+contact_us:
+  view:
+    name: contact_us
+  components:
+    - common.user
+    - help.contact_us
+
+contact_us_submit:
+  view:
+    name: contact_us
+  components:
+    - common.user
+    - help.contact_us_submit
+    - help.contact_us ?
+
+security_question_submit:
+  function: security_question_submit
+  view:
+    name: submit_security_question
+  components:
+    - common.user
+    - security_question.submit_security_question ?
+    - security_question.submit_security_question

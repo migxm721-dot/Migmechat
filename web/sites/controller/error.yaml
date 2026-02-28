@@ -1,0 +1,25 @@
+all:
+  decorators:
+    midlet:
+      name: common.midlet
+    ajax:
+      name: common.ajax
+      body_class: page
+    touch:
+      name: common.touch
+    wap:
+      name: common.migbo_wap
+    corporate:
+      name: corporate
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+
+display:
+  view:
+    name: home
+  components:
+    - display

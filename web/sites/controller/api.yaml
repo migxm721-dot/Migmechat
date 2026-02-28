@@ -1,0 +1,149 @@
+photos:
+  function: get_photos
+  components:
+    - common.user
+    - photo.get_photos
+
+myphotos:
+  function: get_my_photos
+  components:
+    - common.user
+    - photo.get_photos
+
+profile_compat:
+  function: profile_compat
+  encode: json
+  components:
+    - common.user
+    - migbo.compat
+
+myphotosheader:
+  function: get_my_photos_header
+  components:
+    - common.user
+    - photo.get_photos
+
+photo_wall:
+  function: get_photo_wall
+  components:
+    - common.user
+    - photos.wall_base
+    - photos.wall
+
+publish_to_wall:
+  function: publish_to_wall
+  components:
+    - common.user
+
+report_wall_photo:
+  function: report_wall_photo
+  components:
+    - common.user
+    - photos.wall_base
+    - photos.report_wall_abuse
+
+profile:
+  function: get_profile
+  components:
+    - common.user
+    - profile.profile
+    - avatar.user_avatar_setting
+
+friends:
+  function: get_friends
+  components:
+    - common.user
+    - common.privacy
+    - profile.friends
+
+browse_profile:
+  function: browse_profile
+  components:
+    - common.user
+    - profile.browse
+
+user_gifts:
+  function: get_user_gifts
+  encode: auto, json
+  components:
+    - common.user encode_payload allow_no_session
+    - common.flood_control 30/60 450/3600
+    - common.receiver_flood_control 60/60 600/3600
+    - common.privacy
+    - gifts.total_gifts
+    - gifts.gifts
+
+user_games:
+  function: get_user_games
+  encode: auto, json
+  components:
+    - common.user encode_payload allow_no_session
+    - common.flood_control 30/60 450/3600
+    - common.receiver_flood_control 60/60 600/3600
+    - common.privacy
+    - games.games_played
+
+user_chatrooms:
+  function: get_user_chatrooms
+  encode: auto, json
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - user.private_profile ?
+    - chatroom.chatrooms
+
+user_like:
+  function: user_like
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - common.user_permissions
+    - common.user_like
+
+user_permissions:
+  function: get_user_permissions
+  components:
+    - common.user
+    - common.user_permissions
+
+get_emoticon:
+  function: get_emoticon
+
+gift_like:
+  function: gift_like
+  components:
+    - common.user
+
+photo_like:
+  function: photo_like
+  components:
+    - common.user
+    - common.flood_control
+    - photos.voting
+
+storeitem_rate:
+  function: storeitem_rate
+  components:
+    - common.user
+    - common.flood_control
+    - store.rating
+
+block_list:
+  function: block_list
+  components:
+    - common.user
+    - settings.block_list
+
+unblock_user:
+  function: unblock_user
+  components:
+    - common.user
+    - settings.unblock_user
+
+log_events:
+  function: push_events_to_instrumentation
+  components:
+      - common.user
+

@@ -1,0 +1,15 @@
+all:
+  decorators:
+    touch:
+      name: common.touch
+    json:
+      name: common.json
+    wap:
+      name: common.wap
+
+manager:
+  view:
+    name: manager
+  components:
+    - common.user
+    - chat_manager

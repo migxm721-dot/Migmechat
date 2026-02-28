@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="fusion_test">
+<table_data name="avatarbody">
+	<row>
+		<field name="id">1</field>
+		<field name="Name"></field>
+		<field name="Description"  xsi:nil="true" />
+		<field name="PreviewImage">AMbodydark-preview.png</field>
+		<field name="Image">AMbodydark.png</field>
+		<field name="HeadX">25</field>
+		<field name="HeadY">75</field>
+		<field name="HeadWidth">100</field>
+		<field name="HeadHeight">100</field>
+		<field name="Gender">M</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="Name"></field>
+		<field name="Description"  xsi:nil="true" />
+		<field name="PreviewImage">AMbodydarkest-preview.png</field>
+		<field name="Image">AMbodydarkest.png</field>
+		<field name="HeadX">25</field>
+		<field name="HeadY">75</field>
+		<field name="HeadWidth">100</field>
+		<field name="HeadHeight">100</field>
+		<field name="Gender">M</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="Name"></field>
+		<field name="Description"  xsi:nil="true" />
+		<field name="PreviewImage">AMbodyfair-preview.png</field>
+		<field name="Image">AMbodyfair.png</field>
+		<field name="HeadX">25</field>
+		<field name="HeadY">75</field>
+		<field name="HeadWidth">100</field>
+		<field name="HeadHeight">100</field>
+		<field name="Gender">M</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="Name"></field>
+		<field name="Description"  xsi:nil="true" />
+		<field name="PreviewImage">AMbodypale-preview.png</field>
+		<field name="Image">AMbodypale.png</field>
+		<field name="HeadX">25</field>
+		<field name="HeadY">75</field>
+		<field name="HeadWidth">100</field>
+		<field name="HeadHeight">100</field>
+		<field name="Gender">M</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="Name"></field>
+		<field name="Description"  xsi:nil="true" />
+		<field name="PreviewImage">AFbodydark-preview.png</field>
+		<field name="Image">AFbodydark.png</field>
+		<field name="HeadX">25</field>
+		<field name="HeadY">75</field>
+		<field name="HeadWidth">100</field>
+		<field name="HeadHeight">100</field>
+		<field name="Gender">F</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="Name"></field>
+		<field name="Description"  xsi:nil="true" />
+		<field name="PreviewImage">AFbodydarkest-preview.png</field>
+		<field name="Image">AFbodydarkest.png</field>
+		<field name="HeadX">25</field>
+		<field name="HeadY">75</field>
+		<field name="HeadWidth">100</field>
+		<field name="HeadHeight">100</field>
+		<field name="Gender">F</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="Name"></field>
+		<field name="Description"  xsi:nil="true" />
+		<field name="PreviewImage">AFbodyfair-preview.png</field>
+		<field name="Image">AFbodyfair.png</field>
+		<field name="HeadX">25</field>
+		<field name="HeadY">75</field>
+		<field name="HeadWidth">100</field>
+		<field name="HeadHeight">100</field>
+		<field name="Gender">F</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="Name"></field>
+		<field name="Description"  xsi:nil="true" />
+		<field name="PreviewImage">AFbodypale-preview.png</field>
+		<field name="Image">AFbodypale.png</field>
+		<field name="HeadX">25</field>
+		<field name="HeadY">75</field>
+		<field name="HeadWidth">100</field>
+		<field name="HeadHeight">100</field>
+		<field name="Gender">F</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

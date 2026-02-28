@@ -1,0 +1,370 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+    midlet:
+      name: decorator
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+    json:
+      name: common.json
+
+main:
+  view:
+    name: main
+  components:
+    - common.user
+    - account.get_balance
+    - main_wp
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+    - (midlet, mre) common.user_permissions
+    - account.get_balance
+    - (midlet, mre) featured
+    - (midlet, mre) new
+    - (midlet, mre) popular
+    - (midlet, mre) promoted_groups
+    - (midlet, mre) recent_gifts_given_for_preview
+    - (midlet, mre) categories
+    - (ajax, wap, touch, ios, blackberry) store
+    - (ajax, wap, touch, ios, blackberry) new_item_for_each_type
+    - (ajax, wap, touch, ios, blackberry) popular_item_for_each_type
+
+home_wap:
+  function: home
+
+home_touch:
+  function: home
+
+services:
+  view:
+    name: services
+  components:
+    - common.user
+    - account.get_balance
+    - services_wp
+
+services_wap:
+  view:
+    name: services
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - services_wp_wap
+
+services_touch:
+  view:
+    name: services
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - services_wp_touch
+
+services_sms:
+  view:
+    name: services_sms
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - rates.rates
+    - rates.sms_rate
+    - services_sms_page
+
+featured:
+  view:
+    name: list
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - store
+    - featured
+    - new_for_preview
+    - popular_for_preview
+
+recent_gifts_given:
+  view:
+    name: list
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - store
+    - recent_gifts_given
+
+all_items:
+  view:
+    name: list
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - categories_breadcrumb
+    - items_of_type
+    - new_for_preview
+    - popular_for_preview
+    - recent_gifts_given_for_preview
+
+corporate_list:
+  view:
+    name: list
+  components:
+    - free
+    - new
+    - popular
+    - featured
+
+new:
+  view:
+    name: list
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - new
+
+popular:
+  view:
+    name: list
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - popular
+
+purchased:
+  view:
+    name: list
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - recently_purchased
+
+view_item:
+  view:
+    name: view_item
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - store
+    - item
+    - categories_breadcrumb_min
+
+buy_item:
+  function: check_buy_item
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - store
+    - item
+    - store.buy_store_item ?
+
+subscribe_item:
+  function: check_buy_item
+  components:
+    - common.user
+    - account.get_balance
+    - item
+    - store.buy_store_item ?
+
+buy_item_success:
+  view:
+    name: buy_item_success
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - store
+    - item
+    - categories_breadcrumb_min
+    - featured
+    - popular
+
+subscribe_item_success:
+  view:
+    name: subscribe_item_success
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - item
+    - categories_breadcrumb_min
+
+transfer_item:
+  view:
+    name: transfer_item
+  components:
+    - common.user
+    - account.get_balance
+    - store
+
+remove_item:
+  view:
+    name: remove_item
+  components:
+    - store
+
+push_item:
+  function: check_push_item
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - item
+
+push_item_success:
+  view:
+    name: push_item_success
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - item
+    - categories_breadcrumb_min
+
+categories:
+  function: show_categories
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - category
+    - categories
+
+categories_result:
+  view:
+    name: categories_result
+
+list_items_in_category:
+  view:
+    name: list_items_in_category
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - category
+    - items_in_category
+
+pick_friend:
+  function: pick_friend
+  view:
+    name: pick_friend
+  components:
+    - common.user
+    - account.get_balance
+    - base_item
+    - item
+    - user_list
+
+add_message:
+  function: check_add_message_data
+  view:
+    name: add_message
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - base_item
+    - item
+    - categories_breadcrumb_min
+
+reset_memcache:
+  view:
+    name: reset_memcache
+  components:
+    - common.user
+    - reset_memcache
+
+storeitem_rate:
+  function: storeitem_rate
+  components:
+    - common.user
+    - common.flood_control
+    - captcha.is_captcha_required ?
+    - rating
+
+show_with_category:
+  function: check_for_available_data
+  view:
+    name: list
+  components:
+    - common.user return_here_upon_login
+    - (midlet, mre) common.user_permissions
+    - account.get_balance
+    - (ajax, wap, touch, ios, blackberry) store
+    - categories_breadcrumb
+    - items_in_category
+    - (midlet, mre) new_for_preview
+    - popular_for_preview
+    - (midlet, mre) recent_gifts_given_for_preview
+
+show_with_category_wap:
+  function: show_with_category
+
+show_with_category_touch:
+  function: show_with_category
+
+all_items_wap:
+  view:
+    name: list
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - items_of_type
+    - popular_for_preview
+
+list_rest:
+  function: list_rest
+  encode: auto, json
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - new_item_for_each_type
+    - popular_item_for_each_type
+
+show_with_category_rest:
+  function: list_rest
+  encode: auto, json
+  components:
+    - common.user
+    - account.get_balance
+    - store
+    - categories_breadcrumb
+    - items_of_type
+    - popular_for_preview
+
+search:
+  view:
+    name: search
+  components:
+    - common.user
+    - common.user_permissions
+    - account.get_balance
+    - new_for_preview
+    - popular_for_preview
+
+search_submit:
+  view:
+    name: search_results
+  components:
+    - common.user
+    - common.user_permissions
+    - search ?
+    - account.get_balance
+    - search
+    - new_for_preview
+    - popular_for_preview

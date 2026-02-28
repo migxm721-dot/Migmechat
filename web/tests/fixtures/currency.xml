@@ -1,0 +1,1739 @@
+<?xml version="1.0"?>
+
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="fusion_test">
+
+	<table_data name="currency">
+
+	<row>
+		<field name="Code">ADF</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">3.9532</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">ADP</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">99.6682</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">AED</field>
+		<field name="Name">United Arab Emirates Dirhams</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.8664</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">AFA</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">2413.9500</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">AFN</field>
+		<field name="Name">Afghanistan Afghanis</field>
+		<field name="Symbol">؋</field>
+		<field name="ExchangeRate">2413.9500</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">ALL</field>
+		<field name="Name">Albania Leke</field>
+		<field name="Symbol">Lek</field>
+		<field name="ExchangeRate">75.9759</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">AMD</field>
+		<field name="Name">Armenia Drams</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">419.6346</field>
+		<field name="LastUpdated">2012-02-29 01:04:17</field>
+	</row>
+
+	<row>
+		<field name="Code">ANG</field>
+		<field name="Name">Netherlands Antilles Guilders</field>
+		<field name="Symbol">ƒ</field>
+		<field name="ExchangeRate">0.9046</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">AOA</field>
+		<field name="Name">Angola Kwanza</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">2.9961</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">AON</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">2.9961</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">ARS</field>
+		<field name="Name">Argentina Pesos</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">0.5079</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">ATS</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">8.2425</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">AUD</field>
+		<field name="Name">Australia Dollars</field>
+		<field name="Symbol">AU$</field>
+		<field name="ExchangeRate">1.0000</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">AWG</field>
+		<field name="Name">Aruba Guilders</field>
+		<field name="Symbol">ƒ</field>
+		<field name="ExchangeRate">0.9097</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">AZM</field>
+		<field name="Name">Azerbaijan Manats</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">4114.1700</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">AZN</field>
+		<field name="Name">Azerbaijan New Manats</field>
+		<field name="Symbol">ман</field>
+		<field name="ExchangeRate">0.8484</field>
+		<field name="LastUpdated">2012-02-29 01:04:19</field>
+	</row>
+
+	<row>
+		<field name="Code">BAM</field>
+		<field name="Name">Bosnia and Herzegovina Convertible Marka</field>
+		<field name="Symbol">KM</field>
+		<field name="ExchangeRate">1.5669</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">BBD</field>
+		<field name="Name">Barbados Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">1.0113</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">BDT</field>
+		<field name="Name">Bangladesh Taka</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">29.1707</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">BEF</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">17.5670</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">BGL</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.1694</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">BGN</field>
+		<field name="Name">Bulgaria Leva</field>
+		<field name="Symbol">лв</field>
+		<field name="ExchangeRate">1.1694</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">BHD</field>
+		<field name="Name">Bahrain Dinars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.1916</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">BIF</field>
+		<field name="Name">Burundi Francs</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">444.8270</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">BMD</field>
+		<field name="Name">Bermuda Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">0.5031</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">BND</field>
+		<field name="Name">Brunei Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">0.9213</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">BOB</field>
+		<field name="Name">Bolivia Bolivianos</field>
+		<field name="Symbol">$b</field>
+		<field name="ExchangeRate">3.3287</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">BRL</field>
+		<field name="Name">Brazil Reais</field>
+		<field name="Symbol">R$</field>
+		<field name="ExchangeRate">1.2080</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">BSD</field>
+		<field name="Name">Bahamas Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">0.5082</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">BTN</field>
+		<field name="Name">Bhutan Ngultrum</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">23.8597</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">BWP</field>
+		<field name="Name">Botswana Pulas</field>
+		<field name="Symbol">P</field>
+		<field name="ExchangeRate">2.8439</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">BYR</field>
+		<field name="Name">Belarus Rubles</field>
+		<field name="Symbol">p.</field>
+		<field name="ExchangeRate">8716.7427</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">BZD</field>
+		<field name="Name">Belize Dollars</field>
+		<field name="Symbol">BZ$</field>
+		<field name="ExchangeRate">1.0012</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">CAD</field>
+		<field name="Name">Canada Dollars</field>
+		<field name="Symbol">C$</field>
+		<field name="ExchangeRate">0.7813</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">CAX</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.5349</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">CDF</field>
+		<field name="Name">Congo/Kinshasa Francs</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">982.6245</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">CHF</field>
+		<field name="Name">Switzerland Francs</field>
+		<field name="Symbol">CHF</field>
+		<field name="ExchangeRate">0.9120</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">CLF</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.0229</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">CLP</field>
+		<field name="Name">Chile Pesos</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">310.2050</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">CNY</field>
+		<field name="Name">China Yuan Renminbi</field>
+		<field name="Symbol">元</field>
+		<field name="ExchangeRate">4.2067</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">COP</field>
+		<field name="Name">Colombia Pesos</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">1172.4200</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">CRC</field>
+		<field name="Name">Costa Rica Colones</field>
+		<field name="Symbol">₡</field>
+		<field name="ExchangeRate">165.6940</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">CSD</field>
+		<field name="Name">Serbia Dinars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">47.1586</field>
+		<field name="LastUpdated">2006-11-16 08:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">CUC</field>
+		<field name="Name">Cuba Convertible Pesos</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.5082</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">CUP</field>
+		<field name="Name">Cuba Pesos</field>
+		<field name="Symbol">₱</field>
+		<field name="ExchangeRate">0.5082</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">CVE</field>
+		<field name="Name">Cape Verde Escudos</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">62.2276</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">CYP</field>
+		<field name="Name">Cyprus Pounds</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.3437</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">CZK</field>
+		<field name="Name">Czech Republic Koruny</field>
+		<field name="Symbol">Kč</field>
+		<field name="ExchangeRate">20.3859</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">DEM</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.0269</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">DJF</field>
+		<field name="Name">Djibouti Francs</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">88.9350</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">DKK</field>
+		<field name="Name">Denmark Kroner</field>
+		<field name="Symbol">kr</field>
+		<field name="ExchangeRate">4.4664</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">DOP</field>
+		<field name="Name">Dominican Republic Pesos</field>
+		<field name="Symbol">RD$</field>
+		<field name="ExchangeRate">8.2328</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">DZD</field>
+		<field name="Name">Algeria Dinars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">40.7028</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">ECS</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">12654.2000</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">EEK</field>
+		<field name="Name">Estonia Krooni</field>
+		<field name="Symbol">kr</field>
+		<field name="ExchangeRate">9.3727</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">EGP</field>
+		<field name="Name">Egypt Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">1.9751</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">ERN</field>
+		<field name="Name">Eritrea Nakfa</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">16.3051</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">ESP</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">72.4185</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">ETB</field>
+		<field name="Name">Ethiopia Birr</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">4.2277</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">EUR</field>
+		<field name="Name">Euro</field>
+		<field name="Symbol">€</field>
+		<field name="ExchangeRate">0.5990</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">EUX</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.3199</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">FIM</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">2.5892</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">FJD</field>
+		<field name="Name">Fiji Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">1.1669</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">FKP</field>
+		<field name="Name">Falkland Islands Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">0.3593</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">FRF</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">2.8560</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">GBP</field>
+		<field name="Name">United Kingdom Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">0.3584</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">GEL</field>
+		<field name="Name">Georgia Lari</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.7958</field>
+		<field name="LastUpdated">2012-02-29 01:04:17</field>
+	</row>
+
+	<row>
+		<field name="Code">GGP</field>
+		<field name="Name">Guernsey Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">0.6782</field>
+		<field name="LastUpdated">2012-02-29 01:04:17</field>
+	</row>
+
+	<row>
+		<field name="Code">GHC</field>
+		<field name="Name">Ghana Cedis</field>
+		<field name="Symbol">¢</field>
+		<field name="ExchangeRate">3579.7600</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">GHS</field>
+		<field name="Name">Ghana Cedis</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.8152</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">GIP</field>
+		<field name="Name">Gibraltar Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">0.3593</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">GMD</field>
+		<field name="Name">Gambia Dalasi</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">7.9787</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">GNF</field>
+		<field name="Name">Guinea Francs</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">973.2030</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">GRD</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">204.1130</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">GTQ</field>
+		<field name="Name">Guatemala Quetzales</field>
+		<field name="Symbol">Q</field>
+		<field name="ExchangeRate">3.9385</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">GYD</field>
+		<field name="Name">Guyana Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">91.7301</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">HKD</field>
+		<field name="Name">Hong Kong Dollars</field>
+		<field name="Symbol">HK$</field>
+		<field name="ExchangeRate">3.9635</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">HNL</field>
+		<field name="Name">Honduras Lempiras</field>
+		<field name="Symbol">L</field>
+		<field name="ExchangeRate">7.8161</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">HRK</field>
+		<field name="Name">Croatia Kuna</field>
+		<field name="Symbol">kn</field>
+		<field name="ExchangeRate">4.3717</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">HTG</field>
+		<field name="Name">Haiti Gourdes</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">12.0697</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">HUF</field>
+		<field name="Name">Hungary Forint</field>
+		<field name="Symbol">Ft</field>
+		<field name="ExchangeRate">151.7230</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">IDR</field>
+		<field name="Name">Indonesia Rupiahs</field>
+		<field name="Symbol">Rp</field>
+		<field name="ExchangeRate">5793.4800</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">IEP</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.3424</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">ILA</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">363.4000</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">ILS</field>
+		<field name="Name">Israel New Shekels</field>
+		<field name="Symbol">₪</field>
+		<field name="ExchangeRate">2.1034</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">IMP</field>
+		<field name="Name">Isle of Man Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">0.6782</field>
+		<field name="LastUpdated">2012-02-29 01:04:19</field>
+	</row>
+
+	<row>
+		<field name="Code">INR</field>
+		<field name="Name">India Rupees</field>
+		<field name="Symbol">₨</field>
+		<field name="ExchangeRate">23.8600</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">IQD</field>
+		<field name="Name">Iraq Dinars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1587.6200</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">IRR</field>
+		<field name="Name">Iran Rials</field>
+		<field name="Symbol">﷼</field>
+		<field name="ExchangeRate">889.3500</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">ISK</field>
+		<field name="Name">Iceland Kronur</field>
+		<field name="Symbol">kr</field>
+		<field name="ExchangeRate">52.5530</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">ITL</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">843.1040</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">JEP</field>
+		<field name="Name">Jersey Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">0.6782</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">JMD</field>
+		<field name="Name">Jamaica Dollars</field>
+		<field name="Symbol">J$</field>
+		<field name="ExchangeRate">23.0977</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">JOD</field>
+		<field name="Name">Jordan Dinars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.3598</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">JPY</field>
+		<field name="Name">Japan Yen</field>
+		<field name="Symbol">¥</field>
+		<field name="ExchangeRate">60.7100</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">KES</field>
+		<field name="Name">Kenya Shillings</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">39.5380</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">KGS</field>
+		<field name="Name">Kyrgyzstan Soms</field>
+		<field name="Symbol">лв</field>
+		<field name="ExchangeRate">50.1732</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">KHR</field>
+		<field name="Name">Cambodia Riels</field>
+		<field name="Symbol">៛</field>
+		<field name="ExchangeRate">1948.9500</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">KMF</field>
+		<field name="Name">Comoros Francs</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">292.5730</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">KPW</field>
+		<field name="Name">North Korea Won</field>
+		<field name="Symbol">₩</field>
+		<field name="ExchangeRate">1.1180</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">KRW</field>
+		<field name="Name">South Korea Won</field>
+		<field name="Symbol">₩</field>
+		<field name="ExchangeRate">651.5120</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">KWD</field>
+		<field name="Name">Kuwait Dinars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.1564</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">KYD</field>
+		<field name="Name">Cayman Islands Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">0.4076</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">KZT</field>
+		<field name="Name">Kazakhstan Tenge</field>
+		<field name="Symbol">лв</field>
+		<field name="ExchangeRate">74.4005</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">LAK</field>
+		<field name="Name">Laos Kips</field>
+		<field name="Symbol">₭</field>
+		<field name="ExchangeRate">3862.3200</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">LBP</field>
+		<field name="Name">Lebanon Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">769.2880</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">LKR</field>
+		<field name="Name">Sri Lanka Rupees</field>
+		<field name="Symbol">₨</field>
+		<field name="ExchangeRate">46.5003</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">LRD</field>
+		<field name="Name">Liberia Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">0.2160</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">LSL</field>
+		<field name="Name">Lesotho Maloti</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">3.1661</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">LTL</field>
+		<field name="Name">Lithuania Litai</field>
+		<field name="Symbol">Lt</field>
+		<field name="ExchangeRate">2.0323</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">LUF</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">17.5837</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">LVL</field>
+		<field name="Name">Latvia Lati</field>
+		<field name="Symbol">Ls</field>
+		<field name="ExchangeRate">0.3224</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">LYD</field>
+		<field name="Name">Libya Dinars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.2831</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">MAD</field>
+		<field name="Name">Morocco Dirhams</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">6.0598</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">MDL</field>
+		<field name="Name">Moldova Lei</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">12.6283</field>
+		<field name="LastUpdated">2012-02-29 01:04:17</field>
+	</row>
+
+	<row>
+		<field name="Code">MGA</field>
+		<field name="Name">Madagascar Ariary</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">2337.7823</field>
+		<field name="LastUpdated">2012-02-29 01:04:17</field>
+	</row>
+
+	<row>
+		<field name="Code">MGF</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">3414.0900</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">MKD</field>
+		<field name="Name">Macedonia Denars</field>
+		<field name="Symbol">ден</field>
+		<field name="ExchangeRate">49.3472</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">MMK</field>
+		<field name="Name">Myanmar Kyats</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">3.4465</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">MNT</field>
+		<field name="Name">Mongolia Tugriks</field>
+		<field name="Symbol">₮</field>
+		<field name="ExchangeRate">556.4790</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">MOP</field>
+		<field name="Name">Macau Patacas</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">4.0824</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">MRO</field>
+		<field name="Name">Mauritania Ouguiyas</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">128.9100</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">MTL</field>
+		<field name="Name">Malta Liri</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.2353</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">MUR</field>
+		<field name="Name">Mauritius Rupees</field>
+		<field name="Symbol">₨</field>
+		<field name="ExchangeRate">14.5599</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">MVR</field>
+		<field name="Name">Maldives Rufiyaa</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">5.9815</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">MWK</field>
+		<field name="Name">Malawi Kwachas</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">38.2420</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">MXN</field>
+		<field name="Name">Mexico Pesos</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">4.6526</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">MYR</field>
+		<field name="Name">Malaysia Ringgits</field>
+		<field name="Symbol">RM</field>
+		<field name="ExchangeRate">1.9312</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">MZM</field>
+		<field name="Name">Mozambique Meticais</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">10367.3000</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">MZN</field>
+		<field name="Name">Mozambique Meticais</field>
+		<field name="Symbol">MT</field>
+		<field name="ExchangeRate">10.3673</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">NAD</field>
+		<field name="Name">Namibia Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">4.0656</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">NGN</field>
+		<field name="Name">Nigeria Nairas</field>
+		<field name="Symbol">₦</field>
+		<field name="ExchangeRate">56.9692</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">NIO</field>
+		<field name="Name">Nicaragua Cordobas</field>
+		<field name="Symbol">C$</field>
+		<field name="ExchangeRate">6.7438</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">NLG</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.9599</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">NOK</field>
+		<field name="Name">Norway Kroner</field>
+		<field name="Symbol">kr</field>
+		<field name="ExchangeRate">4.8029</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">NPR</field>
+		<field name="Name">Nepal Rupees</field>
+		<field name="Symbol">₨</field>
+		<field name="ExchangeRate">38.1760</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">NZD</field>
+		<field name="Name">New Zealand Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">1.2380</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">OMR</field>
+		<field name="Name">Oman Rials</field>
+		<field name="Symbol">﷼</field>
+		<field name="ExchangeRate">0.1956</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">PAB</field>
+		<field name="Name">Panama Balboas</field>
+		<field name="Symbol">B/.</field>
+		<field name="ExchangeRate">0.5031</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">PEN</field>
+		<field name="Name">Peru Nuevos Soles</field>
+		<field name="Symbol">S/.</field>
+		<field name="ExchangeRate">1.8427</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">PGK</field>
+		<field name="Name">Papua New Guinea Kina</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.6447</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">PHP</field>
+		<field name="Name">Philippines Pesos</field>
+		<field name="Symbol">Php</field>
+		<field name="ExchangeRate">25.6133</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">PKR</field>
+		<field name="Name">Pakistan Rupees</field>
+		<field name="Symbol">₨</field>
+		<field name="ExchangeRate">32.4232</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">PLN</field>
+		<field name="Name">Poland Zlotych</field>
+		<field name="Symbol">zł</field>
+		<field name="ExchangeRate">2.0252</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">PLX</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.1559</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">PTE</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">87.3748</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">PYG</field>
+		<field name="Name">Paraguay Guarani</field>
+		<field name="Symbol">Gs</field>
+		<field name="ExchangeRate">1961.6500</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">QAR</field>
+		<field name="Name">Qatar Riyals</field>
+		<field name="Symbol">﷼</field>
+		<field name="ExchangeRate">1.8500</field>
+		<field name="LastUpdated">2012-02-29 09:00:01</field>
+	</row>
+
+	<row>
+		<field name="Code">ROL</field>
+		<field name="Name">Romania Lei</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">14620.9000</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">RON</field>
+		<field name="Name">Romania New Lei</field>
+		<field name="Symbol">lei</field>
+		<field name="ExchangeRate">1.4621</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">RSD</field>
+		<field name="Name">Serbia Dinars</field>
+		<field name="Symbol">Дин.</field>
+		<field name="ExchangeRate">35.4008</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">RUB</field>
+		<field name="Name">Russia Rubles</field>
+		<field name="Symbol">руб</field>
+		<field name="ExchangeRate">14.7891</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">RWF</field>
+		<field name="Name">Rwanda Francs</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">645.7246</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">SAR</field>
+		<field name="Name">Saudi Arabia Riyals</field>
+		<field name="Symbol">﷼</field>
+		<field name="ExchangeRate">1.9060</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SBD</field>
+		<field name="Name">Solomon Islands Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">2.6250</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SCR</field>
+		<field name="Name">Seychelles Rupees</field>
+		<field name="Symbol">₨</field>
+		<field name="ExchangeRate">2.8624</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SDD</field>
+		<field name="Name">Sudan Dinars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">130.0990</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">SDG</field>
+		<field name="Name">Sudan Pounds</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">2.8901</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">SDP</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">13.1471</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">SEK</field>
+		<field name="Name">Sweden Kronor</field>
+		<field name="Symbol">kr</field>
+		<field name="ExchangeRate">5.5323</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">SGD</field>
+		<field name="Name">Singapore Dollars</field>
+		<field name="Symbol">S$</field>
+		<field name="ExchangeRate">0.9213</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SHP</field>
+		<field name="Name">Saint Helena Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">0.7187</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SIT</field>
+		<field name="Name">Slovenia Tolars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">130.2470</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SKK</field>
+		<field name="Name">Slovakia Koruny</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">25.6788</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">SLL</field>
+		<field name="Name">Sierra Leone Leones</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">965.0720</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">SOS</field>
+		<field name="Name">Somalia Shillings</field>
+		<field name="Symbol">S</field>
+		<field name="ExchangeRate">1331.4800</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SPL</field>
+		<field name="Name">Seborga Luigini</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.1800</field>
+		<field name="LastUpdated">2012-02-29 01:04:19</field>
+	</row>
+
+	<row>
+		<field name="Code">SRD</field>
+		<field name="Name">Suriname Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">0.4985</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SRG</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">498.5440</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">STD</field>
+		<field name="Name">São Tome and Principe Dobras</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">416.9020</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SVC</field>
+		<field name="Name">El Salvador Colones</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">4.4478</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">SYP</field>
+		<field name="Name">Syria Pounds</field>
+		<field name="Symbol">£</field>
+		<field name="ExchangeRate">26.1088</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">SZL</field>
+		<field name="Name">Swaziland Emalangeni</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">4.0605</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">THB</field>
+		<field name="Name">Thailand Baht</field>
+		<field name="Symbol">฿</field>
+		<field name="ExchangeRate">23.0520</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">TJS</field>
+		<field name="Name">Tajikistan Somoni</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">5.1386</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">TMM</field>
+		<field name="Name">Turkmenistan Manats</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">15387.2510</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">TMT</field>
+		<field name="Name">Turkmenistan New Manats</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">3.0775</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">TND</field>
+		<field name="Name">Tunisia Dinars</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.7616</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">TOF</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.0576</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">TOP</field>
+		<field name="Name">Tonga Pa'anga</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.0817</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">TRL</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">574266.0000</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">TRY</field>
+		<field name="Name">Turkey Lira</field>
+		<field name="Symbol">YTL</field>
+		<field name="ExchangeRate">0.5743</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">TTD</field>
+		<field name="Name">Trinidad and Tobago Dollars</field>
+		<field name="Symbol">TT$</field>
+		<field name="ExchangeRate">3.1407</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">TVD</field>
+		<field name="Name">Tuvalu Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">1.0000</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">TW1</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">31.5400</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">TW2</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">31.5263</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">TWD</field>
+		<field name="Name">Taiwan New Dollars</field>
+		<field name="Symbol">NT$</field>
+		<field name="ExchangeRate">17.2788</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">TZS</field>
+		<field name="Name">Tanzania Shillings</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">450.2650</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">UAH</field>
+		<field name="Name">Ukraine Hryvnia</field>
+		<field name="Symbol">₴</field>
+		<field name="ExchangeRate">2.7515</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">UGX</field>
+		<field name="Name">Uganda Shillings</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">896.9730</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">USD</field>
+		<field name="Name">United States Dollars</field>
+		<field name="Symbol">US$</field>
+		<field name="ExchangeRate">0.5082</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">UYU</field>
+		<field name="Name">Uruguay Pesos</field>
+		<field name="Symbol">$U</field>
+		<field name="ExchangeRate">6.6625</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">UZS</field>
+		<field name="Name">Uzbekistan Sums</field>
+		<field name="Symbol">лв</field>
+		<field name="ExchangeRate">1985.7652</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">VAC</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">2.5633</field>
+		<field name="LastUpdated">2012-01-23 00:18:56</field>
+	</row>
+
+	<row>
+		<field name="Code">VEB</field>
+		<field name="Name">Venezuela Bolivares</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">362.8550</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">VEF</field>
+		<field name="Name">Venezuela Bolivares Fuertes</field>
+		<field name="Symbol">Bs</field>
+		<field name="ExchangeRate">4.6432</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">VND</field>
+		<field name="Name">Vietnam Dong</field>
+		<field name="Symbol">₫</field>
+		<field name="ExchangeRate">7456.8200</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">VUV</field>
+		<field name="Name">Vanuatu Vatu</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">74.1972</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">WST</field>
+		<field name="Name">Samoa Tala</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1.7524</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">XAF</field>
+		<field name="Name">Communauté Financière Africaine Francs BEAC</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">390.2980</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">XAG</field>
+		<field name="Name">Silver Ounces</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.1150</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">XAU</field>
+		<field name="Name">Gold Ounces</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.0019</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">XCD</field>
+		<field name="Name">East Caribbean Dollars</field>
+		<field name="Symbol">$</field>
+		<field name="ExchangeRate">1.3569</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">XDR</field>
+		<field name="Name">International Monetary Fund Special Drawing Rights</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.6945</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">XEU</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.5990</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">XOF</field>
+		<field name="Name">Communauté Financière Africaine Francs BCEAO</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">390.2980</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">XPD</field>
+		<field name="Name">Palladium Ounces</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.0008</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">XPF</field>
+		<field name="Name">Comptoirs Français du Pacifique Francs</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">71.6908</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">XPT</field>
+		<field name="Name">Platinum Ounces</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">0.0008</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">YER</field>
+		<field name="Name">Yemen Rials</field>
+		<field name="Symbol">﷼</field>
+		<field name="ExchangeRate">233.7782</field>
+		<field name="LastUpdated">2012-02-29 01:04:18</field>
+	</row>
+
+	<row>
+		<field name="Code">YUN</field>
+		<field name="Name"></field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">35.4008</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">ZAC</field>
+		<field name="Name">ERR</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">736.0874</field>
+		<field name="LastUpdated">2008-05-06 08:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">ZAR</field>
+		<field name="Name">South Africa Rand</field>
+		<field name="Symbol">R</field>
+		<field name="ExchangeRate">4.0770</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">ZMK</field>
+		<field name="Name">Zambia Kwacha</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">1412.8000</field>
+		<field name="LastUpdated">2012-02-29 09:00:02</field>
+	</row>
+
+	<row>
+		<field name="Code">ZWD</field>
+		<field name="Name">Zimbabwe Dollars</field>
+		<field name="Symbol">Z$</field>
+		<field name="ExchangeRate">27.9002</field>
+		<field name="LastUpdated">2012-02-29 09:00:03</field>
+	</row>
+
+	<row>
+		<field name="Code">ZWN</field>
+		<field name="Name">Zimbabwe Dollar</field>
+		<field name="Symbol" xsi:nil="true" />
+		<field name="ExchangeRate">186.1392</field>
+		<field name="LastUpdated">2006-10-03 08:00:01</field>
+	</row>
+
+	</table_data>
+
+</database>
+</mysqldump>

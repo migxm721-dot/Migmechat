@@ -1,0 +1,56 @@
+a.username {
+  color: #FF6F18;
+}
+
+a.menu_nodecor {
+  text-decoration: none;
+}
+
+a.menu_nodecor:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top_nav {
+  height: 27px;
+  float: left;
+  text-decoration: none;
+  background: #F3FBFD;
+}
+
+.mem_nav_link {
+  float: left;
+  padding: 10px 16px;
+  font-weight: bold;
+  color: #606060;
+  text-decoration: none;
+}
+
+.mem_nav_link:hover {
+  color: white;
+}
+
+.mem_nav_link_grey
+
+.mem_edit_link {
+  font: bold 10px/140% Verdana, Tahoma, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.item_edit_link {
+  font-weight: bold;
+  color: #FF7C16;
+}
+
+.about_nav_link {
+  font: bold 10px/140% Verdana, Tahoma, Arial, Helvetica, sans-serif;
+  font-color: #535353;
+  text-decoration: none;
+}
+
+.about_nav_link:hover {
+  font: bold 10px/140% Verdana, Tahoma, Arial, Helvetica, sans-serif;
+  font-color: #FF6F18;
+  text-decoration: none;
+}
+

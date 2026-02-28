@@ -1,0 +1,40 @@
+all:
+  components:
+    - none ?
+
+datasvc:
+  function: datasvc
+  encode: auto, json
+  components:
+    - common.user encode_payload
+    - common.flood_control 30/60
+
+test:
+  function: route
+
+sso:
+  function: route
+
+gating:
+  function: route
+
+settings:
+  function: route
+
+user:
+  function: route
+
+partner:
+  function: route
+
+application:
+  function: route
+
+group:
+  function: route
+
+groups:
+  function: route
+
+api:
+  function: route

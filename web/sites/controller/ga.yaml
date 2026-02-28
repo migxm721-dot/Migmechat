@@ -1,0 +1,9 @@
+all:
+  components:
+    - none ?
+
+home:
+  view:
+    name: home
+  components:
+    - native

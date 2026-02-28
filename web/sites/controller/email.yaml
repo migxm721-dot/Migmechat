@@ -1,0 +1,76 @@
+all:
+  decorators:
+    touch:
+      name: common.touch
+    midlet:
+      name: common.midlet
+    json:
+      name: common.json
+
+home:
+  view:
+    name: email_disabled
+
+folder:
+  view:
+    name: email_disabled
+
+compose:
+  view:
+    name: email_disabled
+
+compose_submit:
+  view:
+    name: email_disabled
+
+view:
+  view:
+    name: email_disabled
+
+reply:
+  view:
+    name: email_disabled
+
+forward:
+  view:
+    name: email_disabled
+
+delete:
+  view:
+    name: email_disabled
+
+undelete:
+ view:
+    name: email_disabled
+
+block_user:
+  view:
+    name: email_disabled
+
+pick_contact:
+  view:
+    name: email_disabled
+
+settings:
+  view:
+    name: email_disabled
+
+settings_submit:
+  view:
+    name: email_disabled
+
+setup:
+  view:
+    name: email_disabled
+
+setup_submit:
+  view:
+    name: email_disabled
+
+delete_all:
+  view:
+    name: email_disabled
+
+delete_all_submit:
+  view:
+    name: email_disabled

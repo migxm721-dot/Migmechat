@@ -1,0 +1,9 @@
+node_modules
+Gruntfile.js
+dist
+test
+app/components
+app/images
+app/language
+app/styles
+app/scripts/vendor/

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--$ phpunit -c runners/frame252.xml -->
+<phpunit
+	verbose="false"
+	colors="true"
+	bootstrap="../base.php"
+	stopOnError="false"
+	stopOnFailure="false"
+	stopOnSkipped="false"
+	stopOnIncomplete="false"
+>
+	<php>
+        <var name="L_DB_DSN" value="mysql:dbname=fusion_test;host=localhost" />
+        <var name="L_DB_USER" value="root" />
+        <var name="L_DB_PWD" value="ten20304050" />
+        <var name="L_DB_NAME" value="fusion_test" />
+    </php>
+	<testsuites>
+		<testsuite name="dao_dir">
+			<directory suffix="Test.php">../dao</directory>
+		</testsuite>
+	</testsuites>
+</phpunit>

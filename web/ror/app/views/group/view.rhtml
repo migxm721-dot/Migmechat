@@ -1,0 +1,82 @@
+<div>
+    
+    <div class="sectionHeader">
+        <h1>View Group</h1>
+        <span><%= link_to 'search', { :action => 'index'} %></span>
+        <div class="clear"></div>
+    </div>
+    
+    <% if !@errors.empty? %>
+        <div class="errorMessage" id="vGiftErrorMessage">
+            <ul class="indentList">
+                <% @errors.each { |key,value| %>
+                    <li><%= value %></li>
+                <% } %>
+            </ul>
+        </div>
+    <% end %>
+    
+    <% if !@msg.nil? %>
+        <div class="sectionActionHighlightDisplayed"><%= @msg %></div>
+    <% end %>
+    
+    <% if !@group.nil? %>
+        <div class="section">
+            <h2>Details</h2>
+            <table class="single_border" cellpadding="0" cellspacing="0" width="100%">
+                <tr class="dispField">
+                    <td width="200"><label>Name</label></td>
+                    <td colspan="2"><%= @group.name %></td>
+                </tr>
+                <tr class="dispField">
+                    <td width="200"><label>Type</label></td>
+                    <td colspan="2"><%= get_group_type_display @group.type %></td>
+                </tr>
+                <tr class="dispField">
+                    <td width="200"><label>Created By</label></td>
+                    <td colspan="2"><%= link_to @group.createdBy, {:controller => 'mig33_user', :action => 'view', :id => @group.createdBy} %></td>
+                </tr>
+                <tr class="dispField">
+                    <td width="200"><label>Date Created</label></td>
+                    <td colspan="2"><%= @group.dateCreated.strftime("%b %d, %Y") unless @group.dateCreated.nil?  %></td>
+                </tr>
+                <tr class="dispField">
+                    <td width="200" valign="top"><label>Display Picture</label></td>
+                    <td <%= 'colspan=2' if @group.picture.nil? or @user_access.eql? 'read' %>><%= display_image @group.picture, 125, {:alt => '-- BROKEN IMAGE --'} %>&nbsp;</td>
+                    <% if !@group.picture.nil? and !@user_access.eql? 'read' %>
+                        <td width="200" valign="top"><span class="action"><%= link_to 'Remove', {:action => 'update_attribute', :id => @group.id, :field => 'picture'}, :title => 'Remove Display Picture' %></span></td>
+                    <% end %>   
+                </tr>
+                <tr class="dispField">
+                    <td width="200" valign="top"><label>Description</label></td>
+                    <td <%= 'colspan=2' if @user_access.eql? 'read' %>><%= @group.description %></td>
+                    <% if !@user_access.eql? 'read' %>
+                        <td width="200" valign="top"><span class="action"><%= link_to 'Edit', {:action => 'update_attribute', :id => @group.id, :field => 'description'}, :title => 'Edit Description' %></span></td>
+                    <% end %>   
+                </tr>
+                <tr class="dispField">
+                    <td width="200"><label>Total Members</label></td>
+                    <td colspan="2"><%= @group.numMembers %></td>
+                </tr>
+                <tr class="dispField">
+                    <td width="200"><label>Status</label></td>
+                    <td <%= 'colspan=2' if @user_access.eql? 'read' %>><%= get_status_display @group.status %></td>
+                    <% if !@user_access.eql? 'read' %>
+                        <td width="200"><span class="action"><%= link_to 'Edit', {:action => 'update_attribute', :id => @group.id, :field => 'status'}, :title => 'Edit Status' %></span></td>
+                    <% end %>   
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Chatrooms</h2>
+            <%= render :file => 'shared/chatrooms' %>
+        </div>
+        
+        <div class="section">
+            <h2>Logs</h2>
+            <%= render :file => 'shared/logs' %>
+        </div>
+        
+    <% end %>
+</div>

@@ -1,0 +1,27 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page captcha
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+    midlet:
+      name: common.midlet
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+    - common.flood_control
+    - get_query_string
+    - prepare_captcha
+
+home_submit:
+  view:
+    name: home
+  components:
+    - common.user
+    - user_captcha ?

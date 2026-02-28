@@ -1,0 +1,432 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+      page_title: "%USERNAME%'s Chatrooms"
+    touch:
+      name: common.touch
+
+user_owned_chatrooms:
+  function: user_owned_chatrooms
+  view:
+    name: user_owned_chatrooms
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - user.private_profile ?
+    - chatrooms
+
+user_moderated_chatrooms:
+  function: user_moderated_chatrooms
+  view:
+    name: user_moderated_chatrooms
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - user.private_profile ?
+    - chatrooms
+
+user_chatrooms:
+  view:
+    name: user_chatrooms
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - user.private_profile ?
+    - chatrooms
+
+create:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page page-create-chatroom
+  view:
+    name: create
+  components:
+    - common.user
+    - create_chatroom
+    - languages
+
+home:
+  view:
+    name: home
+
+create_submit:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page page-create-chatroom page-create-chatroom-success
+  function: create_submit
+  view:
+    name: create_submit
+  components:
+    - common.user
+    - chatroom
+    - chatroom.create_chatroom ?
+
+create_help:
+  view:
+    name: create_help
+  components:
+    - common.user
+    - chatroom
+
+search:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: search
+  components:
+    - common.user
+    - chatroom
+    - languages
+
+search_submit:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: search_submit
+  components:
+    - common.user
+    - chatroom.search_chatroom ?
+    - search
+  # - chatroom
+
+search_help:
+  view:
+    name: search_help
+  components:
+    - common.user
+    - chatroom
+
+join:
+  function: join
+  view:
+    name: search_submit
+  components:
+    - common.user
+    - chatroom
+    - search
+
+setup:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup
+  components:
+    - common.user
+    - chatroom
+    - room_details
+    - moderators
+
+setup_multiids:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup_multiids
+  components:
+    - common.user
+    - chatroom
+    - room_details
+    - setup_multiids ?
+    - setup_multiids
+
+setup_details:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup_details
+  components:
+    - common.user
+    - chatroom
+    - room_details
+    - languages
+
+setup_details_post:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup_details
+  components:
+    - common.user
+    - chatroom
+    - setup_details
+    - room_details
+    - languages
+
+setup_keywords:
+  decorators:
+    midlet:
+      name: setup_decorator
+  view:
+    name: setup_keywords
+  components:
+    - common.user
+    - chatroom
+    - room_details
+
+setup_keywords_post:
+  decorators:
+    midlet:
+      name: setup_decorator
+  view:
+    name: setup_keywords
+  components:
+    - common.user
+    - chatroom
+    - setup_keywords
+    - room_details
+
+setup_moderators:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup_moderators
+  components:
+    - common.user
+    - chatroom
+    - moderators
+    - room_details
+
+remove_moderator:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup_moderators
+  components:
+    - common.user
+    - chatroom
+    - remove_moderator
+    - moderators
+    - room_details
+
+add_contact_moderators:
+  view:
+    name: add_contact_moderators
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  components:
+    - common.user
+    - chatroom
+    - room_details
+    - common.contacts
+
+add_moderator_id:
+  view:
+    name: add_moderator_id
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  components:
+    - common.user
+    - chatroom
+    - room_details
+
+add_moderator:
+  function: add_moderator
+  view:
+    name: add_moderator
+  components:
+    - common.user
+    - chatroom
+    - room_details
+    - common.contacts
+
+setup_banned_users:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup_banned_users
+  components:
+    - common.user
+    - common.flood_control
+    - captcha.is_captcha_required ?
+    - chatroom
+    - room_details
+    - banned_users
+
+unban_user:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup_banned_users
+  components:
+    - common.user
+    - common.flood_control
+    - captcha.is_captcha_required ?
+    - chatroom
+    - room_details
+    - unban_user
+    - banned_users
+
+ban_user:
+  function: ban_user
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - chatroom
+    - room_details
+
+ban_user_by_member:
+  view:
+    name: ban_user_by_member
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - captcha.is_captcha_required ?
+    - chatroom
+    - room_details
+    - common.chatroom_users
+
+ban_user_by_id:
+  view:
+    name: ban_user_by_id
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  components:
+    - common.user
+    - chatroom
+    - room_details
+
+setup_kicking:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup_kicking
+  components:
+    - common.user
+    - chatroom
+    - room_details
+
+setup_kicking_post:
+  decorators:
+    midlet:
+      name: setup_decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+  view:
+    name: setup_kicking
+  components:
+    - common.user
+    - chatroom
+    - setup_kicking
+    - room_details
+
+setup_ownership:
+  decorators:
+    midlet:
+      name: setup_decorator
+  function: change_owner_send_email
+  view:
+    name: setup
+  components:
+    - common.user
+    - chatroom
+    - change_owner
+    - room_details
+    - common.contacts
+
+about:
+  view:
+    name: about
+  components:
+    - common.user
+    - chatroom
+    - room_details
+    - moderators
+    - group.group
+
+intro:
+  view:
+    name: intro
+  components:
+    - common.user
+    - common.stats
+
+#merchant trail stuff, hmmm, could probably be moved to a separate controller...
+tagged_by_me:
+  view:
+    name: tagged_by_me
+  components:
+    - common.user
+    - chatroom
+    - tagged_by_me
+
+tagged_by_others:
+  view:
+    name: tagged_by_others
+  components:
+    - common.user
+    - chatroom
+    - tagged_by_others
+
+tagged_by_none:
+  view:
+    name: tagged_by_none
+  components:
+    - common.user
+    - chatroom
+    - tagged_by_none

@@ -1,0 +1,342 @@
+#!/bin/sh
+#
+# mig33:		Mig33 Application Management
+#
+# chkconfig:	- 60 40
+# description:	Mig33 Application Management
+#
+
+# Source function library.
+
+checkpid() {
+    local i
+
+    for i in $* ; do
+        if ps -p $i > /dev/null 
+	then
+		return 0;
+	else
+		return 1;
+	fi;
+    done
+    return 1
+}
+
+
+
+
+Mig33_BINDIR=${Mig33_BINDIR:-/usr/local/fusion-in-a-box/fusion}
+if [ $# -eq 1 ]; then
+	Mig33_APP=`basename $0`
+else
+	Mig33_APP=$2;
+fi;
+Mig33_RUN=${Mig33_RUN:-/usr/local/fusion-in-a-box/mig33/mig33}
+LOCKFILE=/var/lock/subsys/${Mig33_APP}
+
+GLOBAL_DIRECTIVES="-Dconfig.dir=/usr/local/fusion-in-a-box/fusion/etc/ -Dlog.dir=/usr/local/fusion-in-a-box/fusion/logs"
+DEBUGGING_DIRECTIVES="-Xdebug -Xnoagent -agentlib:jdwp=transport=dt_socket,server=y,address=st-app-1:8000"
+JMX_REMOTEPORT=$(python -c "import random; random.seed('${Mig33_APP}'); print random.randint(2200,2500)")
+RETVAL=0
+
+HEAP_LARGE=-Xmx128M;
+HEAP_SMALL=-Xmx64m;
+
+prep_app() {
+
+	case "${Mig33_APP}" in
+			RewardDispatcher)
+                                cmd_param="${GLOBAL_DIRECTIVES}  -Dlog.dir=/usr/fusion/logs -Dconfig.dir=/usr/fusion/etc/ -Dlog.filename=rewarddispatcher"
+                                cmd_cp="-cp .:Fusion.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:/usr/share/java/Ice.jar:jedis-1.3.2-jdk1.5.jar:java_memcached-release_2.0.1.jar"
+                                cmd_run="com.projectgoth.fusion.rewardsystem.RewardDispatcher"
+                        ;;
+			ExchangeRateFeed)
+				cmd_param="${GLOBAL_DIRECTIVES}"
+				cmd_cp="-cp .:Fusion.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar"
+				cmd_run="com.projectgoth.fusion.externalfeed.ExchangeRateFeed AUD 900 60"
+			;;
+			EventQueueWorker*)
+				cmd_ulimit="ulimit -n 32768"
+				cmd_param="${HEAP_LARGE} -Xloggc:/usr/fusion/logs/EventStore.gc.log -verbose:gc -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Dlog.dir=/usr/fusion/logs -Dconfig.dir=/usr/fusion/etc/ -Dlog.filename=eventstore "
+				cmd_cp="-cp .:etc:je-3.3.62.jar:Fusion.jar:commons-logging-1.1.1.jar:spring-2.5.5.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar"
+				cmd_run="com.projectgoth.fusion.eventqueue.Worker ${Mig33_APP}.cfg"
+			;;
+			EventStore)
+				cmd_ulimit="ulimit -n 32768"
+				cmd_param="${HEAP_LARGE} -Xloggc:/usr/fusion/logs/EventStore.gc.log -verbose:gc -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Dlog.dir=/usr/fusion/logs -Dconfig.dir=/usr/fusion/etc/ -Dlog.filename=eventstore "
+				cmd_cp="-cp .:etc:je-3.3.62.jar:Fusion.jar:commons-logging-1.1.1.jar:spring-2.5.5.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar"
+				cmd_run="com.projectgoth.fusion.userevent.store.EventStoreMain"
+			;;
+			EventSystem)
+				cmd_ulimit="ulimit -n 32768"
+				cmd_param="${HEAP_LARGE} -Xloggc:/usr/fusion/logs/EventSystem.gc.log -verbose:gc -XX:+PrintGCTimeStamps -XX:+PrintGCDetails ${GLOBAL_DIRECTIVES} -Dlog.filename=eventsystem"
+				cmd_cp="-cp .:etc:Fusion.jar:commons-logging-1.1.1.jar:spring-2.5.5.jar:c3p0-0.9.1.2.jar:java_memcached-release_2.0.1.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:je-3.3.62.jar:mysql-connector-java-5.1.7-bin.jar:ehcache-1.6.0-beta3.jar "
+				cmd_run="com.projectgoth.fusion.userevent.system.EventSystemMain"
+			;;
+                        BlueLabelService)
+                                cmd_ulimit="ulimit -n 32768"
+                                cmd_param="${HEAP_LARGE} -Dlog.dir=/usr/fusion/logs -Dconfig.dir=/usr/fusion/etc/ -Dlog.filename=bluelabelservice "
+                                cmd_cp="-cp .:etc:Fusion.jar:commons-logging-1.1.1.jar:spring-2.5.5.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:je-3.3.62.jar:c3p0-0.9.1.2.jar:java_memcached-release_2.0.1.jar:axis.jar:commons-discovery-0.2.jar:jaxrpc.jar:mibli.jar:wsdl4j-1.5.1.jar:mysql-connector-java-5.1.7-bin.jar:axis.jar:commons-discovery-0.2.jar:jaxrpc.jar:mibli.jar:wsdl4j-1.5.1.jar"
+                                cmd_run="com.projectgoth.fusion.bl1.BlueLabelServiceMain"
+			;;
+                        AuthenticationService)
+                                cmd_ulimit="ulimit -n 32768"
+                                cmd_param="${HEAP_LARGE}  -Dcom.sun.management.jmxremote.port=$JMX_REMOTEPORT -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dlog.dir=/usr/fusion/logs -Dconfig.dir=/usr/fusion/etc/ -Dlog.filename=authenticationservice "
+                                cmd_cp="-cp .:etc:Fusion.jar:commons-logging-1.1.1.jar:spring-2.5.5.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:c3p0-0.9.1.2.jar:java_memcached-release_2.0.1.jar:mysql-connector-java-5.1.7-bin.jar:keyczar-0.6b-1.5-111908.jar:gson-1.3b3.jar"
+                                cmd_run="com.projectgoth.fusion.authentication.AuthenticationServiceMain"
+                        ;;
+                        UserNotificationService)
+                                cmd_ulimit="ulimit -n 32768"
+                                cmd_param="${HEAP_LARGE} -Dcom.sun.management.jmxremote.port=2221 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dlog.dir=/usr/fusion/logs -Dconfig.dir=/usr/fusion/etc/ -Dlog.filename=usernotificationservice "
+                                cmd_cp="-cp .:etc:Fusion.jar:commons-logging-1.1.1.jar:spring-2.5.5.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:je-3.3.62.jar:c3p0-0.9.1.2.jar:java_memcached-release_2.0.1.jar:mysql-connector-java-5.1.7-bin.jar:jedis-1.3.2-jdk1.5.jar:gson-1.3b3.jar"
+                                cmd_run="com.projectgoth.fusion.uns.UserNotificationServiceMain"
+			;;
+                        JobSchedulingService)
+                                cmd_ulimit="ulimit -n 32768"
+                                cmd_param="${HEAP_LARGE} -Dlog.dir=/usr/fusion/logs -Dconfig.dir=/usr/fusion/etc/ -Dlog.filename=jobschedulingservice "
+                                cmd_cp="-cp .:etc:Fusion.jar:commons-logging-1.1.1.jar:spring-2.5.5.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:je-3.3.62.jar:c3p0-0.9.1.2.jar:java_memcached-release_2.0.1.jar:mysql-connector-java-5.1.7-bin.jar:quartz-1.6.5.jar:commons-collections-3.2.jar:commons-dbcp-1.2.2.jar:commons-pool-1.3.jar:jedis-1.3.2-jdk1.5.jar"
+                                cmd_run="com.projectgoth.fusion.jobscheduling.JobSchedulingServiceMain"
+                        ;;
+			GatewayTCP_*)
+				cmd_ulimit="ulimit -n 32768"
+				cmd_param="${HEAP_SMALL} -Dcom.sun.management.jmxremote.port=${JMX_REMOTEPORT} -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dsun.net.inetaddr.ttl=60 -Dsun.rmi.dgc.client.gcInterval=1200000 -Dsun.rmi.dgc.server.gcInterval=1200000 ${GLOBAL_DIRECTIVES} -Dlog.filename=${Mig33_APP}"
+				rpm -q java-1.6.0-sun-compat > /dev/null
+				if [ $? -eq 0 ]; then cmd_param="$cmd_param -Xbootclasspath/p:/usr/fusion/epollpatch.zip" ; fi
+				#cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:java_memcached-release_2.0.1.jar:spring-2.5.5.jar:json-1.0.jar"
+				cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar"
+				cmd_run="com.projectgoth.fusion.gateway.Gateway ${Mig33_APP}.cfg"
+			;;
+			GatewayHTTP)
+				cmd_ulimit="ulimit -n 32768"
+				cmd_param="${HEAP_SMALL} -Dcom.sun.management.jmxremote.port=2224 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dsun.net.inetaddr.ttl=60 -Dsun.rmi.dgc.client.gcInterval=1200000 -Dsun.rmi.dgc.server.gcInterval=1200000 ${GLOBAL_DIRECTIVES} -Dlog.filename=gateway.http"
+				rpm -q java-1.6.0-sun-compat > /dev/null
+				if [ $? -eq 0 ]; then cmd_param="$cmd_param -Xbootclasspath/p:/usr/fusion/epollpatch.zip" ; fi
+				#cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:java_memcached-release_2.0.1.jar:spring-2.5.5.jar:json-1.0.jar"
+				cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar"
+				cmd_run="com.projectgoth.fusion.gateway.Gateway GatewayHTTP.cfg"
+			;;
+			ImageServer)
+				cmd_ulimit="ulimit -n 32768"
+				cmd_param="${HEAP_SMALL} -Dcom.sun.management.jmxremote.port=2226 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dlog.dir=/usr/fusion/logs"
+				if [ `hostname` == 'mogw01.sjc01.projectgoth.com' ]; then cmd_param="$cmd_param -Xbootclasspath/p:/usr/fusion/epollpatch.zip"; fi
+				cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar"
+				cmd_run="com.projectgoth.fusion.imageserver.ImageServer ImageServer.cfg"
+			;;
+			MessageLogger)
+				cmd_param="${GLOBAL_DIRECTIVES} -Dlog.filename=messagelogger"
+				cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar"
+				cmd_run="com.projectgoth.fusion.messagelogger.MessageLogger"
+			;;
+			ObjectCache*)
+				cmd_ulimit="ulimit -n 32768"
+				cmd_param="${HEAP_LARGE} -Xloggc:/usr/fusion/logs/${Mig33_APP}.gc.log -verbose:gc -XX:+PrintGCTimeStamps -XX:+PrintGCDetails -Dsun.net.inetaddr.ttl=60 -Dsun.rmi.dgc.client.gcInterval=1200000 -Dsun.rmi.dgc.server.gcInterval=1200000 ${GLOBAL_DIRECTIVES} -Dlog.filename=${Mig33_APP} -Dcom.sun.management.jmxremote.port=${JMX_REMOTEPORT} -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+				cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar:jedis-1.3.2-jdk1.5.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:spring-2.5.5.jar:java_memcached-release_2.0.1.jar:json-1.0.jar:httpclient-4.0.jar:httpcore-4.0.1.jar:httpcore-nio-4.0.1.jar:httpmime.jar:commons-logging-1.1.1.jar:smack.jar:smackx.jar:google-api-translate-java-jdk1.5.jar"
+				cmd_run="com.projectgoth.fusion.objectcache.ObjectCache ${Mig33_APP}.cfg"
+			;;
+			Registry*)
+            cmd_param="-Xmx64m -Xloggc:/usr/fusion/logs/Registry2.gc.log -verbose:gc -XX:+PrintGCTimeStamps -XX:+PrintGCDetails ${GLOBAL_DIRECTIVES} -Dlog.filename=${Mig33_APP} -Dcom.sun.management.jmxremote.port=$JMX_REMOTEPORT -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+				cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:activation.jar:mail.jar:spring-2.5.5.jar"
+				cmd_run="com.projectgoth.fusion.registry.Registry ${Mig33_APP}.cfg"
+			;;
+			SMSEngine)
+                cmd_param="${HEAP_LARGE} -Dlog.dir=/usr/fusion/logs -Dlog.filename=smsengine -Dconfig.dir=/usr/fusion/etc/"
+				cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar"
+				cmd_run="com.projectgoth.fusion.smsengine.SMSEngine"
+			;;
+			VoiceEngine)
+				cmd_param="${HEAP_LARGE} -Dconfig.dir=/usr/fusion/etc/ -Dlog.filename=voiceengine -Dlog.dir=/usr/fusion/logs"
+				cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar"
+				cmd_run="com.projectgoth.fusion.voiceengine.VoiceEngine"
+			;;
+			EmailAlert)
+				cmd_param="-Xmx1024m -Dlog.dir=/usr/fusion/logs"
+				cmd_cp="-cp .:Fusion.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar"
+				cmd_run="com.projectgoth.fusion.emailalert.EmailAlert"
+			;;
+			GlobalCollectReportFeed)
+				cmd_param="${HEAP_LARGE} -Dlog.dir=/usr/fusion/logs"
+				cmd_cp="-cp .:Fusion.jar:log4j-1.2.9.jar:jbossall-client.jar:activation.jar:mail.jar:jsch-0.1.33.jar"
+				cmd_run="com.projectgoth.fusion.externalfeed.GlobalCollectReportFeed 240 sft.globalcollect.com gcmigmig 02kv6ynp 3723 /out/ feeds wr1"
+			;;
+			BotService)
+			    cmd_ulimit="ulimit -n 32768"
+		        cmd_param="${HEAP_LARGE} -Dcom.sun.management.jmxremote.port=2222 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dlog.dir=/usr/fusion/logs -Dconfig.dir=/usr/fusion/etc/ -Dlog.filename=botservice "
+		        cmd_cp="-cp .:etc:Fusion.jar:commons-logging-1.1.1.jar:spring-2.5.5.jar:/usr/share/java/Ice.jar:log4j-1.2.9.jar:jbossall-client.jar:axis.jar:activation.jar:mail.jar:c3p0-0.9.1.2.jar:java_memcached-release_2.0.1.jar:mysql-connector-java-5.1.7-bin.jar:jedis-1.3.2-jdk1.5.jar:simmetrics_jar_v1_6_2_d07_02_07.jar"
+		        cmd_run="com.projectgoth.fusion.botservice.BotServiceMain /usr/fusion/etc/BotServer.cfg"
+		    ;;
+			SessionCache)
+				cmd_param="${GLOBAL_DIRECTIVES} -Xmx256M -Dlog.filename=sessioncache -Dcom.sun.management.jmxremote.port=2229 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false"
+				cmd_cp="-cp :etc:Fusion.jar:/usr/share/java/Ice.jar:spring-2.5.5.jar:c3p0-0.9.1.2.jar:mysql-connector-java-5.1.7-bin.jar:commons-logging-1.1.1.jar:log4j-1.2.9.jar:aspectjrt.jar:java_memcached-release_2.0.1.jar"
+				cmd_run="com.projectgoth.fusion.sessioncache.Main"
+			;;
+			*)
+				echo $"Invalid application specified: $Mig33_APP"
+				exit 1
+		esac
+}
+
+start_app()
+{
+	[ ! -f ${Mig33_RUN} ] && return 0
+
+	if [ -f ${LOCKFILE} ]; then
+		status_app
+		RETVAL=$?
+		[ "$RETVAL" -eq 2 ] && rm -f ${LOCKFILE}
+	fi
+
+	if [ ! -f ${LOCKFILE} ]; then
+
+		echo -n "Starting Mig33 ${Mig33_APP} Application: "
+
+		touch ${LOCKFILE}
+
+		cd $Mig33_BINDIR
+
+		prep_app
+
+		${cmd_ulimit}
+		echo initlog -c "/usr/bin/java -server ${cmd_param} ${cmd_cp} ${cmd_run}" 
+		/usr/bin/java -server ${cmd_param} ${cmd_cp} ${cmd_run} 2>/dev/null &
+
+		RETVAL=$?
+		echo $" OK."
+		
+	else
+		echo $"lockfile for ${LOCKFILE} already exists..."
+		RETVAL=1
+
+
+	fi
+	return $RETVAL
+	echo
+}
+
+stop_app()
+{
+	
+	echo -n $"Shutting down Mig33 $Mig33_APP: "
+
+	local watch
+	watch=$Mig33_APP
+	case "$watch" in
+		GatewayHTTP)
+			watch="GatewayHTTP.cfg"
+			;;
+		GatewayTCP)
+			watch="GatewayTCP.cfg"
+			;;
+		ObjectCache)
+			watch="ObjectCache.cfg"
+		;;
+		ObjectCache2)
+			watch="ObjectCache2.cfg"
+		;;
+		ObjectCache3)
+			watch="ObjectCache3.cfg"
+		;;
+		ObjectCache4)
+			watch="ObjectCache4.cfg"
+		;;
+		SessionCache)
+			watch="sessioncache.Main"
+		;;
+	esac
+
+	RETVAL=1
+
+	pslist=$( ps -ef | grep java | grep $watch | grep -v initlog| awk '{print $2}' | tr '\n' ' ' | sed -E s/\ $// )
+	for pid in ${pslist}
+	do
+		if checkpid $pid 2>&1; then
+			# TERM first, then KILL if not dead
+			kill -TERM $pid >/dev/null 2>&1
+			sleep 1
+			if checkpid $pid && sleep 5 &&
+				checkpid $pid && sleep 5 &&
+				checkpid $pid ; then
+					kill -KILL $pid >/dev/null 2>&1
+					sleep 15
+			fi
+		fi
+		checkpid $pid
+		RETVAL=$?
+		[ "$RETVAL" -eq 0 ] && echo "Failed" || echo "OK"
+	done
+
+	rm -f  ${LOCKFILE}
+
+	[ "$RETVAL" -eq 0 ] && return 1 || return 0
+
+}
+
+status_app()
+{
+	local watch
+	watch=$Mig33_APP
+	case "$watch" in
+		GatewayHTTP)
+			watch="GatewayHTTP.cfg"
+		;;
+		GatewayTCP)
+			watch="GatewayTCP.cfg"
+		;;
+		ObjectCache)
+			watch="ObjectCache.cfg"
+		;;
+		ObjectCache2)
+			watch="ObjectCache2.cfg"
+		;;
+		ObjectCache3)
+			watch="ObjectCache3.cfg"
+		;;
+		ObjectCache4)
+			watch="ObjectCache4.cfg"
+		;;
+		SessionCache)
+			watch="sessioncache.Main"
+		;;
+	esac
+
+	pslist=$( ps -ef | grep java | grep $watch | grep -v initlog| awk '{print $2}' | tr '\n' ' ' | sed -e s/\ $// )
+	if [ -n "$pslist" ]; then
+		echo $"Mig33: $Mig33_APP pid [$pslist] is running"
+		if [ ! -f ${LOCKFILE} ]; then
+			echo $"Mig33: Running, but no lock file \(${LOCKFILE}\)"
+		fi
+		[ -f ${Mig33_RUN} ] && return 0 || return 3
+	fi
+	if [ -f ${LOCKFILE} ]; then
+		echo $"Mig33: $Mig33_APP dead but subsys locked"
+		[ ! -f ${Mig33_RUN} ] && return 0 || return 2
+	fi
+	echo "Mig33: $Mig33_APP is stopped"
+	[ ! -f ${Mig33_RUN} ] && return 0 || return 3
+}
+
+# See how we were called.
+case "$1" in
+  start)
+		start_app
+	;;
+  stop)
+		stop_app
+	;;
+  status)
+		status_app
+	;;
+  restart|reload)
+		stop_app
+		start_app
+	;;
+  condrestart)
+		[ -e /var/lock/subsys/${LOCKFILE} ] && (stop_app; start_app)
+	;;
+  *)
+		echo $"Usage: $0 {start|stop|status|restart|reload|condrestart}"
+		exit 1
+	;;
+esac
+
+exit $?
+

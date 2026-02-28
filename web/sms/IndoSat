@@ -1,0 +1,68 @@
+<?
+/*
+	Example of a MO SMS:
+	
+	msisdn=6285765145858&sms=MIGI&trx_time=20090618161035170&transid=628576514585820090618161035170
+	
+	Example of a delivery report:
+	
+	time=20090619111550818&tid=628564300243520090619111544001&dest=6285643002435&serviceid=67600001008008&status=2
+*/
+
+require_once($_SERVER['DOCUMENT_ROOT'] . "/common/common-inc.php");
+
+header("Content-type: text/plain");
+
+try {
+	$receiver = '676';
+	
+	if (!empty($_POST['msisdn']))
+		$sender = $_POST['msisdn'];
+	elseif (!empty($_GET['msisdn']))
+		$sender = $_GET['msisdn'];
+		
+	if (!empty($_POST['sms']))
+		$text = $_POST['sms'];
+	elseif (!empty($_GET['sms']))
+		$text = $_GET['sms'];
+	
+	if (!empty($_POST['substype']))
+		$isPrepaidNumber = ($_POST['substype'] == "20");
+	elseif (!empty($_GET['substype']))
+		$isPrepaidNumber = ($_GET['substype'] == "20");
+	else
+		$isPrepaidNumber = true;
+						
+	if (!empty($sender) && !empty($text)) {
+		soap_call_ejb('processMobileOrignatedSMS', array($receiver, $sender, $text, $isPrepaidNumber, getRemoteIPAddress()));
+		print 'OK';
+	}
+	else {
+		if (!empty($_POST['tid']))
+			$transactionID = $_POST['tid'];
+		elseif (!empty($_GET['tid']))
+			$transactionID = $_GET['tid'];
+		
+		if (!empty($_POST['dest']))
+			$destination = $_POST['dest'];
+		elseif (!empty($_GET['dest']))
+			$destination = $_GET['dest'];
+		
+		if (!empty($_POST['status']))
+			$status = $_POST['status'];
+		elseif (!empty($_GET['status']))
+			$status = $_GET['status'];
+		
+		if (!empty($transactionID) && !empty($destination) && !empty($status)) {
+			settype($status, "integer");
+			soap_call_ejb('processSMSDeliveryReport', array($transactionID, $destination, $status, getRemoteIPAddress(), getSessionID(), getMobileDevice(), getUserAgent()));
+			print 'OK';
+		}
+		else {
+			print 'ERROR';
+		}
+	}
+} catch (Exception $e) {
+	print 'ERROR';
+}
+?>

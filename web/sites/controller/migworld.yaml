@@ -1,0 +1,92 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+    json:
+      name: common.json
+
+home:
+  function: home
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: home
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - is_enabled ?
+    - avatar.avatar
+    - notification.notifications
+    - (midlet) contacts.num_friends_online
+    - snippets
+    - mobpage
+    - (midlet) store.promoted_groups
+    - bot.bot_list
+
+details:
+  function: redirect_discover
+
+details2:
+  function: redirect_discover
+  decorators:
+    midlet:
+      name: common.midlet
+      page_title: migWorld
+    ajax:
+      name: common.ajax
+      body_class: page
+      page_title: migWorld
+  view:
+    name: details
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - avatar.avatar
+    - details
+
+get_page:
+  decorators:
+    midlet:
+      name: common.midlet
+      page_title: migWorld
+  view:
+    name: get_page
+  components:
+    - common.user
+    - profile.profile
+    - common.privacy
+    - avatar.avatar
+    - wordpress.get_page
+
+get_mobpage:
+  function: new_migworld
+  components:
+    - common.user
+
+get_wappage:
+  view:
+    name: get_wappage
+  components:
+    - common.user
+    - wappage
+
+get_touchpage:
+  view:
+    name: get_touchpage
+  components:
+    - common.user
+    - profile.profile
+    - touchpage
+
+get_decorator:
+  view:
+    name: get_page
+  components:
+    - common.user

@@ -1,0 +1,65 @@
+<?
+require_once($_SERVER['DOCUMENT_ROOT'] . "/common/common-inc.php");
+
+header("Content-type: text/plain");
+$xmlstr =  file_get_contents("php://input");
+
+if (strlen($xmlstr) > 0)
+{
+
+	$xml = new SimpleXMLElement($xmlstr);
+	foreach ($xml->message as $message) {
+	   $receiver = (string)$message->receiver;
+	   $sender = (string)$message->sender;
+	   $text = (string)$message->text;
+	   $isPrepaidNumber = false;
+		if (preg_match("/(^anc|^a n c|^a\.n\.c|^bob)/i", $text) > 0)
+			sendGroupURL($sender, 'ANC', 'anc');
+		else if (preg_match("/(^udm|^u d m|^u\.d\.m)/i", $text) > 0)
+			sendGroupURL($sender, 'UDM', 'udm');
+		else if (preg_match("/(^cope|^c o p e|^c\.o\.p\.e)/i", $text) > 0)
+			sendGroupURL($sender, 'COPE', 'cope');
+		else if (preg_match("/(^da|^d a|^d\.a)/i", $text) > 0)
+			sendGroupURL($sender, 'DA', 'da');
+		else if (preg_match("/(^id|^i d|^i\.d)/i", $text) > 0)
+			sendGroupURL($sender, 'ID', 'id');
+		else if (preg_match("/(^ifp|^i f p|^i\.f\.p)/i", $text) > 0)
+			sendGroupURL($sender, 'IFP', 'ifp');
+		else if (preg_match("/(^cricket|^criket|^cricet)/i", $text) > 0)
+			sendGroupURL($sender, 'Cricket Fans', 'cricket');
+		else if (preg_match("/(^rr|^rajasthan|^royals)/i", $text) > 0)
+			sendGroupURL($sender, 'Rajasthan Royals Unofficial', 'rr');
+		else if (preg_match("/(^csk|^chennai|^super kings|^superkings)/i", $text) > 0)
+			sendGroupURL($sender, 'Chennai Super Kings Unofficial', 'csk');
+		else if (preg_match("/(^dc|^deccan|^chargers)/i", $text) > 0)
+			sendGroupURL($sender, 'Deccan Chargers Unofficial', 'dc');
+		else if (preg_match("/(^dd|^delhi|^daredevil)/i", $text) > 0)
+			sendGroupURL($sender, 'Delhi Daredevils', 'dd');
+		else if (preg_match("/(^kxip|^kp|^xi|^xl|^x1|^punjab|^kings)/i", $text) > 0)
+			sendGroupURL($sender, 'Kings XI Punjab Unofficial', 'kxip');
+		else if (preg_match("/(^mi|^mumbai|^indian)/i", $text) > 0)
+			sendGroupURL($sender, 'Mumbai Indians Unofficial', 'mi');
+		else if (preg_match("/(^rc|^royal|^bangalore)/i", $text) > 0)
+			sendGroupURL($sender, 'Bangalore Royal Challengers Unofficial', 'rc');
+		else if (preg_match("/(^kkr|^kolkata|^knight|^riders)/i", $text) > 0)
+			sendGroupURL($sender, 'Kolkata Knight Riders Unofficial', 'kkr');
+		else
+			$status = soap_call_ejb('processMobileOrignatedSMS', array($receiver, $sender, $text, $isPrepaidNumber, getRemoteIPAddress()));
+	}
+}
+else 
+{
+	header("HTTP/1.1 500 Internal Server Error");
+}
+
+function sendGroupURL($sender, $groupName, $urlSuffix) {
+	$messageText = urlencode('Welcome to the ' . $groupName . ' group on mig33. Go to http://m.mig33.com/' . $urlSuffix . ' on your phone to join, download and get involved');
+	$clickatellURL = 'http://api.clickatell.com/http/sendmsg?user=goth&password=gothic123&from=447717989963&to=' . $sender . '&text=' . $messageText . '&api_id=1355967';
+
+	$curl_handle = curl_init();
+	curl_setopt($curl_handle, CURLOPT_URL, $clickatellURL);
+	curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
+	$return = curl_exec($curl_handle);
+	curl_close($curl_handle);
+}
+?>

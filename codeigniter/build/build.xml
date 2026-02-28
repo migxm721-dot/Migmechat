@@ -1,0 +1,63 @@
+<project name="mig33Web" default="dist" basedir=".">
+    <property name="sh" location="/bin/bash" />
+    <property name="python" location="/usr/bin/python" />
+
+    <target name="dist">
+        <antcall target="gettext-ci" />
+        <antcall target="gettext-migbo" />
+        <antcall target="gettext-register" />
+        <antcall target="gettext-login" />
+        <antcall target="mergepot" />
+    </target>
+
+    <target name="gettext-ci">
+        <exec executable="${sh}">
+            <arg value="scripts/gettext.sh" />
+            <arg value="codeigniter" />
+            <arg value="/var/www/codeigniter/packages/mig33" />
+            <arg value="/var/www/codeigniter/packages/mig33/language" />
+        </exec>
+    </target>
+    <target name="gettext-migbo">
+        <exec executable="${sh}">
+            <arg value="scripts/gettext.sh" />
+            <arg value="migbo" />
+            <arg value="/var/www/migbo/application" />
+            <arg value="/var/www/codeigniter/packages/mig33/language" />
+        </exec>
+    </target>
+    <target name="gettext-register">
+        <exec executable="${sh}">
+            <arg value="scripts/gettext.sh" />
+            <arg value="register" />
+            <arg value="/var/www/register/application" />
+            <arg value="/var/www/codeigniter/packages/mig33/language" />
+        </exec>
+        <exec executable="${python}">
+            <arg value="scripts/gettext-tpl.py" />
+            <arg value="register-tpl" />
+            <arg value="/var/www/register/application" />
+            <arg value="/var/www/codeigniter/packages/mig33/language" />
+        </exec>
+    </target>
+    <target name="gettext-login">
+        <exec executable="${sh}">
+            <arg value="scripts/gettext.sh" />
+            <arg value="login" />
+            <arg value="/var/www/login/application" />
+            <arg value="/var/www/codeigniter/packages/mig33/language" />
+        </exec>
+        <exec executable="${python}">
+            <arg value="scripts/gettext-tpl.py" />
+            <arg value="login-tpl" />
+            <arg value="/var/www/login/application" />
+            <arg value="/var/www/codeigniter/packages/mig33/language" />
+        </exec>
+    </target>
+    <target name="mergepot">
+        <exec executable="${sh}">
+            <arg value="scripts/mergepot.sh" />
+            <arg value="/var/www/codeigniter/packages/mig33/language" />
+        </exec>
+    </target>
+</project>

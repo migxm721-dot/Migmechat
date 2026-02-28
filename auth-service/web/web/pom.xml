@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.projectgoth.auth</groupId>
+		<artifactId>auth-web-parent</artifactId>
+		<version>0.2.29-SNAPSHOT</version>
+	</parent>
+  
+	<artifactId>auth-web</artifactId>
+    <packaging>war</packaging>
+
+	<name>Auth Web</name>
+	
+	<properties>
+		<httpPort>9090</httpPort>
+		<httpsPort>9443</httpsPort>
+		<parent_path>/</parent_path>
+	</properties>
+	
+    <dependencies>
+		<dependency>
+			<groupId>com.projectgoth.auth</groupId>
+		    <artifactId>auth-web-core</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>	<!-- org.glassfish.jersey.servlet.ServletContainer -->	
+			<groupId>org.glassfish.jersey.containers</groupId>
+			<artifactId>jersey-container-servlet-core</artifactId>
+			<version>${version.jersey}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.ext</groupId>
+			<artifactId>jersey-mvc-jsp</artifactId>
+			<version>${version.jersey}</version>
+		</dependency>
+
+        <dependency>	 <!-- javax.servlet.http.* -->
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>7.0</version>
+    		<scope>provided</scope>
+		</dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.4</version>
+            <scope>provided</scope>
+        </dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+    </dependencies>
+    
+	<build>
+	    <!-- Name of the war file -->
+		<finalName>auth-web</finalName>
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<configuration>
+					<port>${httpPort}</port>
+					<path>${parent_path}</path>
+					<httpsPort>${httpsPort}</httpsPort>
+					<keystoreFile>${basedir}/ssl/miab.p12</keystoreFile>
+					<keystorePass>changeit</keystorePass>
+					<keystoreType>PKCS12</keystoreType>
+				</configuration>
+			</plugin>
+		</plugins>
+
+	</build>
+	
+</project>

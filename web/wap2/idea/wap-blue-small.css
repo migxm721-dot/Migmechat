@@ -1,0 +1,71 @@
+body{font-size:medium;}
+
+/* Headers */
+h1{font-size:1.1em;line-height:18px;}
+h2 {font-size:1em;}
+h3 {font-size:1em;}
+h4 {font-size:1em;}
+.header1 {font-size: 12px; }
+.title { font-size: 12px; }
+
+/* Commons */
+
+
+/* Misc */
+.small{font-size:small;}
+
+/* Layouts */
+#footer {font-size: small;}
+
+/* Forms */
+form label {font-size: medium}
+form input, textarea {font-size:small;}
+form .sec {font-size:small;}
+
+/* Sections */
+.section {font-size:medium}
+.section h2 {font-size: medium;}
+
+
+/* Highlights */
+.focus {padding:2px; margin:2px 0;background:#d3ffad url(../images/wap/box_green_bg.gif) left bottom repeat-x;border: 1px solid #8ce730;}
+.focus h2 {margin:-2px;background:#1FA9DB;color:#fff;padding: 1px 0;}
+.focus h3 {margin:0;}
+.positive {background:#eefbff url(../images/wap/box_blue_bg.gif) left bottom repeat-x;border: 1px solid #8ac2e9;padding: 0.2em; margin: 0 0 0.4em;}
+.banner {margin-bottom: 2px;background: #000;}
+
+
+/* Tabs */
+#wap_header_tabs {font-size: small;}
+.wap_header_tab_selected a:link, 
+.wap_header_tab_selected a:visited{font-weight: normal;}
+
+.dropdown {
+	outline-color: #2B79C2;
+}
+
+.textbox {
+	outline-color: #2B79C2;
+}
+
+
+/* Notifications/highlights */
+.notif{	font-size:small; }
+.highlight { font-size:small; }
+
+
+/* Store */
+.product-category { font-size: 10px; }
+.num-sold{ font-size:11px; }
+.price {font-size:11px;}
+.secondary { font-size: 10px; }
+
+
+/* Nav stuff */ 
+.navbar { font-size: medium; }
+.nav-back { font-size: 75%; }
+
+/* Quick Access */
+
+/* Grid CSS */
+.grid-box-text { font-size: 90%; }

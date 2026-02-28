@@ -1,0 +1,21 @@
+# BEGIN Redirect
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)-([0-9]+)$ $1 [R=301,L]
+Redirect /merchant-resources http://merchant.mig33.com/web/business_support/kits
+Redirect /support/merchant-help/mig33-merchant-certification-program http://merchant.mig33.com/business_support/quest
+</IfModule>
+# END Redirect
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

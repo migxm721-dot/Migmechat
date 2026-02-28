@@ -1,0 +1,855 @@
+all:
+  decorators:
+    wap:
+      name: common.migbo_wap
+    corporate:
+      name: merchant_corporate_space_blue
+    midlet:
+      name: decorator
+    touch:
+      name: common.touch
+    json:
+      name: common.json
+
+balance:
+  view:
+    name: balance
+  components:
+    - common.user
+    - merchant_session ?
+
+#dashboard
+
+dashboard:
+  view:
+    name: dashboard
+  components:
+    - common.user
+    - merchant_session ?
+    - dashboard
+    - merchant
+    - merchant_performance
+    - merchant_ranking
+    - account.account_transactions
+    - account.account_transactions_summary
+    - get_starter_discount
+    - get_invite_count
+    - top_merchants
+    - avatar.avatar
+    - account.get_balance
+    - local_bank_deposit_available
+
+transactions:
+  view:
+    name: account_transactions
+  components:
+    - common.user
+    - merchant_session ?
+    - account.account_transactions
+    - account.account_transactions_summary
+    - account.get_account_transactions_month_and_year
+    - get_invite_count
+    - account.get_balance
+    - local_bank_deposit_available
+
+export_transactions:
+  decorators:
+    corporate:
+      name: xls_export
+      filename: transactions.csv
+  view:
+    name: export_transactions
+  components:
+    - common.user
+    - merchant_session ?
+    - account.account_transactions
+    - account.account_transactions_summary
+    - account.get_account_transactions_month_and_year
+    - get_invite_count
+    - account.get_balance
+    - local_bank_deposit_available
+
+modify_account:
+  view:
+    name: modify_account_details
+  components:
+    - common.user
+    - merchant_session ?
+    - modify_account_details
+    - account.get_balance
+    - local_bank_deposit_available
+
+modify_account_submit:
+  view:
+    name: modify_account_details
+  components:
+    - common.user
+    - merchant_session ?
+    - modify_account_details_submit
+    - account.get_balance
+    - local_bank_deposit_available
+    - modify_merchant_account_submit ?
+
+quest_report:
+  view:
+    name: quest_report
+  components:
+    - common.user
+    - merchant_session ?
+
+sms:
+  view:
+    name: sms
+  components:
+    - common.user
+    - merchant_session ?
+    - sms.sms_history
+    - sms.get_sms_month_and_year
+    - account.get_balance
+    - local_bank_deposit_available
+
+export_sms:
+  decorators:
+    corporate:
+      name: xls_export
+      filename: transactions.csv
+  view:
+    name: export_sms
+  components:
+    - common.user
+    - merchant_session ?
+    - sms.sms_history
+    - sms.get_sms_month_and_year
+    - account.get_balance
+    - local_bank_deposit_available
+
+top_merchants:
+  view:
+    name: top_merchants
+  components:
+    - common.user
+    - merchant_session ?
+    - top_merchants
+    - account.get_balance
+    - local_bank_deposit_available
+
+tags:
+  view:
+    name: tags
+  components:
+    - common.user
+    - merchant_session ?
+    - tag_details ?
+    - tags
+    - account.get_balance
+    - local_bank_deposit_available
+
+export_tags:
+  decorators:
+    corporate:
+      name: xls_export
+      filename: tags.csv
+  view:
+    name: export_tags
+  components:
+    - common.user
+    - merchant_session ?
+    - tags
+    - account.get_balance
+    - local_bank_deposit_available
+
+# sell credits
+
+bonus_calculator:
+  view:
+    name: bonus_calculator
+  components:
+    - common.user
+    - merchant_session ?
+    - account.get_balance
+    - local_bank_deposit_available
+
+bonus_calculator_submit:
+  view:
+    name: bonus_calculator
+  components:
+    - common.user
+    - merchant_session ?
+    - bonus_calculator ?
+    - bonus_calculator
+    - account.get_balance
+    - local_bank_deposit_available
+
+sell_credits:
+  view:
+    name: sell_credits
+  components:
+    - common.user
+    - merchant_session ?
+    - account.get_balance
+    - local_bank_deposit_available
+
+vouchers:
+  view:
+    name: vouchers
+  components:
+    - common.user
+    - merchant_session ?
+    - voucher.get_vouchers
+    - account.get_balance
+    - local_bank_deposit_available
+
+voucher_batch:
+  view:
+    name: voucher_batch
+  components:
+    - common.user
+    - merchant_session ?
+    - voucher.get_voucher_batch
+    - account.get_balance
+    - local_bank_deposit_available
+
+find_voucher:
+  view:
+    name: find_voucher
+  components:
+    - common.user
+    - merchant_session ?
+    - find_voucher ?
+    - voucher.find_voucher
+    - account.get_balance
+    - local_bank_deposit_available
+
+create_voucher:
+  view:
+    name: create_voucher
+  components:
+    - common.user
+    - merchant_detail
+    - voucher.init_voucher
+    - merchant_session ?
+    - voucher.create_voucher
+    - account.get_balance
+    - local_bank_deposit_available
+
+create_voucher_submit:
+  function: create_voucher_submit
+  components:
+    - common.user
+    - voucher.init_voucher
+    - merchant_session ?
+    - create_voucher_submit_pre ?
+    - voucher.create_voucher_submit
+    - account.get_balance
+    - local_bank_deposit_available
+    - create_voucher_submit ?
+
+export_voucher:
+  decorators:
+    corporate:
+      name: xls_export
+      filename: vouchers.csv
+  view:
+    name: export_vouchers
+  components:
+    - common.user
+    - merchant_session ?
+    - voucher.export_voucher
+    - account.get_balance
+    - local_bank_deposit_available
+
+activate_batch:
+  view:
+    name: voucher_batch
+  components:
+    - common.user
+    - merchant_session ?
+    - voucher.activate_batch_voucher
+    - voucher.get_voucher_batch
+    - account.get_balance
+    - local_bank_deposit_available
+
+deactivate_batch:
+  view:
+    name: voucher_batch
+  components:
+    - common.user
+    - merchant_session ?
+    - voucher.deactivate_batch_voucher
+    - voucher.get_voucher_batch
+    - account.get_balance
+    - local_bank_deposit_available
+
+cancel_batch:
+  view:
+    name: voucher_batch
+  components:
+    - common.user
+    - merchant_session ?
+    - voucher.cancel_batch_voucher
+    - voucher.get_voucher_batch
+    - account.get_balance
+    - local_bank_deposit_available
+
+deactivate_voucher:
+  view:
+    name: voucher_batch
+  components:
+    - common.user
+    - merchant_session ?
+    - voucher.deactivate_voucher
+    - voucher.get_voucher_batch
+    - account.get_balance
+    - local_bank_deposit_available
+
+activate_voucher:
+  view:
+    name: voucher_batch
+  components:
+    - common.user
+    - merchant_session ?
+    - voucher.activate_voucher
+    - voucher.get_voucher_batch
+    - account.get_balance
+    - local_bank_deposit_available
+
+cancel_voucher:
+  view:
+    name: voucher_batch
+  components:
+    - common.user
+    - merchant_session ?
+    - voucher.cancel_voucher
+    - voucher.get_voucher_batch
+    - account.get_balance
+    - local_bank_deposit_available
+
+modify_notes:
+  function: modify_notes
+  view:
+    name: modify_notes
+  components:
+    - common.user
+    - merchant_session ?
+    - modify_notes ?
+    - voucher.is_voucher_batch_owner
+    - voucher.modify_notes
+    - account.get_balance
+    - local_bank_deposit_available
+
+modify_notes_submit:
+  function: modify_notes_submit
+  view:
+    name: modify_notes
+  components:
+    - common.user
+    - merchant_session ?
+    - modify_notes_submit ?
+    - voucher.is_voucher_batch_owner
+    - voucher.modify_notes_submit
+    - account.get_balance
+    - local_bank_deposit_available
+
+transfer_credit:
+  view:
+    name: transfer_credit
+  decorators:
+    corporate:
+      name: merchant_corporate_yui_space_blue
+      body_class: yui-skin-sam
+  components:
+    - common.user
+    - merchant_session ?
+    - merchant_detail
+    - account.get_possible_credit_recipients
+    - account.transfer_credit
+    - account.get_balance
+    - local_bank_deposit_available
+
+transfer_credit_confirm:
+  view:
+    name: transfer_credit_confirm
+  decorators:
+    corporate:
+      name: merchant_corporate_yui_space_blue
+      body_class: yui-skin-sam
+  components:
+    - common.user
+    - common.generic_captcha
+    - merchant_detail
+    - merchant_session ?
+    - account.account_transfer_credit_confirm ?
+    - account.transfer_credit_confirm
+    - account.get_balance
+    - local_bank_deposit_available
+
+transfer_credit_submit:
+  function: transfer_credit_submit
+  view:
+    name: transfer_credit_success
+  components:
+    - common.user
+    - merchant_detail
+    - merchant_session ?
+    - account.account_transfer_credit ?
+    - account.transfer_credit_submit
+    - account.get_details
+    - account.get_balance
+    - local_bank_deposit_available
+    - account.account_transfer_credit_submit ?
+
+# customers
+
+create_user:
+  view:
+    name: quick_create_merchant
+  components:
+    - common.user
+    - merchant_session ?
+    - common.generic_captcha
+    - quick_create_merchant
+    - account.get_balance
+    - local_bank_deposit_available
+
+create_user_submit:
+  function: create_user_submit
+  view:
+    name: quick_create_merchant_success
+  components:
+    - common.user
+    - merchant_session ?
+    - create_user ?
+    - quick_create_merchant_submit
+    - account.get_balance
+    - local_bank_deposit_available
+
+invite_customer:
+  view:
+    name: invite_customer
+  components:
+    - common.user
+    - merchant_session ?
+    - invite.invite_by_email
+    - account.get_balance
+    - local_bank_deposit_available
+
+customers:
+  view:
+    name: customers
+  components:
+    - common.user
+    - merchant_session ?
+    - customer_search
+    - account.get_balance
+    - local_bank_deposit_available
+
+customer_profile:
+  view:
+    name: customer_profile
+  components:
+    - common.user
+    - merchant_session ?
+    - customer_profile
+    - customer_transaction_summary
+    - customer_transactions
+    - account.get_balance
+    - local_bank_deposit_available
+
+# merchant network
+
+merchant_network:
+  view:
+    name: merchant_network
+  components:
+    - common.user
+    - merchant_session ?
+    - merchant
+    - get_mentor
+    - merchant_network
+    - account.get_balance
+    - local_bank_deposit_available
+
+merchant_profile:
+  view:
+    name: merchant_profile
+  components:
+    - common.user
+    - merchant_session ?
+    - merchant
+    - customer_transaction_summary
+    - customer_transactions
+    - account.get_balance
+    - local_bank_deposit_available
+
+# buy credits
+
+buy_credits:
+  view:
+    name: buy_credits
+  components:
+    - common.user
+    - merchant_session ?
+    - buy_credits
+    - account.get_balance
+    - local_bank_deposit_available
+
+bank_transfer_info:
+  view:
+    name: bank_transfer_info
+  decorators:
+    corporate:
+      name: merchant_corporate_yui_space_blue
+      body_class: yui-skin-sam
+  components:
+    - common.user
+    - merchant_session ?
+    - account.get_balance
+    - local_bank_deposit_available
+
+bank_deposit_form:
+  view:
+    name: bank_transfer
+  components:
+    - common.user
+    - merchant_session ?
+    - account.bank_deposit_form
+    - account.get_balance
+    - local_bank_deposit_available
+
+bank_transfer_submit:
+  function: bank_transfer_submit
+  components:
+    - common.user
+    - merchant_session ?
+    - account.account_bank_deposit ?
+    - account.bank_deposit_form_submit
+    - account.get_balance
+    - local_bank_deposit_available
+
+show_bank_transfer_success_details:
+  view:
+    name: bank_transfer_success
+  components:
+    - common.user
+    - merchant_session ?
+    - get_bank_transfer_success_details
+    - account.get_balance
+    - local_bank_deposit_available
+
+tt_info:
+  decorators:
+    corporate:
+      name: merchant_corporate_yui_space_blue
+      body_class: yui-skin-sam
+  view:
+    name: telegraphic_transfer_info
+  components:
+    - common.user
+    - merchant_session ?
+    - account.get_balance
+    - local_bank_deposit_available
+
+tt_form:
+  view:
+    name: telegraphic_transfer
+  components:
+    - common.user
+    - merchant_session ?
+    - account.get_balance
+    - local_bank_deposit_available
+    - account.get_balance
+    - local_bank_deposit_available
+
+tt_form_submit:
+  view:
+    name: telegraphic_transfer_success
+  components:
+    - common.user
+    - merchant_session ?
+    - account.account_telegraphic_transfer ?
+    - account.tt_form_submit
+    - account.get_balance
+    - local_bank_deposit_available
+
+western_union_info:
+  decorators:
+    corporate:
+      name: merchant_corporate_yui_space_blue
+      body_class: yui-skin-sam
+  view:
+    name: western_union_transfer_info
+  components:
+    - common.user
+    - merchant_session ?
+    - account.get_balance
+    - local_bank_deposit_available
+
+western_union_form:
+  view:
+    name: western_union_transfer
+  components:
+    - common.user
+    - merchant_session ?
+    - profile.profile
+    - account.western_union_form
+    - account.get_balance
+    - local_bank_deposit_available
+
+western_union_form_submit:
+  function: western_union_form_submit
+  view:
+    name: western_union_transfer_success
+  components:
+    - common.user
+    - merchant_session ?
+    - account.account_western_union ?
+    - account.western_union_form_submit
+    - account.get_balance
+    - local_bank_deposit_available
+
+credit_debit:
+  decorators:
+    corporate:
+      name: merchant_corporate_yui_space_blue
+      body_class: yui-skin-sam
+  view:
+    name: cc_transfer
+  components:
+    - common.user
+    - (wap,ajax,corporate,touch) common.https_only ?
+    - merchant_session ?
+    - account.credit_debit_form
+    - account.get_balance
+    - local_bank_deposit_available
+
+credit_debit_form_submit:
+  function: credit_debit_form_submit
+  view:
+    name: cc_transfer_success
+  components:
+    - common.user
+    - (wap,ajax,corporate,touch) common.https_only ?
+    - merchant_session ?
+    - account.account_credit_debit ?
+    - account.credit_debit_form_submit
+    - account.get_balance
+    - local_bank_deposit_available
+
+moneybookers:
+  view:
+    name: moneybooker_transfer_info
+  components:
+    - common.user
+    - merchant_session ?
+    - account.get_balance
+    - local_bank_deposit_available
+
+moneybookers_form:
+  view:
+    name: moneybooker_transfer
+  components:
+    - common.user
+    - merchant_session ?
+    - account.moneybookers_form
+    - account.get_balance
+    - local_bank_deposit_available
+
+moneybookers_status:
+  view:
+    name: moneybooker_transfer_status
+  components:
+    - common.user
+    - merchant_session ?
+    - account.moneybookers_deposit_status
+    - account.get_balance
+    - local_bank_deposit_available
+
+find_merchant:
+  view:
+    name: recharge_via_merchants
+  components:
+    - common.user
+    - merchant_session ?
+    - get_merchant_suggestions
+
+advertise:
+  view:
+    name: advertise
+  components:
+    - common.user
+    - merchant_session ?
+    - advertise
+    - account.get_balance
+    - local_bank_deposit_available
+
+advertise_submit:
+  view:
+    name: advertise_success
+  components:
+    - common.user
+    - merchant_session ?
+    - advertise ?
+    - advertise_submit
+    - account.get_balance
+    - local_bank_deposit_available
+
+advertise_confirm:
+  view:
+    name: advertise_confirm
+  components:
+    - common.user
+    - merchant_session ?
+    - advertise_confirm
+    - account.get_balance
+    - local_bank_deposit_available
+
+# signup from admob_campaign
+merchant_signup_campaign:
+  function: merchant_campaign
+  view:
+    name: signup_campaign
+  components:
+    - common.user return_here_upon_login
+    - merchant_no_active_session ?
+    - merchant_preferred_language
+
+merchant_submit_campaign:
+  function: merchant_signup_submit_campaign
+  view:
+    name: signup_campaign_success
+  components:
+    - common.user return_here_upon_login
+    - merchant_no_active_session ?
+    - merchant_signup_submit_campaign ?
+    - signup_campaign
+    - common.update_session
+    - account.get_balance
+    - local_bank_deposit_available
+
+merchant_signup_success_campaign:
+  view:
+    name: signup_campaign_success
+  components:
+    - common.user allow_no_session
+    - merchant_no_active_session ?
+    - common.update_session
+    - account.get_balance
+    - local_bank_deposit_available
+
+# signup
+
+merchant_signup:
+  view:
+    name: signup
+  decorators:
+    corporate:
+      name: merchant_corporate_v3
+  components:
+    - common.user allow_no_session
+    - merchant_no_active_session ?
+    - signup
+    - merchant_preferred_language
+    - account.get_balance
+    - local_bank_deposit_available
+
+merchant_signup_submit:
+  function: merchant_signup_submit
+  view:
+    name: signup_success
+  components:
+    - common.user allow_no_session
+    - merchant_signup_submit ?
+    - signup_submit
+    - common.update_session
+    - account.get_balance
+    - local_bank_deposit_available
+
+merchant_signup_success:
+  view:
+    name: signup_success
+  components:
+    - common.user allow_no_session
+    - common.update_session
+    - account.get_balance
+    - local_bank_deposit_available
+
+# merchant pin
+
+create_pin:
+  view:
+    name: create_pin
+  components:
+    - common.user
+    - merchant_detail
+    - merchant_session ?
+    - account.get_balance
+    - local_bank_deposit_available
+
+create_pin_confirm:
+  view:
+    name: create_pin_confirm
+  components:
+    - common.user
+    - merchant_session ?
+    - create_pin_confirm ?
+    - create_pin_confirm
+    - account.get_balance
+    - local_bank_deposit_available
+
+create_pin_submit:
+  view:
+    name: create_pin_submit
+  components:
+    - common.user
+    - merchant_session ?
+    - create_pin_submit ?
+    - create_pin
+    - email_pin_activation
+    - account.get_balance
+    - local_bank_deposit_available
+
+activate_pin:
+# No need to check if user has active session or not
+#  validation:
+#    pre:
+#      - merchant_no_active_session
+  view:
+    name: activate_pin
+  components:
+    - activate_pin
+    - account.get_balance
+    - local_bank_deposit_available
+
+recover_pin:
+  view:
+    name: recover_pin
+  components:
+    - common.user
+    - common.generic_captcha
+    - merchant_session ?
+    - get_secret_question
+    - account.get_balance
+    - local_bank_deposit_available
+
+recover_pin_submit:
+  view:
+    name: recover_pin_submit
+  components:
+    - common.user
+    - merchant_session ?
+    - recover_pin ?
+    - recover_pin
+    - account.get_balance
+    - local_bank_deposit_available
+
+dashboard_touch:
+  view:
+    name: dashboard
+  components:
+    - common.user
+    - account.get_balance
+    - local_bank_deposit_available
+
+sales_kit:
+  view:
+    name: sales_kit

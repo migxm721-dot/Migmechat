@@ -1,0 +1,283 @@
+all:
+  decorators:
+    corporate:
+      name: vas_loggedin
+
+home:
+  decorators:
+    corporate:
+      name: vas_not_loggedin
+  view:
+    name: home
+
+login:
+  function: login
+
+login_submit:
+  function: login
+
+#############
+# Agreements
+#############
+
+agreements:
+  view:
+    name: agreements
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - get_agreements
+
+view_agreement:
+  view:
+    name: agreement
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - get_agreement
+    - get_agreements
+
+view_agreement_stats_weekly:
+  view:
+    name: agreement_stats_weekly
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - get_agreement
+    - get_agreements
+    - get_agreement_stats_weekly
+
+view_agreement_stats_monthly:
+  view:
+    name: agreement_stats_monthly
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - get_agreement
+    - get_agreements
+    - get_agreement_stats_monthly
+
+view_agreement_stats_quarterly:
+  view:
+    name: agreement_stats_quarterly
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - get_agreement
+    - get_agreements
+    - get_agreement_stats_quarterly
+
+output_csv:
+  decorators:
+    corporate:
+      name: none
+  view:
+    name: output_csv
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - output_csv
+
+###########
+# VASWorld
+###########
+
+view_published:
+  view:
+    name: published_vasworld
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - get_published_vasworld
+
+edit_draft:
+  view:
+    name: vasworld_draft
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_editor ?
+    - get_vasworld_draft
+
+view_vasworld:
+  view:
+    name: view_vasworld
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_editor ?
+    - view_vasworld
+
+vasworld_draft_submit:
+  view:
+    name: vasworld_draft
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_editor ?
+    - vasworld_draft_submit
+    - get_vasworld_draft
+
+vasworld_status:
+  view:
+    name: vasworld_status
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_editor ?
+    - get_agreements
+    - get_vasworlds
+
+kbrowser_guide:
+  view:
+    name: kbrowser_guide
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+
+vasworld_action:
+  function: vasworld_action_redirect
+  view:
+    name: view_vasworld
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_editor ?
+    - vasworld_action
+
+get_vasworld:
+  decorators:
+    corporate:
+      name: none
+    midlet:
+      name: none
+  view:
+    name: vasworld
+  components:
+    - common.user
+    - vas_loggedin ?
+    - vasworld
+
+get_vasworld_draft:
+  decorators:
+    corporate:
+      name: none
+    midlet:
+      name: none
+  view:
+    name: vasworld_draft
+  components:
+    - common.user
+    - vas_loggedin ?
+    - vasworld_draft
+
+vasworld_drafts:
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: vasworld_drafts
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - vasworld_drafts
+
+published_vasworlds:
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: published_vasworlds
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - get_published_vasworlds
+
+##########
+# Members
+##########
+
+members:
+  view:
+    name: members
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_admin ?
+    - get_members
+
+add_user:
+  view:
+    name: add_user
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_admin ?
+
+add_user_submit:
+  view:
+    name: add_user
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_admin ?
+    - add_user ?
+    - add_user
+
+edit_user:
+  view:
+    name: edit_user
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_admin ?
+    - get_member
+
+edit_user_submit:
+  view:
+    name: members
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_admin ?
+    - edit_user
+    - get_members
+
+remove_user:
+  view:
+    name: members
+  components:
+    - common.user
+    - common.partner_detail
+    - vas_loggedin ?
+    - member_admin ?
+    - remove_user
+    - get_members
+
+######################
+# Services for builds
+######################
+
+android_main_menu_svc:
+  encode: json
+  function: get_vas_main_menu

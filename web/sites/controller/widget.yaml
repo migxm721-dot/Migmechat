@@ -1,0 +1,65 @@
+profile:
+  view:
+    name: profile
+  components:
+    - common.user
+    - common.flood_control 20/60
+    - profile.profile
+
+profile_header:
+  view:
+    name: profile_header
+  components:
+    - common.user
+    - common.flood_control 20/60
+    - common.user_permissions
+    - profile.profile
+    - avatar.user_avatar_setting
+    - avatar.avatar
+    - profile.record_footprint
+    - profile.footprint_count
+
+about_me:
+  view:
+    name: about_me
+  components:
+    - common.user
+    - profile.profile
+
+chatroom_info:
+  view:
+    name: chatroom_info
+  components:
+    - common.user
+    - chatroom.chatroom
+    - chatroom.room_details
+    - chatroom.moderators
+
+group_header_small:
+  view:
+    name: group_header_small
+  components:
+    - common.user
+    - group.group
+
+store_header:
+  view:
+    name: store_header
+  components:
+    - common.user
+    - account.get_balance
+
+virtual_gift_received_comment_header:
+  view:
+    name: virtual_gift_received_comment_header
+  components:
+    - common.user
+    - virtual_gift_received.gift
+
+account_header:
+  view:
+    name: account_header
+  components:
+    - common.user
+    - account.get_balance
+    - account.get_details

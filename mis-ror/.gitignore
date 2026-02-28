@@ -1,0 +1,4 @@
+.DS_Store
+ror/log/*
+ror/config/app.rb
+.idea

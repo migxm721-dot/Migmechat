@@ -1,0 +1,296 @@
+all:
+  decorators:
+    wap:
+      name: common.migbo_wap
+    ajax:
+      name: common.ajax
+    midlet:
+      name: common.midlet
+    touch:
+      name: common.touch
+    json:
+      name: common.json
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+    - get_balance
+    - payment.pending_transactions
+
+get_details:
+  view:
+    name: get_details
+  components:
+    - common.user
+    - get_details
+
+set_details:
+  view:
+    name: get_details
+  components:
+    - common.user
+    - account.account_update_details ?
+    - set_details
+    - get_details
+
+get_history:
+  view:
+    name: get_history
+  components:
+    - common.user
+    - get_history
+    - get_balance
+    - payment.pending_transactions
+
+recharge_credit:
+  view:
+    name: recharge_credit
+  components:
+    - common.user
+    - get_balance
+    - disable_ios_app_access ?
+    - recharge_credit
+    - merchant.local_bank_deposit_available
+    - get_other_available_payments
+
+# In-app credit recharge, not in used yet
+disabled_recharge_credit:
+  view:
+    name: disabled_recharge_credit
+  components:
+    - common.user
+
+recharge_credit_via_merchants:
+  view:
+    name: recharge_via_merchants
+  components:
+    - common.user
+    - get_merchant_suggestions
+    - get_balance
+
+recharge_credit_via_vouchers:
+  view:
+    name: recharge_via_vouchers
+  components:
+    - common.user
+    - get_available_voucher_payments
+
+recharge_credit_via_operators:
+  view:
+    name: recharge_via_operators
+  components:
+    - common.user
+
+recharge_credit_via_other_payments:
+  view:
+    name: recharge_via_other_payments
+  components:
+    - common.user
+    - get_other_available_payments
+
+transfer_credit:
+  view:
+    name: transfer_credit
+  components:
+    - common.user
+    - get_balance
+    - payment.pending_transactions
+
+transfer_credit_confirm:
+  view:
+    name: transfer_credit_confirm
+  components:
+    - common.user
+    - common.generic_captcha
+    - get_balance
+    - merchant.merchant_detail
+    - account.account_transfer_credit_confirm ?
+    - transfer_credit_confirm
+    - payment.pending_transactions
+
+transfer_credit_submit:
+  view:
+    name: transfer_credit_submit
+  components:
+    - common.user
+    - merchant.merchant_detail
+    - account.account_transfer_credit ?
+    - transfer_credit_submit
+    - get_balance
+    - account.account_transfer_credit_submit ?
+    - payment.pending_transactions
+
+bank_deposit:
+  view:
+    name: bank_deposit
+  components:
+    - common.user
+    - get_balance
+    - bank_deposit_form
+
+bank_deposit_form:
+  view:
+    name: bank_deposit_form
+  components:
+    - common.user
+    - get_balance
+    - bank_deposit_form
+
+bank_deposit_form_submit:
+  function: form_submit
+  view:
+    name: bank_deposit_summary
+  components:
+    - common.user
+    - account.account_bank_deposit ?
+    - bank_deposit_form_submit
+    - bank_deposit_summary
+
+redeem_voucher:
+  view:
+    name: redeem_voucher
+  components:
+    - common.user
+    - get_balance
+
+redeem_voucher_submit:
+  view:
+    name: redeem_voucher
+  components:
+    - common.user
+    - account.account_redeem_voucher ?
+    - redeem_voucher_submit
+    - get_balance
+
+moneybookers:
+  view:
+    name: moneybookers_info
+  components:
+    - common.user
+    - get_balance
+
+moneybookers_form:
+  view:
+    name: moneybookers_form
+  components:
+    - common.user
+
+moneybookers_result:
+  view:
+    name: moneybookers_result
+  components:
+    - common.user
+
+western_union:
+  view:
+    name: western_union
+  components:
+    - common.user
+    - western_union
+
+western_union_form:
+  view:
+    name: western_union_form
+  components:
+    - common.user
+    - get_balance
+    - profile.profile
+    - western_union_form
+
+western_union_form_submit:
+  view:
+    name: western_union_success
+  components:
+    - common.user
+    - account.account_western_union ?
+    - western_union_form_submit
+
+find_merchant:
+  view:
+    name: find_merchant
+  components:
+    - common.user
+    - recharge_credit
+    - find_merchant
+    - get_balance
+
+suggested_merchant:
+  view:
+    name: suggested_merchant
+  components:
+    - common.user
+    - recharge_credit
+    - suggested_merchant
+    - get_balance
+
+tt_info:
+  view:
+    name: tt_info
+  components:
+    - common.user
+
+tt_mig33_details:
+  view:
+    name: tt_mig33_details
+  components:
+    - common.user
+
+tt_history:
+  view:
+    name: tt_history
+  components:
+    - common.user
+    - tt_history
+
+tt_form:
+  view:
+    name: tt_form
+  components:
+    - common.user
+    - get_balance
+
+tt_form_submit:
+  view:
+    name: tt_form_submit
+  components:
+    - common.user
+    - account.account_telegraphic_transfer ?
+    - tt_form_submit
+
+credit_debit:
+  view:
+    name: credit_debit_form
+  components:
+    - common.user
+    - (ajax,wap,corporate,touch,ios,blackberry) common.https_only ?
+    - (ajax,wap,touch,ios,blackberry) common.get_registration_context_campaign
+    - credit_debit_form
+    - get_balance
+
+credit_debit_form_submit:
+  view:
+    name: credit_debit_form
+  components:
+    - common.user
+    - (ajax,wap,corporate,touch,ios,blackberry) common.https_only ?
+    - account.account_credit_debit ?
+    - credit_debit_form_submit
+    - credit_debit_form
+    - get_balance
+
+credit_debit_form_success:
+  view:
+    name: credit_debit_form
+  components:
+    - common.user
+    - credit_debit_form_success
+    - get_balance
+
+search_merchant:
+  view:
+    name: search_merchant
+  components:
+    - common.user
+    - search_merchant

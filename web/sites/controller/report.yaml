@@ -1,0 +1,29 @@
+all:
+  decorators:
+    wap:
+      name: common.migbo_wap
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: common.midlet
+    touch:
+      name: common.touch
+
+report_abuse:
+  view:
+    name: report_abuse
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - report_abuse
+
+report_abuse_submit:
+  view:
+    name: report_abuse_done
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - report_abuse_submit

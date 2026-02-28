@@ -1,0 +1,33 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    touch:
+      name: common.touch
+    midlet:
+      name: common.midlet
+    corporate:
+      name: merchant_corporate_space_blue
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+    - buzz
+
+buzz_user_submit:
+  view:
+    name: success
+  components:
+    - common.user
+    - buzz_user
+
+settings:
+  view:
+    name: settings
+  function: settings
+  components:
+    - common.user
+    - buzz_settings

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit 
+	verbose="true"
+	colors="true"
+	bootstrap="base.php"
+	stopOnError="true"
+	stopOnFailure="true"
+	stopOnSkipped="false"
+	stopOnIncomplete="false"
+>
+	<comments>
+		<![CDATA[
+			Run tests inside the tests folder:
+			$ cd tests
+
+			To run the full PHPUnit Test:
+			$ phpunit
+
+			To run a specific test case:
+			$ phpunit <file_to_run>
+
+			To run a specific test case from a group:
+			$ phpunit --group <group name>
+
+			** This PHPUnit test also runs a bootstrap file called base.php which
+			will add all the necessary files up.
+		]]>
+	</comments>
+	<php>
+        <var name="L_DB_DSN" value="mysql:dbname=fusion_test;host=localhost" />
+        <var name="L_DB_USER" value="fusion" />
+        <var name="L_DB_PWD" value="abalone5KG" />
+        <var name="L_DB_NAME" value="fusion_test" />
+    </php>
+	<testsuites>
+		<testsuite name="Main">
+			<directory>./</directory>
+		</testsuite>
+<!--		<testsuite name="common_dir">
+			<file>common/controller_definition.php</file>
+			<file>common/session_utilities.php</file>
+			<file>common/memcached.php</file>
+		</testsuite>
+		<testsuite name="lib_dir">
+			<file>lib/fusion/fusion_rest.php</file>
+			<file>lib/rest/rest_response.php</file>
+			<file>lib/shindig/mig33ActivityService.php</file>
+		</testsuite>
+		<testsuite name="domain_dir">
+			<file>domain/facebook/facebook.php</file>
+			<file>domain/twitter/twitter.php</file>
+		</testsuite>
+		<testsuite name="dao_dir">
+			<file>dao/invitation_dao.php</file>
+			<file>dao/oauth_dao.php</file>
+			<file>dao/user_dao.php</file>
+		</testsuite>-->
+	</testsuites>
+</phpunit>

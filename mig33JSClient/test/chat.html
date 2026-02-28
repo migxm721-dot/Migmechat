@@ -1,0 +1,328 @@
+<div id="chat" class="visible-lg">
+    <div class="chat-collapsed">
+        <div class="row">
+            <div class="col-md-3 no-padding-right">
+                <div class="toggle-chat-sidebar">
+                    <a href="#" onclick="$('.chat-collapsed', $('#chat')).hide();$('.chat-expanded', $('#chat')).show();">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9 no-padding-left">
+                <div class="chat-user-avatar text-center">
+                    <img src="http://img.qalab.projectgoth.com/a/lesterchan?w=64&h=64&a=1&c=1" width="64" height="64"
+                         class="img-circle"/>
+                </div>
+            </div>
+        </div>
+        <div class="chat-recent padding-4px text-center">
+            <span class="glyphicon glyphicon-comment"></span>
+        </div>
+        <div class="chat-recent-list">
+            <div class="chat-recent-list-item padding-4px text-center">
+                <img src="http://img.qalab.projectgoth.com/a/lesterchan?w=48&h=48&a=1&c=1" width="48" height="48"
+                     class="img-circle"/>
+                <span class="status fusion-online"></span>
+                <span class="badge font-size-12">88</span>
+            </div>
+        </div>
+    </div>
+    <div class="chat-expanded">
+        <div class="row">
+            <div class="col-md-1">
+                <div class="toggle-chat-sidebar">
+                    <a href="#" onclick="$('.chat-expanded', $('#chat')).hide();$('.chat-collapsed', $('#chat')).show();">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="chat-user-avatar">
+                    <img src="http://img.qalab.projectgoth.com/a/lesterchan?w=64&h=64&a=1&c=1" width="64" height="64"
+                         class="img-circle"/>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="chat-user-username">
+                    <a href="/">lesterchan</a>
+                </div>
+                <div class="chat-user-status">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-xs btn-default dropdown-toggle" data-toggle="dropdown"><span
+                                    class="status fusion-online"></span> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="status fusion-online"></span>&nbsp;Online</a></li>
+                                <li><a href="#"><span class="status fusion-away"></span>&nbsp;Away</a></li>
+                                <li><a href="#"><span class="status fusion-busy"></span>&nbsp;Busy</a></li>
+                                <li><a href="#"><span class="status fusion-offline"></span>&nbsp;Offline</a></li>
+                                <li><a href="#"><span class="status fusion-unknown"></span>&nbsp;Unknown</a></li>
+                            </ul>
+                        </div>
+                        <input type="text" class="form-control input-xs status-msg" placeholder="Enter your status"
+                               maxlength="128">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-user-stat padding-8px font-size-12 text-uppercase">
+            <div class="row">
+                <div class="col-md-12">
+         <span class="chat-user-miglevel">
+         migLevel <span class="level">75</span>
+         </span>
+                    &nbsp;
+         <span class="chat-user-label">
+         <img src="http://www.lc.qalab.projectgoth.com/b/resources/img/labels/16x16/v.png" title="Verified" alt="Verified">
+         &nbsp;
+         <img src="http://www.lc.qalab.projectgoth.com/b/resources/img/labels/16x16/ga.png" title="Group Admin"
+              alt="Group Admin">
+         </span>
+                </div>
+            </div>
+        </div>
+        <div class="row font-size-12 user-stats">
+            <div class="col-md-4 text-center user-stat">
+                <span class="glyphicon glyphicon-plane"></span>
+                &nbsp;
+                1234
+            </div>
+            <div class="col-md-4 text-center user-stat">
+                <span class="glyphicon glyphicon-plane"></span>
+                &nbsp;
+                1234
+            </div>
+            <div class="col-md-4 text-center user-stat">
+                <span class="glyphicon glyphicon-plane"></span>
+                &nbsp;
+                1234
+            </div>
+        </div>
+        <ul class="nav nav-tabs nav-justified chat-tabs">
+            <li class="active">
+                <a href="#chat-recent-tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-time"></span>
+                    <span class="display-block font-size-12">Recent</span>
+                    <span class="badge font-size-12">88</span>
+                </a>
+            </li>
+            <li>
+                <a href="#chat-chatrooms-tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-comment"></span>
+                    <span class="display-block font-size-12">Chat Room</span>
+                </a>
+            </li>
+            <li>
+                <a href="#chat-contacts-tab" data-toggle="tab">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="display-block font-size-12">People</span>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="chat-recent-tab">
+                <div class="chat-item">
+                    <div class="chat-item-category padding-4px font-size-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <b class="caret"></b>
+                                &nbsp;
+                                Today
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-item-list padding-4px">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="chat-list-avatar">
+                                    <img src="http://img.qalab.projectgoth.com/a/lesterchan?w=48&h=48&a=1&c=1" width="48"
+                                         height="48" class="img-circle"/>
+                                    <span class="status fusion-online"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="chat-list-title">
+                                    <a href="#">lesterchan</a>
+                                </div>
+                                <div class="chat-list-subtitle font-size-12">Testing 123</div>
+                            </div>
+                            <div class="col-md-3 text-center">
+                                <div class="badge font-size-12">1,234</div>
+                                <div class="chat-list-time font-color-grey font-size-12">20:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-footer font-size-12 padding-8px">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <a href="#">Star a new Chat</a>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="chat-chatrooms-tab">
+                <div class="chat-search">
+                    <div class="row">
+                        <div class="col-md-10 no-padding-right">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-xs" placeholder="Search Chat Rooms">
+
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-xs btn-default">
+                                        <span class="glyphicon glyphicon-search font-color-grey"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 no-padding-left">
+                            <div class="chat-settings text-center">
+                                <a href="#"><span class="glyphicon glyphicon-cog font-color-grey"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row font-size-12 user-stats">
+                    <div class="col-md-4 text-center user-stat">
+                        <span class="count">35.6k</span>
+                        &nbsp;
+                        Users
+                    </div>
+                    <div class="col-md-4 text-center user-stat">
+                        <span class="count">35.6k</span>
+                        &nbsp;
+                        Rooms
+                    </div>
+                    <div class="col-md-4 text-center user-stat">
+                        <span class="count">35.6k</span>
+                        &nbsp;
+                        Groups
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-item-category padding-4px font-size-12">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <b class="caret"></b>
+                                &nbsp;
+                                Favourites
+                                 <span class="chat-item-category-count">
+                                 (<span class="count">30</span>)
+                                 </span>
+                            </div>
+                            <div class="col-md-2 text-center font-color-grey">
+                                <a href="#"><span class="glyphicon glyphicon-refresh font-color-grey"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-item-list padding-4px">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="chat-list-avatar">
+                                    <img src="http://img.qalab.projectgoth.com/a/lesterchan?w=48&h=48&a=1&c=1" width="48"
+                                         height="48" class="img-circle"/>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="chat-list-title">
+                                    <a href="#">Chat Room Name</a>
+                                     <span class="chat-list-title-count font-size-12">
+                                     (<span class="count">20/30</span>)
+                                     </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-item-list-more padding-4px text-center text-uppercase font-size-12">
+                        Show More
+                    </div>
+                </div>
+                <div class="chat-footer font-size-12 padding-8px">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <a href="#">Create a Chat Room</a>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="chat-contacts-tab">
+                <div class="chat-search">
+                    <div class="row">
+                        <div class="col-md-10 no-padding-right">
+                            <div class="input-group">
+                                <input type="text" class="form-control input-xs" placeholder="Search">
+
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-xs btn-default">
+                                        <span class="glyphicon glyphicon-search font-color-grey"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 no-padding-left">
+                            <div class="chat-settings text-center">
+                                <a href="#"><span class="glyphicon glyphicon-cog font-color-grey"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-item-category padding-4px font-size-12">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <b class="caret"></b>
+                                &nbsp;
+                                Colleagues
+                                 <span class="chat-item-category-count">
+                                 (<span class="count">30</span>)
+                                 </span>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="chat-settings text-center">
+                                    <a href="#"><span class="glyphicon glyphicon-cog font-color-grey"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-item-list padding-4px">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="chat-list-avatar">
+                                    <img src="http://img.qalab.projectgoth.com/a/lesterchan?w=48&h=48&a=1&c=1" width="48"
+                                         height="48" class="img-circle"/>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="chat-list-title">
+                                    <a href="#">lesterchan</a>
+                                </div>
+                                <div class="chat-list-subtitle font-size-12">Testing 123</div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="chat-item-list-action">
+                                    <a href="#"><span class="glyphicon glyphicon-arrow-right font-color-grey"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-footer font-size-12 padding-8px">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <a href="#">Find Friends</a>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

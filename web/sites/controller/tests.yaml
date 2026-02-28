@@ -1,0 +1,14 @@
+services:
+  function: services
+  encode: auto, json
+  components:
+    - common.internal_ips ?
+    - tests.ice
+    - tests.soap
+    - tests.mysql
+    - tests.memcache
+    - tests.fusion_rest
+    - tests.migbo_datasvc
+    - tests.wordpress
+    - tests.redis
+    - tests.xcache

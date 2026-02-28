@@ -1,0 +1,112 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+    midlet:
+      name: common.midlet
+    json:
+      name: common.json
+
+add_mig33_user:
+  decorators:
+    midlet:
+      name: common.midlet
+      page_title: Add Friends
+  view:
+    name: add_mig33_user
+  components:
+    - common.user
+    - invite.contact_groups
+
+add_mig33_user_submit:
+  function: invitation
+  view:
+    name: add_contact_submit
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - captcha.is_captcha_required ?
+    - contact.add_contact_input ?
+    - add_mig33_user
+
+add_number_contact:
+  view:
+    name: add_number_contact
+  components:
+    - common.user
+    - invite.contact_groups
+
+add_number_contact_submit:
+# function: add_contact_redirect
+  view:
+    name: add_contact_submit
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - contact.add_number_contact_input ?
+    - add_number_contact
+
+search_friends_submit:
+  view:
+    name: friends
+  components:
+    - common.user
+    - search_friends
+
+friends:
+  decorators:
+    ajax:
+      name: common.ajax
+      page_title: "%USERNAME%'s Friends"
+  view:
+    name: friends
+  components:
+    - common.user
+    - common.privacy
+    - user.private_profile ?
+    - (ajax,wap) common.user_list
+    - friends
+
+add_contact:
+  view:
+    name: add_contact
+  components:
+    - common.user
+
+add_contact_submit:
+  function: add_contact_submit
+  components:
+    - common.user
+
+add_contact_group:
+  view:
+    name: add_contact_group
+  components:
+    - common.user
+
+add_contact_group_submit:
+  function: add_contact_group_redirect
+  components:
+    - common.user
+    - contact.contact_group_input ?
+    - add_contact_group
+
+edit:
+  view:
+    name: edit_contact
+  components:
+    - common.user
+    - edit_contact
+
+add_friend:
+  view:
+    name: add_friend
+  components:
+    - common.user

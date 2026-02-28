@@ -1,0 +1,8 @@
+MIDlet-1: mig33v3,MiG33.png,com.projectgoth.Roshan.Main
+MIDlet-Jar-Size: 115314
+MIDlet-Jar-URL: mig33v3.jar
+MIDlet-Name: mig33v3
+MIDlet-Vendor: Project Goth, inc.
+MIDlet-Version: 3.08
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0

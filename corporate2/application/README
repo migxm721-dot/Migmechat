@@ -1,0 +1,6 @@
+
+custom configuration e.g. GA ID, FB APP ID, etc. constants are under config/constants.php
+
+exclude.txt - Determines what files/folders to exclude when running the "rsync to devlab" script.
+
+

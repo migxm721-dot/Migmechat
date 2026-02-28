@@ -1,0 +1,10 @@
+MIDlet-1: mig33v42,MiG33.png,com.projectgoth.Roshan.Main
+MIDlet-Jar-URL: mig33v4.jar
+MIDlet-Permissions-Opt: javax.microedition.io.Connector.file.read, javax.microedition.io.Connector.socket, javax.microedition.media.control.VideoControl.getSnapshot
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Version: 4.20
+MIDlet-Install-Notify: http://www.mig33.com/midlet/member/c_info.php?awtrack=wap
+MIDlet-Name: mig33v42
+MIDlet-Vendor: Project Goth, Inc.
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Jar-Size: 165963

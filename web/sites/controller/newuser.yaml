@@ -1,0 +1,160 @@
+all:
+  decorators:
+    midlet:
+      name: decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+    - settings.account_profile
+    - (wap,touch) common.get_registration_context_campaign do_increment_login
+    - (wap,touch) registration_context_action_redirect ?
+    - (ajax,touch) avatar.avatar
+    - (ajax,touch) common.stats
+    - (ajax,touch) welcome
+    - (ajax,touch) group.total_count
+
+campaign_upgrade_message:
+  view:
+    name: campaign_upgrade_message
+  components:
+    - common.user
+    - settings.account_profile
+
+games:
+  view:
+    name: games
+  components:
+    - common.user
+    - bot.bot_list
+
+chatroom:
+  view:
+    name: chatroom
+  components:
+    - common.user
+    - chatrooms
+
+chatroom_help:
+  view:
+    name: chatroom_help
+  components:
+    - common.user
+
+### Used By AJAX/Touch
+chatroom_games:
+  view:
+    name: chatroom_games
+  components:
+    - common.user
+    - chatrooms_games
+
+setup_im:
+  decorators:
+    midlet:
+      name: decorator
+  view:
+    name: setup_im
+  components:
+    - common.user
+    - new_user
+
+setup_im_post:
+  function: setup_im_post
+  view:
+    name: setup_im_confirmed
+  components:
+    - common.user
+    - new_user
+    - im.setup_im ?
+
+### Used By AJAX/Touch
+create_avatar:
+  view:
+    name: create_avatar
+  components:
+    - common.user
+
+choose_avatar:
+  function: choose_avatar
+  components:
+    - common.user
+    - avatar.avatar
+    - avatar.equip_set
+    - avatar.clear_cache
+    - avatar.build_avatar
+
+choose_avatar_done:
+  view:
+    name: choose_avatar_done
+  components:
+    - common.user
+    - avatar.avatar
+
+### Used By Touch
+chat_help:
+  view:
+    name: chat_help
+  components:
+    - common.user
+
+fun:
+  view:
+    name: fun
+  components:
+    - fun_things
+
+friends:
+  view:
+    name: friends
+  components:
+    - common.user
+    - common.user_idd
+    - invite.contact_groups
+
+add_mig33_user_submit:
+  view:
+    name: friends
+  components:
+    - common.user
+    - add_contact_input ?
+    - contacts.add_mig33_user
+    - common.user_idd
+    - invite.contact_groups
+
+refer_friend_submit:
+  view:
+    name: friends
+  components:
+    - common.user
+    - referfriend_input ?
+    - invite.refer_friend
+    - common.user_idd
+    - invite.contact_groups
+
+group:
+  view:
+    name: group
+  components:
+    - common.user
+    - group.total_count
+
+group_search:
+  view:
+    name: group_search
+  components:
+    - common.user
+    - group.search
+
+email:
+  view:
+    name: email

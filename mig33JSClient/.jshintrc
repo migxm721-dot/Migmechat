@@ -1,0 +1,33 @@
+{
+    "globals": {
+        "define": true,
+        "require": true,
+        "jQuery": true,
+        "$": true,
+        "console": true,
+        "ga" : true,
+	    "__extends": true
+    },
+	"smarttabs": true,
+    "node": false,
+    "browser": true,
+    "es5": false,
+    "esnext": true,
+    "bitwise": true,
+    "camelcase": false,
+    "curly": true,
+    "eqeqeq": false,
+    "immed": true,
+    "latedef": false,
+    "newcap": false,
+    "noarg": false,
+    "quotmark": false,
+    "regexp": false,
+    "undef": true,
+    "unused": false,
+    "strict": false,
+    "trailing": true,
+    "laxbreak": true,
+    "laxcomma": true,
+    "scripturl": true
+}

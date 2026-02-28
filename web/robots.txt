@@ -1,0 +1,7 @@
+# robots.txt, www.mig33.com 9/26/2009
+#
+
+User-agent: *
+Disallow:  
+Disallow: /includes_corporate/
+Sitemap: http://www.mig33.com/sitemap.xml

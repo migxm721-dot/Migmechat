@@ -1,0 +1,66 @@
+<project name="mig33Web" default="dist" basedir=".">
+	<property name="script.dir" location="./scripts" />
+	<property name="sites" location="../sites" />
+	<property name="sites.javascript" location="${sites}/resources/js" />
+	<property name="sites.v3" location="${sites}/v3" />
+	<property name="sites.javascript.version" location="${sites.javascript}/version.txt" />
+	<property name="sites.controller" location="${sites}/controller" />
+	<property name="sites.controller.gen" location="${sites.controller}/_gen" />
+	<property name="php" location="/usr/bin/php" />
+	<property name="sh" location="/bin/bash" />
+	<property name="sencha" location="/Applications/SenchaSDKTools/sencha" />
+
+	<target name="dist">
+		<antcall target="versionInfo" />
+		<antcall target="php" />
+		<antcall target="js" />
+		<antcall target="extjs" />
+		<antcall target="sh" /> 
+	</target>
+
+	<target name="versionInfo">
+		<exec executable="${sh}" output="${sites.javascript.version}">
+			<arg value="${script.dir}/versionInfo.sh" />
+		</exec>
+	</target>
+
+	<target name="php">
+		<exec executable="${sh}">
+			<arg value="${script.dir}/php_lint.sh" />
+		</exec>
+	</target>
+
+	<target name="js">
+		<exec executable="${php}">
+			<arg value="${script.dir}/minify.php" />
+			<arg value="-d" />
+			<arg value="${sites.javascript}" />
+			<arg value="-s" />
+			<arg value="${script.dir}" />
+		</exec>
+	</target>
+
+	<target name="extjs">
+		<exec executable="${sencha}">
+			<arg value="build" />
+			<arg value="-p" />
+			<arg value="${sites.v3}/mig33.jsb3" />
+			<arg value="-d" />
+			<arg value="${sites.v3}/app" />
+		</exec>
+	</target>
+
+	<target name="sh">
+		<exec executable="${sh}">
+			<arg value="${script.dir}/gettext.sh" />
+			<arg value="${sites}" />
+		</exec>
+	</target>
+
+	<target name="clean">
+		<delete dir="${sites.controller.gen}" />
+		<delete dir="${sites.javascript}">
+			<include name="**/*.min.js" />
+		</delete>
+	</target>
+</project>

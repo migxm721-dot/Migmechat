@@ -1,0 +1,14 @@
+CodeIgniter Core Bugs That We Fix
+
+ALL CORE BUGS FIXED SHOULD BE REPORTED TO CODEIGNITER (https://bitbucket.org/ellislab/codeigniter-reactor/issues/new)
+
+
+CodeIgniter 2.0.2 (Released On 7th April 2011)
+
+28-06-2011 - https://bitbucket.org/ellislab/codeigniter-reactor/issue/200/environment-changes-break-config-with
+When a config file is present in /application/third_party/config/, the config file gets loaded but on top of it, it will try to load the same config filename in /application/config/ which is obviously not there. The reason is because $found = FALSE in core/Config.php is defined outside the loop and hence when the loop iterate, the variable is not resetted.
+
+CodeIgniter 2.1.0 (Released on 28th November 2011)
+CodeIgniter incorrectly takes on some ops responsabilities for captcha by traversing the captcha directory at every captcha write requests, to delete expired captcha images. This is making incoming unecessary slow. Deletion of expired captcha is an ops operation and should be done by a cron-type process.
+
+Under core/helpers/captcha_helper.php in create_captcha() function, we comment out the "Remove old images" portion. 

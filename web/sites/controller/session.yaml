@@ -1,0 +1,8 @@
+check:
+  function: check
+  encode: auto, json
+  components:
+    - common.user allow_no_session
+
+logout:
+  function: logout

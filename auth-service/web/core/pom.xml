@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+		<groupId>com.projectgoth.auth</groupId>
+		<artifactId>auth-web-parent</artifactId>
+		<version>0.2.29-SNAPSHOT</version>
+	</parent>
+
+    <artifactId>auth-web-core</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Auth Web Core</name>
+
+    <dependencies>
+		<dependency>
+			<groupId>com.projectgoth.auth</groupId>
+		    <artifactId>auth-service</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+        <dependency>	 <!-- javax.servlet.http.* -->
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>7.0</version>
+    		<scope>provided</scope>
+		</dependency>
+
+        <!-- OLTU -->
+        
+		<dependency>	<!-- org.apache.oltu.oauth2.common.* -->
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.common</artifactId>
+			<version>${version.oltu}</version>
+		</dependency>
+		<dependency>	<!-- org.apache.oltu.oauth2.as.* -->
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.authzserver</artifactId>
+			<version>${version.oltu}</version>
+		</dependency>
+		<dependency>	<!-- org.apache.oltu.oauth2.rs.* -->	
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.resourceserver</artifactId>
+			<version>${version.oltu}</version>
+		</dependency>
+		<dependency>	<!-- org.apache.oltu.oauth2.client.* -->
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.client</artifactId>
+			<version>${version.oltu}</version>
+		</dependency>
+        
+		<!-- Needed for AuthHttpHandler -->
+		<dependency>
+			<groupId>com.sun.net.httpserver</groupId>
+			<artifactId>http</artifactId>
+			<version>20070405</version>
+		</dependency>
+		
+        <!-- TESTS -->
+        
+        <dependency>	<!-- org.testng.* -->	
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${version.testng}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>

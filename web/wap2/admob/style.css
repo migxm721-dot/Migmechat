@@ -1,0 +1,79 @@
+html,
+body{
+    margin:0;
+    padding:0;
+    background-color:#f70;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+}
+a{
+	border:0px;
+}
+img{
+	padding:5px;
+	width:5em;
+}
+#container{
+    min-height:10em;
+    position:relative;
+	margin:0 auto;
+	background-color:#fff;
+}
+#header{
+	font-size:0.75em;
+    padding:5px;
+    background-color:#fff;
+}
+#main{
+    padding:5px;
+    font-size:.75em;
+    background-color:#fff;
+	clear:both;
+}
+#footer{
+    width:100%;
+	font-size:0.75em;
+	text-align:center;
+	background-color:#f70;
+	clear:both;
+}
+
+/*changed and modified into class by Borrys
+#links{
+	padding:0px 0px 20px 0px;
+	text-align:center;
+	font-size:1.2em;
+	font-weight:bold;
+}
+*/
+
+#clear{
+	clear:both;
+}
+
+/*added by Borrys*/
+img.floatLeft{
+	float:left;
+}
+img.floatRight{
+	float:right;
+}
+.downloadLinkArea{
+	text-align:center;
+	background-color:#dddddd;
+	border:1px solid #aaaaaa;
+	padding:15px 0px;
+
+}
+
+.center{
+	text-align:center;
+}
+
+a.large{
+	font-weight:bold;
+	font-size : 120%;
+}
+.small{
+	font-size:90%;
+}

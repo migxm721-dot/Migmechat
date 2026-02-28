@@ -1,0 +1,23 @@
+#!/bin/bash
+read -p "This will (re-) create OAuth2 tables. Continue? [Y/n]" prompt;
+if [ $prompt == "y" ] || [ $prompt == "Y" ]
+then
+    stty -echo;
+	read -p "Enter fusion password for local db:" dbroot;
+    stty echo ;
+    printf \\n;
+
+    echo "Importing tables";
+    mysql -ufusion -p$dbroot fusion < service/docs/sql/CreateAppStore.sql;
+    mysql -ufusion -p$dbroot fusion < service/docs/sql/CreateAuthCodeStore.sql;
+    mysql -ufusion -p$dbroot fusion < service/docs/sql/CreateTokenStore.sql;
+    mysql -ufusion -p$dbroot fusion < service/docs/sql/CreateScopeStore.sql;
+
+    echo "Importing data";
+    mysql -ufusion -p$dbroot fusion < service/docs/sql/CreateDefaultApps.sql;
+    mysql -ufusion -p$dbroot fusion < service/docs/sql/CreateUnitTestDbContent.sql;
+
+    echo "done"
+else
+    echo "aborting.";
+fi;

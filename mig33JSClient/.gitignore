@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+*.DS_Store
+temp
+/dist/
+dist.zip
+.idea/
+.sass-cache
+atlassian-ide-plugin.xml

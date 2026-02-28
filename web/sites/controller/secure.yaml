@@ -1,0 +1,11 @@
+all:
+  decorators:
+    midlet:
+      name: common.midlet
+
+url:
+  view:
+    name: url
+  components:
+    - common.user
+    - common.staff ?

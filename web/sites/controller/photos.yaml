@@ -1,0 +1,96 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: decorator
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+    - common.user_permissions
+    - photo.get_photos
+    - profile.profile
+
+send:
+  view:
+    name: send
+  components:
+    - common.user
+    - photos
+    - profile.profile
+
+photo:
+  view:
+    name: photo
+  components:
+    - common.user
+    - photo.get_photo
+
+set_profile:
+  view:
+    name: set_profile
+  components:
+    - common.user
+    - photos
+    - profile.profile
+
+set_profile_picture:
+  view:
+    name: set_profile
+  components:
+    - common.user
+    - set_profile_picture ?
+    - photos
+    - set_profile_picture
+    - profile.profile
+
+edit_permission:
+  view:
+    name: edit_permission
+  components:
+    - common.user
+    - photo.get_photo
+
+edit_permission_submit:
+  view:
+    name: edit_permission
+  components:
+    - common.user
+    - edit_permission
+    - photo.get_photo
+
+received:
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: received
+  components:
+    - common.user
+    - registration.account_verified ?
+    - photos
+    - received
+
+received_confirmed:
+  function: show_received_confirmed
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: received_confirmed
+  components:
+    - common.user
+    - registration.account_verified ?
+    - photos
+
+photo_like:
+  function: photo_like
+  components:
+    - common.user
+    - common.flood_control
+    - captcha.is_captcha_required ?
+    - voting

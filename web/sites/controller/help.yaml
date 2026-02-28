@@ -1,0 +1,291 @@
+all:
+  decorators:
+    midlet:
+      name: miglevel_faq_decorator
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+    corporate:
+      name: decorator
+
+main:
+  function: anyhow_go_redirect
+  view:
+    name: main
+  decorators:
+    midlet:
+      name: decorator
+  components:
+    - get_page
+
+merchant_help:
+  view:
+    name: merchant_help
+  decorators:
+    midlet:
+      name: decorator
+  components:
+    - common.device_info
+    - get_page
+
+phone_select_vendor:
+  function: show_phone_select_vendor
+  view:
+    name: phone_select_vendor
+  components:
+    - phone_detect
+    - phone_vendors
+
+phone_select_model:
+  function: show_phone_select_model
+  view:
+    name: phone_select_model
+  components:
+    - phone_detect
+    - phone_models
+
+apn:
+  function: show_apn
+  view:
+    name: apn
+  components:
+    - phone_detect
+
+apn_select_carrier:
+  function: show_apn_select_carrier
+  view:
+    name: apn_select_carrier
+  components:
+    - phone_detect
+    - carriers
+
+apn_no_carrier:
+  view:
+    name: apn_no_carrier
+  components:
+    - phone_detect
+
+apn_carrier_detail:
+  function: show_apn_carrier_detail
+  view:
+    name: apn_carrier_detail
+  components:
+    - phone_detect
+    - carrier
+
+tc:
+  view:
+    name: tc
+
+privacy:
+  view:
+    name: privacy
+
+miglevel:
+  view:
+    name: miglevel
+
+miglevel_q_2:
+  view:
+    name: miglevel_q_2
+
+miglevel_q_3:
+  view:
+    name: miglevel_q_3
+
+miglevel_q_4:
+  view:
+    name: miglevel_q_4
+
+miglevel_q_5:
+  view:
+    name: miglevel_q_5
+
+miglevel_q_6:
+  view:
+    name: miglevel_q_6
+
+miglevel_q_7:
+  view:
+    name: miglevel_q_7
+
+miglevel_q_8:
+  view:
+    name: miglevel_q_8
+
+miglevel_q_9:
+  view:
+    name: miglevel_q_9
+
+miglevel_q_10:
+  view:
+    name: miglevel_q_10
+
+miglevel_q_11:
+  view:
+    name: miglevel_q_11
+
+miglevel_q_12:
+  view:
+    name: miglevel_q_12
+
+miglevel_q_13:
+  view:
+    name: miglevel_q_13
+
+miglevel_q_14:
+  view:
+    name: miglevel_q_14
+
+miglevel_q_15:
+  view:
+    name: miglevel_q_15
+
+miglevel_q_16:
+  view:
+    name: miglevel_q_16
+
+miglevel_q_17:
+  view:
+    name: miglevel_q_17
+
+miglevel_q_18:
+  view:
+    name: miglevel_q_18
+
+miglevel_q_19:
+  view:
+    name: miglevel_q_19
+
+miglevel_q_20:
+  view:
+    name: miglevel_q_20
+
+miglevel_q_21:
+  view:
+    name: miglevel_q_21
+
+miglevel_q_22:
+  view:
+    name: miglevel_q_22
+
+miglevel_q_23:
+  view:
+    name: miglevel_q_23
+
+miglevel_q_24:
+  view:
+    name: miglevel_q_24
+
+miglevel_faq:
+  view:
+    name: miglevel_faq
+
+home:
+  decorators:
+    midlet:
+      name: home_decorator
+  view:
+    name: home
+
+cat_chatroom:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: cat_chatroom
+
+cat_game:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: cat_game
+
+cat_im:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: cat_im
+
+cat_merchant:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: cat_merchant
+
+cat_account:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: cat_account
+
+cat_credits:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: cat_credits
+
+cat_privacy:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: cat_privacy
+
+cat_about:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: cat_about
+
+cat_more:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: cat_more
+
+chatroom_admins:
+  decorators:
+    midlet:
+      name: general_decorator
+  view:
+    name: chatroom_admins
+
+contact_us:
+  view:
+    name: contact_us
+  decorators:
+    midlet:
+      name: decorator
+  components:
+    - common.user allow_no_session
+    - contact_us
+
+contact_us_submit:
+  view:
+    name: contact_us
+  decorators:
+    midlet:
+      name: decorator
+  components:
+    - common.user allow_no_session
+    - help.contact_us ?
+    - contact_us_submit
+
+contact_us_corp_submit:
+  view:
+    name: contact_us_submit
+  decorators:
+    midlet:
+      name: decorator
+  components:
+    - help.contact_us_corp ?
+    - contact_us_submit

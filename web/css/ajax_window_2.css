@@ -1,0 +1,304 @@
+body {
+	font: 11px Arial, Helvetica, sans-serif;
+	/*font: normal 12px arial,helvetica,sansserif;*/
+	/*background: #ffffff; */
+	margin: 0px;
+	padding: 0px;
+	background:#fff;
+	
+	/*background-image: url(/img/ajax_window_bg.gif);
+	background-position: left bottom;
+	background-repeat:repeat-x;*/
+}
+
+img {
+	border: none;
+}
+
+a:link, a:active, a:visited, a:focus { color: #0070ee; text-decoration: underline; font-weight: bold;}
+a:hover { color: #f36c34; text-decoration: underline; font-weight: bold;}
+
+h1 {
+	color: #F27413; /*#0dbfff;*/
+	font: bold 20px arial,helvetica,sansserif;
+	margin-top: 0px;
+}
+
+h2 {
+	color: #F27413;
+	font: bold 16px arial,helvetica,sansserif;
+}
+h3 {
+	color: #5FAE03;
+	font: bold 12px arial,helvetica,sansserif;
+	margin-bottom: 4px;
+}
+
+.blue {
+	color: #1da3d6;
+	font-weight: bold;
+}
+
+.green {
+	color: #5fae03;
+	font-weight: bold;
+}
+
+.missing {
+	color: #808080;
+	font-style: italic;
+}
+
+.gray_small {
+	color: #808080;
+	font: 9px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.gray {
+	color: #808080;
+}
+
+.small {
+	color: #404040;
+	font: 9px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.red_small {
+	color: #ae1903;
+	font: 9px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.green_small {
+	color: #5fae03;
+	font: 9px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.error {
+	font: 11px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	color: #ae1903;
+	margin-bottom: 2px;
+}
+
+.center {
+	text-align: center;
+}
+
+
+div#container {
+	padding: 6px;
+}
+
+div#container2 {
+	padding: 15px;
+}
+
+div#container_center {
+	padding: 6px;
+	text-align: center;
+}
+
+.container_center {
+	padding: 6px;
+	text-align: center;
+}
+div#wrapper {
+	float: left;
+	width:100%;
+}
+
+div#profile_content {
+	margin-left: 120px;
+}
+
+div#profile_pic {
+	float: left;
+	width: 120px;
+	margin-left: -100%;
+	text-align: center;
+}
+
+div#public_photos {
+	clear:left;
+	width:100%;
+}
+
+div#fixed_left {
+	float: left;
+	width: 100px;
+	margin-left: -100%;
+}
+
+div#fluid_right {
+	margin-left: 100px;
+}
+
+/*#normform input,textarea, select { background-color:#d6f4ff; border:1px solid #bdd8e2;}*/
+#normform .fieldlabel {color:#1da3d6;font:bold 11px arial,helvetica,sansserif;text-align:right;vertical-align: top;}
+#normform .fieldlabelError {color: #FF643A;font:bold 10px arial,helvetica,sansserif;text-align:right;}
+#normform .field {text-align:left;vertical-align: top;}
+
+img.profile_pic {
+	border: solid 1px #606060;
+	text-align: center;
+}
+
+.thumbnail {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 6px;
+	padding: 2px;
+	text-align: center;
+	border: solid 1px #cccccc;
+}
+
+.thumbnail2 {
+	width: 100px;
+	height: 100px;
+}
+
+.thumbnail_and_text {
+	float: left;
+	margin: 6px;
+	padding: 2px;
+	text-align: center;
+	border: solid 1px #cccccc;
+}
+
+a.thumbnail_link:link, a,thumbnail_link:active, a.thumbnail_link:visited { color: #000000; text-decoration: none; font-weight: bold;}
+a.thumbnail_link:hover { color: #0099FF; text-decoration: underline;}
+
+.thumbnail img {
+}
+.full_center {
+	width: 100%;
+	text-align: center;
+}
+	
+.photo {
+	border: solid 1px #cccccc;
+	margin-top: 8px;
+	/*padding: 5px;*/
+}
+
+.photo_description {
+	color: #808080;
+	font-style: italic;
+}
+
+.photo_description_edit {
+	margin-top: 4px;
+	margin-bottom: 9px;
+	color: #000000;
+	font: 11px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.edit_profile_display_pic {
+	float: left;
+	width: 50px;
+	height: 50px;
+	border: solid 1px #cccccc;
+	margin-right: 10px;
+}
+
+.about_me p {
+	margin-top: 0em;	
+	margin-bottom: 0em;	
+}
+
+ hr {
+ 	border: 0;
+	width: 80%;
+	color: #808080;
+	background-color: #808080;
+	height: 1px;
+}
+
+a.keyword:link, a.keyword:active, a.keyword:visited { color: #000000; text-decoration: underline; font-weight: normal;}
+a.keyword:hover { color: #0099FF; text-decoration: underline;}
+
+.paging {
+	clear: left;
+	margin-top: 4px;
+	font: 11px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	color: #404040;
+}
+
+a.paging:link, a.paging:active, a.paging:visited {
+	font: bold 11px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	color: #404040;
+	text-decoration: underline;
+}
+
+a.paging:hover { color: #0099FF; text-decoration: underline;}
+
+
+.middle_block {
+	text-align: left;
+	margin-left: 15px;
+	font: 12px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.container_center {
+	padding: 6px;
+	text-align: center;
+}
+
+.lower_block {
+	padding-top: 20px;
+	text-align: left;
+	padding-left: 25px;
+	font: 12px Verdana, Tahoma, Arial, Helvetica, sans-serif;
+}
+
+#notice {
+	background-color: #F1F0F0;
+	border:thin;
+	border-style: groove;
+	padding: 3px;
+}
+
+
+/* Ajax Client V2
+--------------------------------------------------------------------*/
+input[type=submit], input[type=button], button{
+    margin:0 7px 0 0;
+    background: #d6d6d6 url(../sites/resources/images/mig33-blue/button/btn-window-sprite.gif) 0 0 repeat-x;
+	border:1px solid #bbb;
+    font-family: arial,verdana,sans-serif;
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#515151;
+    cursor:pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+    padding:5px 10px 6px 7px; /* Links */
+}
+input[type=submit], input[type=button], button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+input[type=submit], input[type=button], button{
+    padding:4px 10px 4px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html input[type=submit], *:first-child+html input[type=button], *:first-child+html button{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+
+/* Standard button */
+input[type=submit]:hover, input[type=button]:hover, button:hover {
+    background-color:#e5e5e5;
+	background-position:0 -51px;
+    border:1px solid #89cfee;
+    color:#336699;;
+}
+input[type=submit]:active, input[type=button]:active, button:active {
+  	background-color:#b9b9b9;
+	background-position:0 -101px;
+    border:1px solid #999;
+    color:#fff;
+}

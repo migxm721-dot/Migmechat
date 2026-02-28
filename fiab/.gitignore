@@ -1,0 +1,11 @@
+fusion/logs
+jboss/server/default/log/
+lock/
+fusion/logs/placeholder
+jboss/server/default/log/placeholder
+jboss/server/default/tmp/
+jboss/server/default/work/
+jboss/server/default/data/
+fusion/Fusion.jar
+jboss/console.log
+jboss/server/default/data/hypersonic/localDB.properties

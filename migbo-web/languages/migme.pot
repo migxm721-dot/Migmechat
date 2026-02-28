@@ -1,0 +1,3278 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: migme\n"
+"POT-Creation-Date: 2014-05-27 17:21+0800\n"
+"PO-Revision-Date: 2014-05-27 17:22+0800\n"
+"Last-Translator: Lester Chan <lesterchan@gmail.com>\n"
+"Language-Team: Web Team <web.team@mig.me>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../application/config/form_validation.php:9
+msgid "Post"
+msgstr ""
+
+#: ../application/config/form_validation.php:15
+msgid "Originality"
+msgstr ""
+
+#: ../application/config/form_validation.php:24
+#: ../application/views/midlet/message/create.php:16
+#: ../application/views/midlet/profile/index.php:61
+#: ../application/views/midlet/profile/index.php:430
+#: ../application/views/wap/message/create.php:23
+msgid "Message"
+msgstr ""
+
+#: ../application/config/form_validation.php:30
+msgid "Destinations"
+msgstr ""
+
+#: ../application/config/variables.php:58
+msgid "Male"
+msgstr ""
+
+#: ../application/config/variables.php:59
+msgid "Female"
+msgstr ""
+
+#: ../application/config/variables.php:60
+msgid "Not Specified"
+msgstr ""
+
+#: ../application/config/variables.php:62
+msgid "His"
+msgstr ""
+
+#: ../application/config/variables.php:63
+#: ../application/config/variables.php:71
+msgid "Her"
+msgstr ""
+
+#: ../application/config/variables.php:64
+#: ../application/config/variables.php:68
+#: ../application/config/variables.php:72
+msgid "It"
+msgstr ""
+
+#: ../application/config/variables.php:66
+msgid "He"
+msgstr ""
+
+#: ../application/config/variables.php:67
+msgid "She"
+msgstr ""
+
+#: ../application/config/variables.php:70
+msgid "Him"
+msgstr ""
+
+#: ../application/config/variables.php:74
+msgid "January"
+msgstr ""
+
+#: ../application/config/variables.php:75
+msgid "February"
+msgstr ""
+
+#: ../application/config/variables.php:76
+msgid "March"
+msgstr ""
+
+#: ../application/config/variables.php:77
+msgid "April"
+msgstr ""
+
+#: ../application/config/variables.php:78
+msgid "May"
+msgstr ""
+
+#: ../application/config/variables.php:79
+msgid "June"
+msgstr ""
+
+#: ../application/config/variables.php:80
+msgid "July"
+msgstr ""
+
+#: ../application/config/variables.php:81
+msgid "August"
+msgstr ""
+
+#: ../application/config/variables.php:82
+msgid "September"
+msgstr ""
+
+#: ../application/config/variables.php:83
+msgid "October"
+msgstr ""
+
+#: ../application/config/variables.php:84
+msgid "November"
+msgstr ""
+
+#: ../application/config/variables.php:85
+msgid "December"
+msgstr ""
+
+#: ../application/config/variables.php:87
+#: ../application/views/midlet/profile/details.php:26
+#: ../application/views/wap/profile/details.php:46
+msgid "Unspecified"
+msgstr ""
+
+#: ../application/config/variables.php:88
+msgid "Single"
+msgstr ""
+
+#: ../application/config/variables.php:89
+msgid "In a Relationship"
+msgstr ""
+
+#: ../application/config/variables.php:90
+msgid "A domestic partner"
+msgstr ""
+
+#: ../application/config/variables.php:91
+msgid "Married"
+msgstr ""
+
+#: ../application/config/variables.php:92
+msgid "Complicated"
+msgstr ""
+
+#: ../application/config/variables.php:94
+msgid "Original Author"
+msgstr ""
+
+#: ../application/config/variables.php:95
+#: ../application/views/midlet/message/view.php:29
+#: ../application/views/midlet/post/single_post.php:63
+#: ../application/views/module/midlet/message/thread.php:13
+#: ../application/views/module/wap/post/post_actions.php:60
+#: ../application/views/module/wap/post/post_tabs.php:4
+#: ../application/views/wap/message/view.php:38
+#: ../application/views/wap/post/single_post.php:101
+msgid "Reply"
+msgstr ""
+
+#: ../application/config/variables.php:96
+#: ../application/views/module/wap/post/post_actions.php:66
+#: ../application/views/module/wap/post/post_actions.php:67
+#: ../application/views/module/wap/post/post_tabs.php:14
+#: ../application/views/module/wap/post/post_text_reshare.php:35
+#: ../application/views/wap/post/single_post.php:89
+msgid "Repost"
+msgstr ""
+
+#: ../application/config/variables.php:98
+msgid "Opera Mini"
+msgstr ""
+
+#: ../application/config/variables.php:100
+msgid "Web"
+msgstr ""
+
+#: ../application/config/variables.php:101
+msgid "WAP"
+msgstr ""
+
+#: ../application/config/variables.php:102
+msgid "J2ME"
+msgstr ""
+
+#: ../application/config/variables.php:103
+msgid "Android"
+msgstr ""
+
+#: ../application/config/variables.php:104
+msgid "System"
+msgstr ""
+
+#: ../application/config/variables.php:105
+msgid "BlackBerry"
+msgstr ""
+
+#: ../application/config/variables.php:106
+msgid "Blaast"
+msgstr ""
+
+#: ../application/config/variables.php:107
+msgid "Mobile"
+msgstr ""
+
+#: ../application/config/variables.php:108
+msgid "iOS"
+msgstr ""
+
+#: ../application/config/variables.php:110
+msgid "Sponsored"
+msgstr ""
+
+#: ../application/config/variables.php:111
+msgid "mig33"
+msgstr ""
+
+#: ../application/config/variables.php:112
+msgid "Facebook"
+msgstr ""
+
+#: ../application/config/variables.php:113
+msgid "Twitter"
+msgstr ""
+
+#: ../application/config/variables.php:115
+msgid "Text"
+msgstr ""
+
+#: ../application/config/variables.php:116
+msgid "Link"
+msgstr ""
+
+#: ../application/config/variables.php:117
+msgid "Photo"
+msgstr ""
+
+#: ../application/config/variables.php:118
+msgid "Video"
+msgstr ""
+
+#: ../application/config/variables.php:119
+msgid "RSS"
+msgstr ""
+
+#: ../application/config/variables.php:120
+msgid "Activity"
+msgstr ""
+
+#: ../application/config/variables.php:121
+msgid "Event"
+msgstr ""
+
+#: ../application/config/variables.php:123
+msgid "Deleted"
+msgstr ""
+
+#: ../application/config/variables.php:124
+msgid "Active"
+msgstr ""
+
+#: ../application/config/variables.php:125
+msgid "Abuse Reported"
+msgstr ""
+
+#: ../application/controllers/api/api.php:49
+msgid "Temporarily Unavailable"
+msgstr ""
+
+#: ../application/controllers/api/api.php:62
+#: ../application/controllers/api/api.php:73
+#: ../application/controllers/api/api.php:84
+msgid "Access Denied"
+msgstr ""
+
+#: ../application/controllers/api/api.php:120
+msgid "Session expired"
+msgstr ""
+
+#: ../application/controllers/api/group.php:38
+#: ../application/controllers/api/group.php:71
+#: ../application/controllers/api/miniblog.php:1116
+#: ../application/controllers/migalert.php:174
+msgid "Invalid Group ID"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:102
+msgid "Invalid Username"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:158
+#: ../application/controllers/api/miniblog.php:304
+#: ../application/controllers/api/miniblog.php:338
+#: ../application/controllers/api/miniblog.php:372
+#: ../application/controllers/api/miniblog.php:397
+#: ../application/controllers/api/miniblog.php:421
+#: ../application/controllers/api/miniblog.php:871
+#: ../application/controllers/api/miniblog.php:1006
+#: ../application/controllers/api/miniblog.php:1028
+#: ../application/controllers/api/miniblog.php:1335
+#: ../application/controllers/api/miniblog.php:1357
+#: ../application/controllers/post.php:35
+#: ../application/controllers/post.php:515
+#: ../application/controllers/post.php:552
+#: ../application/controllers/post.php:594
+#: ../application/controllers/post.php:630
+#: ../application/controllers/post.php:673
+#: ../application/controllers/post.php:728
+msgid "Invalid Post ID"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:182
+#: ../application/controllers/api/miniblog.php:461
+#: ../application/controllers/api/miniblog.php:486
+#: ../application/controllers/api/miniblog.php:550
+#: ../application/controllers/api/miniblog.php:562
+#: ../application/controllers/api/miniblog.php:608
+#: ../application/controllers/api/miniblog.php:620
+#: ../application/controllers/api/miniblog.php:655
+#: ../application/controllers/api/miniblog.php:1055
+#: ../application/controllers/api/miniblog.php:1290
+#: ../application/controllers/api/miniblog.php:1313
+#: ../application/controllers/api/miniblog.php:1406
+#: ../application/controllers/follow.php:30
+#: ../application/controllers/follow.php:100
+#: ../application/controllers/follow.php:147
+#: ../application/controllers/follow.php:193
+#: ../application/controllers/migalert.php:96
+#: ../application/controllers/post.php:334
+#: ../application/controllers/profile.php:464
+#: ../application/controllers/profile.php:513
+msgid "Invalid User ID"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:424
+msgid "Invalid Tag ID"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:438
+msgid "Invalid Tag Type"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:570
+#: ../application/controllers/api/miniblog.php:587
+msgid "$1 and you are now friends."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:574
+msgid "You are now a fan of $1. When they add you back, you will be friends."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:578
+msgid "Pending approval from $1."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:581
+msgid "You are already a fan of $1."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:584
+msgid "Error adding $1."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:590
+#: ../application/controllers/api/miniblog.php:636
+#: ../application/controllers/follow.php:67
+#: ../application/controllers/follow.php:231
+msgid "Invalid Status"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:626
+msgid "You are not a Fan of $1, and sadly are no longer Friends."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:629
+msgid "You are not a Fan of $1"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:633
+msgid ""
+"Oops! There was an error in removing you from being $1's Fan. Try again "
+"later."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:667
+msgid "You have approved $1's request to be a Fan"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:671
+msgid "There was an error approving $1's request to be a Fan"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:679
+msgid "You have rejected $1's request to be a Fan"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:683
+msgid "There was an error rejecting $1's request to be a Fan"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:688
+#: ../application/controllers/api/miniblog.php:1097
+#: ../application/controllers/api/miniblog.php:1149
+#: ../application/controllers/api/miniblog.php:1191
+#: ../application/controllers/migalert.php:153
+#: ../application/controllers/migalert.php:208
+#: ../application/controllers/migalert.php:262
+msgid "Invalid Action"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:706
+msgid "Invalid Timestamp"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:823
+#: ../application/controllers/post.php:169
+#: ../application/controllers/post.php:388
+#, php-format
+msgid ""
+"The file you are trying to post might be too large. Please select a file "
+"less than %sMB."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:895
+#: ../application/controllers/search.php:227
+msgid "Search query is empty."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:920
+#: ../application/controllers/search.php:247
+msgid "Invalid Search Location"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1032
+msgid "Invalid Permission"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1066
+msgid "You have accepted friend request from $1"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1070
+msgid "Error accepting friend request from $1"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1077
+msgid "You have rejected friend request from $1"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1081
+msgid "Error rejecting friend request from $1"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1088
+msgid "You have rejected and blocked friend request from $1"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1092
+msgid "Error rejecting and blocking friend request from $1"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1128
+msgid "You have accepted $1 group invitation from $2"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1132
+msgid "Error accepting $1 group invitation from $2"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1140
+msgid "You have rejected $1 group invitation from $2"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1144
+msgid "Error rejecting $1 group invitation from $2"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1168
+#: ../application/controllers/migalert.php:229
+msgid "Invalid Game ID"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1182
+msgid "You have accepted $1 game invitation from $2"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1187
+msgid "You have rejected $1 game invitation from $2"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1218
+#: ../application/controllers/discover.php:218
+msgid "Maximum 5 emails are allowed."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1262
+#: ../application/controllers/message.php:60
+#, php-format
+msgid "Message sent to %s."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1266
+#: ../application/controllers/message.php:64
+#, php-format
+msgid "Unable to send to %s."
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1388
+msgid "Invalid Status Message"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1409
+msgid "Invalid Sort By"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1476
+msgid "Cover Photo URL is not specified"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1547
+#: ../application/controllers/post.php:844
+#: ../application/controllers/share_to_mig33.php:297
+msgid "Post content is empty"
+msgstr ""
+
+#: ../application/controllers/api/miniblog.php:1569
+#: ../application/controllers/post.php:866
+#: ../application/controllers/share_to_mig33.php:318
+#, php-format
+msgid "Post content is more than %s characters"
+msgstr ""
+
+#: ../application/controllers/captcha.php:87
+msgid "Captcha does not match"
+msgstr ""
+
+#: ../application/controllers/captcha.php:101
+#: ../application/views/midlet/captcha/index.php:1
+#: ../application/views/wap/captcha/index.php:3
+msgid "Captcha Check"
+msgstr ""
+
+#: ../application/controllers/datasvc.php:98
+msgid "Permission denied"
+msgstr ""
+
+#: ../application/controllers/discover.php:29
+#: ../application/views/midlet/header.php:9
+#: ../application/views/midlet/header.php:11
+#: ../application/views/wap/footer_wap.php:17
+#: ../application/views/wap/header.php:18
+#: ../application/views/wap/header.php:19
+msgid "Discover"
+msgstr ""
+
+#: ../application/controllers/discover.php:81
+#, php-format
+msgid "%s - Recommendations - Discover"
+msgstr ""
+
+#: ../application/controllers/discover.php:113
+#: ../application/controllers/discover.php:145
+#, php-format
+msgid "%s - Hot Topics - Discover"
+msgstr ""
+
+#: ../application/controllers/discover.php:162
+#, php-format
+msgid "%s - Invite Friends - Discover"
+msgstr ""
+
+#: ../application/controllers/discover.php:190
+#: ../application/controllers/discover.php:243
+#, php-format
+msgid "%s - Email Referral"
+msgstr ""
+
+#: ../application/controllers/discover.php:199
+msgid "Enter at least one email address."
+msgstr ""
+
+#: ../application/controllers/discover.php:212
+msgid "You have entered invalid email(s). Please correct and try again."
+msgstr ""
+
+#: ../application/controllers/discover.php:226
+msgid "Your email referral was sent successfully."
+msgstr ""
+
+#: ../application/controllers/discover.php:230
+msgid "Sorry, unable to send email referrals."
+msgstr ""
+
+#: ../application/controllers/follow.php:42
+#: ../application/controllers/follow.php:63
+msgid "Fan Of"
+msgstr ""
+
+#: ../application/controllers/follow.php:45
+#: ../application/controllers/follow.php:64
+#, php-format
+msgid ""
+"%s and you are now friends. Both of you can see and chat with each other on "
+"your friends list."
+msgstr ""
+
+#: ../application/controllers/follow.php:49
+#, php-format
+msgid ""
+"You are now a fan of %s. When they add you back, you will be able to see and "
+"chat with each other on your friends list."
+msgstr ""
+
+#: ../application/controllers/follow.php:53
+#: ../application/controllers/follow.php:222
+#: ../application/views/module/midlet/profile/people.php:51
+#: ../application/views/module/midlet/profile/search.php:24
+#: ../application/views/module/wap/profile/people.php:12
+#: ../application/views/module/wap/profile/search.php:20
+msgid "Pending"
+msgstr ""
+
+#: ../application/controllers/follow.php:54
+#, php-format
+msgid "Pending approval from %s."
+msgstr ""
+
+#: ../application/controllers/follow.php:57
+#: ../application/controllers/share_to_mig33.php:235
+#, php-format
+msgid "You are already a fan of %s"
+msgstr ""
+
+#: ../application/controllers/follow.php:60
+#: ../application/controllers/share_to_mig33.php:238
+#, php-format
+msgid "Error becoming a fan of %s"
+msgstr ""
+
+#: ../application/controllers/follow.php:84
+#: ../application/controllers/follow.php:131
+#: ../application/controllers/follow.php:178
+#: ../application/controllers/follow.php:270
+#: ../application/views/module/midlet/profile/search.php:31
+msgid "Follow"
+msgstr ""
+
+#: ../application/controllers/follow.php:108
+msgid "Approved"
+msgstr ""
+
+#: ../application/controllers/follow.php:109
+#, php-format
+msgid "You have approved fan request from %s"
+msgstr ""
+
+#: ../application/controllers/follow.php:113
+#, php-format
+msgid "Error approving fan request from %s"
+msgstr ""
+
+#: ../application/controllers/follow.php:155
+msgid "Rejected"
+msgstr ""
+
+#: ../application/controllers/follow.php:156
+#, php-format
+msgid "You have rejected fan request from %s"
+msgstr ""
+
+#: ../application/controllers/follow.php:160
+#, php-format
+msgid "Error rejecting fan request from %s"
+msgstr ""
+
+#: ../application/controllers/follow.php:207
+msgid "Success"
+msgstr ""
+
+#: ../application/controllers/follow.php:210
+#: ../application/views/module/midlet/follow/follow_action_message.php:10
+#, php-format
+msgid "You have now removed %1$s and will be unable to chat with %1$s."
+msgstr ""
+
+#: ../application/controllers/follow.php:214
+#, php-format
+msgid "You have now removed %s."
+msgstr ""
+
+#: ../application/controllers/follow.php:218
+#: ../application/controllers/follow.php:226
+#: ../application/controllers/follow.php:230
+msgid "Failed"
+msgstr ""
+
+#: ../application/controllers/follow.php:219
+#, php-format
+msgid "You are not a fan of %s"
+msgstr ""
+
+#: ../application/controllers/follow.php:223
+#, php-format
+msgid "Pending fan approval from %s. You can not remove now."
+msgstr ""
+
+#: ../application/controllers/follow.php:227
+#, php-format
+msgid "Error removing %s"
+msgstr ""
+
+#: ../application/controllers/home.php:98
+#, php-format
+msgid "%s - Home"
+msgstr ""
+
+#: ../application/controllers/home.php:160
+#, php-format
+msgid "%s - Mentions"
+msgstr ""
+
+#: ../application/controllers/home.php:232
+#, php-format
+msgid "%s - Watch List"
+msgstr ""
+
+#: ../application/controllers/message.php:38
+#: ../application/controllers/message.php:109
+#, php-format
+msgid "%s - New Message"
+msgstr ""
+
+#: ../application/controllers/message.php:113
+#, php-format
+msgid "%s - Messages"
+msgstr ""
+
+#: ../application/controllers/message.php:128
+#: ../application/controllers/message.php:196
+msgid "Invalid Thread ID"
+msgstr ""
+
+#: ../application/controllers/message.php:128
+#: ../application/controllers/message.php:196
+msgid "Invalid Thread ID or Thread ID not specified."
+msgstr ""
+
+#: ../application/controllers/message.php:183
+#, php-format
+msgid "%s - Messages Between %s & %s"
+msgstr ""
+
+#: ../application/controllers/message.php:235
+msgid "Thread deleted successfully."
+msgstr ""
+
+#: ../application/controllers/message.php:239
+msgid "Unable to delete thread."
+msgstr ""
+
+#: ../application/controllers/message.php:247
+msgid "Message deleted from the thread successfully."
+msgstr ""
+
+#: ../application/controllers/message.php:251
+msgid "Unable to delete message from thread."
+msgstr ""
+
+#: ../application/controllers/message.php:266
+msgid "There must at least be one valid recipient."
+msgstr ""
+
+#: ../application/controllers/message.php:279
+#, php-format
+msgid "Only a maximum of %s Recipients are allowed"
+msgstr ""
+
+#: ../application/controllers/message.php:295
+msgid "Message content is empty."
+msgstr ""
+
+#: ../application/controllers/message.php:316
+#, php-format
+msgid "Message content is more than %s characters"
+msgstr ""
+
+#: ../application/controllers/migalert.php:81
+#, php-format
+msgid "%s - %s - migAlerts"
+msgstr ""
+
+#: ../application/controllers/migalert.php:112
+#, php-format
+msgid "You have accepted friend request from %s."
+msgstr ""
+
+#: ../application/controllers/migalert.php:116
+#, php-format
+msgid "Error accepting friend request from %s"
+msgstr ""
+
+#: ../application/controllers/migalert.php:127
+#, php-format
+msgid "You have rejected and blocked friend request from %s"
+msgstr ""
+
+#: ../application/controllers/migalert.php:131
+#, php-format
+msgid "Error rejecting and blocking friend request from %s"
+msgstr ""
+
+#: ../application/controllers/migalert.php:138
+#, php-format
+msgid "You have rejected friend request from %s"
+msgstr ""
+
+#: ../application/controllers/migalert.php:142
+#, php-format
+msgid "Error rejecting friend request from %s"
+msgstr ""
+
+#: ../application/controllers/migalert.php:165
+#, php-format
+msgid "%s - Friend Invite"
+msgstr ""
+
+#: ../application/controllers/migalert.php:187
+msgid "You have accepted the group invitation."
+msgstr ""
+
+#: ../application/controllers/migalert.php:191
+msgid "Error accepting group invitation."
+msgstr ""
+
+#: ../application/controllers/migalert.php:199
+msgid "You have rejected the group invitation."
+msgstr ""
+
+#: ../application/controllers/migalert.php:203
+msgid "Error rejecting group invitation."
+msgstr ""
+
+#: ../application/controllers/migalert.php:220
+#, php-format
+msgid "%s - Group Invite"
+msgstr ""
+
+#: ../application/controllers/migalert.php:242
+msgid "You have accepted the game invitation."
+msgstr ""
+
+#: ../application/controllers/migalert.php:246
+msgid "Error accepting game invitation."
+msgstr ""
+
+#: ../application/controllers/migalert.php:253
+msgid "You have rejected the game invitation."
+msgstr ""
+
+#: ../application/controllers/migalert.php:257
+msgid "Error rejecting game invitation."
+msgstr ""
+
+#: ../application/controllers/migalert.php:275
+#, php-format
+msgid "%s - Game Invite"
+msgstr ""
+
+#: ../application/controllers/nue.php:84
+msgid "Hello! - NUE"
+msgstr ""
+
+#: ../application/controllers/nue.php:95
+msgid "Miniblog - NUE"
+msgstr ""
+
+#: ../application/controllers/nue.php:106
+msgid "Games - NUE"
+msgstr ""
+
+#: ../application/controllers/nue.php:126
+msgid "Opera Mini - NUE"
+msgstr ""
+
+#: ../application/controllers/post.php:35
+#: ../application/controllers/post.php:673
+#: ../application/controllers/post.php:728
+msgid "Invalid Post ID or Post ID not specified."
+msgstr ""
+
+#: ../application/controllers/post.php:112
+#, php-format
+msgid "%s - %s"
+msgstr ""
+
+#: ../application/controllers/post.php:228
+#: ../application/controllers/post.php:252
+#: ../application/controllers/post.php:266
+#: ../application/controllers/post.php:283
+#: ../application/controllers/post.php:419
+#: ../application/controllers/post.php:468
+#: ../application/controllers/post.php:470
+#: ../application/controllers/post.php:829
+#: ../application/views/midlet/header.php:29
+#: ../application/views/midlet/header.php:31
+#: ../application/views/midlet/home/index.php:29
+#: ../application/views/midlet/post/index.php:43
+#: ../application/views/module/wap/post/post_tabs.php:25
+#: ../application/views/wap/home/index.php:8
+#: ../application/views/wap/post/share_email.php:34
+#: ../application/views/wap/share_to_mig33/index.php:83
+#: ../application/views/web/share_to_mig33/button.php:58
+#: ../application/views/web/share_to_mig33/index.php:377
+msgid "Share"
+msgstr ""
+
+#: ../application/controllers/post.php:343
+msgid "Invalid Parent/Root Post ID"
+msgstr ""
+
+#: ../application/controllers/post.php:357
+#: ../application/views/module/wap/postbox/postbox.php:33
+msgid "Emoticons"
+msgstr ""
+
+#: ../application/controllers/post.php:493
+#: ../application/controllers/post.php:695
+#: ../application/controllers/post.php:750
+#, php-format
+msgid "%s - Post"
+msgstr ""
+
+#: ../application/controllers/post.php:573
+msgid "Report Post"
+msgstr ""
+
+#: ../application/controllers/post.php:826
+msgid ""
+"You have successfully share to your friend. Share more to your other friends!"
+msgstr ""
+
+#: ../application/controllers/profile.php:102
+#: ../application/controllers/profile.php:138
+#, php-format
+msgid "%s's Fans"
+msgstr ""
+
+#: ../application/controllers/profile.php:151
+#, php-format
+msgid "%s's Fan Of"
+msgstr ""
+
+#: ../application/controllers/profile.php:188
+#, php-format
+msgid "%s's Fan of"
+msgstr ""
+
+#: ../application/controllers/profile.php:243
+#: ../application/controllers/profile.php:288
+#, php-format
+msgid "%s's Badges"
+msgstr ""
+
+#: ../application/controllers/profile.php:328
+msgid "No badge specified"
+msgstr ""
+
+#: ../application/controllers/profile.php:360
+#: ../application/views/midlet/profile/badges.php:73
+#: ../application/views/wap/profile/badges.php:72
+msgid "Unable to retrieve badge."
+msgstr ""
+
+#: ../application/controllers/profile.php:385
+#, php-format
+msgid "%s's Badge"
+msgstr ""
+
+#: ../application/controllers/profile.php:395
+#, php-format
+msgid "%s's Gifts"
+msgstr ""
+
+#: ../application/controllers/profile.php:410
+#, php-format
+msgid "%s's Cover Photo"
+msgstr ""
+
+#: ../application/controllers/profile.php:433
+#, php-format
+msgid "%s's Details"
+msgstr ""
+
+#: ../application/controllers/profile.php:457
+#: ../application/controllers/profile.php:488
+#, php-format
+msgid "%s - Block %s"
+msgstr ""
+
+#: ../application/controllers/profile.php:468
+msgid "User profile blocked successfully."
+msgstr ""
+
+#: ../application/controllers/profile.php:472
+msgid "Sorry, an error occured while blocking user."
+msgstr ""
+
+#: ../application/controllers/profile.php:517
+msgid "User profile unblocked successfully."
+msgstr ""
+
+#: ../application/controllers/profile.php:521
+msgid "Sorry, an error occured while unblocking user."
+msgstr ""
+
+#: ../application/controllers/profile.php:581
+#: ../application/controllers/profile.php:604
+#, php-format
+msgid "Delete Friend - %s"
+msgstr ""
+
+#: ../application/controllers/profile.php:589
+#, php-format
+msgid "%s - Friend deleted successfully."
+msgstr ""
+
+#: ../application/controllers/profile.php:593
+#, php-format
+msgid "Sorry, an error occured while deleting friend - %s"
+msgstr ""
+
+#: ../application/controllers/search.php:47
+#: ../application/controllers/search.php:66
+#: ../application/views/midlet/discover/facets.php:8
+#: ../application/views/midlet/discover/hashtags.php:8
+#: ../application/views/midlet/discover/index.php:8
+#: ../application/views/midlet/search/index.php:10
+#: ../application/views/midlet/search/posts.php:22
+#: ../application/views/midlet/search/topics.php:22
+#: ../application/views/midlet/search/users.php:22
+#: ../application/views/module/wap/common/search_box.php:14
+#: ../application/views/wap/discover/facets.php:8
+#: ../application/views/wap/discover/hashtags.php:8
+msgid "Search"
+msgstr ""
+
+#: ../application/controllers/search.php:64
+#, php-format
+msgid "Search Results For \"%s\""
+msgstr ""
+
+#: ../application/controllers/search.php:88
+msgid "Search Users"
+msgstr ""
+
+#: ../application/controllers/search.php:102
+#, php-format
+msgid "Search Results For \"%s\" In Users"
+msgstr ""
+
+#: ../application/controllers/search.php:106
+msgid "Search In Users"
+msgstr ""
+
+#: ../application/controllers/search.php:129
+msgid "Search Posts"
+msgstr ""
+
+#: ../application/controllers/search.php:155
+#, php-format
+msgid "Search Results For \"%s\" In Posts"
+msgstr ""
+
+#: ../application/controllers/search.php:159
+msgid "Search In Posts"
+msgstr ""
+
+#: ../application/controllers/search.php:179
+msgid "Search Topics"
+msgstr ""
+
+#: ../application/controllers/search.php:205
+#, php-format
+msgid "Search Results For \"#%s\" In Topics"
+msgstr ""
+
+#: ../application/controllers/search.php:209
+msgid "Search In Topics"
+msgstr ""
+
+#: ../application/controllers/search.php:224
+msgid "Search limit is not specified."
+msgstr ""
+
+#: ../application/controllers/search.php:252
+msgid "Search is temporarily unavailable, please try again later."
+msgstr ""
+
+#: ../application/controllers/share_to_mig33.php:31
+msgid "Login to share a post on migme."
+msgstr ""
+
+#: ../application/controllers/tag.php:63 ../application/controllers/tag.php:96
+msgid "Tag name is not specified."
+msgstr ""
+
+#: ../application/controllers/tag.php:68
+msgid "User not found"
+msgstr ""
+
+#: ../application/controllers/test.php:19
+#, php-format
+msgid "Test Failed: %s"
+msgstr ""
+
+#: ../application/controllers/test.php:26
+msgid "Unable to verify CodeIgniter Install"
+msgstr ""
+
+#: ../application/controllers/test.php:32
+msgid "Unable to verify RPM Install"
+msgstr ""
+
+#: ../application/controllers/test.php:41
+msgid "Unable to ping to API"
+msgstr ""
+
+#: ../application/core/MY_Controller.php:428
+msgid "Invalid Session"
+msgstr ""
+
+#: ../application/core/MY_Controller.php:429
+#, php-format
+msgid "%s. Please <a href=\"%s\">login again</a>."
+msgstr ""
+
+#: ../application/core/MY_Controller.php:472
+msgid "Invalid User Name"
+msgstr ""
+
+#: ../application/domains/badge_domain.php:39
+msgid "Any migme User"
+msgstr ""
+
+#: ../application/domains/badge_domain.php:40
+msgid "No Expiry"
+msgstr ""
+
+#: ../application/domains/badge_domain.php:67
+msgid "Post a message on home page"
+msgstr ""
+
+#: ../application/domains/migbo_user_domain.php:94
+#: ../application/views/wap/profile/details.php:29
+msgid "Verified"
+msgstr ""
+
+#: ../application/domains/migbo_user_domain.php:100
+msgid "Staff"
+msgstr ""
+
+#: ../application/domains/migbo_user_domain.php:110
+msgid "Merchant"
+msgstr ""
+
+#: ../application/domains/migbo_user_domain.php:113
+msgid "Merchant Mentor"
+msgstr ""
+
+#: ../application/domains/migbo_user_domain.php:125
+msgid "Admin"
+msgstr ""
+
+#: ../application/domains/migbo_user_domain.php:128
+msgid "Group Admin"
+msgstr ""
+
+#: ../application/domains/migbo_user_domain.php:131
+msgid "Chat Room Admin"
+msgstr ""
+
+#: ../application/domains/post_domain.php:153
+#: ../application/views/midlet/post/single_post.php:109
+#: ../application/views/wap/post/single_post.php:206
+msgid "This post has been deleted."
+msgstr ""
+
+#: ../application/domains/post_photo_flickr_domain.php:27
+#, php-format
+msgid "Flickr Photo #%s"
+msgstr ""
+
+#: ../application/domains/post_photo_flickr_domain.php:73
+msgid "Flickr photo not found."
+msgstr ""
+
+#: ../application/domains/post_video_flickr_domain.php:31
+msgid "Flickr slideshow not found."
+msgstr ""
+
+#: ../application/domains/post_video_vimeo_domain.php:26
+msgid "Vimeo video not found."
+msgstr ""
+
+#: ../application/errors/error_404.php:4
+msgid "404 Not Found - migme"
+msgstr ""
+
+#: ../application/errors/error_db.php:4
+msgid "Database Error - migme"
+msgstr ""
+
+#: ../application/errors/error_general.php:4
+msgid "Error - migme"
+msgstr ""
+
+#: ../application/errors/midlet/error_general.php:5
+#: ../application/errors/midlet/error_miglevel.php:5
+#: ../application/errors/wap/error_general.php:3
+#: ../application/errors/wap/error_miglevel.php:5
+#: ../application/errors/web/error_miglevel.php:5
+msgid "Oopsies! - migme"
+msgstr ""
+
+#: ../application/errors/midlet/error_general.php:13
+msgid "System is currently undergoing maintenance."
+msgstr ""
+
+#: ../application/errors/midlet/error_general.php:14
+msgid "The page you were looking for is undergoing maintenance."
+msgstr ""
+
+#: ../application/errors/midlet/error_general.php:17
+msgid "Here is the actual error message:"
+msgstr ""
+
+#: ../application/errors/midlet/error_general.php:20
+msgid "404 Not Found"
+msgstr ""
+
+#: ../application/errors/midlet/error_miglevel.php:13
+#: ../application/errors/wap/error_miglevel.php:13
+#: ../application/errors/web/error_miglevel.php:13
+msgid ""
+"Currently, Miniblog is only available for selected miglevels on our feature "
+"phone client."
+msgstr ""
+
+#: ../application/errors/midlet/error_miglevel.php:14
+#: ../application/errors/wap/error_miglevel.php:14
+#: ../application/errors/web/error_miglevel.php:14
+#, php-format
+msgid ""
+"To access Miniblog on your feature phone, please login through WAP at %s"
+msgstr ""
+
+#: ../application/errors/web/error_general.php:3
+msgid "Oopsies! - mig33"
+msgstr ""
+
+#: ../application/helpers/migbo_helper.php:51
+msgid " years old"
+msgstr ""
+
+#: ../application/libraries/LoginDataSvc.php:55
+msgid "Unable to login. Invalid Username or Password."
+msgstr ""
+
+#: ../application/libraries/floodcontrol/Captcha_FloodControl.php:36
+msgid ""
+"You have been flagged, please clear the captcha check before proceeding."
+msgstr ""
+
+#: ../application/libraries/floodcontrol/RateLimit_FloodControl.php:19
+msgid "You have been rate limited, please try again later."
+msgstr ""
+
+#: ../application/models/message/message_model.php:60
+msgid "Empty post"
+msgstr ""
+
+#: ../application/models/message/message_model.php:65
+msgid "Invalid destinations"
+msgstr ""
+
+#: ../application/models/search/search_facets_model.php:17
+#: ../application/models/search/search_facets_model.php:20
+msgid "Hashtags is temporarily unavailable"
+msgstr ""
+
+#: ../application/models/search/search_posts_model.php:17
+#: ../application/models/search/search_posts_model.php:20
+msgid "Post Search is temporarily unavailable"
+msgstr ""
+
+#: ../application/models/search/search_users_model.php:17
+#: ../application/models/search/search_users_model.php:20
+msgid "User Search is temporarily unavailable"
+msgstr ""
+
+#: ../application/views/decorator/midlet.php:8
+#, php-format
+msgid "%s's Profile"
+msgstr ""
+
+#: ../application/views/decorator/midlet.php:10
+msgid "miniBlog"
+msgstr ""
+
+#: ../application/views/decorator/wap.php:47
+msgid ""
+"migme miniBlog - Share your thoughts anytime & anywhere, Add others and "
+"Connect with the world!"
+msgstr ""
+
+#: ../application/views/decorator/wap.php:49
+#: ../application/views/decorator/web.php:36
+#: ../application/views/decorator/web.php:74
+#, php-format
+msgid "%s on migme"
+msgstr ""
+
+#: ../application/views/decorator/wap.php:51
+#: ../application/views/decorator/web.php:38
+#, php-format
+msgid "%s - %s on migme"
+msgstr ""
+
+#: ../application/views/decorator/wap.php:53
+#: ../application/views/decorator/web.php:40
+#, php-format
+msgid "%s - migme"
+msgstr ""
+
+#: ../application/views/decorator/wap.php:78
+msgid ""
+"Join the biggest party in the world! Chat, blog and play with friends new "
+"and old, artists and celebrities."
+msgstr ""
+
+#: ../application/views/decorator/wap.php:80
+#: ../application/views/wap/header.php:49
+msgid "Sign Up"
+msgstr ""
+
+#: ../application/views/decorator/wap.php:81
+msgid "Sign In"
+msgstr ""
+
+#: ../application/views/decorator/web.php:34
+#: ../application/views/decorator/web.php:42
+#: ../application/views/wap/header.php:11
+#: ../application/views/wap/header.php:39
+#: ../application/views/wap/share_to_mig33/index.php:40
+msgid "migme"
+msgstr ""
+
+#: ../application/views/decorator/web.php:66
+#: ../application/views/decorator/web.php:87
+#: ../application/views/decorator/web.php:94
+msgid ""
+"Share your thoughts anytime & anywhere, Add others and Connect with the "
+"world!"
+msgstr ""
+
+#: ../application/views/decorator/web.php:121
+#, php-format
+msgid "%s on migme RSS Feed"
+msgstr ""
+
+#: ../application/views/midlet/captcha/index.php:8
+#: ../application/views/wap/captcha/index.php:9
+msgid "Refresh Captcha"
+msgstr ""
+
+#: ../application/views/midlet/captcha/index.php:11
+#: ../application/views/wap/captcha/index.php:11
+msgid "Please enter the letters displayed in the image above."
+msgstr ""
+
+#: ../application/views/midlet/captcha/index.php:12
+#: ../application/views/module/wap/email/prompt.php:10
+#: ../application/views/module/web/email/prompt.php:8
+#: ../application/views/wap/captcha/index.php:12
+msgid "Submit"
+msgstr ""
+
+#: ../application/views/midlet/discover/external_email_referral.php:11
+msgid ""
+"You can invite up to 5 friends at once. Use comma \",\" to separate email "
+"addresses."
+msgstr ""
+
+#: ../application/views/midlet/discover/external_email_referral.php:14
+#: ../application/views/wap/footer_wap.php:9
+msgid "Invite"
+msgstr ""
+
+#: ../application/views/midlet/discover/facets.php:4
+#: ../application/views/midlet/discover/hashtags.php:4
+#: ../application/views/midlet/discover/index.php:4
+msgid "Type Usernames or Topics and Search here:"
+msgstr ""
+
+#: ../application/views/midlet/discover/facets.php:15
+#: ../application/views/wap/discover/facets.php:30
+msgid "#"
+msgstr ""
+
+#: ../application/views/midlet/discover/facets.php:18
+#: ../application/views/midlet/discover/hashtags.php:18
+#: ../application/views/wap/discover/facets.php:38
+#: ../application/views/wap/discover/hashtags.php:36
+msgid "There are no hot topics available at the moment."
+msgstr ""
+
+#: ../application/views/midlet/discover/index.php:14
+#: ../application/views/wap/discover/recommended_people.php:6
+msgid "People you might be interested in"
+msgstr ""
+
+#: ../application/views/midlet/discover/index.php:22
+#: ../application/views/wap/discover/recommended_people.php:16
+msgid "There are no users to display at the moment."
+msgstr ""
+
+#: ../application/views/midlet/follow/index.php:2
+#: ../application/views/midlet/migalert/friend_invite.php:2
+#: ../application/views/midlet/migalert/game_invite.php:2
+#: ../application/views/midlet/migalert/group_invite.php:2
+#: ../application/views/midlet/profile/badges.php:2
+#: ../application/views/midlet/profile/block.php:3
+#: ../application/views/midlet/profile/delete_friend.php:3
+#: ../application/views/midlet/profile/details.php:2
+#: ../application/views/module/wap/common/follow_navbar.php:2
+#: ../application/views/module/wap/profile/header.php:4
+#: ../application/views/wap/migalert/friend_invite.php:2
+#: ../application/views/wap/migalert/game_invite.php:2
+#: ../application/views/wap/migalert/group_invite.php:2
+#: ../application/views/wap/post/single_post.php:19
+#: ../application/views/wap/profile/badges.php:2
+#: ../application/views/wap/profile/details.php:2
+msgid "Back"
+msgstr ""
+
+#: ../application/views/midlet/header.php:3
+#: ../application/views/midlet/header.php:5
+#: ../application/views/wap/header.php:14
+#: ../application/views/wap/header.php:15
+msgid "Home"
+msgstr ""
+
+#: ../application/views/midlet/header.php:16
+#: ../application/views/midlet/header.php:22
+msgid "migAlerts"
+msgstr ""
+
+#: ../application/views/midlet/header.php:18
+#: ../application/views/midlet/header.php:24
+#, php-format
+msgid "migAlerts (%s)"
+msgstr ""
+
+#: ../application/views/midlet/home/index.php:11
+#: ../application/views/midlet/post/index.php:25
+#, php-format
+msgid "What are you thinking? (%s)"
+msgstr ""
+
+#: ../application/views/midlet/home/index.php:17
+#: ../application/views/midlet/post/index.php:31
+#: ../application/views/midlet/post/single_post.php:48
+msgid "Post to Twitter"
+msgstr ""
+
+#: ../application/views/midlet/home/index.php:24
+#: ../application/views/midlet/post/index.php:38
+#: ../application/views/midlet/post/single_post.php:55
+msgid "Post to Facebook"
+msgstr ""
+
+#: ../application/views/midlet/home/index.php:31
+#: ../application/views/midlet/post/index.php:45
+#: ../application/views/midlet/post/single_post.php:79
+msgid "Share to Facebook/Twitter?"
+msgstr ""
+
+#: ../application/views/midlet/home/index.php:47
+#: ../application/views/wap/home/index.php:38
+msgid "You have an empty feed"
+msgstr ""
+
+#: ../application/views/midlet/home/index.php:50
+#: ../application/views/wap/home/index.php:41
+msgid "Sorry, there is no feed available."
+msgstr ""
+
+#: ../application/views/midlet/home/mentions.php:23
+#: ../application/views/wap/home/mentions.php:28
+msgid "No one mentioned you yet."
+msgstr ""
+
+#: ../application/views/midlet/home/watchlist.php:9
+#: ../application/views/wap/home/watchlist.php:14
+msgid "No posts found"
+msgstr ""
+
+#: ../application/views/midlet/home/watchlist.php:12
+#: ../application/views/wap/home/watchlist.php:17
+msgid "Error retrieving watch list"
+msgstr ""
+
+#: ../application/views/midlet/message/create.php:11
+#: ../application/views/wap/message/create.php:19
+msgid "To"
+msgstr ""
+
+#: ../application/views/midlet/message/create.php:22
+#: ../application/views/wap/message/create.php:29
+msgid "Send"
+msgstr ""
+
+#: ../application/views/midlet/message/create.php:26
+#: ../application/views/wap/message/create.php:34
+msgid ""
+"Type the usernames you want to send messages to. Separate multiple usernames "
+"with commas."
+msgstr ""
+
+#: ../application/views/midlet/message/index.php:15
+#: ../application/views/wap/message/index.php:24
+#, php-format
+msgid "%s does not have any messages."
+msgstr ""
+
+#: ../application/views/midlet/message/index.php:18
+#: ../application/views/midlet/message/view.php:43
+#: ../application/views/wap/message/index.php:27
+#: ../application/views/wap/message/view.php:57
+msgid "You have not received any messages recently."
+msgstr ""
+
+#: ../application/views/midlet/message/view.php:4
+#: ../application/views/wap/message/view.php:11
+#, php-format
+msgid "Messages between %s & %s (%s)"
+msgstr ""
+
+#: ../application/views/midlet/message/view.php:40
+#: ../application/views/wap/message/view.php:54
+msgid "You do not have any messages."
+msgstr ""
+
+#: ../application/views/midlet/migalert/friend_invite.php:7
+#: ../application/views/wap/migalert/friend_invite.php:9
+#, php-format
+msgid "Are you sure you want to reject the friend request from %s ?"
+msgstr ""
+
+#: ../application/views/midlet/migalert/friend_invite.php:8
+#: ../application/views/wap/migalert/friend_invite.php:10
+msgid "Also block this user"
+msgstr ""
+
+#: ../application/views/midlet/migalert/friend_invite.php:9
+#: ../application/views/midlet/post/report.php:11
+msgid "Ok"
+msgstr ""
+
+#: ../application/views/midlet/migalert/friend_invite.php:10
+#: ../application/views/midlet/post/report.php:11
+#: ../application/views/midlet/profile/block.php:18
+#: ../application/views/wap/migalert/friend_invite.php:15
+#: ../application/views/wap/post/report.php:16
+#: ../application/views/wap/profile/block.php:16
+msgid "Cancel"
+msgstr ""
+
+#: ../application/views/midlet/migalert/index.php:15
+#: ../application/views/wap/migalert/index.php:76
+#, php-format
+msgid "%s does not have any migAlerts."
+msgstr ""
+
+#: ../application/views/midlet/post/emotional_footprint.php:5
+#: ../application/views/wap/post/emotional_footprint.php:4
+msgid "Choose your emotion and leave a footprint:"
+msgstr ""
+
+#: ../application/views/midlet/post/emotional_footprint.php:20
+msgid "remove"
+msgstr ""
+
+#: ../application/views/midlet/post/emotional_footprint.php:31
+#: ../application/views/wap/post/emotional_footprint.php:21
+#, php-format
+msgid "%d emotional footprint for <a href=\"%s\">this post</a>"
+msgstr ""
+
+#: ../application/views/midlet/post/emotional_footprint.php:52
+#: ../application/views/wap/post/emotional_footprint.php:44
+msgid "No one left an emotional footprint."
+msgstr ""
+
+#: ../application/views/midlet/post/emotional_footprint.php:57
+msgid "Go back"
+msgstr ""
+
+#: ../application/views/midlet/post/report.php:4
+#: ../application/views/wap/post/report.php:8
+#, php-format
+msgid "Are you sure to report post \"%s\" by %s?"
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:25
+#: ../application/views/module/wap/post/post_actions.php:61
+#: ../application/views/module/wap/post/post_tabs.php:6
+#: ../application/views/module/wap/post/post_tabs.php:9
+#: ../application/views/module/wap/post/post_tabs.php:16
+#: ../application/views/module/wap/post/post_tabs.php:19
+#: ../application/views/module/wap/post/post_tabs.php:27
+#: ../application/views/module/wap/post/post_tabs.php:30
+#: ../application/views/module/wap/post/post_tabs.php:38
+#: ../application/views/module/wap/post/post_tabs.php:41
+msgid "Replies"
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:27
+msgid "Reshares"
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:65
+#: ../application/views/module/midlet/post/post_text_reshare.php:13
+msgid "Reshare"
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:69
+msgid "Also post on my miniblog"
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:74
+msgid "Also reply to original post"
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:94
+#: ../application/views/wap/post/single_post.php:184
+msgid "No replies has been posted yet"
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:105
+msgid "No reshares has been made yet"
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:111
+#: ../application/views/wap/post/single_post.php:208
+#, php-format
+msgid "%s has not posted anything yet."
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:118
+#: ../application/views/wap/post/single_post.php:215
+#, php-format
+msgid "Only approved fans have access to %s's profile and post."
+msgstr ""
+
+#: ../application/views/midlet/post/single_post.php:119
+msgid ""
+"You need to send a request before you can start becoming a fan of this user."
+msgstr ""
+
+#: ../application/views/midlet/post/vote.php:5
+#: ../application/views/wap/post/vote.php:5
+#, php-format
+msgid "%d person voted for <a href=\"%s\">this post</a>"
+msgstr ""
+
+#: ../application/views/midlet/post/vote.php:6
+#: ../application/views/wap/post/vote.php:6
+#, php-format
+msgid "%d people voted for <a href=\"%s\">this post</a>"
+msgstr ""
+
+#: ../application/views/midlet/post/vote.php:21
+#: ../application/views/wap/post/vote.php:25
+msgid "No one has voted yet."
+msgstr ""
+
+#: ../application/views/midlet/post/vote.php:26
+#: ../application/views/wap/post/emotional_footprint.php:47
+#: ../application/views/wap/post/vote.php:28
+msgid "&laquo; Go back"
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:4
+#: ../application/views/wap/profile/badges.php:3
+#, php-format
+msgid "My Badges (%s)"
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:4
+#: ../application/views/wap/profile/badges.php:3
+#, php-format
+msgid "%s's Badges (%s)"
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:6
+#: ../application/views/wap/profile/badges.php:4
+msgid "All Badges"
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:35
+#: ../application/views/wap/profile/badges.php:40
+msgid "You have not obtained any badges yet."
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:35
+#: ../application/views/wap/profile/badges.php:40
+#, php-format
+msgid "%s has not obtained any badges yet."
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:38
+#: ../application/views/wap/profile/badges.php:43
+#, php-format
+msgid "Unable to retrieve %s's badges."
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:59
+#: ../application/views/wap/profile/badges.php:65
+msgid "Name:"
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:62
+#: ../application/views/wap/profile/badges.php:66
+msgid "Description:"
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:65
+#: ../application/views/wap/profile/badges.php:67
+msgid "Who Can Unlock:"
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:68
+#: ../application/views/wap/profile/badges.php:68
+msgid "Validity:"
+msgstr ""
+
+#: ../application/views/midlet/profile/badges.php:78
+#: ../application/views/wap/profile/badges.php:76
+#, php-format
+msgid ""
+"<a href=\"%s\" title=\"Click here\">Click here</a> to learn more about the "
+"\"XLent migLover\" and \"Coach\" badges!"
+msgstr ""
+
+#: ../application/views/midlet/profile/block.php:12
+#: ../application/views/wap/profile/block.php:12
+#, php-format
+msgid "Are you sure you want to block %s ?"
+msgstr ""
+
+#: ../application/views/midlet/profile/block.php:17
+#: ../application/views/wap/migalert/friend_invite.php:13
+#: ../application/views/wap/post/report.php:14
+#: ../application/views/wap/profile/block.php:14
+msgid "OK"
+msgstr ""
+
+#: ../application/views/midlet/profile/delete_friend.php:13
+#: ../application/views/wap/profile/delete_friend.php:13
+#, php-format
+msgid "Are you sure you want to un-friend %s?"
+msgstr ""
+
+#: ../application/views/midlet/profile/delete_friend.php:19
+#: ../application/views/wap/profile/delete_friend.php:15
+msgid "Yes"
+msgstr ""
+
+#: ../application/views/midlet/profile/delete_friend.php:20
+#: ../application/views/wap/profile/delete_friend.php:17
+msgid "No"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:7
+msgid "[Basic]"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:9
+msgid "Username: "
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:11
+msgid "Member Since: "
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:13
+#: ../application/views/module/midlet/profile/people.php:24
+#: ../application/views/module/wap/profile/people.php:54
+msgid "Verified Profile: "
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:20
+#: ../application/views/wap/profile/details.php:37
+msgid "Country:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:21
+#: ../application/views/wap/profile/details.php:41
+msgid "Gender:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:29
+#: ../application/views/wap/profile/details.php:51
+msgid "Relationship Status:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:32
+#: ../application/views/wap/profile/details.php:58
+msgid "Birthday:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:34
+#: ../application/views/wap/profile/details.php:63
+msgid "Interests:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:35
+#: ../application/views/wap/profile/details.php:67
+msgid "About Me:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:37
+msgid "[Details]"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:39
+#: ../application/views/wap/profile/details.php:75
+msgid "Real Name:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:40
+#: ../application/views/wap/profile/details.php:79
+msgid "External Email:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:41
+#: ../application/views/wap/profile/details.php:83
+msgid "City:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:42
+#: ../application/views/wap/profile/details.php:87
+msgid "State:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:43
+#: ../application/views/wap/profile/details.php:91
+msgid "School:"
+msgstr ""
+
+#: ../application/views/midlet/profile/details.php:44
+#: ../application/views/wap/profile/details.php:95
+msgid "Company:"
+msgstr ""
+
+#: ../application/views/midlet/profile/fanof.php:9
+#: ../application/views/wap/profile/fanof.php:14
+#, php-format
+msgid "%s is not a fan of anyone yet."
+msgstr ""
+
+#: ../application/views/midlet/profile/fans.php:9
+#: ../application/views/wap/profile/fans.php:14
+#, php-format
+msgid "%s does not have any fans yet."
+msgstr ""
+
+#: ../application/views/midlet/profile/friends.php:7
+#: ../application/views/wap/profile/friends.php:17
+#, php-format
+msgid "%s does not have any friends."
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:13
+#: ../application/views/midlet/profile/index.php:392
+msgid "Pending Approval"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:18
+#: ../application/views/midlet/profile/index.php:44
+#: ../application/views/midlet/profile/index.php:396
+#: ../application/views/midlet/profile/index.php:419
+msgid "Full Profile"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:21
+#: ../application/views/midlet/profile/index.php:398
+msgid "Edit Profile"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:24
+#: ../application/views/midlet/profile/index.php:400
+msgid "Edit Avatar"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:29
+#: ../application/views/midlet/profile/index.php:38
+#: ../application/views/midlet/profile/index.php:404
+#: ../application/views/midlet/profile/index.php:413
+#: ../application/views/module/midlet/profile/people.php:56
+#: ../application/views/module/midlet/profile/people.php:58
+#: ../application/views/module/midlet/profile/search.php:29
+#: ../application/views/module/wap/profile/people.php:19
+#: ../application/views/module/wap/profile/search.php:25
+#: ../application/views/module/wap/profile/search.php:27
+#: ../application/views/wap/post/emoticon.php:30
+#: ../application/views/wap/profile/index.php:52
+#: ../application/views/wap/profile/index.php:73
+#: ../application/views/web/share_to_mig33/follow.php:340
+#: ../application/views/web/share_to_mig33/index.php:286
+msgid "Add"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:33
+#: ../application/views/midlet/profile/index.php:408
+#: ../application/views/module/midlet/profile/people.php:63
+#: ../application/views/module/midlet/profile/people.php:65
+#: ../application/views/module/midlet/profile/search.php:36
+#: ../application/views/module/midlet/profile/search.php:38
+msgid "Remove"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:47
+msgid "Mention"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:55
+#: ../application/views/midlet/profile/index.php:426
+#: ../application/views/midlet/profile/index.php:528
+msgid " [Gift]"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:56
+#: ../application/views/midlet/profile/index.php:427
+#: ../application/views/midlet/profile/index.php:529
+msgid " Gifts"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:68
+#: ../application/views/midlet/profile/index.php:434
+msgid "Chat"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:77
+#: ../application/views/midlet/profile/index.php:557
+msgid " Likes"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:80
+msgid "[Like]"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:88
+msgid " Votes"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:91
+msgid "[Vote]"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:99
+#, php-format
+msgid "%s %s"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:101
+msgid "Comments"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:101
+msgid "[Comment]"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:109
+#: ../application/views/midlet/profile/index.php:451
+#: ../application/views/module/wap/post/post_link_reply.php:24
+#: ../application/views/module/wap/post/post_photo_reply.php:24
+#: ../application/views/module/wap/post/post_text_reply.php:24
+#: ../application/views/module/wap/post/post_text_reshare.php:24
+#: ../application/views/module/wap/post/post_video_reply.php:24
+#: ../application/views/wap/post/single_post.php:159
+msgid "Report"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:115
+#: ../application/views/midlet/profile/index.php:456
+msgid "Block"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:117
+#: ../application/views/midlet/profile/index.php:458
+msgid "Unblock"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:138
+msgid "Less"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:147
+#: ../application/views/midlet/profile/index.php:468
+#: ../application/views/module/wap/post/post_tabs.php:36
+#: ../application/views/wap/header.php:32
+#: ../application/views/wap/header.php:33
+msgid "More"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:157
+#: ../application/views/midlet/profile/index.php:484
+msgid " Posts"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:160
+#: ../application/views/midlet/profile/index.php:493
+#: ../application/views/module/midlet/submenu/followers.php:35
+#: ../application/views/module/midlet/submenu/followers.php:41
+#, php-format
+msgid "Fan of (%s)"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:164
+#: ../application/views/midlet/profile/index.php:505
+msgid " Friends"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:167
+#: ../application/views/wap/profile/index.php:99
+#: ../application/views/web/share_to_mig33/follow.php:315
+#: ../application/views/web/share_to_mig33/index.php:334
+msgid "Badges"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:172
+#: ../application/views/midlet/profile/index.php:521
+msgid " Games"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:175
+#: ../application/views/midlet/profile/index.php:538
+#: ../application/views/module/midlet/profile/people.php:19
+#: ../application/views/module/midlet/profile/people.php:41
+#: ../application/views/module/midlet/profile/search.php:19
+#: ../application/views/module/midlet/submenu/followers.php:21
+#: ../application/views/module/midlet/submenu/followers.php:27
+#: ../application/views/module/wap/profile/people.php:71
+#, php-format
+msgid "Fans (%s)"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:180
+#: ../application/views/midlet/profile/index.php:550
+msgid " Groups"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:187
+#: ../application/views/midlet/profile/index.php:575
+#: ../application/views/wap/profile/index.php:121
+msgid " Chatrooms"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:192
+#: ../application/views/midlet/profile/index.php:587
+#: ../application/views/wap/profile/index.php:126
+msgid " Footprints"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:197
+#: ../application/views/midlet/profile/index.php:581
+#: ../application/views/wap/profile/index.php:131
+msgid " Photos"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:205
+#: ../application/views/midlet/profile/index.php:594
+#: ../application/views/wap/profile/index.php:142
+msgid " Emoticons"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:212
+#: ../application/views/midlet/profile/index.php:600
+msgid " Less"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:216
+#: ../application/views/midlet/profile/index.php:606
+msgid " More"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:236
+#: ../application/views/midlet/profile/index.php:331
+#, php-format
+msgid "migLevel %s "
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:421
+msgid "@Mention"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:440
+msgid "Like"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:444
+msgid "Vote Avatar"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:449
+msgid "Comment Avatar"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:464
+msgid " Delete"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:511
+msgid " Badges"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:563
+msgid " Avatar Votes"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:569
+msgid " Avatar Comments"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:612
+msgid "Recent Post"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:625
+msgid "All Posts >>"
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:629
+#: ../application/views/midlet/profile/posts.php:10
+#: ../application/views/wap/profile/index.php:265
+#: ../application/views/wap/profile/posts.php:16
+#, php-format
+msgid "Sorry, %s hasn't posted any feeds yet."
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:635
+#: ../application/views/midlet/profile/posts.php:13
+#: ../application/views/wap/profile/index.php:270
+#: ../application/views/wap/profile/posts.php:20
+#, php-format
+msgid "Unable to retrieve %s's feed."
+msgstr ""
+
+#: ../application/views/midlet/profile/index.php:641
+#: ../application/views/midlet/profile/posts.php:19
+#, php-format
+msgid ""
+"%s's profile is protected, only approved fans have access to %s's posts and "
+"complete profile."
+msgstr ""
+
+#: ../application/views/midlet/profile/posts.php:1
+#: ../application/views/wap/profile/posts.php:3
+#, php-format
+msgid "All %s's Posts"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:16
+msgid "[All]"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:18
+#: ../application/views/midlet/search/posts.php:31
+#: ../application/views/midlet/search/topics.php:32
+#: ../application/views/wap/search/index.php:10
+#: ../application/views/wap/search/posts.php:22
+#: ../application/views/wap/search/topics.php:21
+#: ../application/views/wap/search/users.php:22
+msgid "Users"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:20
+#: ../application/views/midlet/search/topics.php:34
+#: ../application/views/midlet/search/users.php:34
+#: ../application/views/module/midlet/submenu/home.php:3
+#: ../application/views/module/midlet/submenu/home.php:5
+#: ../application/views/module/wap/common/home_navbar.php:2
+#: ../application/views/wap/profile/index.php:83
+#: ../application/views/wap/search/index.php:11
+#: ../application/views/wap/search/posts.php:23
+#: ../application/views/wap/search/topics.php:22
+#: ../application/views/wap/search/users.php:23
+#: ../application/views/web/share_to_mig33/follow.php:306
+#: ../application/views/web/share_to_mig33/index.php:325
+msgid "Posts"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:22
+#: ../application/views/midlet/search/posts.php:35
+#: ../application/views/midlet/search/users.php:36
+#: ../application/views/wap/search/index.php:12
+#: ../application/views/wap/search/posts.php:24
+#: ../application/views/wap/search/topics.php:23
+#: ../application/views/wap/search/users.php:24
+msgid "Topics"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:32
+#: ../application/views/wap/search/index.php:22
+#, php-format
+msgid "Found %s results matching \"%s\" in users"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:34
+#: ../application/views/wap/search/index.php:24
+#, php-format
+msgid "Found %s result matching \"%s\" in users"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:38
+#: ../application/views/wap/search/index.php:28
+#, php-format
+msgid "Found no matches for \"%s\" in users"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:49
+#: ../application/views/midlet/search/users.php:50
+#: ../application/views/wap/search/index.php:40
+#: ../application/views/wap/search/users.php:40
+#, php-format
+msgid "No result found for user \"%s\"."
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:52
+#: ../application/views/midlet/search/index.php:88
+msgid "View more..."
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:67
+#: ../application/views/wap/search/index.php:62
+#, php-format
+msgid "Found %s results matching \"%s\" in posts"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:69
+#: ../application/views/wap/search/index.php:64
+#, php-format
+msgid "Found %s result matching \"%s\" in posts"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:73
+#: ../application/views/wap/search/index.php:68
+#, php-format
+msgid "Found no matches for \"%s\" in posts"
+msgstr ""
+
+#: ../application/views/midlet/search/index.php:84
+#: ../application/views/midlet/search/posts.php:48
+#: ../application/views/wap/search/index.php:80
+#: ../application/views/wap/search/posts.php:55
+#, php-format
+msgid "No result found for post \"%s\"."
+msgstr ""
+
+#: ../application/views/midlet/search/posts.php:29
+#: ../application/views/midlet/search/topics.php:30
+#: ../application/views/midlet/search/users.php:30
+#: ../application/views/module/midlet/submenu/message.php:3
+#: ../application/views/wap/search/index.php:9
+#: ../application/views/wap/search/posts.php:21
+#: ../application/views/wap/search/topics.php:20
+#: ../application/views/wap/search/users.php:21
+msgid "All"
+msgstr ""
+
+#: ../application/views/midlet/search/posts.php:33
+msgid "[Posts]"
+msgstr ""
+
+#: ../application/views/midlet/search/topics.php:36
+msgid "[Topics]"
+msgstr ""
+
+#: ../application/views/midlet/search/topics.php:49
+#: ../application/views/wap/search/index.php:120
+#: ../application/views/wap/search/topics.php:54
+#, php-format
+msgid "No result found for topic \"%s\"."
+msgstr ""
+
+#: ../application/views/midlet/search/users.php:32
+msgid "[Users]"
+msgstr ""
+
+#: ../application/views/midlet/tag/index.php:5
+#: ../application/views/wap/tag/index.php:9
+#, php-format
+msgid "Featured %s"
+msgstr ""
+
+#: ../application/views/module/midlet/follow/follow_action_message.php:12
+#, php-format
+msgid "You have now removed %s"
+msgstr ""
+
+#: ../application/views/module/midlet/message/message.php:20
+#: ../application/views/module/midlet/message/thread.php:15
+#: ../application/views/module/wap/post/post_link_reply.php:22
+#: ../application/views/module/wap/post/post_photo_reply.php:22
+#: ../application/views/module/wap/post/post_text_reply.php:22
+#: ../application/views/module/wap/post/post_text_reshare.php:22
+#: ../application/views/module/wap/post/post_video_reply.php:22
+#: ../application/views/wap/post/single_post.php:157
+msgid "Delete"
+msgstr ""
+
+#: ../application/views/module/midlet/message/message.php:23
+#: ../application/views/module/midlet/message/thread.php:18
+#: ../application/views/module/midlet/post/post_event.php:41
+#: ../application/views/module/midlet/post/post_photo.php:32
+#: ../application/views/module/midlet/post/post_text.php:44
+#: ../application/views/module/midlet/post/post_text_reply.php:15
+#: ../application/views/module/midlet/post/post_text_reshare.php:15
+#: ../application/views/module/wap/message/message.php:25
+#: ../application/views/module/wap/message/thread.php:25
+#, php-format
+msgid "via %s"
+msgstr ""
+
+#: ../application/views/module/midlet/message/thread.php:11
+#, php-format
+msgid "Messages(%s)"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_action_message.php:7
+msgid "Post watched successfully"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_action_message.php:9
+msgid "Error watching post"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_action_message.php:13
+msgid "Post unwatched successfully"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_action_message.php:15
+msgid "Error unwatching post"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_action_message.php:19
+#: ../application/views/module/wap/post/post_action_message.php:19
+msgid "Post reported successfully"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_action_message.php:21
+#: ../application/views/module/wap/post/post_action_message.php:21
+msgid "Error reporting post"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_action_message.php:25
+#: ../application/views/module/wap/post/post_action_message.php:25
+msgid "Post deleted successfully"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_action_message.php:27
+#: ../application/views/module/wap/post/post_action_message.php:27
+msgid "Error deleting post"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_activity.php:7
+#: ../application/views/module/wap/post/post_activity.php:15
+#, php-format
+msgid "%s became friends with %s."
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_activity.php:14
+#: ../application/views/module/wap/post/post_activity.php:22
+#, php-format
+msgid "%s became friends with %s and %s other people."
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_activity.php:22
+#: ../application/views/module/wap/post/post_activity.php:30
+#, php-format
+msgid "%s sent a %s to %s."
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_activity.php:30
+#: ../application/views/module/wap/post/post_activity.php:38
+#, php-format
+msgid "%s and %s other people sent the gift %s."
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_event.php:48
+#: ../application/views/module/midlet/post/post_photo.php:39
+#: ../application/views/module/midlet/post/post_text.php:51
+#, php-format
+msgid "votes"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_event.php:48
+#: ../application/views/module/midlet/post/post_photo.php:39
+#: ../application/views/module/midlet/post/post_text.php:51
+#, php-format
+msgid "vote"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_event.php:60
+#: ../application/views/module/midlet/post/post_photo.php:51
+#: ../application/views/module/midlet/post/post_text.php:63
+#, php-format
+msgid "%s emotions"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_event.php:60
+#: ../application/views/module/midlet/post/post_photo.php:51
+#: ../application/views/module/midlet/post/post_text.php:63
+#, php-format
+msgid "%s emotion"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_event.php:68
+#: ../application/views/module/midlet/post/post_event.php:80
+#: ../application/views/module/midlet/post/post_photo.php:59
+#: ../application/views/module/midlet/post/post_photo.php:71
+#: ../application/views/module/midlet/post/post_text.php:71
+#: ../application/views/module/midlet/post/post_text.php:83
+msgid "watching"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_event.php:70
+#: ../application/views/module/midlet/post/post_photo.php:61
+#: ../application/views/module/midlet/post/post_text.php:73
+msgid "watch"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_event.php:73
+#: ../application/views/module/midlet/post/post_photo.php:64
+#: ../application/views/module/midlet/post/post_text.php:76
+msgid "delete"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_event.php:75
+#: ../application/views/module/midlet/post/post_photo.php:66
+#: ../application/views/module/midlet/post/post_text.php:78
+msgid "report"
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_text.php:22
+msgid "Reply: "
+msgstr ""
+
+#: ../application/views/module/midlet/post/post_text.php:24
+msgid "Repost: "
+msgstr ""
+
+#: ../application/views/module/midlet/profile/people.php:16
+#: ../application/views/module/midlet/profile/search.php:16
+#, php-format
+msgid "migLevel %s"
+msgstr ""
+
+#: ../application/views/module/midlet/profile/people.php:27
+#: ../application/views/module/wap/profile/people.php:57
+msgid "About Me: "
+msgstr ""
+
+#: ../application/views/module/midlet/profile/people.php:34
+#: ../application/views/module/wap/profile/people.php:64
+#, php-format
+msgid "%s might be your friend"
+msgstr ""
+
+#: ../application/views/module/midlet/profile/people.php:36
+#: ../application/views/module/wap/profile/people.php:66
+msgid "Might be your friend"
+msgstr ""
+
+#: ../application/views/module/midlet/profile/people.php:39
+#: ../application/views/module/wap/profile/people.php:69
+#, php-format
+msgid "%s and %s people are fans of this user"
+msgstr ""
+
+#: ../application/views/module/midlet/profile/people.php:43
+#: ../application/views/module/wap/profile/people.php:73
+msgid "You might be interested in"
+msgstr ""
+
+#: ../application/views/module/midlet/profile/people.php:53
+#: ../application/views/module/midlet/profile/search.php:26
+#: ../application/views/module/wap/profile/search.php:22
+msgid "You"
+msgstr ""
+
+#: ../application/views/module/midlet/profile/people.php:61
+#: ../application/views/module/midlet/profile/search.php:34
+#: ../application/views/module/midlet/submenu/followers.php:33
+#: ../application/views/module/midlet/submenu/followers.php:39
+#: ../application/views/wap/profile/index.php:91
+msgid "Fan of"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/discover.php:3
+#: ../application/views/module/midlet/submenu/discover.php:5
+#: ../application/views/wap/discover/facets.php:18
+#: ../application/views/wap/discover/hashtags.php:18
+msgid "Recommendations"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/discover.php:9
+#: ../application/views/module/midlet/submenu/discover.php:11
+#: ../application/views/wap/discover/facets.php:19
+#: ../application/views/wap/discover/hashtags.php:19
+msgid "Hot Topics"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/discover.php:15
+#: ../application/views/module/midlet/submenu/discover.php:17
+msgid "Invite Friends"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/discover.php:20
+#: ../application/views/wap/discover/facets.php:21
+#: ../application/views/wap/discover/hashtags.php:21
+msgid "migUp"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/followers.php:5
+#: ../application/views/module/midlet/submenu/followers.php:11
+#: ../application/views/module/wap/profile/people.php:24
+#: ../application/views/wap/profile/index.php:56
+msgid "Friends"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/followers.php:7
+#: ../application/views/module/midlet/submenu/followers.php:13
+#, php-format
+msgid "Friends (%s)"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/followers.php:19
+#: ../application/views/module/midlet/submenu/followers.php:25
+#: ../application/views/wap/profile/index.php:87
+msgid "Fans"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/home.php:10
+#: ../application/views/module/midlet/submenu/home.php:16
+#: ../application/views/module/wap/profile/header.php:8
+msgid "@Mentions"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/home.php:12
+#: ../application/views/module/midlet/submenu/home.php:18
+#, php-format
+msgid "@Mentions (%s)"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/home.php:24
+#: ../application/views/module/midlet/submenu/home.php:30
+msgid "Watch"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/home.php:26
+#: ../application/views/module/midlet/submenu/home.php:32
+#, php-format
+msgid "Watch (%s)"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/home.php:37
+msgid "Messages"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/home.php:39
+#, php-format
+msgid "Messages (%s)"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/home.php:43
+#: ../application/views/module/midlet/submenu/home.php:45
+msgid "Activities"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/message.php:5
+msgid "All Messages"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/message.php:9
+msgid "New"
+msgstr ""
+
+#: ../application/views/module/midlet/submenu/message.php:11
+msgid "New Message"
+msgstr ""
+
+#: ../application/views/module/wap/common/banner.php:8
+msgid "banner"
+msgstr ""
+
+#: ../application/views/module/wap/common/follow_navbar.php:3
+#: ../application/views/wap/profile/friends.php:3
+#, php-format
+msgid "<a href=\"%s\">Fans (%s)</a>"
+msgstr ""
+
+#: ../application/views/module/wap/common/follow_navbar.php:4
+#: ../application/views/wap/profile/friends.php:4
+#, php-format
+msgid "<a href=\"%s\">Fan of (%s)</a>"
+msgstr ""
+
+#: ../application/views/module/wap/common/home_navbar.php:3
+msgid "Mentions"
+msgstr ""
+
+#: ../application/views/module/wap/common/home_navbar.php:4
+#, php-format
+msgid "Favorites (%s)"
+msgstr ""
+
+#: ../application/views/module/wap/email/prompt.php:8
+#: ../application/views/module/web/email/prompt.php:5
+msgid ""
+"Leave us your email address and be the first to know about migme updates!"
+msgstr ""
+
+#: ../application/views/module/wap/email/prompt.php:16
+#: ../application/views/module/wap/email/prompt.php:40
+msgid "[X]"
+msgstr ""
+
+#: ../application/views/module/wap/email/prompt.php:30
+#: ../application/views/module/web/email/prompt.php:24
+#, php-format
+msgid ""
+"Your email address (%s) is not verified - please do so by clicking on the "
+"link we'd sent to your inbox. Didn't receive it? Get our migBots to <a class="
+"\"%s\" href=\"%s\">send it again</a>."
+msgstr ""
+
+#: ../application/views/module/wap/follow/follow_action_message.php:10
+#, php-format
+msgid "You have removed %1$s."
+msgstr ""
+
+#: ../application/views/module/wap/follow/follow_action_message.php:12
+#, php-format
+msgid "You have removed %s."
+msgstr ""
+
+#: ../application/views/module/wap/post/post_action_message.php:7
+msgid "Well Done! Favorited post successfully"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_action_message.php:9
+msgid "Error favoriting a post"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_action_message.php:13
+msgid "Removed favorite successfully"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_action_message.php:15
+msgid "Error removing favorite"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_actions.php:12
+msgid "Remove vote"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_actions.php:12
+msgid "Vote"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_actions.php:21
+msgid "Votes"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_actions.php:37
+#: ../application/views/module/wap/post/post_actions.php:45
+#: ../application/views/module/wap/post/post_actions.php:52
+msgid "Emotions"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_actions.php:74
+msgid "Subscribed"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_actions.php:77
+msgid "Subscribe"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_event.php:20
+#: ../application/views/module/wap/post/post_link.php:40
+#: ../application/views/module/wap/post/post_photo.php:40
+#: ../application/views/module/wap/post/post_text.php:41
+#: ../application/views/module/wap/post/post_video.php:40
+msgid "View Single Post"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_event.php:46
+#: ../application/views/module/wap/post/post_link.php:35
+#: ../application/views/module/wap/post/post_link_reply.php:16
+#: ../application/views/module/wap/post/post_photo.php:35
+#: ../application/views/module/wap/post/post_photo_reply.php:16
+#: ../application/views/module/wap/post/post_root.php:10
+#: ../application/views/module/wap/post/post_root.php:47
+#: ../application/views/module/wap/post/post_text.php:36
+#: ../application/views/module/wap/post/post_text_reply.php:16
+#: ../application/views/module/wap/post/post_text_reshare.php:16
+#: ../application/views/module/wap/post/post_video.php:35
+#: ../application/views/module/wap/post/post_video_reply.php:16
+#, php-format
+msgid "via&nbsp;%s"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_link.php:16
+#: ../application/views/module/wap/post/post_photo.php:16
+#: ../application/views/module/wap/post/post_text.php:17
+#: ../application/views/module/wap/post/post_video.php:16
+msgid "Promoted"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_photo.php:51
+#: ../application/views/module/wap/post/post_text.php:52
+#: ../application/views/module/wap/post/post_video.php:51
+msgid "Reply:"
+msgstr ""
+
+#: ../application/views/module/wap/post/post_photo.php:54
+#: ../application/views/module/wap/post/post_text.php:55
+#: ../application/views/module/wap/post/post_video.php:54
+msgid "Repost:"
+msgstr ""
+
+#: ../application/views/module/wap/postbox/postbox.php:24
+msgid "Photos"
+msgstr ""
+
+#: ../application/views/module/wap/postbox/postbox.php:42
+#: ../application/views/module/wap/postbox/postbox.php:44
+#: ../application/views/wap/post/single_post.php:134
+msgid "Post To Twitter"
+msgstr ""
+
+#: ../application/views/module/wap/postbox/postbox.php:51
+#: ../application/views/module/wap/postbox/postbox.php:53
+#: ../application/views/wap/post/single_post.php:140
+msgid "Post To Facebook"
+msgstr ""
+
+#: ../application/views/module/wap/postbox/postbox.php:65
+msgid "Also repost"
+msgstr ""
+
+#: ../application/views/module/wap/profile/people.php:27
+msgid "I'm a Fan"
+msgstr ""
+
+#: ../application/views/module/wap/profile/people.php:39
+#: ../application/views/wap/profile/index.php:174
+#, php-format
+msgid "Level %s"
+msgstr ""
+
+#: ../application/views/module/wap/profile/people.php:48
+#, php-format
+msgid "Fans %s"
+msgstr ""
+
+#: ../application/views/module/wap/profile/search.php:17
+#, php-format
+msgid "%s Fans"
+msgstr ""
+
+#: ../application/views/module/wap/profile/search.php:30
+#: ../application/views/wap/profile/index.php:59
+msgid "I'm a fan"
+msgstr ""
+
+#: ../application/views/touch/post/hidden_post.php:16
+msgid "Error posting update"
+msgstr ""
+
+#: ../application/views/wap/discover/external_email_referral.php:10
+msgid ""
+"Get rewarded for every successful signup and when your friends grow in their "
+"migLevels!"
+msgstr ""
+
+#: ../application/views/wap/discover/external_email_referral.php:10
+msgid "Click here"
+msgstr ""
+
+#: ../application/views/wap/discover/external_email_referral.php:10
+msgid "for more details."
+msgstr ""
+
+#: ../application/views/wap/discover/external_email_referral.php:15
+msgid "Invite via Facebook"
+msgstr ""
+
+#: ../application/views/wap/discover/external_email_referral.php:26
+msgid ""
+"Enter friend's email address below and we'll send them an email inviting "
+"them to join migme."
+msgstr ""
+
+#: ../application/views/wap/discover/external_email_referral.php:29
+msgid "Invite now"
+msgstr ""
+
+#: ../application/views/wap/discover/facets.php:20
+#: ../application/views/wap/discover/hashtags.php:20
+msgid "Invite&nbsp;Friends"
+msgstr ""
+
+#: ../application/views/wap/follow/index.php:12
+msgid "Back to Pending Requests"
+msgstr ""
+
+#: ../application/views/wap/follow/index.php:14
+#, php-format
+msgid "Back to %s's Profile"
+msgstr ""
+
+#: ../application/views/wap/footer_wap.php:3
+#: ../application/views/wap/footer_wap.php:15
+msgid "Download"
+msgstr ""
+
+#: ../application/views/wap/footer_wap.php:5
+msgid "Settings"
+msgstr ""
+
+#: ../application/views/wap/footer_wap.php:7
+msgid "Credits"
+msgstr ""
+
+#: ../application/views/wap/footer_wap.php:11
+#: ../application/views/wap/footer_wap.php:19
+msgid "Help"
+msgstr ""
+
+#: ../application/views/wap/footer_wap.php:13
+msgid "Logout"
+msgstr ""
+
+#: ../application/views/wap/footer_wap.php:23
+#: ../application/views/wap/share_to_mig33/index.php:98
+#, php-format
+msgid "Copyright &copy; %s Project Goth. All Rights Reserved."
+msgstr ""
+
+#: ../application/views/wap/header.php:22
+#: ../application/views/wap/header.php:23
+msgid "Play"
+msgstr ""
+
+#: ../application/views/wap/header.php:28
+#: ../application/views/wap/header.php:29
+msgid "Notifications"
+msgstr ""
+
+#: ../application/views/wap/header.php:41
+msgid "Welcome to migme"
+msgstr ""
+
+#: ../application/views/wap/header.php:49
+msgid "Login"
+msgstr ""
+
+#: ../application/views/wap/home/index.php:7
+#: ../application/views/wap/post/index.php:47
+#: ../application/views/wap/post/media.php:26
+#, php-format
+msgid "What are you thinking? (%s characters only)"
+msgstr ""
+
+#: ../application/views/wap/message/create.php:3
+#: ../application/views/wap/message/index.php:3
+#: ../application/views/wap/message/view.php:5
+msgid "All&nbsp;Messages"
+msgstr ""
+
+#: ../application/views/wap/message/create.php:4
+#: ../application/views/wap/message/index.php:4
+#: ../application/views/wap/message/view.php:6
+msgid "New&nbsp;Message"
+msgstr ""
+
+#: ../application/views/wap/migalert/index.php:44
+msgid "LEVEL"
+msgstr ""
+
+#: ../application/views/wap/post/emoticon.php:33
+msgid "No emoticons available."
+msgstr ""
+
+#: ../application/views/wap/post/media.php:14
+msgid "Choose pictures:"
+msgstr ""
+
+#: ../application/views/wap/post/share_email.php:21
+msgid "Email"
+msgstr ""
+
+#: ../application/views/wap/post/share_email.php:25
+msgid "Subject"
+msgstr ""
+
+#: ../application/views/wap/post/single_post.php:87
+#, php-format
+msgid "Repost it (%s characters maximum)"
+msgstr ""
+
+#: ../application/views/wap/post/single_post.php:99
+#, php-format
+msgid "Any thoughts? (%s characters maximum)"
+msgstr ""
+
+#: ../application/views/wap/post/single_post.php:129
+msgid "Share via Email"
+msgstr ""
+
+#: ../application/views/wap/post/single_post.php:151
+#: ../application/views/wap/post/single_post.php:163
+msgid "Unfavorite"
+msgstr ""
+
+#: ../application/views/wap/post/single_post.php:153
+msgid "Favorite"
+msgstr ""
+
+#: ../application/views/wap/post/single_post.php:199
+msgid "No repost has been made yet"
+msgstr ""
+
+#: ../application/views/wap/post/single_post.php:216
+msgid "You need to send a request before you can start adding this user."
+msgstr ""
+
+#: ../application/views/wap/profile/badges.php:3
+msgid "My Badges"
+msgstr ""
+
+#: ../application/views/wap/profile/details.php:14
+msgid "Basic"
+msgstr ""
+
+#: ../application/views/wap/profile/details.php:18
+msgid "Username:"
+msgstr ""
+
+#: ../application/views/wap/profile/details.php:22
+msgid "Member Since:"
+msgstr ""
+
+#: ../application/views/wap/profile/details.php:71
+msgid "Details"
+msgstr ""
+
+#: ../application/views/wap/profile/friends.php:2
+#, php-format
+msgid "<a href=\"%s\">Friends (%s)</a>"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:11
+msgid " Edit Profile"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:14
+msgid " Edit Avatar"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:18
+msgid " Mention"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:21
+msgid " Report"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:25
+msgid " Send Gift"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:30
+msgid " Block"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:33
+msgid " Unblock"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:42
+msgid "View Credit Balance"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:47
+msgid " Pending Approval"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:63
+msgid "Remove fan"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:95
+#: ../application/views/web/share_to_mig33/follow.php:312
+#: ../application/views/web/share_to_mig33/index.php:331
+msgid "Gifts"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:103
+msgid "Groups"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:107
+msgid "Chatrooms"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:111
+msgid "Games"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:239
+#, php-format
+msgid "%s's Recent Post"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:262
+msgid "View all posts"
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:276
+#: ../application/views/wap/profile/posts.php:27
+#, php-format
+msgid ""
+"%s's profile is protected, only approved fans have access to %s's posts and "
+"complete profile. Please send a request by click \"Add\" to be a fan of this "
+"account."
+msgstr ""
+
+#: ../application/views/wap/profile/index.php:286
+#: ../application/views/wap/profile/posts.php:32
+#, php-format
+msgid "%s to view full profile, or read, reply, reshare more %s's feed."
+msgstr ""
+
+#: ../application/views/wap/search/index.php:45
+#: ../application/views/wap/search/index.php:85
+#: ../application/views/wap/search/index.php:125
+msgid "View more"
+msgstr ""
+
+#: ../application/views/wap/search/index.php:102
+#, php-format
+msgid "Found %s results matching \"%s\" in topics"
+msgstr ""
+
+#: ../application/views/wap/search/index.php:104
+#, php-format
+msgid "Found %s result matching \"%s\" in topics"
+msgstr ""
+
+#: ../application/views/wap/search/index.php:108
+#, php-format
+msgid "Found no matches for \"%s\" in topics"
+msgstr ""
+
+#: ../application/views/wap/search/posts.php:34
+#: ../application/views/wap/search/topics.php:33
+msgid "Latest Posted"
+msgstr ""
+
+#: ../application/views/wap/search/posts.php:35
+#: ../application/views/wap/search/topics.php:34
+msgid "Most Popular"
+msgstr ""
+
+#: ../application/views/wap/search/posts.php:36
+#: ../application/views/wap/search/topics.php:35
+msgid "Most Replied"
+msgstr ""
+
+#: ../application/views/wap/search/posts.php:37
+#: ../application/views/wap/search/topics.php:36
+msgid "Most Reshared"
+msgstr ""
+
+#: ../application/views/wap/search/posts.php:38
+#: ../application/views/wap/search/topics.php:37
+msgid "Most Footprints"
+msgstr ""
+
+#: ../application/views/wap/search/posts.php:40
+#: ../application/views/wap/search/topics.php:39
+msgid "Sort"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:10
+msgid "Share to migme - migme miniBlog"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:41
+msgid "Share To migme"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:46
+#: ../application/views/web/share_to_mig33/index.php:251
+msgid "Share content with your migme fans!"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:49
+msgid "Post successfully shared to migme"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:52
+#, php-format
+msgid "You will be redirected back to where you came from in %s seconds"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:54
+#, php-format
+msgid "You will be redirected back to your miniBlog Home in %s seconds"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:57
+#, php-format
+msgid "Please <a href=\"%s\">click here</a> if you are not redirected."
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:67
+msgid " characters only"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:71
+#: ../application/views/web/share_to_mig33/follow.php:331
+#: ../application/views/web/share_to_mig33/index.php:365
+msgid "Username"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:75
+#: ../application/views/web/share_to_mig33/follow.php:332
+#: ../application/views/web/share_to_mig33/index.php:366
+msgid "Password"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:79
+msgid "Login & Post"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:89
+msgid "Not a migme user?"
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:90
+#, php-format
+msgid ""
+"We're not just blue and white and limited to %s characters. In fact, the "
+"possibilities are endless! There are so many activities to explore and "
+"enjoy. Watch out, you might actually get addicted..."
+msgstr ""
+
+#: ../application/views/wap/share_to_mig33/index.php:91
+msgid "SIGN UP NOW!"
+msgstr ""
+
+#: ../application/views/wap/tag/index.php:6
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/button.php:4
+#, php-format
+msgid "%s Button - migme"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/button.php:61
+#, php-format
+msgid "Fan of %s"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/button.php:64
+#: ../application/views/web/share_to_mig33/button.php:66
+#, php-format
+msgid "Add %s"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:7
+msgid "Follow migme users - migme"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:232
+#: ../application/views/web/share_to_mig33/index.php:255
+#, php-format
+msgid ""
+"Add <a href=\"%s\" target=\"migme-new-window\" title=\"%s\">%s</a> for more "
+"news and updates!"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:234
+#, php-format
+msgid ""
+"You are a fan of %s. <a href=\"%s\" target=\"migme-new-window\">View "
+"Profile</a>"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:237
+#: ../application/views/web/share_to_mig33/index.php:342
+msgid "Close"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:274
+#: ../application/views/web/share_to_mig33/index.php:293
+#, php-format
+msgid "Level <strong>%s</strong>"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:291
+#: ../application/views/web/share_to_mig33/index.php:310
+msgid "Verified Profile:"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:295
+#: ../application/views/web/share_to_mig33/index.php:314
+msgid "About:"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:309
+#: ../application/views/web/share_to_mig33/index.php:328
+msgid "Fan"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:338
+msgid "Login & Add"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/follow.php:347
+#: ../application/views/web/share_to_mig33/index.php:385
+#, php-format
+msgid ""
+"Not a migme member yet? <a href=\"%s\" target=\"migme-new-window\" title="
+"\"Sign up\">Sign up</a> Now!"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/index.php:7
+msgid "Share content with your migme fans! - migme"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/index.php:253
+#, php-format
+msgid ""
+"Message successfully posted. <a href=\"%s\" target=\"migme-new-window\">View "
+"Post</a>"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/index.php:358
+msgid "Share your thoughts"
+msgstr ""
+
+#: ../application/views/web/share_to_mig33/index.php:375
+msgid "Login & Share"
+msgstr ""

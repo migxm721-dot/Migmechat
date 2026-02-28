@@ -1,0 +1,78 @@
+all:
+  decorators:
+    midlet:
+      name: decorator
+    ajax:
+      name: common.ajax
+      body_class: page
+    touch:
+      name: common.touch
+    wap:
+      name: common.migbo_wap
+
+setup_im:
+  view:
+    name: setup_im
+  components:
+    - common.user return_here_upon_login
+    - im.no_aim ?
+
+setup_im_post:
+  function: setup_im_post
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: setup_im_confirmed
+  components:
+    - common.user
+    - im.no_aim ?
+    - im.setup_im ?
+
+setup_im_remove:
+  function: setup_im_remove
+  decorators:
+    midlet:
+      name: none
+  view:
+    name: setup_im
+  components:
+    - common.user
+    - im.no_aim ?
+
+home:
+  function: home
+  view:
+    name: home
+  components:
+    - common.user
+    - im.no_aim ?
+
+edit:
+  view:
+    name: edit
+  components:
+    - common.user
+    - im.no_aim ?
+    - edit_im
+
+facebook_setup:
+  view:
+    name: facebook_setup
+  components:
+    - common.user return_here_upon_login
+
+facebook_auth:
+  view:
+    name: facebook_auth
+  components:
+    - common.user
+    - facebook_auth
+
+facebook_test_user:
+  view:
+    name: facebook_test_user
+  components:
+    - common.user
+    - common.staff ?
+    - facebook_test_user

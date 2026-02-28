@@ -1,0 +1,75 @@
+body{font-family:Helvetica, Arial, Verdana, sans-serif;font-size:0.7em;color:#333;margin:0;padding:0;}
+h1{padding:0;margin:0;color:#fff;font-size:1.1em;line-height:18px;display:inline;vertical-align:top;}
+h2, h3, h4 {padding:0; margin:5px 0 1px 0;}
+h2 {font-size:1.1em;color:#0C75BD;}
+h3 {font-size:1em;}
+p {margin:0 0 0.3em 0;}
+.info p, #help p {margin-bottom:0.6em;}
+ol,ul {padding-left:20px;margin:0;padding-bottom:3px;}
+a:link, a:visited {color:#0000EE;}
+h2 a, h3 a {font-weight:normal;}
+
+.sec{color:#888;}
+.error{color:red;}
+.small{font-size:0.8em;}
+
+#header {padding:0;margin:0;background:#555 url(../wap2/img/header_mobile_bg.gif) left bottom repeat-x;border-bottom:1px solid #cfcfcf;}
+#header h1 {padding-left:2px;}
+#content {padding:0 2px;}
+
+#footer {padding:3px;background:#eee;border-top:1px solid #d3d3d3;}
+#footer p {margin:0;color:#777;}
+
+form label {display:block;margin:5px 0 2px 0;font-weight:bold;}
+form input {font-size:1em;}
+form input.btn{margin:5px 0;}
+form .sec {font-size:0.9em;}
+
+.promo {padding:2px;background:#edffdb url(../wap2/img/box_green_bg.gif) left bottom repeat-x;border: 1px solid #8ce730;}
+.promo h2, .promo h3 {margin:0;}
+
+#mc-join .promo {}
+#mc-join .promo h2 {font-size:1.1em;color:#246c00;}
+#mc-join .promo a {display:block;}
+#mc-join ol strong {display:block;}
+
+.focus {padding:2px; margin:2px 0;background:#eefbff url(../wap2/img/box_blue_bg.gif) left bottom repeat-x;border: 1px solid #8ac2e9;}
+.focus h2 {margin:-2px;background:#1FA9DB;color:#fff;padding: 1px 0;}
+.focus h3 {margin:0;}
+#s-guide h3 {margin-top:5px;}
+
+.sysmsg {padding:2px; margin:2px 0;background:#fcfcd5;border: 1px solid #ffea5e;}
+
+.zero {background:#feecec url(../wap2/img/box_red_bg.gif) left bottom repeat-x;border:1px solid #fd9c9c;}
+.positive {background:#edffdb url(../wap2/img/box_green_bg.gif) left bottom repeat-x;border: 1px solid #8ce730;}
+
+.section{padding-bottom:2px;background:url(/sites/resources/images/wap/section_mobile_bg.gif) left bottom repeat-x;}
+.section h2 {color:#444;background:#F2F7FF; line-height:1.2em;margin:0 -2px 3px -2px;border-bottom:1px solid #DEEAFC;border-top:1px solid #DEEAFC;padding: 0 0 0 2px;}
+div.first {border-top:0 none;}
+.border-top {border-top:1px dotted #ccc;}
+.nobg {background:none;}
+
+#mc-home .section h2 {font-size:1em;}
+#callrates .section {border-top:0 none;border-bottom:solid 1px #ccc;padding-bottom:0;margin-bottom:3px;background:#F2F7FF;}
+
+#balance {padding:2px; margin:2px 0;}
+#balance p {margin:0;}
+
+#transactions ol li {padding:0.1em 0;}
+#transactions table, #transactions table td {border: 0 none;}
+table {margin-bottom:2px;}
+table .index, table .date {text-align:right;}
+table td.index {color:#888;}
+table .date {padding:0 4px;}
+table .odd, .odd {background:#f8f8f8;}
+
+#profile .avatar {float:left;margin-right:5px;margin-bottom:5px;}
+#mc-customer #summary {clear:both;}
+
+#lm p {margin:1px 0;}
+#lm a {display:block;}
+#lm .focus a {display:inline;}
+
+#ma {padding:2px 0;list-style:none;}
+#ma p {margin:0.3em 0;}
+#ma a {font-weight:bold;}

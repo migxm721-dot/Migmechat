@@ -1,0 +1,11 @@
+BUILD: .150
+MIDlet-1: mig33v45,/MiG33.png,main.Main
+MIDlet-Icon: MiG33.png
+MIDlet-Install-Notify: http://www.mig33.com/midlet/member/c_info.php?awtrack=wap
+MIDlet-Jar-Size: 218050
+MIDlet-Jar-URL: mig33v45.jar
+MIDlet-Name: mig33v45
+MIDlet-Vendor: Project Goth, Inc.
+MIDlet-Version: 4.50
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0

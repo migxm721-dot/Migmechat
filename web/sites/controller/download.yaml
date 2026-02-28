@@ -1,0 +1,6 @@
+client:
+  function: client
+  view:
+    name: client
+  components:
+    - client

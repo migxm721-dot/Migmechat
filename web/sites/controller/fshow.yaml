@@ -1,0 +1,65 @@
+all:
+  decorators:
+    midlet:
+      name: decorator
+    wap:
+      name: common.migbo_wap
+    ajax:
+      name: decorator
+    touch:
+      name: common.touch
+
+home:
+  view:
+    name: home
+  components:
+    - common.user
+    - midlet_version ?
+    - miglevel ?
+    - captcha.is_captcha_required ?
+    - user_auth ?
+    - home
+
+play:
+  view:
+    name: play
+  components:
+    - common.user
+    - midlet_version ?
+    - miglevel ?
+    - captcha.is_captcha_required ?
+    - user_auth ?
+    - play
+    - avatar_vote
+
+voters:
+  view:
+    name: voters
+  components:
+    - common.user
+    - miglevel ?
+    - captcha.is_captcha_required ?
+    - user_auth ?
+    - voters
+
+miglevel_req:
+  view:
+    name: miglevel_req
+  components:
+    - common.user
+
+midlet_version_req:
+  view:
+    name: midlet_version_req
+  components:
+    - common.user
+
+help:
+  view:
+    name: help
+  components:
+    - common.user
+    - midlet_version ?
+    - miglevel ?
+    - captcha.is_captcha_required ?
+    - user_auth ?

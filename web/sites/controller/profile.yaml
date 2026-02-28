@@ -1,0 +1,274 @@
+all:
+  decorators:
+    ajax:
+      name: common.ajax
+    wap:
+      name: common.migbo_wap
+    touch:
+      name: common.touch
+    midlet:
+      name: common.midlet
+    json:
+      name: common.json
+
+display_pic_xml:
+  view:
+    name: display_pic_xml
+  decorators:
+    ajax:
+      name: none
+  components:
+    - common.user
+
+user_auth:
+  view:
+    name: auth
+  components:
+    - common.user
+
+home:
+  function: home_router
+  components:
+    - common.user
+    - home_migbo_enabled ?
+
+home_migbo:
+  function: home_migbo
+  components:
+    - common.user
+    - home_migbo_enabled ?
+    - home_migbo
+
+home_migcore:
+  decorators:
+    midlet:
+      name: common.midlet
+      page_title: "%USERNAME%'s Profile"
+  view:
+    name: home
+  components:
+    - common.user
+    - common.flood_control 20/60
+    - profile
+    - common.user_permissions
+    - is_enabled ?
+    - captcha.is_captcha_required ?
+    - user.user_valid ?
+    - common.privacy
+    - avatar.avatar
+    - avatar.user_avatar_setting
+    - avatar.comment_count
+    - record_footprint
+    - footprint_count
+    - load_profile_snippets
+    - gifts.gifts
+    - paintwars.get_paint
+    - games.games_played
+
+list_games:
+  decorators:
+    midlet:
+      name: common.midlet
+  view:
+    name: list_games
+  components:
+    - common.user
+    - common.flood_control
+    - common.user_permissions
+    - profile
+    - common.privacy
+    - captcha.is_captcha_required ?
+    - user.user_valid ?
+    - user.private_profile ?
+    - games.games_played
+
+error:
+  view:
+    name: error
+  components:
+    - common.user
+
+about_me:
+  decorators:
+    midlet:
+      page_title: %USERNAME%
+      name: common.midlet
+  view:
+    name: about_me
+  components:
+    - common.user
+    - profile
+    - common.privacy
+    - avatar.avatar
+    - user.private_profile ?
+
+edit:
+  function: edit_profile
+
+update_profile:
+  function: edit_profile
+
+update_status:
+  view:
+    name: update_status
+  components:
+    - common.user
+    - profile
+
+update_status_submit:
+  function: home_router
+  components:
+    - common.user
+    - common.flood_control 10/300
+    - captcha.is_captcha_required ?
+    - update_status
+
+view_status:
+  view:
+    name: view_status
+  components:
+    - common.user
+    - get_status
+
+like_user:
+# home router will absorb error message for home_migbo
+  function: home_router
+  components:
+    - common.user
+    - common.flood_control
+    - common.receiver_flood_control
+    - captcha.is_captcha_required ?
+    - common.user_permissions
+    - common.user_like
+
+user_current_balance:
+  function: show_user_balance
+  view:
+    name: user_balance
+  components:
+    - common.user
+    - common.user_permissions
+
+gifts_received:
+  decorators:
+    midlet:
+      name: common.midlet
+  view:
+    name: gifts_received
+  components:
+    - common.user return_here_upon_login
+    - common.user_permissions
+    - common.privacy
+    - profile
+    - user.private_profile ?
+    - gifts.gifts
+    - notification.clear_vg_notifications
+
+gifts_received_like:
+  function: show_gift_received
+  components:
+    - common.user
+    - virtual_gift_received.like_gift
+
+gifts_received_dislike:
+  function: show_gift_received
+  components:
+    - common.user
+    - virtual_gift_received.dislike_gift
+
+view_display_picture:
+  view:
+    name: view_display_picture
+  components:
+    - common.user
+    - profile
+    - avatar.avatar
+
+footprints:
+  decorators:
+    midlet:
+      name: common.midlet
+  view:
+    name: footprints
+  components:
+    - common.user
+    - profile
+    - common.privacy
+    - footprints
+
+footprints_history:
+  decorators:
+    midlet:
+      name: common.midlet
+  view:
+    name: footprints_history
+  components:
+    - common.user
+    - profile
+    - common.privacy
+    - footprints_history
+
+footprint_remove:
+  decorators:
+    midlet:
+      name: common.midlet
+  view:
+    name: footprints_history
+  components:
+    - common.user
+    - profile
+    - common.privacy
+    - remove_footprint
+    - footprints_history
+
+search:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      page_title: Search a Friend
+      name: common.midlet
+  view:
+    name: search
+  components:
+    - common.user
+
+search_submit:
+  decorators:
+    ajax:
+      name: common.ajax
+      body_class: page
+    midlet:
+      name: common.midlet
+  view:
+    name: search_submit
+  components:
+    - common.user
+    - search
+
+private_profile:
+  view:
+    name: private_profile
+  components:
+    - common.user
+
+paintwars_paint:
+  function: paint
+  components:
+    - common.user
+    - paintwars.midlet_version ?
+    - paintwars.miglevel ?
+    - captcha.is_captcha_required ?
+    - paintwars.user_auth ?
+    - paintwars.paint
+
+paintwars_clean:
+  function: clean
+  components:
+    - common.user
+    - paintwars.midlet_version ?
+    - paintwars.miglevel ?
+    - captcha.is_captcha_required ?
+    - paintwars.user_auth ?
+    - paintwars.clean

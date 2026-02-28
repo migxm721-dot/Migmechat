@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.projectgoth</groupId>
+	<artifactId>migbo</artifactId>
+	<version>1.43.120</version>
+	<packaging>jar</packaging>
+	<name>migbo-datasvc-assembly Zip Archive</name>
+	<url>http://www.mig33.com</url>
+
+	<repositories>
+		<repository>
+			<id>mig33</id>
+			<url>https://tools.projectgoth.com/nexus/content/groups/public/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
+    <scm>
+        <connection>scm:git:ssh://git@github.com/mig33/migbo-datasvc-assembly.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/mig33/migbo-datasvc-assembly.git</developerConnection>
+        <url>scm:git:ssh://git@github.com/mig33/migbo-datasvc-assembly.git</url>
+    </scm>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Nexus Release Repo</name>
+			<url>https://tools.projectgoth.com/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Nexus Release Repo</name>
+			<url>https://tools.projectgoth.com/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.projectgoth.migbo</groupId>
+			<type>war</type>
+			<artifactId>migbo-datasvc-web</artifactId>
+			<version>1.43.120</version>
+		</dependency>
+		<dependency>
+			<groupId>com.projectgoth.migbo</groupId>
+			<artifactId>migbo-datasvc-core</artifactId>
+			<version>1.43.120</version>
+		</dependency>
+	</dependencies>
+
+	<properties>
+		<migbo.zip.filename>migbo-${project.version}</migbo.zip.filename>
+	</properties>
+
+	<build>
+		<finalName>migbo-${project.version}</finalName>
+		<plugins>
+
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2.1</version>
+				<executions>
+					<execution>
+						<id>assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>attached</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<finalName>${migbo.zip.filename}</finalName>
+					<appendAssemblyId>false</appendAssemblyId>
+					<outputDirectory>target</outputDirectory>
+					<ignoreMissingDescriptor>true</ignoreMissingDescriptor>
+
+ 					<descriptors>
+						<descriptor>src/main/assemble/distribution.xml</descriptor>
+					</descriptors>
+					<outputDirectory>target</outputDirectory>
+				</configuration>
+			</plugin>
+
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-release-plugin</artifactId>
+	            <version>2.4.1</version>
+	            <dependencies>
+	                <dependency>
+	                    <groupId>org.apache.maven.plugins</groupId>
+	                    <artifactId>maven-scm-plugin</artifactId>
+	                    <version>1.8.1</version>
+	                </dependency>
+	            </dependencies>
+	        </plugin>        
+
+		</plugins>
+	</build>
+
+
+</project>

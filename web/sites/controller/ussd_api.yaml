@@ -1,0 +1,65 @@
+send_error:
+  function: send_error
+
+register:
+  function: register
+  components:
+    - get_partner
+    - is_api_enabled ?
+    - is_authorized ?
+    - register ?
+    - register
+
+user:
+  function: user
+  components:
+    - get_partner
+    - is_api_enabled ?
+    - is_authorized ?
+    - get_user ?
+    - user
+
+purchase:
+  function: credit_transaction
+  components:
+    - get_partner
+    - user
+    - is_api_enabled ?
+    - is_authorized ?
+    - credit_transaction ?
+    - purchase
+
+redeem:
+  function: credit_transaction
+  components:
+    - get_partner
+    - user
+    - is_api_enabled ?
+    - is_authorized ?
+    - credit_transaction ?
+    - redeem
+
+redeem_topup:
+  function: credit_transaction
+  components:
+    - get_partner
+    - user
+    - is_api_enabled ?
+    - is_authorized ?
+    - credit_transaction ?
+    - redeem_bonus
+
+balance:
+  function: balance
+  components:
+    - get_partner
+    - user
+    - is_api_enabled ?
+    - is_authorized ?
+    - balance ?
+    - balance
+
+check:
+  function: ping
+  components:
+    - is_api_enabled ?

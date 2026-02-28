@@ -1,0 +1,1422 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="fusion_test">
+	<table_data name="avatarrating" />
+	<table_data name="avatarratingsummary" />
+	<table_data name="user">
+	<row>
+		<field name="ID">2214</field>
+		<field name="Username">cherrymoo</field>
+		<field name="DateRegistered">2012-01-06 07:42:50</field>
+		<field name="Password">11password</field>
+		<field name="DisplayName"  xsi:nil="true" />
+		<field name="DisplayPicture" xsi:nil="true" />
+		<field name="StatusMessage" xsi:nil="true" />
+		<field name="StatusTimeStamp">2012-03-07 07:48:35</field>
+		<field name="CountryID">199</field>
+		<field name="Language">ENG</field>
+		<field name="EmailAddress">mcheng.work@gmail.com</field>
+		<field name="OnMailingList" xsi:nil="true" />
+		<field name="ChatRoomAdmin">0</field>
+		<field name="ChatRoomBans">0</field>
+		<field name="ContactListVersion">0</field>
+		<field name="MSNUsername" xsi:nil="true" />
+		<field name="MSNPassword" xsi:nil="true" />
+		<field name="YahooUsername" xsi:nil="true" />
+		<field name="YahooPassword" xsi:nil="true" />
+		<field name="AIMUsername" xsi:nil="true" />
+		<field name="AIMPassword" xsi:nil="true" />
+		<field name="GTalkUsername" xsi:nil="true" />
+		<field name="GTalkPassword" xsi:nil="true" />
+		<field name="RegistrationIPAddress">10.3.3.92</field>
+		<field name="RegistrationDevice">Web</field>
+		<field name="FirstLoginDate">2012-01-06 07:43:41</field>
+		<field name="LastLoginDate">2012-05-15 06:26:48</field>
+		<field name="FailedLoginAttempts">0</field>
+		<field name="FailedActivationAttempts">0</field>
+		<field name="MobilePhone">6591855167</field>
+		<field name="MobileDevice">1</field>
+		<field name="UserAgent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0</field>
+		<field name="MobileVerified">1</field>
+		<field name="VerificationCode">32781</field>
+		<field name="EmailActivated">0</field>
+		<field name="EmailActivationDate" xsi:nil="true" />
+		<field name="AllowBuzz">1</field>
+		<field name="EmailAlert">0</field>
+		<field name="EmailAlertSent">0</field>
+		<field name="UTCOffset" xsi:nil="true" />
+		<field name="Type">1</field>
+		<field name="AffiliateID" xsi:nil="true" />
+		<field name="MerchantCreated" xsi:nil="true" />
+		<field name="ReferredBy"  xsi:nil="true" />
+		<field name="ReferralLevel" xsi:nil="true" />
+		<field name="BonusProgramID" xsi:nil="true" />
+		<field name="Balance">0.19</field>
+		<field name="FundedBalance">0.00</field>
+		<field name="FailedVoucherRecharges">0</field>
+		<field name="LastFailedVoucherRecharge" xsi:nil="true" />
+		<field name="Status">1</field>
+		<field name="Notes" xsi:nil="true" />
+		<field name="Currency">SGD</field>
+	</row>
+	<row>
+		<field name="ID">162</field>
+		<field name="Username">infn8loop</field>
+		<field name="DateRegistered">2010-10-31 08:08:08</field>
+		<field name="Password">ten20304050</field>
+		<field name="DisplayName" xsi:nil="true" />
+		<field name="DisplayPicture" xsi:nil="true" />
+		<field name="StatusMessage">mfmfp racrocies</field>
+		<field name="StatusTimeStamp">2012-04-17 08:31:17</field>
+		<field name="CountryID">231</field>
+		<field name="Language">ENG</field>
+		<field name="EmailAddress">ali@foobar.com.pk</field>
+		<field name="OnMailingList" xsi:nil="true" />
+		<field name="ChatRoomAdmin">1</field>
+		<field name="ChatRoomBans">0</field>
+		<field name="ContactListVersion">0</field>
+		<field name="MSNUsername" xsi:nil="true" />
+		<field name="MSNPassword" xsi:nil="true" />
+		<field name="YahooUsername" xsi:nil="true" />
+		<field name="YahooPassword" xsi:nil="true" />
+		<field name="AIMUsername" xsi:nil="true" />
+		<field name="AIMPassword" xsi:nil="true" />
+		<field name="GTalkUsername" xsi:nil="true" />
+		<field name="GTalkPassword" xsi:nil="true" />
+		<field name="RegistrationIPAddress">10.3.3.13</field>
+		<field name="RegistrationDevice">Web</field>
+		<field name="FirstLoginDate">2010-09-24 06:05:43</field>
+		<field name="LastLoginDate">2012-05-18 00:51:20</field>
+		<field name="FailedLoginAttempts">5</field>
+		<field name="FailedActivationAttempts">0</field>
+		<field name="MobilePhone">6598452146</field>
+		<field name="MobileDevice">migpy/1.0</field>
+		<field name="UserAgent">migpy/1.0</field>
+		<field name="MobileVerified">1</field>
+		<field name="VerificationCode">69161</field>
+		<field name="EmailActivated">1</field>
+		<field name="EmailActivationDate" xsi:nil="true" />
+		<field name="AllowBuzz">1</field>
+		<field name="EmailAlert">0</field>
+		<field name="EmailAlertSent">0</field>
+		<field name="UTCOffset" xsi:nil="true" />
+		<field name="Type">3</field>
+		<field name="AffiliateID" xsi:nil="true" />
+		<field name="MerchantCreated" xsi:nil="true" />
+		<field name="ReferredBy" xsi:nil="true" />
+		<field name="ReferralLevel" xsi:nil="true" />
+		<field name="BonusProgramID" xsi:nil="true" />
+		<field name="Balance">13799.08</field>
+		<field name="FundedBalance">178.19</field>
+		<field name="FailedVoucherRecharges">0</field>
+		<field name="LastFailedVoucherRecharge" xsi:nil="true" />
+		<field name="Status">1</field>
+		<field name="Notes">Flooding 4 times in 7 days, banned permanently (20101209). Released user after reclaiming credits into migybank201107 - 08/08/2011 Ali.; Released user after reclaiming credits into migybank201107 - 08/08/2011 Ali.</field>
+		<field name="Currency">SGD</field>
+	</row>
+	<row>
+		<field name="ID">250</field>
+		<field name="Username">lesterchan</field>
+		<field name="DateRegistered">2010-10-30 08:08:08</field>
+		<field name="Password">ten20304050</field>
+		<field name="DisplayName" xsi:nil="true" />
+		<field name="DisplayPicture" xsi:nil="true" />
+		<field name="StatusMessage">:&quot;m</field>
+		<field name="StatusTimeStamp">2012-04-04 02:55:40</field>
+		<field name="CountryID">199</field>
+		<field name="Language">ENG</field>
+		<field name="EmailAddress">lesterchan@gmail.com</field>
+		<field name="OnMailingList" xsi:nil="true" />
+		<field name="ChatRoomAdmin">0</field>
+		<field name="ChatRoomBans">0</field>
+		<field name="ContactListVersion">0</field>
+		<field name="MSNUsername" xsi:nil="true" />
+		<field name="MSNPassword" xsi:nil="true" />
+		<field name="YahooUsername" xsi:nil="true" />
+		<field name="YahooPassword" xsi:nil="true" />
+		<field name="AIMUsername" xsi:nil="true" />
+		<field name="AIMPassword" xsi:nil="true" />
+		<field name="GTalkUsername" xsi:nil="true" />
+		<field name="GTalkPassword" xsi:nil="true" />
+		<field name="RegistrationIPAddress">10.3.3.11</field>
+		<field name="RegistrationDevice">Web</field>
+		<field name="FirstLoginDate">2010-09-24 05:41:30</field>
+		<field name="LastLoginDate">2012-05-17 01:03:49</field>
+		<field name="FailedLoginAttempts">0</field>
+		<field name="FailedActivationAttempts">0</field>
+		<field name="MobilePhone">6598427651234</field>
+		<field name="MobileDevice">1</field>
+		<field name="UserAgent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:12.0) Gecko/20100101 Firefox/12.0</field>
+		<field name="MobileVerified">1</field>
+		<field name="VerificationCode">90264</field>
+		<field name="EmailActivated">1</field>
+		<field name="EmailActivationDate">2011-11-02 06:04:35</field>
+		<field name="AllowBuzz">0</field>
+		<field name="EmailAlert">0</field>
+		<field name="EmailAlertSent">0</field>
+		<field name="UTCOffset" xsi:nil="true" />
+		<field name="Type">2</field>
+		<field name="AffiliateID" xsi:nil="true" />
+		<field name="MerchantCreated" xsi:nil="true" />
+		<field name="ReferredBy"  xsi:nil="true" />
+		<field name="ReferralLevel" xsi:nil="true" />
+		<field name="BonusProgramID" xsi:nil="true" />
+		<field name="Balance">5011.16</field>
+		<field name="FundedBalance">0.00</field>
+		<field name="FailedVoucherRecharges">0</field>
+		<field name="LastFailedVoucherRecharge" xsi:nil="true" />
+		<field name="Status">1</field>
+		<field name="Notes" xsi:nil="true" />
+		<field name="Currency">SGD</field>
+	</row>
+	<row>
+		<field name="ID">7582</field>
+		<field name="Username">joker2</field>
+		<field name="DateRegistered">2012-04-27 04:54:48</field>
+		<field name="Password">11password</field>
+		<field name="DisplayName" xsi:nil="true" />
+		<field name="DisplayPicture" xsi:nil="true" />
+		<field name="StatusMessage" xsi:nil="true" />
+		<field name="StatusTimeStamp">2012-04-27 08:16:57</field>
+		<field name="CountryID">199</field>
+		<field name="Language">ENG</field>
+		<field name="EmailAddress">joker2@gmail.com</field>
+		<field name="OnMailingList" xsi:nil="true" />
+		<field name="ChatRoomAdmin">0</field>
+		<field name="ChatRoomBans">0</field>
+		<field name="ContactListVersion">0</field>
+		<field name="MSNUsername" xsi:nil="true" />
+		<field name="MSNPassword" xsi:nil="true" />
+		<field name="YahooUsername" xsi:nil="true" />
+		<field name="YahooPassword" xsi:nil="true" />
+		<field name="AIMUsername" xsi:nil="true" />
+		<field name="AIMPassword" xsi:nil="true" />
+		<field name="GTalkUsername" xsi:nil="true" />
+		<field name="GTalkPassword" xsi:nil="true" />
+		<field name="RegistrationIPAddress">192.168.56.1</field>
+		<field name="RegistrationDevice">Web</field>
+		<field name="FirstLoginDate">2012-04-27 04:55:48</field>
+		<field name="LastLoginDate">2012-05-17 03:02:57</field>
+		<field name="FailedLoginAttempts">0</field>
+		<field name="FailedActivationAttempts">0</field>
+		<field name="MobilePhone" xsi:nil="true" />
+		<field name="MobileDevice">mig33/4.62 (NokiaE72-1/021.024/sw_platform=S60;sw_platform_version=3.2;java_build_version=1.0.5) kBrowser</field>
+		<field name="UserAgent">J2MEv4.62.000</field>
+		<field name="MobileVerified">0</field>
+		<field name="VerificationCode">10766</field>
+		<field name="EmailActivated">0</field>
+		<field name="EmailActivationDate" xsi:nil="true" />
+		<field name="AllowBuzz">1</field>
+		<field name="EmailAlert">0</field>
+		<field name="EmailAlertSent">0</field>
+		<field name="UTCOffset" xsi:nil="true" />
+		<field name="Type">1</field>
+		<field name="AffiliateID" xsi:nil="true" />
+		<field name="MerchantCreated" xsi:nil="true" />
+		<field name="ReferredBy" xsi:nil="true" />
+		<field name="ReferralLevel" xsi:nil="true" />
+		<field name="BonusProgramID" xsi:nil="true" />
+		<field name="Balance">10000.00</field>
+		<field name="FundedBalance">10000.00</field>
+		<field name="FailedVoucherRecharges">0</field>
+		<field name="LastFailedVoucherRecharge" xsi:nil="true" />
+		<field name="Status">1</field>
+		<field name="Notes" xsi:nil="true" />
+		<field name="Currency">SGD</field>
+	</row>
+	</table_data>
+	<table_data name="userid">
+	<row>
+		<field name="id">1</field>
+		<field name="username">lesterchan</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="username">infn8loop</field>
+	</row>
+	<row>
+		<field name="id">2160</field>
+		<field name="username">cherrymoo</field>
+	</row>
+	<row>
+		<field name="id">7386</field>
+		<field name="username">joker2</field>
+	</row>
+	</table_data>
+
+	<table_data name="useralias">
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="alias">lcsuperhero</field>
+		<field name="DateUpdated">2011-10-11 04:28:22</field>
+	</row>
+	</table_data>
+
+	<table_data name="broadcastlist">
+		<row>
+		<field name="username">cherrymoo</field>
+		<field name="broadcastUsername">joker1</field>
+	</row>
+
+	<row>
+		<field name="username">cherrymoo</field>
+		<field name="broadcastUsername">joker2</field>
+	</row>
+
+	<row>
+		<field name="username">cherrymoo</field>
+		<field name="broadcastUsername">saj</field>
+	</row>
+
+	<row>
+		<field name="username">joker2</field>
+		<field name="broadcastUsername">cherrymoo</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">alice1</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">alisaifee</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">b0rn_c0nfused</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">ben.eng</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">bobmarley</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">Charlie1</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">chernjie</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">chernjie02</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">dangerbot</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">dangerousbunny</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">darkweapon</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">forzadraco</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gamerz</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gamerz-01</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gamerz84</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gamerztest01</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gamerztest02</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gamerztest05</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gamerztest06</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gamerztest07</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gamerztest08</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gozalijo</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">gozalijo2</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">hurrumph</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">infn8loop</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">infn8loopslave01</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">inthitest</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">jing-lp</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">johantester01</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">leeswa</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">limleeswa</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">mela124</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">merchanttester04</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">mickeyckm</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">migtester</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">miridhani.riani</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">phongalong</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">phongtest</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">rewardstester99</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">rondev</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">sayonara</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">snsuser02</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">sunshinestreet</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">testuser01</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">testuser10</field>
+	</row>
+
+	<row>
+		<field name="username">lesterchan</field>
+		<field name="broadcastUsername">timotheeg</field>
+	</row>
+	</table_data>
+	<table_data name="userprofile">
+		<row>
+		<field name="ID">2007</field>
+		<field name="Username">cherrymoo</field>
+		<field name="FirstName" xsi:nil="true" />
+		<field name="LastName" xsi:nil="true" />
+		<field name="HomeTown" xsi:nil="true" />
+		<field name="City" xsi:nil="true" />
+		<field name="State" xsi:nil="true" />
+		<field name="DateOfBirth">1976-09-04</field>
+		<field name="Gender">F</field>
+		<field name="Jobs" xsi:nil="true" />
+		<field name="Schools" xsi:nil="true" />
+		<field name="Hobbies">Sly fox</field>
+		<field name="Likes" xsi:nil="true" />
+		<field name="Dislikes" xsi:nil="true" />
+		<field name="AboutMe">Mah moo...</field>
+		<field name="RelationshipStatus" xsi:nil="true" />
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">33</field>
+		<field name="Username">infn8loop</field>
+		<field name="FirstName">Ali Akber 666</field>
+		<field name="LastName">last name 12</field>
+		<field name="HomeTown">this is my hometown 3</field>
+		<field name="City">this is my hood 33</field>
+		<field name="State">singapore state edited 44</field>
+		<field name="DateOfBirth" xsi:nil="true" />
+		<field name="Gender" xsi:nil="true" />
+		<field name="Jobs" xsi:nil="true" />
+		<field name="Schools" xsi:nil="true" />
+		<field name="Hobbies" xsi:nil="true" />
+		<field name="Likes" xsi:nil="true" />
+		<field name="Dislikes" xsi:nil="true" />
+		<field name="AboutMe" xsi:nil="true" />
+		<field name="RelationshipStatus" xsi:nil="true" />
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">6902</field>
+		<field name="Username">joker2</field>
+		<field name="FirstName" xsi:nil="true" />
+		<field name="LastName" xsi:nil="true" />
+		<field name="HomeTown" xsi:nil="true" />
+		<field name="City" xsi:nil="true" />
+		<field name="State" xsi:nil="true" />
+		<field name="DateOfBirth" xsi:nil="true" />
+		<field name="Gender" xsi:nil="true" />
+		<field name="Jobs" xsi:nil="true" />
+		<field name="Schools" xsi:nil="true" />
+		<field name="Hobbies" xsi:nil="true" />
+		<field name="Likes" xsi:nil="true" />
+		<field name="Dislikes" xsi:nil="true" />
+		<field name="AboutMe" xsi:nil="true" />
+		<field name="RelationshipStatus" xsi:nil="true" />
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">19</field>
+		<field name="Username">lesterchan</field>
+		<field name="FirstName">Lester</field>
+		<field name="LastName">Chan</field>
+		<field name="HomeTown">Hometown</field>
+		<field name="City">Singapore City</field>
+		<field name="State"></field>
+		<field name="DateOfBirth">1984-03-23</field>
+		<field name="Gender">M</field>
+		<field name="Jobs">dd 222 test 2 test 3 test 4 4</field>
+		<field name="Schools">asd</field>
+		<field name="Hobbies">Anything interesting</field>
+		<field name="Likes">Interests</field>
+		<field name="Dislikes">I Hate</field>
+		<field name="AboutMe">sad</field>
+		<field name="RelationshipStatus">3</field>
+		<field name="Status">3</field>
+	</row>
+	</table_data>
+	
+	<table_data name="score">
+	<row>
+		<field name="userid">1</field>
+		<field name="score">260120</field>
+		<field name="lastUpdated">2011-11-29 12:35:10</field>
+	</row>
+	<row>
+		<field name="userid">9</field>
+		<field name="score">167000</field>
+		<field name="lastUpdated">2012-03-29 10:11:28</field>
+	</row>
+	<row>
+		<field name="userid">2160</field>
+		<field name="score">10000</field>
+		<field name="lastUpdated">2012-05-17 05:34:01</field>
+	</row>
+	<row>
+		<field name="userid">7386</field>
+		<field name="score">10000</field>
+		<field name="lastUpdated">2012-05-17 05:34:01</field>
+	</row>
+	</table_data>
+
+	<table_data name="avataruserbody">
+	<row>
+		<field name="UserID">1</field>
+		<field name="AvatarBodyID">6</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">Ze3CO15yzCi1lv.4Z1k50WsX8OUE-</field>
+		<field name="HeadUUID">ZHe3CO15yzCi1lv.4Z1k50WsX8OUE-</field>
+	</row>
+	<row>
+		<field name="UserID">1</field>
+		<field name="AvatarBodyID">7</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">Z4ca456f6960f7</field>
+		<field name="HeadUUID">ZH4ca456f695d0f</field>
+	</row>
+	<row>
+		<field name="UserID">1</field>
+		<field name="AvatarBodyID">8</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">Z4ca455d0e158b</field>
+		<field name="HeadUUID">ZH4ca455d0e11a5</field>
+	</row>
+	<row>
+		<field name="UserID">1</field>
+		<field name="AvatarBodyID">1</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">Z4cbd6e0f7ef62</field>
+		<field name="HeadUUID">ZH4cbd6e0f7eb7e</field>
+	</row>
+	<row>
+		<field name="UserID">1</field>
+		<field name="AvatarBodyID">2</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">Z4cc4f4edd8102</field>
+		<field name="HeadUUID">ZH4cc4f4edd7d1c</field>
+	</row>
+	<row>
+		<field name="UserID">1</field>
+		<field name="AvatarBodyID">4</field>
+		<field name="Used">1</field>
+		<field name="BodyUUID">ZP3tPRXy822wua9HzVfJJLyP8TP0-</field>
+		<field name="HeadUUID">ZHP3tPRXy822wua9HzVfJJLyP8TP0-</field>
+	</row>
+	<row>
+		<field name="UserID">9</field>
+		<field name="AvatarBodyID">7</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">ZpSSQW07Sf0iwcSC6LUPq9bl49bw-</field>
+		<field name="HeadUUID">ZHpSSQW07Sf0iwcSC6LUPq9bl49bw-</field>
+	</row>
+	<row>
+		<field name="UserID">9</field>
+		<field name="AvatarBodyID">1</field>
+		<field name="Used">1</field>
+		<field name="BodyUUID">ZKWpK7EJBoU.kihor4zZYfapmbaE-</field>
+		<field name="HeadUUID">ZHKWpK7EJBoU.kihor4zZYfapmbaE-</field>
+	</row>
+	<row>
+		<field name="UserID">2160</field>
+		<field name="AvatarBodyID">4</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">ZOUezsPh7lC5ahMy5H8c1dPfXIPo-</field>
+		<field name="HeadUUID">ZHOUezsPh7lC5ahMy5H8c1dPfXIPo-</field>
+	</row>
+	<row>
+		<field name="UserID">2160</field>
+		<field name="AvatarBodyID">1</field>
+		<field name="Used">1</field>
+		<field name="BodyUUID">ZYJKKzvnArpg3Eu3DQuhvjcTcY3k-</field>
+		<field name="HeadUUID">ZHYJKKzvnArpg3Eu3DQuhvjcTcY3k-</field>
+	</row>
+	<row>
+		<field name="UserID">2160</field>
+		<field name="AvatarBodyID">2</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">Zr9rmm6A0z.PYqsHy_oudpDBd9u0-</field>
+		<field name="HeadUUID">ZHr9rmm6A0z.PYqsHy_oudpDBd9u0-</field>
+	</row>
+	<row>
+		<field name="UserID">2160</field>
+		<field name="AvatarBodyID">8</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">ZzWjTgJOnE3DY_GEe1Hj3rDU7PKQ-</field>
+		<field name="HeadUUID">ZHzWjTgJOnE3DY_GEe1Hj3rDU7PKQ-</field>
+	</row>
+	<row>
+		<field name="UserID">2160</field>
+		<field name="AvatarBodyID">5</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">ZfJQvgkJHdOaQNNAIqP6jkk.nqzg-</field>
+		<field name="HeadUUID">ZHfJQvgkJHdOaQNNAIqP6jkk.nqzg-</field>
+	</row>
+	<row>
+		<field name="UserID">2160</field>
+		<field name="AvatarBodyID">6</field>
+		<field name="Used">0</field>
+		<field name="BodyUUID">Z_jmoFrMVqnVtkkqbpWz5GVRRFAk-</field>
+		<field name="HeadUUID">ZH_jmoFrMVqnVtkkqbpWz5GVRRFAk-</field>
+	</row>
+	<row>
+		<field name="UserID">7386</field>
+		<field name="AvatarBodyID">1</field>
+		<field name="Used">1</field>
+		<field name="BodyUUID">ZdDMACg0TB9ukWeka87nqmY4TUVs-</field>
+		<field name="HeadUUID">ZHdDMACg0TB9ukWeka87nqmY4TUVs-</field>
+	</row>
+	</table_data>
+
+	<table_data name="avatarcomment">
+	<row>
+		<field name="ID">1</field>
+		<field name="AvatarUserID">2160</field>
+		<field name="UserID">2160</field>
+		<field name="DateCreated">2010-11-01 08:49:51</field>
+		<field name="Comment">test message 1</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">2</field>
+		<field name="AvatarUserID">2160</field>
+		<field name="UserID">2160</field>
+		<field name="DateCreated">2010-11-02 03:26:06</field>
+		<field name="Comment">test message 2</field>
+		<field name="NumLikes">1</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">3</field>
+		<field name="AvatarUserID">2160</field>
+		<field name="UserID">7386</field>
+		<field name="DateCreated">2010-11-23 07:55:01</field>
+		<field name="Comment">hello world</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+	<table_data name="avatarcommentlike" />
+
+	<table_data name="groups">
+	<row>
+		<field name="ID">79</field>
+		<field name="Type">1</field>
+		<field name="CountryID" xsi:nil="true" />
+		<field name="Name">adminkick_01</field>
+		<field name="Description">adminkick_01</field>
+		<field name="About"></field>
+		<field name="DateCreated">2011-01-07 06:04:13</field>
+		<field name="CreatedBy">infn8loop</field>
+		<field name="Picture"></field>
+		<field name="EmailAddress">infn8loop@mig33.com</field>
+		<field name="ReferralSMS" xsi:nil="true" />
+		<field name="GroupCategoryID">4</field>
+		<field name="VIPServiceID" xsi:nil="true" />
+		<field name="SortOrder" xsi:nil="true" />
+		<field name="NumMembers">1</field>
+		<field name="Status">1</field>
+		<field name="AllowNonMembersToJoinRooms">0</field>
+		<field name="Featured">0</field>
+		<field name="Official">0</field>
+		<field name="NumPhotos">0</field>
+		<field name="NumForumPosts">6</field>
+	</row>
+	</table_data>
+	
+	<table_data name="groupmember">
+	<row>
+		<field name="ID">147</field>
+		<field name="Username">cherrymoo</field>
+		<field name="GroupID">79</field>
+		<field name="LocationID" xsi:nil="true" />
+		<field name="DateCreated">2011-01-07 06:04:13</field>
+		<field name="Type">2</field>
+		<field name="DateLeft" xsi:nil="true" />
+		<field name="SMSNotification">0</field>
+		<field name="EmailNotification">1</field>
+		<field name="EventNotification">1</field>
+		<field name="SMSGroupEventNotification">0</field>
+		<field name="EmailThreadUpdateNotification">0</field>
+		<field name="EventThreadUpdateNotification">0</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">148</field>
+		<field name="Username">joker2</field>
+		<field name="GroupID">79</field>
+		<field name="LocationID" xsi:nil="true" />
+		<field name="DateCreated">2011-01-07 06:04:13</field>
+		<field name="Type">2</field>
+		<field name="DateLeft" xsi:nil="true" />
+		<field name="SMSNotification">0</field>
+		<field name="EmailNotification">1</field>
+		<field name="EventNotification">1</field>
+		<field name="SMSGroupEventNotification">0</field>
+		<field name="EmailThreadUpdateNotification">0</field>
+		<field name="EventThreadUpdateNotification">0</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+
+	<table_data name="groupforum">
+	<row>
+		<field name="ID">79</field>
+		<field name="GroupID">79</field>
+		<field name="NumPosts">6</field>
+		<field name="NumComments">0</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="LastUpdated">2011-01-09 05:42:30</field>
+		<field name="DateCreated">2011-01-07 06:04:13</field>
+	</row>
+	</table_data>
+	
+	<table_data name="groupforumpost">
+	<row>
+		<field name="ID">23</field>
+		<field name="ForumID">79</field>
+		<field name="Title">helllooo</field>
+		<field name="Body">helllooohelllooohelllooo</field>
+		<field name="NumComments">0</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="DateCreated">2011-01-09 05:14:32</field>
+		<field name="LastUpdated">2011-01-09 05:14:32</field>
+		<field name="AuthorID">1</field>
+		<field name="FileID" xsi:nil="true" />
+		<field name="IsLocked">0</field>
+		<field name="IsSticked">0</field>
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">25</field>
+		<field name="ForumID">79</field>
+		<field name="Title">foofoofoofoofoofoofoofoofoo</field>
+		<field name="Body">foofoofoofoofoofoofoofoofoo</field>
+		<field name="NumComments">0</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="DateCreated">2011-01-09 05:30:05</field>
+		<field name="LastUpdated">2011-01-09 05:30:05</field>
+		<field name="AuthorID">9</field>
+		<field name="FileID" xsi:nil="true" />
+		<field name="IsLocked">0</field>
+		<field name="IsSticked">0</field>
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">26</field>
+		<field name="ForumID">79</field>
+		<field name="Title">foofoofoofoofoofoofoofoofoo</field>
+		<field name="Body">whoopdeedoerere</field>
+		<field name="NumComments">0</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="DateCreated">2011-01-09 05:33:54</field>
+		<field name="LastUpdated">2011-01-09 05:33:54</field>
+		<field name="AuthorID">9</field>
+		<field name="FileID" xsi:nil="true" />
+		<field name="IsLocked">0</field>
+		<field name="IsSticked">0</field>
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">27</field>
+		<field name="ForumID">79</field>
+		<field name="Title">foofoofoofoofoofoofoofoofoo</field>
+		<field name="Body">foofoofoofoofoofoofoofoofoo</field>
+		<field name="NumComments">0</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="DateCreated">2011-01-09 05:34:59</field>
+		<field name="LastUpdated">2011-01-09 05:34:59</field>
+		<field name="AuthorID">9</field>
+		<field name="FileID" xsi:nil="true" />
+		<field name="IsLocked">0</field>
+		<field name="IsSticked">0</field>
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">28</field>
+		<field name="ForumID">79</field>
+		<field name="Title">foofoofoofoofoofoofoofoofoo</field>
+		<field name="Body">foofoofoofoofoofoofoofoofoo</field>
+		<field name="NumComments">2</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="DateCreated">2011-01-09 05:41:39</field>
+		<field name="LastUpdated">2011-01-09 05:41:39</field>
+		<field name="AuthorID">9</field>
+		<field name="FileID" xsi:nil="true" />
+		<field name="IsLocked">0</field>
+		<field name="IsSticked">0</field>
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">29</field>
+		<field name="ForumID">79</field>
+		<field name="Title">foofoofoofoofoofoofoofoofoo</field>
+		<field name="Body">foofoofoofoofoofoofoofoofoo</field>
+		<field name="NumComments">1</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="DateCreated">2011-01-09 05:42:30</field>
+		<field name="LastUpdated">2011-01-09 05:42:30</field>
+		<field name="AuthorID">9</field>
+		<field name="FileID" xsi:nil="true" />
+		<field name="IsLocked">0</field>
+		<field name="IsSticked">0</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+	<table_data name="groupforumpostlike" />
+
+	<table_data name="groupforumpostcomment">
+	<row>
+		<field name="ID">118</field>
+		<field name="PostID">23</field>
+		<field name="UserID">2160</field>
+		<field name="Comment">Test comment 1</field>
+		<field name="DateCreated">2011-05-06 05:30:42</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">119</field>
+		<field name="PostID">23</field>
+		<field name="UserID">9</field>
+		<field name="Comment">Test comment 2</field>
+		<field name="DateCreated">2011-05-06 05:35:42</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">120</field>
+		<field name="PostID">23</field>
+		<field name="UserID">2160</field>
+		<field name="Comment">Test comment 3</field>
+		<field name="DateCreated">2011-05-06 05:45:42</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">121</field>
+		<field name="PostID">23</field>
+		<field name="UserID">1</field>
+		<field name="Comment">Test comment 4</field>
+		<field name="DateCreated">2011-05-06 06:30:42</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+
+	<table_data name="groupphotoalbum">
+	<row>
+		<field name="ID">1</field>
+		<field name="GroupID">79</field>
+		<field name="UserID">2160</field>
+		<field name="Name">Just Do This Group</field>
+		<field name="Description" xsi:nil="true" />
+		<field name="DateCreated">2010-11-08 02:38:50</field>
+		<field name="CoverPhotoID" xsi:nil="true" />
+		<field name="NumPhotos">4</field>
+		<field name="Size">14792</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+
+	<table_data name="groupphoto">
+	<row>
+		<field name="ID">1</field>
+		<field name="GroupPhotoAlbumID">1</field>
+		<field name="GroupID">79</field>
+		<field name="UserID">2160</field>
+		<field name="FileID">e7762af115314d14a7338ca452a51e51</field>
+		<field name="DateCreated">2010-11-08 02:38:50</field>
+		<field name="Description">Published by lesterchan</field>
+		<field name="NumComments">0</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">2</field>
+		<field name="GroupPhotoAlbumID">1</field>
+		<field name="GroupID">79</field>
+		<field name="UserID">2160</field>
+		<field name="FileID">29ac4c2c47e94968a5d224e661d12b56</field>
+		<field name="DateCreated">2010-11-11 08:15:20</field>
+		<field name="Description">Published by lesterchan</field>
+		<field name="NumComments">0</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">3</field>
+		<field name="GroupPhotoAlbumID">1</field>
+		<field name="GroupID">79</field>
+		<field name="UserID">9</field>
+		<field name="FileID">c8bbd3f02dfb4f4cae5a9a57e7e2b033</field>
+		<field name="DateCreated">2010-11-18 02:05:24</field>
+		<field name="Description">Published by gamerztest03</field>
+		<field name="NumComments">0</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">4</field>
+		<field name="GroupPhotoAlbumID">1</field>
+		<field name="GroupID">79</field>
+		<field name="UserID">7386</field>
+		<field name="FileID">83b091525a314334af4be4ce2e7332c3</field>
+		<field name="DateCreated">2010-12-21 06:43:20</field>
+		<field name="Description"></field>
+		<field name="NumComments">2</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+
+	<table_data name="groupphotocomment">
+	<row>
+		<field name="ID">1</field>
+		<field name="GroupPhotoID">4</field>
+		<field name="UserID">2160</field>
+		<field name="DateCreated">2011-03-14 02:07:08</field>
+		<field name="Comment">hi, comment 1</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">2</field>
+		<field name="GroupPhotoID">4</field>
+		<field name="UserID">9</field>
+		<field name="DateCreated">2011-03-14 02:07:08</field>
+		<field name="Comment">hi, comment 2</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+
+	<table_data name="groupphotolike" />
+	<table_data name="groupphotocommentlike" />
+
+	<table_data name="groupwallpostlike" />
+	<table_data name="groupwallpost">
+	<row>
+		<field name="id">1</field>
+		<field name="groupid">79</field>
+		<field name="authoruserid">2160</field>
+		<field name="datecreated">2010-10-15 08:48:58</field>
+		<field name="body">Super cali fragi listic espi ala docious</field>
+		<field name="numcomments">0</field>
+		<field name="numlikes">0</field>
+		<field name="numdislikes">0</field>
+		<field name="type">1</field>
+		<field name="status">1</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="groupid">79</field>
+		<field name="authoruserid">2160</field>
+		<field name="datecreated">2010-10-16 08:48:58</field>
+		<field name="body">Wall post number 2</field>
+		<field name="numcomments">0</field>
+		<field name="numlikes">0</field>
+		<field name="numdislikes">0</field>
+		<field name="type">1</field>
+		<field name="status">1</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="groupid">79</field>
+		<field name="authoruserid">7386</field>
+		<field name="datecreated">2010-10-17 08:48:58</field>
+		<field name="body">Wall post number 3</field>
+		<field name="numcomments">0</field>
+		<field name="numlikes">0</field>
+		<field name="numdislikes">0</field>
+		<field name="type">1</field>
+		<field name="status">1</field>
+	</row>
+	</table_data>
+	<table_data name="groupwallpostcomment">
+	<row>
+		<field name="id">1</field>
+		<field name="groupwallpostid">2</field>
+		<field name="userid">1</field>
+		<field name="datecreated">2010-10-15 08:49:13</field>
+		<field name="comment">Comment 1</field>
+		<field name="status">1</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="groupwallpostid">2</field>
+		<field name="userid">2160</field>
+		<field name="datecreated">2010-10-15 09:30:00</field>
+		<field name="comment">Comment 2</field>
+		<field name="status">1</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="groupwallpostid">2</field>
+		<field name="userid">7386</field>
+		<field name="datecreated">2010-10-15 09:49:13</field>
+		<field name="comment">Comment 3</field>
+		<field name="status">1</field>
+	</row>
+	</table_data>
+
+	<table_data name="merchanttag">
+	<row>
+		<field name="ID">1</field>
+		<field name="UserID">2160</field>
+		<field name="MerchantUserID">9</field>
+		<field name="DateCreated">2011-03-28 10:23:44</field>
+		<field name="LastSalesDate">2011-03-28 10:23:44</field>
+		<field name="Status">1</field>
+		<field name="AccountentryID" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="ID">2</field>
+		<field name="UserID">7386</field>
+		<field name="MerchantUserID">9</field>
+		<field name="DateCreated">2010-12-10 06:24:29</field>
+		<field name="LastSalesDate">2010-12-10 06:32:02</field>
+		<field name="Status">1</field>
+		<field name="AccountentryID" xsi:nil="true" />
+	</row>
+	</table_data>
+	<table_data name="scrapbook">
+	<row>
+		<field name="ID">1</field>
+		<field name="Username">cherrymoo</field>
+		<field name="FileID">05b59ebdfe744a389352c6298d19a061</field>
+		<field name="DateCreated">2010-10-01 07:23:49</field>
+		<field name="ReceivedFrom">cherrymoo</field>
+		<field name="Description" xsi:nil="true" />
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">2</field>
+		<field name="Username">lesterchan</field>
+		<field name="FileID">45d89a19953041ddacf5cc6c1ddf5ca8</field>
+		<field name="DateCreated">2011-10-01 11:14:32</field>
+		<field name="ReceivedFrom">lesterchan</field>
+		<field name="Description" xsi:nil="true" />
+		<field name="Status">4</field>
+	</row>
+	<row>
+		<field name="ID">3</field>
+		<field name="Username">cherrymoo</field>
+		<field name="FileID">05b59ebdfe744a389352c6298d19a561</field>
+		<field name="DateCreated">2012-10-01 07:23:49</field>
+		<field name="ReceivedFrom">cherrymoo</field>
+		<field name="Description" xsi:nil="true" />
+		<field name="Status">4</field>
+	</row>
+	</table_data>
+	<table_data name="scrapbooklike" />
+	<table_data name="scrapbooklikesummary" />
+
+	<table_data name="file">
+	<row>
+		<field name="ID">05b59ebdfe744a389352c6298d19a061</field>
+		<field name="DateCreated">2011-06-28 07:15:39</field>
+		<field name="MIMEType">image/jpeg</field>
+		<field name="Size">10884</field>
+		<field name="Width">320</field>
+		<field name="Height">240</field>
+		<field name="Length" xsi:nil="true" />
+		<field name="UploadedBy">cherrymoo</field>
+	</row>
+	<row>
+		<field name="ID">45d89a19953041ddacf5cc6c1ddf5ca8</field>
+		<field name="DateCreated">2011-06-28 07:15:39</field>
+		<field name="MIMEType">image/jpeg</field>
+		<field name="Size">10884</field>
+		<field name="Width">320</field>
+		<field name="Height">240</field>
+		<field name="Length" xsi:nil="true" />
+		<field name="UploadedBy">lesterchan</field>
+	</row>
+	<row>
+		<field name="ID">05b59ebdfe744a389352c6298d19a561</field>
+		<field name="DateCreated">2011-06-28 07:15:39</field>
+		<field name="MIMEType">image/jpeg</field>
+		<field name="Size">10884</field>
+		<field name="Width">320</field>
+		<field name="Height">240</field>
+		<field name="Length" xsi:nil="true" />
+		<field name="UploadedBy">cherrymoo</field>
+	</row>
+	</table_data>
+
+	<table_data name="storeitem">
+	<row>
+		<field name="ID">1</field>
+		<field name="Type">1</field>
+		<field name="ReferenceID">1</field>
+		<field name="Name">Fortune Cookie</field>
+		<field name="Description">Fortune Cookie</field>
+		<field name="Price">0.15</field>
+		<field name="Currency">USD</field>
+		<field name="Status">1</field>
+		<field name="NumAvailable">5511</field>
+		<field name="NumSold">0</field>
+		<field name="Featured">1</field>
+		<field name="CatalogImage">fortune-cookie</field>
+		<field name="PreviewImage">fortune-cookie</field>
+		<field name="ForSale">0</field>
+		<field name="SortOrder" xsi:nil="true" />
+		<field name="ExpiryDate" xsi:nil="true" />
+		<field name="DateListed">2010-02-11 06:52:40</field>
+		<field name="migLevelMin">0</field>
+		<field name="GroupID">79</field>
+	</row>
+	</table_data>
+	<table_data name="storeitemrating" />
+	<table_data name="storeitemratingsummary" />
+
+	<table_data name="thirdpartyapplication">
+	<row>
+		<field name="ID">17</field>
+		<field name="Name">themobilegamer.clubwars_os</field>
+		<field name="DisplayName">Club Wars</field>
+		<field name="CompanyName">The Mobile Gamer</field>
+		<field name="Secret">5107de3f318a42816648ae296a7e7ca1</field>
+		<field name="IPWhiteList">128.0.0.1,128.0.0.2,128.0.0.3</field>
+		<field name="Type">GAME</field>
+		<field name="DateCreated">0000-00-00 00:00:00</field>
+		<field name="CreatedBy">koko</field>
+		<field name="DateLastModified">2011-03-09 05:37:45</field>
+		<field name="LastModifiedBy">tim</field>
+		<field name="Notes">JIRA: GAPI-1</field>
+		<field name="oauth_consumer_key">713a7dd8c3ab8d89307a2fdde92bcec204dc1fea6</field>
+		<field name="Description">Manage your own Club! Befriend models to gain fans and earn money to fight other clubs! (Tersedia dalam Bahasa Indonesia)</field>
+		<field name="GroupID">79</field>
+		<field name="PlayLinkText">Play CLUB WARS</field>
+		<field name="MinMigLevel" xsi:nil="true" />
+		<field name="ReleaseDate" xsi:nil="true" />
+		<field name="Status">0</field>
+		<field name="SortOrder">0</field>
+		<field name="AuthorizeCallbackUrl" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="ID">6</field>
+		<field name="Name">mig33.ostest</field>
+		<field name="DisplayName">mig33 OpenSocial Test App</field>
+		<field name="CompanyName">mig33</field>
+		<field name="Secret">e627addf36b00ab167b821d965422b77</field>
+		<field name="IPWhiteList">10. 122.248.234.191 122.248.234.189 122.248.234.44 122.248.234.32</field>
+		<field name="Type">GAME</field>
+		<field name="DateCreated">2011-04-18 02:51:39</field>
+		<field name="CreatedBy" xsi:nil="true" />
+		<field name="DateLastModified">2012-03-14 03:31:08</field>
+		<field name="LastModifiedBy">timothee.groleau@mig33global.com</field>
+		<field name="Notes" xsi:nil="true" />
+		<field name="oauth_consumer_key">2e3432ec5f13685c569253ac26350f0304db67ad1</field>
+		<field name="Description">ali is super gay</field>
+		<field name="GroupID">4</field>
+		<field name="PlayLinkText">OpenSocial Test App</field>
+		<field name="MinMigLevel" xsi:nil="true" />
+		<field name="ReleaseDate" xsi:nil="true" />
+		<field name="Status">0</field>
+		<field name="SortOrder">60</field>
+		<field name="AuthorizeCallbackUrl">http://ostestapp/authorize</field>
+	</row>
+	</table_data>
+	<table_data name="thirdpartyapplicationview">
+	<row>
+		<field name="ID">1</field>
+		<field name="ThirdPartyApplicationID">17</field>
+		<field name="View">midlet</field>
+		<field name="URL">http://mig33.dev.kotagames.com/cw_mig_os/gadget.xml</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">2</field>
+		<field name="ThirdPartyApplicationID">17</field>
+		<field name="View">wap</field>
+		<field name="URL">http://mig33.dev.kotagames.com/cw_mig_os_wap/gadget.xml</field>
+		<field name="Status">1</field>
+	</row>
+	<row>
+		<field name="ID">22</field>
+		<field name="ThirdPartyApplicationID">6</field>
+		<field name="View">midlet</field>
+		<field name="URL">http://devlab.projectgoth.com:8191/johan/mobile_gadgets_php.xml</field>
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">39</field>
+		<field name="ThirdPartyApplicationID">6</field>
+		<field name="View">touch</field>
+		<field name="URL">http://devlab.projectgoth.com:8191/johan/touch_gadgets_php.xml</field>
+		<field name="Status">1</field>
+	</row>
+
+	<row>
+		<field name="ID">41</field>
+		<field name="ThirdPartyApplicationID">6</field>
+		<field name="View">blackberry</field>
+		<field name="URL">http://devlab.projectgoth.com:8191/johan/blackberry_gadgets_php.xml</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+
+	<table_data name="virtualgift">
+	<row>
+		<field name="ID">996</field>
+		<field name="Name">Bug In Love</field>
+		<field name="HotKey">(vg_bug-in-love)</field>
+		<field name="Price">0.06</field>
+		<field name="Currency">USD</field>
+		<field name="NumAvailable" xsi:nil="true" />
+		<field name="NumSold">0</field>
+		<field name="SortOrder">853</field>
+		<field name="GroupID" xsi:nil="true" />
+		<field name="GroupVIPOnly" xsi:nil="true" />
+		<field name="Location12x12GIF">/usr/fusion/emoticons/virtualgifts/bug-in-love_12.gif</field>
+		<field name="Location12x12PNG">/usr/fusion/emoticons/virtualgifts/bug-in-love_12.png</field>
+		<field name="Location14x14GIF">/usr/fusion/emoticons/virtualgifts/bug-in-love_14.gif</field>
+		<field name="Location14x14PNG">/usr/fusion/emoticons/virtualgifts/bug-in-love_14.png</field>
+		<field name="Location16x16GIF">/usr/fusion/emoticons/virtualgifts/bug-in-love_16.gif</field>
+		<field name="Location16x16PNG">/usr/fusion/emoticons/virtualgifts/bug-in-love_16.png</field>
+		<field name="Location64x64PNG">/usr/fusion/emoticons/virtualgifts/bug-in-love_64.png</field>
+		<field name="Status">1</field>
+		<field name="GiftAllMessage" xsi:nil="true" />
+	</row>
+	</table_data>
+
+	<table_data name="virtualgiftreceived">
+	<row>
+		<field name="ID">8</field>
+		<field name="Username">cherrymoo</field>
+		<field name="DateCreated">2010-10-01 09:33:35</field>
+		<field name="PurchaseLocation">7</field>
+		<field name="VirtualGiftID">996</field>
+		<field name="Sender">lesterchan</field>
+		<field name="Private">0</field>
+		<field name="Removed">0</field>
+		<field name="Message"></field>
+	</row>
+	</table_data>
+	<table_data name="virtualgiftreceivedlike" />
+	<table_data name="virtualgiftreceivedlikesummary" />
+
+	<table_data name="virtualgiftreceivedcomment">
+	<row>
+		<field name="ID">1</field>
+		<field name="VirtualGiftReceivedID">8</field>
+		<field name="VirtualGiftReceivedUserID">2160</field>
+		<field name="UserID">9</field>
+		<field name="DateCreated">2012-01-05 12:00:00</field>
+		<field name="Comment">Hello!</field>
+		<field name="NumLikes">0</field>
+		<field name="NumDislikes">0</field>
+		<field name="Status">1</field>
+	</row>
+	</table_data>
+	<table_data name="virtualgiftreceivedcommentlike" />
+
+	<table_data name="voucherbatch">
+	<row>
+		<field name="ID">1</field>
+		<field name="Username">lesterchan</field>
+		<field name="DateCreated">2010-10-05 07:50:53</field>
+		<field name="ExpiryDate" xsi:nil="true" />
+		<field name="Currency">SGD</field>
+		<field name="Amount">30.00</field>
+		<field name="NumVoucher">3</field>
+		<field name="Notes"></field>
+	</row>
+	</table_data>
+	<table_data name="voucher">
+	<row>
+		<field name="ID">1</field>
+		<field name="VoucherBatchID">1</field>
+		<field name="Number">6602341036</field>
+		<field name="LastUpdated">2010-10-05 07:56:08</field>
+		<field name="Status">1</field>
+		<field name="Notes" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="ID">2</field>
+		<field name="VoucherBatchID">1</field>
+		<field name="Number">8599782319</field>
+		<field name="LastUpdated">2010-10-05 07:56:08</field>
+		<field name="Status">1</field>
+		<field name="Notes" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="ID">3</field>
+		<field name="VoucherBatchID">1</field>
+		<field name="Number">7751318034</field>
+		<field name="LastUpdated">2010-10-05 07:56:08</field>
+		<field name="Status">1</field>
+		<field name="Notes" xsi:nil="true" />
+	</row>
+	</table_data>
+</database>
+</mysqldump>

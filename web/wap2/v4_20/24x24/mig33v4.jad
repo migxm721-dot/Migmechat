@@ -1,0 +1,9 @@
+MIDlet-Version: 4.20
+MIDlet-Vendor: Project Goth, Inc.
+MIDlet-Jar-URL: http://www.mig33.com/wap2/v4_20/24x24/mig33v4.jar
+MIDlet-Install-Notify: http://www.mig33.com/midlet/member/c_info.php?awtrack=wap
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-1: mig33v42,MiG33.png,com.projectgoth.Roshan.Main
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Name: mig33v42
+MIDlet-Jar-Size: 157433

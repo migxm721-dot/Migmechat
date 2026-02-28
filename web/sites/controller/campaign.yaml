@@ -1,0 +1,46 @@
+all:
+  decorators:
+    wap:
+      name: common.migbo_wap
+    ajax:
+      name: common.ajax
+    midlet:
+      name: common.midlet
+    touch:
+      name: common.touch
+    json:
+      name: common.json
+
+input:
+  view:
+    name: input
+  components:
+    - common.user
+    - get_campaign_status
+    - get_user_campaign_details
+    - get_user_device_details
+
+join:
+  function: validate_mobile_number
+  components:
+    - common.user
+    - get_campaign_status
+    - get_campaign_details
+    - get_user_campaign_details
+    - get_user_device_details
+
+confirm:
+  view:
+    name: confirm
+
+confirm_submit:
+  function: store_user_campaign_details
+  components:
+    - common.user
+    - get_campaign_status
+    - get_campaign_details
+    - get_user_campaign_details
+
+confirmed:
+  view:
+    name: confirmed

@@ -1,0 +1,18 @@
+all:
+  decorators:
+    wap:
+      name: common.migbo_wap
+    ajax:
+      name: common.ajax
+    midlet:
+      name: common.midlet
+    touch:
+      name: common.touch
+    json:
+      name: common.json
+
+j2me_upgrade:
+  view:
+    name: j2me_upgrade
+  components:
+    - j2me_upgrade_links

@@ -1,0 +1,25 @@
+xrds:
+  view:
+    name: xrds
+
+register:
+  view:
+    name: register
+  components:
+    - common.user
+
+register_submit:
+  function: register_submit
+  view:
+    name: register
+  components:
+    - common.user
+
+authorize:
+  function: oauth
+
+request_token:
+  function: oauth
+
+access_token:
+  function: oauth
