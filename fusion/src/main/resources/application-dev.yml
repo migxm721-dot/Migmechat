@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/migme_dev?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: migme
+    password: migme_dev_password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    enabled: true
+
+logging:
+  level:
+    com.migme.fusion: DEBUG
+    org.springframework.security: DEBUG
+    io.netty: INFO
