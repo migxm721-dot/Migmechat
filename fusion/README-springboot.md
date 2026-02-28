@@ -15,7 +15,7 @@ This is the modernized Fusion backend built with Spring Boot 3.2.0 + Netty 4.1.x
 ## Quick Start
 
 ### Prerequisites
-- Java 21
+- Java 17+
 - Maven 3.8+
 - MySQL 8.0
 - Redis 7.x
