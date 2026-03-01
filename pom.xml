@@ -5,45 +5,35 @@
     <packaging>jar</packaging>
     <version>8.75.132</version>
     <name>Fusion</name>
-    <url>http://www.mig33.com</url>
+    <url>https://github.com/migxm721-dot/Migmechat</url>
     <repositories>
         <repository>
-            <id>mig33Repo</id>
-            <url>https://tools.projectgoth.com/nexus/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </snapshots>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <repository>
+            <id>zeroc-releases</id>
+            <name>ZeroC Releases</name>
+            <url>https://repo.zeroc.com/nexus/content/repositories/releases/</url>
         </repository>
     </repositories>
     <pluginRepositories>
         <pluginRepository>
-            <id>mig33Repo</id>
-            <url>https://tools.projectgoth.com/nexus/content/groups/public</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>warn</checksumPolicy>
-            </snapshots>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2</url>
         </pluginRepository>
     </pluginRepositories>
 
     <scm>
-        <connection>scm:svn:https://svn.projectgoth.com/svn/Mig33/fusion/branches/REL_8.63_RC</connection>
-        <developerConnection>scm:svn:https://svn.projectgoth.com/svn/Mig33/fusion/branches/REL_8.63_RC</developerConnection>
-        <url>https://svn.projectgoth.com/svn/Mig33/fusion/branches/REL_8.63_RC</url>
+        <connection>scm:git:https://github.com/migxm721-dot/Migmechat.git</connection>
+        <developerConnection>scm:git:git@github.com:migxm721-dot/Migmechat.git</developerConnection>
+        <url>https://github.com/migxm721-dot/Migmechat</url>
+        <tag>HEAD</tag>
     </scm>
+    <!-- Commented out - no longer accessible -->
+    <!--
     <distributionManagement>
         <repository>
             <id>nexus</id>
@@ -56,6 +46,7 @@
             <url>https://tools.projectgoth.com/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
+    -->
 
     <profiles>
         <!-- Mac OSX -->
