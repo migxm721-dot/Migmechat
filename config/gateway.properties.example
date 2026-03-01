@@ -1,0 +1,85 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Migmechat Gateway Configuration
+# Copy this file and remove the .example suffix:
+#   cp config/gateway.properties.example etc/GatewayTCP.cfg
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ─── Server Type ──────────────────────────────────────────────────────────────
+# Gateway transport type: TCP | HTTP | WS
+GatewayType=TCP
+
+# ─── Network Binding ──────────────────────────────────────────────────────────
+# IP address the gateway binds to (0.0.0.0 = all interfaces)
+GatewayHost=0.0.0.0
+
+# Port the gateway listens on
+GatewayPort=9119
+
+# ─── Ice Registry / Locator ───────────────────────────────────────────────────
+# Ice middleware locator endpoint connecting to IceGrid Registry
+Ice.Default.Locator=FusionIceGrid/Locator:tcp -h localhost -p 10000
+
+# ─── Ice Thread Pool ──────────────────────────────────────────────────────────
+# Server-side thread pool: handles incoming requests
+Ice.ThreadPool.Server.Size=4
+Ice.ThreadPool.Server.SizeMax=20
+Ice.ThreadPool.Server.SizeWarn=15
+
+# Client-side thread pool: handles outbound calls
+Ice.ThreadPool.Client.Size=2
+Ice.ThreadPool.Client.SizeMax=10
+
+# ─── Connection Settings ──────────────────────────────────────────────────────
+# Maximum number of simultaneous client connections (0 = unlimited)
+Ice.ACM.Close=3
+Ice.ACM.Heartbeat=3
+Ice.ACM.Timeout=30
+
+# Connection timeout in milliseconds
+Ice.Override.Timeout=5000
+
+# ─── WebSocket Settings ───────────────────────────────────────────────────────
+# (Applicable when GatewayType=WS)
+# WebSocketPort=9120
+# WebSocketSSL=false
+# WebSocket.MaxFrameSize=65536
+
+# ─── HTTP Settings ────────────────────────────────────────────────────────────
+# (Applicable when GatewayType=HTTP)
+# HTTP.LongPollingTimeout=30
+# HTTP.MaxSessions=10000
+
+# ─── Security ─────────────────────────────────────────────────────────────────
+# Enable rate limiting (requests per second per IP)
+# RateLimit.Enabled=true
+# RateLimit.RequestsPerSecond=100
+
+# ─── Monitoring & Health Check ────────────────────────────────────────────────
+# Port for the health/stats endpoint
+# Monitor.Port=9999
+# Monitor.Enabled=true
+
+# ─── Feature Flags ────────────────────────────────────────────────────────────
+# Enable/disable specific gateway features
+# Feature.Bots=true
+# Feature.Gifts=true
+# Feature.GroupChat=true
+
+# ─── Logging ──────────────────────────────────────────────────────────────────
+Ice.Trace.Network=0
+Ice.Trace.Protocol=0
+# Set to 1 or 2 for verbose network/protocol tracing (development only)
+
+# ─── Environment-Specific Examples ───────────────────────────────────────────
+# Development:
+#   GatewayPort=9119
+#   Ice.ThreadPool.Server.Size=2
+#   Ice.ThreadPool.Server.SizeMax=5
+#   Ice.Trace.Network=1
+#
+# Production:
+#   GatewayHost=0.0.0.0
+#   GatewayPort=9119
+#   Ice.ThreadPool.Server.Size=8
+#   Ice.ThreadPool.Server.SizeMax=64
+#   Ice.Trace.Network=0

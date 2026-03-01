@@ -1,0 +1,136 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Migmechat Database Configuration
+# Copy this file to etc/database.properties and fill in your values:
+#   cp config/database.properties.example etc/database.properties
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ─── Global Pool Settings ────────────────────────────────────────────────────
+# Maximum time (seconds) a connection may remain idle before being closed
+global.maxIdleTime=300
+
+# Query used to validate connections on checkout
+global.preferredTestQuery=select 1
+
+# ─── Primary Database ─────────────────────────────────────────────────────────
+# JDBC driver class (MySQL Connector/J)
+database.driver=com.mysql.jdbc.Driver
+
+# Connection URL
+# Format: jdbc:mysql://<host>:<port>/<database>?<options>
+# rewriteBatchedStatements=true improves batch insert performance significantly
+# NOTE: useSSL=false is for development only. See SSL section below for production.
+database.jdbcUrl=jdbc:mysql://localhost:3306/fusion?rewriteBatchedStatements=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+
+# Database credentials
+database.username=fusion
+database.password=CHANGE_ME
+
+# ─── C3P0 Connection Pool Settings ───────────────────────────────────────────
+# Number of new connections acquired when pool is exhausted
+database.acquireIncrement=5
+
+# Minimum connections maintained in pool
+database.minPoolSize=10
+
+# Maximum connections allowed in pool
+database.maxPoolSize=100
+
+# Initial connections created on startup
+database.initialPoolSize=10
+
+# Number of retry attempts when acquiring a connection (0 = retry indefinitely)
+database.acquireRetryAttempts=0
+
+# Milliseconds between connection retry attempts
+database.acquireRetryDelay=1000
+
+# If true, pool permanently breaks after failed acquisition; if false, retries
+database.breakAfterAcquireFailure=false
+
+# Max time (seconds) a connection may stay idle before being closed
+database.maxIdleTime=300
+
+# Frequency (seconds) to test idle connections (0 = disabled)
+database.idleConnectionTestPeriod=120
+
+# Validate connection on every checkout (safer but slightly slower)
+database.testConnectionOnCheckout=true
+
+# ─── Archive Database (read replicas, session archive, etc.) ──────────────────
+archive.database.driver=com.mysql.jdbc.Driver
+archive.database.jdbcUrl=jdbc:mysql://localhost:3306/fusion?rewriteBatchedStatements=true&characterEncoding=UTF-8
+archive.database.username=fusion
+archive.database.password=CHANGE_ME
+archive.database.acquireIncrement=1
+archive.database.minPoolSize=1
+archive.database.maxPoolSize=10
+archive.database.initialPoolSize=1
+archive.database.acquireRetryAttempts=0
+archive.database.acquireRetryDelay=1000
+archive.database.breakAfterAcquireFailure=false
+archive.database.maxIdleTime=300
+
+# ─── MIS Database ─────────────────────────────────────────────────────────────
+# Used for long-running analytics/reporting queries
+mis.database.driver=com.mysql.jdbc.Driver
+mis.database.jdbcUrl=jdbc:mysql://localhost:3306/fusion
+mis.database.username=fusion
+mis.database.password=CHANGE_ME
+mis.database.acquireIncrement=1
+mis.database.minPoolSize=2
+mis.database.maxPoolSize=5
+mis.database.initialPoolSize=2
+mis.database.idleConnectionTestPeriod=120
+mis.database.testConnectionOnCheckout=true
+
+# ─── Slave VIP Database (high-priority read replica) ─────────────────────────
+slaveVIP.database.driver=com.mysql.jdbc.Driver
+slaveVIP.database.jdbcUrl=jdbc:mysql://localhost:3306/fusion
+slaveVIP.database.username=fusion
+slaveVIP.database.password=CHANGE_ME
+slaveVIP.database.acquireIncrement=1
+slaveVIP.database.minPoolSize=1
+slaveVIP.database.maxPoolSize=3
+slaveVIP.database.initialPoolSize=1
+slaveVIP.database.acquireRetryAttempts=0
+slaveVIP.database.acquireRetryDelay=1000
+slaveVIP.database.breakAfterAcquireFailure=false
+slaveVIP.database.maxIdleTime=300
+slaveVIP.database.testConnectionOnCheckout=true
+slaveVIP.database.idleConnectionTestPeriod=120
+
+# ─── OLAP VIP Database (analytics, read-only) ─────────────────────────────────
+olapVIP.database.driver=com.mysql.jdbc.Driver
+olapVIP.database.jdbcUrl=jdbc:mysql://localhost:3306/fusion
+olapVIP.database.username=readonly
+olapVIP.database.password=CHANGE_ME
+olapVIP.database.acquireIncrement=1
+olapVIP.database.minPoolSize=1
+olapVIP.database.maxPoolSize=3
+olapVIP.database.initialPoolSize=1
+olapVIP.database.acquireRetryAttempts=0
+olapVIP.database.acquireRetryDelay=1000
+olapVIP.database.breakAfterAcquireFailure=false
+olapVIP.database.maxIdleTime=300
+olapVIP.database.testConnectionOnCheckout=true
+olapVIP.database.idleConnectionTestPeriod=120
+
+# ─── SSL / TLS Options ────────────────────────────────────────────────────────
+# Uncomment to enable SSL (recommended for production)
+# database.jdbcUrl=jdbc:mysql://localhost:3306/fusion?useSSL=true&requireSSL=true&verifyServerCertificate=true&trustCertificateKeyStoreUrl=file:/path/to/truststore.jks&trustCertificateKeyStorePassword=truststorepassword
+
+# ─── Environment-Specific Examples ───────────────────────────────────────────
+# Development:
+#   database.jdbcUrl=jdbc:mysql://localhost:3306/fusion_dev?useSSL=false
+#   database.minPoolSize=1
+#   database.maxPoolSize=5
+#
+# Testing:
+#   database.jdbcUrl=jdbc:mysql://localhost:3306/fusion_test?useSSL=false
+#   database.minPoolSize=1
+#   database.maxPoolSize=3
+#
+# Production:
+#   database.jdbcUrl=jdbc:mysql://prod-db:3306/fusion?useSSL=true&requireSSL=true
+#   database.minPoolSize=10
+#   database.maxPoolSize=100
