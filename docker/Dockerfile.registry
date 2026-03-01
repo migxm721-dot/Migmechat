@@ -1,0 +1,32 @@
+FROM openjdk:8-jre-alpine
+
+LABEL maintainer="Migmechat Team"
+LABEL description="ZeroC Ice Registry for Migmechat"
+
+# Install Ice registry
+RUN apk add --no-cache \
+    bash \
+    zeroc-ice \
+    && rm -rf /var/cache/apk/*
+
+# Create non-root user
+RUN addgroup -S fusion && adduser -S fusion -G fusion
+
+WORKDIR /app
+
+# Copy registry configuration
+COPY etc/ etc/
+
+RUN mkdir -p /app/logs /app/db \
+    && chown -R fusion:fusion /app
+
+USER fusion
+
+# Expose registry port
+EXPOSE 10000
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
+    CMD nc -z localhost 10000 || exit 1
+
+CMD ["icegridregistry", "--Ice.Config=/app/etc/Registry.cfg"]

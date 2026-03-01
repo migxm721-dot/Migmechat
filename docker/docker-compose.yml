@@ -1,0 +1,185 @@
+version: '3.8'
+
+# Migmechat Full Stack - Docker Compose
+# Usage:
+#   docker compose up -d                          # Start core services
+#   docker compose --profile admin up -d          # Add PhpMyAdmin
+#   docker compose --profile production up -d     # Add Nginx reverse proxy
+
+networks:
+  migmechat:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
+  memcache_data:
+    driver: local
+
+services:
+
+  # ─────────────────────────────────────────────
+  # MySQL 5.7 Database
+  # ─────────────────────────────────────────────
+  mysql:
+    image: mysql:5.7
+    container_name: migmechat-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-fusion}
+      MYSQL_USER: ${MYSQL_USER:-fusion}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-fusionpassword}
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql-conf/my.cnf:/etc/mysql/conf.d/my.cnf:ro
+      - ./init-db:/docker-entrypoint-initdb.d:ro
+    networks:
+      - migmechat
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-rootpassword}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ─────────────────────────────────────────────
+  # Memcached Cache
+  # ─────────────────────────────────────────────
+  memcache:
+    image: memcached:1.6-alpine
+    container_name: migmechat-memcache
+    restart: unless-stopped
+    command: ["memcached", "-m", "256", "-c", "1024", "-t", "4"]
+    ports:
+      - "${MEMCACHE_PORT:-11211}:11211"
+    networks:
+      - migmechat
+    healthcheck:
+      test: ["CMD", "sh", "-c", "echo stats | nc -w1 localhost 11211 | grep -q uptime"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ─────────────────────────────────────────────
+  # ZeroC Ice Registry
+  # ─────────────────────────────────────────────
+  registry:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.registry
+    image: migmechat-registry:latest
+    container_name: migmechat-registry
+    restart: unless-stopped
+    ports:
+      - "${REGISTRY_PORT:-10000}:10000"
+    volumes:
+      - ./data/registry:/app/db
+      - ./logs/registry:/app/logs
+    networks:
+      - migmechat
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "10000"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  # ─────────────────────────────────────────────
+  # Migmechat Gateway (Main Application)
+  # ─────────────────────────────────────────────
+  gateway:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: migmechat-gateway:latest
+    container_name: migmechat-gateway
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      memcache:
+        condition: service_healthy
+      registry:
+        condition: service_healthy
+    environment:
+      # Database
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: ${MYSQL_DATABASE:-fusion}
+      DB_USER: ${MYSQL_USER:-fusion}
+      DB_PASSWORD: ${MYSQL_PASSWORD:-fusionpassword}
+      # Memcache
+      MEMCACHE_HOST: memcache
+      MEMCACHE_PORT: 11211
+      # Ice Registry
+      ICE_REGISTRY_HOST: registry
+      ICE_REGISTRY_PORT: 10000
+      # Gateway
+      GATEWAY_TYPE: ${GATEWAY_TYPE:-TCP}
+      GATEWAY_HOST: ${GATEWAY_HOST:-0.0.0.0}
+      GATEWAY_PORT: ${GATEWAY_PORT:-9119}
+      # Application
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      TZ: ${TZ:-UTC}
+    ports:
+      - "${GATEWAY_PORT:-9119}:9119"
+    volumes:
+      - ./logs/gateway:/app/logs
+      - ./data/gateway:/app/data
+    networks:
+      - migmechat
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "9119"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    command: ["gateway"]
+
+  # ─────────────────────────────────────────────
+  # PhpMyAdmin (optional admin profile)
+  # ─────────────────────────────────────────────
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: migmechat-phpmyadmin
+    restart: unless-stopped
+    profiles:
+      - admin
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: ${MYSQL_ROOT_PASSWORD:-rootpassword}
+      UPLOAD_LIMIT: 100M
+    ports:
+      - "${PHPMYADMIN_PORT:-8080}:80"
+    networks:
+      - migmechat
+
+  # ─────────────────────────────────────────────
+  # Nginx Reverse Proxy (optional production profile)
+  # ─────────────────────────────────────────────
+  nginx:
+    image: nginx:alpine
+    container_name: migmechat-nginx
+    restart: unless-stopped
+    profiles:
+      - production
+    depends_on:
+      gateway:
+        condition: service_healthy
+    ports:
+      - "${NGINX_HTTP_PORT:-80}:80"
+      - "${NGINX_HTTPS_PORT:-443}:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    networks:
+      - migmechat

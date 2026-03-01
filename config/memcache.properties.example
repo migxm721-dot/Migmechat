@@ -1,0 +1,75 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Migmechat Memcache Configuration
+# These properties are typically included in etc/database.properties
+# Copy relevant settings into your actual config file.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ─── Server List ──────────────────────────────────────────────────────────────
+# Comma-separated list of Memcached servers: host:port
+# Multiple servers: server1:11211,server2:11211
+memcache.serverList=localhost:11211
+
+# ─── Connection Settings ──────────────────────────────────────────────────────
+# Connection timeout in milliseconds
+memcache.timeout=1000
+
+# Use binary protocol for better performance (requires Memcached 1.3+)
+memcache.useBinaryProtocol=true
+
+# ─── Pool Settings ────────────────────────────────────────────────────────────
+# Minimum number of spare connections per server
+memcache.pool.minSpareConnections=5
+
+# Maximum connections per server
+memcache.pool.maxConnections=50
+
+# ─── Cache Key Prefixes ───────────────────────────────────────────────────────
+# Prefix for session cache keys (prevents collisions between environments)
+memcache.prefix.session=sess_
+
+# Prefix for user profile cache keys
+memcache.prefix.user=user_
+
+# Prefix for chat room cache keys
+memcache.prefix.room=room_
+
+# Prefix for message cache keys
+memcache.prefix.message=msg_
+
+# ─── Cache Expiry Times (seconds) ─────────────────────────────────────────────
+# Session cache TTL: 1 hour
+memcache.expiry.session=3600
+
+# User profile cache TTL: 30 minutes
+memcache.expiry.user=1800
+
+# Chat room cache TTL: 20 minutes
+memcache.expiry.room=1200
+
+# Message cache TTL: 10 minutes
+memcache.expiry.message=600
+
+# ─── Compression ──────────────────────────────────────────────────────────────
+# Enable compression for values larger than threshold (bytes)
+memcache.compressionEnabled=true
+memcache.compressionThreshold=16384
+
+# ─── Hashing ──────────────────────────────────────────────────────────────────
+# Hash algorithm for consistent server selection (CONSISTENT avoids remapping
+# when servers are added/removed)
+# Options: NATIVE | CRC | FNV1_64 | FNV1A_64 | FNV1_32 | FNV1A_32 | CONSISTENT
+memcache.hashAlgorithm=CONSISTENT
+
+# ─── Statistics ───────────────────────────────────────────────────────────────
+# Collect Memcached statistics
+memcache.statsEnabled=true
+
+# ─── Environment-Specific Examples ───────────────────────────────────────────
+# Development (single server):
+#   memcache.serverList=localhost:11211
+#   memcache.pool.maxConnections=5
+#
+# Production (clustered):
+#   memcache.serverList=mc1.internal:11211,mc2.internal:11211,mc3.internal:11211
+#   memcache.pool.maxConnections=50
+#   memcache.compressionEnabled=true
