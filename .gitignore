@@ -39,6 +39,7 @@ logs/
 # ─── Sensitive configuration (never commit real credentials) ──────────────────
 config/*.properties
 etc/database.properties
+etc/email.properties
 etc/*.cfg
 docker/.env
 
