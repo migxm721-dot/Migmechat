@@ -1,0 +1,13 @@
+# Brevo Email Configuration
+email.enabled=true
+
+# Brevo API Settings
+brevo.api.key=YOUR_BREVO_API_KEY_HERE
+brevo.from.email=noreply@migxchat.net
+brevo.from.name=Migmechat
+
+# Email Settings
+email.verification.subject=Verify Your Migmechat Account
+email.verification.expiry.minutes=10
+email.password.reset.subject=Reset Your Migmechat Password
+email.password.reset.expiry.minutes=30
