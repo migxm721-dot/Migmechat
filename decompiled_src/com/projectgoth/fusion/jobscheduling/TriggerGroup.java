@@ -1,0 +1,26 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package com.projectgoth.fusion.jobscheduling;
+
+/*
+ * This class specifies class file version 49.0 but uses Java 6 signatures.  Assumed Java 6.
+ */
+public enum TriggerGroup {
+    EMAIL_GROUP_NOTIFICATION,
+    SMS_GROUP_NOTIFICATION,
+    ALERT_GROUP_NOTIFICATION,
+    SUBSCRIPTION_RENEWAL,
+    USER_REFERRAL_NOTIFICATION,
+    LEADERBOARD_UPDATE,
+    MERCHANT_TRAIL,
+    VAS_COMPUTATION,
+    AVATAR_CANDIDATE_POOLING,
+    TOPMERCHANT_TAGGING,
+    MOL_ASYNCHRONOUS_UPDATE,
+    MIMOPAY_ASYNCHRONOUS_UPDATE,
+    PAYPAL_ASYNCHRONOUS_UPDATE,
+    RECOMMENDATION_GENERATION;
+
+}
+
