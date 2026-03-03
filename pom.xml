@@ -2,7 +2,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.projectgoth</groupId>
     <artifactId>Fusion</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>netty-gateway-prototype</module>
+    </modules>
     <version>8.75.132</version>
     <name>Fusion</name>
     <url>http://www.mig33.com</url>
@@ -280,6 +284,7 @@
         <skipTests>true</skipTests>
     </properties>
 
+    <dependencyManagement>
     <dependencies>
     	<dependency>
             <groupId>com.projectgoth</groupId>
@@ -709,6 +714,7 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+    </dependencyManagement>
 
     <build>
 
@@ -796,6 +802,39 @@
 			</lifecycleMappingMetadata>
 		    </configuration>
 		</plugin>
+		<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.2</version>
+                <executions>
+                    <execution>
+                        <id>fusion-test-agent</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                        <configuration>
+                            <archive>
+                                <index>false</index>
+                                <manifest>
+                                    <addClasspath>true</addClasspath>
+                                    <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                                    <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                                </manifest>
+                                <manifestEntries>
+                                    <Premain-Class>com.projectgoth.fusion.FusionTestClassFileTransformer</Premain-Class>
+                                    <Boot-Class-Path>javassist.jar</Boot-Class-Path>
+                                </manifestEntries>
+                            </archive>
+                            <classifier>makeJavaAgentJar</classifier>
+                            <finalName>fusionTestAgent</finalName>
+                            <includes>
+                                <include>**/FusionTestClassFileTransformer*</include>
+                            </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
 	    </plugins>
         </pluginManagement>
 
@@ -844,48 +883,10 @@
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <archive>
-                        <manifestFile>src/main/resources/META-INF/MANIFEST.MF</manifestFile>
-                    </archive>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>test-compile</phase>
-                        <goals>
-                            <goal>test-jar</goal>
-                        </goals>
-                        <configuration>
-                            <archive>
-                                <index>false</index>
-                                <manifest>
-                                    <addClasspath>true</addClasspath>
-                                    <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                                    <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                                </manifest>
-                                <manifestEntries>
-                                    <Premain-Class>com.projectgoth.fusion.FusionTestClassFileTransformer</Premain-Class>
-                                    <Boot-Class-Path>javassist.jar</Boot-Class-Path>
-                                </manifestEntries>
-                            </archive>
-                            <classifier>makeJavaAgentJar</classifier>
-                            <finalName>fusionTestAgent</finalName>
-                            <includes>
-                                <include>**/FusionTestClassFileTransformer*</include>
-                            </includes>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.11.0</version>
                 <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <release>17</release>
                 </configuration>
             </plugin>
             <plugin>
@@ -901,16 +902,43 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.13</version>
-                <configuration>
-		    			<forkMode>pertest</forkMode> 
-		    			<argLine>-javaagent:${build.dir}/fusionTestAgent-tests.jar</argLine>
-                    <additionalClasspathElements>
-                        <additionalClasspathElement>/usr/fusion/etc</additionalClasspathElement>
-                    </additionalClasspathElements>
-                    <parallel>methods</parallel>
-                    <threadCount>1</threadCount>
-                </configuration>
+                <version>3.1.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.1.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.4.1</version>
+                <executions>
+                    <execution>
+                        <id>enforce-versions</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>[17,)</version>
+                                </requireJavaVersion>
+                                <requireMavenVersion>
+                                    <version>[3.8,)</version>
+                                </requireMavenVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
             <plugin> 
               <groupId>org.apache.maven.plugins</groupId> 
