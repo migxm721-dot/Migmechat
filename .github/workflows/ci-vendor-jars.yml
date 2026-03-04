@@ -1,0 +1,47 @@
+name: CI – Vendor Jars Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17 (Temurin) with Maven cache
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Make install-internal-deps.sh executable
+        run: chmod +x .github/scripts/install-internal-deps.sh
+
+      - name: Install internal/private jars into local Maven repository
+        run: .github/scripts/install-internal-deps.sh
+
+      # Tests are skipped because many integration tests require external services
+      # (Nexus, databases, RabbitMQ) that are not available in the CI environment.
+      # The primary goal of this workflow is to verify that the project compiles
+      # and packages successfully with the vendored internal dependencies.
+      - name: Build project (skip tests)
+        run: mvn -B -U -DskipTests clean package
+
+      - name: Upload build logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-logs
+          path: |
+            target/surefire-reports/
+            target/*.log
+          retention-days: 7

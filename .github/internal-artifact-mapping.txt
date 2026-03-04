@@ -1,0 +1,51 @@
+# internal-artifact-mapping.txt
+#
+# Maps vendor jars in libs/ to their Maven coordinates so that
+# install-internal-deps.sh can install them into the local Maven repository
+# before the CI build runs.
+#
+# FORMAT (pipe-delimited, one entry per line):
+#   relative-jar-path|groupId|artifactId|version|packaging|classifier
+#
+# - relative-jar-path : path from the repository root to the jar file
+#                       (e.g. libs/mylib-1.0.0.jar)
+# - groupId           : Maven groupId
+# - artifactId        : Maven artifactId
+# - version           : Maven version string
+# - packaging         : usually "jar"
+# - classifier        : optional; leave the field empty if not needed
+#
+# HOW TO ADD A NEW MAPPING:
+#   1. Copy the private jar into the libs/ directory.
+#   2. Add a line below following the format above.
+#   3. Commit both the jar and this file.
+#
+# NOTE: Lines starting with '#' and blank lines are ignored.
+# ---------------------------------------------------------------------------
+
+# com.projectgoth internal libraries
+libs/com.projectgoth-configuration-1.0.5.jar|com.projectgoth|configuration|1.0.5|jar|
+libs/com.projectgoth-common-lib-0.0.3.jar|com.projectgoth|common-lib|0.0.3|jar|
+libs/com.projectgoth-hashtag-0.0.2.jar|com.projectgoth|hashtag|0.0.2|jar|
+libs/com.projectgoth-s3uploader-0.0.1.jar|com.projectgoth|s3uploader|0.0.1|jar|
+libs/com.projectgoth-leto-common-0.27.0.jar|com.projectgoth|leto-common|0.27.0|jar|
+
+# ICE middleware (platform-specific builds — add whichever platform applies)
+# NOTE: Do NOT change the ICE groupId/version used in pom.xml; update only the
+#       jar file and this mapping to match the platform profile being built.
+libs/Ice-3.3.1-mac.jar|com.zeroc.mac|Ice|3.3.1|jar|
+# libs/Ice-3.3.1-linux.jar|com.zeroc.linux|Ice|3.3.1|jar|
+
+# mig33 RabbitMQ client
+libs/mig33rabbitmq-client-0.5.0.jar|com.mig33|mig33rabbitmq-client|0.5.0|jar|
+
+# SWT (platform-specific — uncomment the one matching your build profile)
+libs/swt-macosx-3.3.1.1.jar|swt|swt-macosx|3.3.1.1|jar|
+# libs/swt-linux-3.3.1.1.jar|swt|swt-linux|3.3.1.1|jar|
+
+# Berkeley DB Java Edition
+libs/je-3.3.74.jar|berkeley|je|3.3.74|jar|
+
+# Add mappings for any additional private jars below this line.
+# Example:
+#   libs/my-internal-lib-2.0.0.jar|com.example|my-internal-lib|2.0.0|jar|
