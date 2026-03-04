@@ -1,0 +1,17 @@
+2014-12-10 03:44:00,855 [main] INFO gateway.Gateway - Gateway version @version@
+2014-12-10 03:44:00,976 [main] INFO gateway.Gateway - Copyright (c) 2005-2008 Project Goth Inc. All rights reserved
+2014-12-10 03:44:02,540 [main] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/dao.properties
+2014-12-10 03:44:02,625 [main] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_read.properties
+2014-12-10 03:44:02,668 [main] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_write.properties
+2014-12-10 03:44:04,137 [main] INFO com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2014-12-10 03:44:06,314 [main] INFO com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-12-10 03:44:10,581 [main] INFO com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt96dyednd1sx2azb|7163238, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt96dyednd1sx2azb|7163238, idleConnectionTestPeriod -> 3000, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://db1:3306/fusion, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 3600, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-12-10 03:44:17,489 [main] INFO common.MemCachedUtils - memcached.properties has 11 indicated pool names
+2014-12-10 03:44:17,509 [main] INFO common.MemCachedUtils - configured 11 dummy memcached clients
+2014-12-10 03:44:17,509 [main] INFO common.MemCachedUtils - configuring client [captcha]
+2014-12-10 03:44:17,514 [main] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:44:17,546 [main] INFO common.MemCachedUtils - Creating pool [captcha]
+2014-12-10 03:44:17,728 [main] INFO common.MemCachedUtils - Configuring memcached client for pool [captcha]
+2014-12-10 03:44:18,423 [main] INFO ice.IceThreadMonitor - Tracing Ice Threads started
+2014-12-10 03:44:18,622 [main] INFO gateway.Gateway - Server started - ID: 3 Type: null, Port: 25
+

@@ -1,0 +1,8 @@
+2014-12-10 03:43:40,953 [main] INFO userevent.store.EventStoreMain - EventStore version @version@
+2014-12-10 03:43:41,050 [main] INFO userevent.store.EventStoreMain - Copyright (c) 2005-2008 Project Goth Inc. All rights reserved
+2014-12-10 03:43:59,943 [main] INFO userevent.store.BDBEventStoreI - EnvironmentHome[./eventstore] allowStoreCreation[true]
+2014-12-10 03:44:17,996 [main] INFO userevent.store.BDBEventStoreI - Store opened successfully
+2014-12-10 03:44:18,006 [main] INFO userevent.store.BDBEventStoreI - Maximum cache memory: 16 MB
+2014-12-10 03:44:18,251 [main] INFO userevent.store.EventStoreMain - Using custom configuration file: EventStore.cfg
+2014-12-10 03:44:21,101 [main] INFO userevent.store.EventStore - Configured endpoint [tcp -p 21000 -t 8000]
+2014-12-10 03:44:22,463 [main] INFO userevent.store.EventStore - Service started

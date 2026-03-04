@@ -1,0 +1,452 @@
+2014-12-10 03:44:05,095 [main] INFO imageserver.ImageServer - ImageServer version @version@
+2014-12-10 03:44:05,211 [main] INFO imageserver.ImageServer - Copyright (c) 2005-2008 Project Goth Inc. All rights reserved
+2014-12-10 03:44:09,896 [main] INFO imageserver.ImageServer - Connected to 1 MogileFS trackers. 1 connection(s) per tracker
+2014-12-10 03:44:11,662 [main] INFO imageserver.ImageServer - Image Server started - Port: 9099 Cache Size: 10,000 KB
+
+2014-12-10 03:55:54,563 [pool-1-thread-3] INFO imageserver.Connection - URI [GET /dp/mspraveenms?w=36&h=36&a=1&c=1] USERAGENT [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36] REFERRER [http://localhost.projectgoth.com/home]
+2014-12-10 03:55:54,838 [pool-1-thread-6] INFO imageserver.Connection - URI [GET /dp/mspraveenms?w=48&h=48&a=1&c=1] USERAGENT [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36] REFERRER [http://localhost.projectgoth.com/home]
+2014-12-10 03:55:54,839 [pool-1-thread-7] INFO imageserver.Connection - URI [GET /dp/mspraveenms?w=64&h=64&a=1&c=1] USERAGENT [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36] REFERRER [http://localhost.projectgoth.com/home]
+2014-12-10 03:55:55,148 [pool-1-thread-6] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/dao.properties
+2014-12-10 03:55:55,211 [pool-1-thread-6] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_read.properties
+2014-12-10 03:55:55,331 [pool-1-thread-6] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_write.properties
+2014-12-10 03:55:55,771 [pool-1-thread-6] INFO com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2014-12-10 03:55:56,349 [pool-1-thread-6] INFO com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-12-10 03:55:58,359 [pool-1-thread-6] INFO com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt96dytlrovqhv4i|40332031, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt96dytlrovqhv4i|40332031, idleConnectionTestPeriod -> 3000, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://db1:3306/fusion, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 3600, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-12-10 03:56:02,069 [pool-1-thread-7] INFO common.Redis - Loading Redis configuration file /etc/fusion/etc/redis.properties
+2014-12-10 03:56:02,097 [pool-1-thread-7] INFO common.Redis - Shard directory master: redis:6379
+2014-12-10 03:56:02,097 [pool-1-thread-7] INFO common.Redis - Shard directory slave: redis:6379
+2014-12-10 03:56:02,098 [pool-1-thread-7] INFO common.Redis - Leaderboards master: redis:6379
+2014-12-10 03:56:02,098 [pool-1-thread-7] INFO common.Redis - Leaderboards slave: redis:6379
+2014-12-10 03:56:02,098 [pool-1-thread-7] INFO common.Redis - Games master: redis:6379
+2014-12-10 03:56:02,098 [pool-1-thread-7] INFO common.Redis - Games slave: redis:6379
+2014-12-10 03:56:02,098 [pool-1-thread-7] INFO common.Redis - Queues master: redis:6379
+2014-12-10 03:56:02,098 [pool-1-thread-7] INFO common.Redis - Queues slave: redis:6379
+2014-12-10 03:56:02,099 [pool-1-thread-7] INFO common.Redis - Web resources master: redis:6379
+2014-12-10 03:56:02,099 [pool-1-thread-7] INFO common.Redis - Web resources slave: redis:6379
+2014-12-10 03:56:02,099 [pool-1-thread-7] INFO common.Redis - Redis configuration successfully loaded
+2014-12-10 03:56:02,219 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 03:56:02,223 [pool-1-thread-7] INFO common.RedisConnectionManager - adding key in pool cache: redis:6379 Current number of JedisPool created: 0{}
+2014-12-10 03:56:02,349 [pool-1-thread-7] INFO com.projectgoth.fusion.jedis.FusionJedisPool - JedisPool props refreshed for pool=com.projectgoth.fusion.jedis.FusionJedisPool@412e9c68
+2014-12-10 03:56:02,587 [pool-1-thread-7] INFO common.SharedRedisConnectionRegistry - SharedRedisConnection [redis:6379] registered
+2014-12-10 03:56:02,589 [pool-1-thread-7] INFO common.SharedRedisConnectionRegistry - SharedRedisConnection [redis:6379] registered
+2014-12-10 03:56:02,641 [pool-1-thread-3] INFO common.RedisConnectionManager - adding key in pool cache: db1:6379 Current number of JedisPool created: 1{redis:6379=com.projectgoth.fusion.jedis.FusionJedisPool@412e9c68}
+2014-12-10 03:56:02,642 [pool-1-thread-3] INFO com.projectgoth.fusion.jedis.FusionJedisPool - JedisPool props refreshed for pool=com.projectgoth.fusion.jedis.FusionJedisPool@19e55091
+2014-12-10 03:56:02,685 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:56:02,743 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:56:02,744 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:56:04,650 [pool-1-thread-6] INFO imageserver.Connection - Request processed in 9817 ms
+2014-12-10 03:56:04,651 [pool-1-thread-3] INFO imageserver.Connection - Request processed in 10097 ms
+2014-12-10 03:56:04,686 [pool-1-thread-7] INFO imageserver.Connection - Request processed in 9848 ms
+2014-12-10 03:57:02,747 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:57:02,761 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:57:02,796 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:58:02,796 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:58:02,806 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:58:02,835 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:59:02,836 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:59:02,873 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:59:02,949 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:00:02,952 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:00:02,963 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:00:03,004 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:01:03,004 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:01:03,020 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:01:03,062 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:02:03,064 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:02:03,076 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:02:03,087 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:03:03,101 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:03:03,120 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:03:03,165 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:04:03,165 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:04:03,177 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:04:03,183 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:05:03,184 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:05:03,200 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:05:03,208 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:06:02,221 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 04:06:03,208 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:06:03,211 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:06:03,229 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:07:03,230 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:07:03,246 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:07:03,256 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:08:03,257 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:08:03,603 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:08:03,607 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:09:03,608 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:09:03,629 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:09:03,634 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:10:03,635 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:10:03,654 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:10:03,663 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:11:03,666 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:11:03,683 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:11:03,694 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:12:03,694 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:12:03,706 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:12:03,718 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:13:03,721 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:13:03,740 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:13:03,747 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:14:03,749 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:14:03,764 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:14:03,767 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:15:03,776 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:15:03,787 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:15:03,791 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:16:02,239 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 04:16:03,793 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:16:03,794 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:16:03,798 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:17:03,800 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:17:03,809 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:17:03,813 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:18:03,814 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:18:03,833 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:18:03,837 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:19:03,839 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:19:03,856 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:19:03,866 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:20:03,868 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:20:03,878 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:20:03,882 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:21:03,882 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:21:03,903 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:21:03,907 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:01:12,201 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:01:12,302 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:01:12,360 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:02:12,364 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:02:12,381 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:02:12,393 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:03:12,394 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:03:12,414 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:03:12,423 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:04:12,423 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:04:12,440 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:04:12,445 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:05:10,556 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:05:12,447 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:05:12,449 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:05:12,460 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:06:12,460 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:06:12,478 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:06:12,482 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:07:12,484 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:07:12,512 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:07:12,516 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:08:08,074 [pool-1-thread-9] INFO imageserver.Connection - URI [GET /dp/mspraveenms?w=36&h=36&a=1&c=1] USERAGENT [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36] REFERRER [http://localhost.projectgoth.com/home]
+2014-12-10 05:08:08,564 [pool-1-thread-9] ERROR common.SharedRedisConnection - Unable to create shared redis connection to server redis:6379 :It seems like server has closed the connection.
+2014-12-10 05:08:08,728 [pool-1-thread-9] INFO imageserver.Connection - Request processed in 659 ms
+2014-12-10 05:08:08,905 [pool-1-thread-12] INFO imageserver.Connection - URI [GET /dp/mspraveenms?w=48&h=48&a=1&c=1] USERAGENT [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36] REFERRER [http://localhost.projectgoth.com/home]
+2014-12-10 05:08:08,941 [pool-1-thread-13] INFO imageserver.Connection - URI [GET /dp/mspraveenms?w=64&h=64&a=1&c=1] USERAGENT [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36] REFERRER [http://localhost.projectgoth.com/home]
+2014-12-10 05:08:09,543 [pool-1-thread-12] INFO imageserver.Connection - Request processed in 638 ms
+2014-12-10 05:08:09,557 [pool-1-thread-13] INFO imageserver.Connection - Request processed in 616 ms
+2014-12-10 05:08:12,516 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:08:12,521 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:08:12,545 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:09:12,550 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:09:12,566 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:09:12,570 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:10:12,571 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:10:12,599 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:10:12,603 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:11:12,604 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:11:12,622 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:11:12,632 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:11:51,446 [pool-1-thread-15] INFO imageserver.Connection - URI [GET /dp/mspraveenms?w=36&h=36&a=1&c=1] USERAGENT [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36] REFERRER [http://localhost.projectgoth.com/home]
+2014-12-10 05:11:51,562 [pool-1-thread-18] INFO imageserver.Connection - URI [GET /dp/mspraveenms?w=48&h=48&a=1&c=1] USERAGENT [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36] REFERRER [http://localhost.projectgoth.com/home]
+2014-12-10 05:11:51,576 [pool-1-thread-19] INFO imageserver.Connection - URI [GET /dp/mspraveenms?w=64&h=64&a=1&c=1] USERAGENT [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.71 Safari/537.36] REFERRER [http://localhost.projectgoth.com/home]
+2014-12-10 05:11:52,051 [pool-1-thread-15] INFO imageserver.Connection - Request processed in 605 ms
+2014-12-10 05:11:52,128 [pool-1-thread-18] INFO imageserver.Connection - Request processed in 566 ms
+2014-12-10 05:11:52,171 [pool-1-thread-19] INFO imageserver.Connection - Request processed in 596 ms
+2014-12-10 05:12:12,633 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:12:12,707 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:12:12,741 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:13:12,744 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:13:12,750 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:13:12,754 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:14:12,755 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:14:12,781 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:14:12,787 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:15:10,572 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:15:12,788 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:15:12,789 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:15:12,797 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:16:12,798 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:16:12,865 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:16:12,870 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:17:12,877 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:17:12,897 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:17:12,901 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:18:12,902 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:18:12,916 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:18:12,922 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:19:12,942 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:19:12,960 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:19:12,970 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:20:12,971 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:20:12,988 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:20:12,993 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:21:12,995 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:21:13,037 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:21:13,059 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:22:13,061 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:22:13,075 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:22:13,081 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:23:13,081 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:23:13,102 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:23:13,106 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:24:13,107 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:24:13,115 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:24:13,118 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:25:10,634 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:25:13,119 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:25:13,121 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:25:13,123 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:26:13,124 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:26:13,151 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:26:13,164 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:27:13,165 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:27:13,174 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:27:13,177 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:28:13,178 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:28:13,196 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:28:13,198 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:29:13,199 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:29:13,252 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:29:13,256 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:30:13,257 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:30:13,354 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:30:13,357 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:31:13,359 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:31:13,388 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:31:13,391 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:32:13,392 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:32:13,400 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:32:13,402 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:33:13,403 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:33:13,426 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:33:13,430 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:34:13,431 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:34:13,462 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:34:13,465 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:35:10,648 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:35:13,466 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:35:13,468 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:35:13,471 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:36:13,472 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:36:13,493 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:36:13,496 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:37:13,498 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:37:13,503 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:37:13,506 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:38:13,507 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:38:13,515 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:38:13,518 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:39:13,518 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:39:13,527 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:39:13,530 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:40:13,531 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:40:13,540 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:40:13,543 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:41:13,544 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:41:13,562 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:41:13,588 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:42:13,589 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:42:13,612 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:42:13,616 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:43:13,617 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:43:13,660 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:43:13,662 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:44:13,662 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:44:13,676 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:44:13,679 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:45:10,669 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:45:13,680 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:45:13,682 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:45:13,685 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:46:13,686 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:46:13,706 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:46:13,710 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:47:13,711 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:47:13,732 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:47:13,734 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:48:13,736 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:48:13,759 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:48:13,761 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:49:14,384 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:49:14,397 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:49:14,399 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:50:14,399 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:50:14,412 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:50:14,414 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:51:14,417 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:51:14,460 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:51:14,464 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:52:14,465 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:52:14,473 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:52:14,525 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:53:14,525 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:53:14,574 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:53:14,580 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:54:14,582 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:54:14,653 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:54:14,656 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:55:10,679 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:55:14,657 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:55:14,661 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:55:14,664 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:56:14,665 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:56:14,682 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:56:14,696 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:57:14,698 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:57:14,720 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:57:14,724 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:58:14,725 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:58:14,735 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:58:14,739 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:59:14,739 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:59:14,750 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:59:14,752 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:00:14,754 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:00:14,780 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:00:14,786 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:01:14,787 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:01:14,822 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:01:14,825 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:02:14,826 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:02:14,858 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:02:14,863 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:03:14,865 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:03:14,888 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:03:14,891 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:04:14,891 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:04:14,915 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:04:14,918 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:05:10,698 [pool-3-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 06:05:14,920 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:05:14,922 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:05:14,924 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:06:14,925 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:06:14,965 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:06:14,967 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:07:14,968 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:07:15,043 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:07:15,045 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:08:15,047 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:08:15,078 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:08:15,080 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:09:15,080 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:09:15,117 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:09:15,121 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:10:15,122 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:10:15,142 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:10:15,145 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:11:15,146 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:11:15,169 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:11:15,171 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:12:15,215 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:12:15,228 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:12:15,231 [pool-4-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms

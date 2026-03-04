@@ -1,0 +1,17 @@
+2014-12-10 03:43:56,627 [main] INFO botservice.BotServiceMain - BotService version @version@
+2014-12-10 03:43:56,710 [main] INFO botservice.BotServiceMain - Copyright (c) 2005-2008 Project Goth Inc. All rights reserved
+2014-12-10 03:44:16,622 [main] INFO com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2014-12-10 03:44:18,398 [main] INFO com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-12-10 03:44:22,002 [main] INFO common.MemCachedUtils - memcached.properties has 11 indicated pool names
+2014-12-10 03:44:22,005 [main] INFO common.MemCachedUtils - configured 11 dummy memcached clients
+2014-12-10 03:44:22,010 [main] INFO common.MemCachedUtils - configuring client [contactList]
+2014-12-10 03:44:22,010 [main] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:44:22,016 [main] INFO common.MemCachedUtils - Creating pool [contactList]
+2014-12-10 03:44:22,360 [main] INFO common.MemCachedUtils - Configuring memcached client for pool [contactList]
+2014-12-10 03:44:25,915 [main] INFO botservice.BotServiceMain - Using custom configuration file: /etc/fusion/etc/BotServer.cfg
+2014-12-10 03:44:33,607 [main] INFO botservice.BotService - Configured endpoint [tcp -p 5991]
+2014-12-10 03:44:35,394 [main] INFO botservice.BotService - Registered with Registry -t:tcp -h localhost -p 10000. Service started
+2014-12-10 03:44:36,280 [BotServiceAdminAdapter.ThreadPool-0] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/dao.properties
+2014-12-10 03:44:36,293 [BotServiceAdminAdapter.ThreadPool-0] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_read.properties
+2014-12-10 03:44:36,311 [BotServiceAdminAdapter.ThreadPool-0] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_write.properties
+2014-12-10 03:44:38,112 [BotServiceAdminAdapter.ThreadPool-0] INFO com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt96dyen05eskwe9|4390e318, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt96dyen05eskwe9|4390e318, idleConnectionTestPeriod -> 3000, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://db1:3306/fusion, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 3600, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]

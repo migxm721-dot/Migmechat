@@ -1,0 +1,25 @@
+2014-12-10 03:43:41,628 [main] INFO userevent.system.EventSystemMain - EventSystem version @version@
+2014-12-10 03:43:41,727 [main] INFO userevent.system.EventSystemMain - Copyright (c) 2005-2008 Project Goth Inc. All rights reserved
+2014-12-10 03:44:05,962 [main] INFO com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2014-12-10 03:44:09,980 [main] INFO com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-12-10 03:44:15,674 [main] INFO common.MemCachedUtils - memcached.properties has 11 indicated pool names
+2014-12-10 03:44:15,700 [main] INFO common.MemCachedUtils - configured 11 dummy memcached clients
+2014-12-10 03:44:15,700 [main] INFO common.MemCachedUtils - configuring client [contactList]
+2014-12-10 03:44:15,709 [main] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:44:15,715 [main] INFO common.MemCachedUtils - Creating pool [contactList]
+2014-12-10 03:44:16,164 [main] INFO common.MemCachedUtils - Configuring memcached client for pool [contactList]
+2014-12-10 03:44:21,001 [main] INFO common.MemCachedUtils - configuring client [broadcastList]
+2014-12-10 03:44:21,014 [main] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:44:21,030 [main] INFO common.MemCachedUtils - Creating pool [broadcastList]
+2014-12-10 03:44:21,034 [main] INFO common.MemCachedUtils - Configuring memcached client for pool [broadcastList]
+2014-12-10 03:44:21,368 [main] INFO common.MemCachedUtils - configuring client [userDisplayPictureAndStatus]
+2014-12-10 03:44:21,368 [main] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:44:21,384 [main] INFO common.MemCachedUtils - Creating pool [userDisplayPictureAndStatus]
+2014-12-10 03:44:21,397 [main] INFO common.MemCachedUtils - Configuring memcached client for pool [userDisplayPictureAndStatus]
+2014-12-10 03:44:24,585 [main] INFO userevent.system.EventSystemMain - Using custom configuration file: EventSystem.cfg
+2014-12-10 03:44:26,776 [main] INFO userevent.system.EventSystemI - Creating proxies...
+2014-12-10 03:44:28,452 [main] INFO userevent.system.EventSystemI - Added proxy [EventStore -t:tcp -h localhost -p 21000 -t 5000]
+2014-12-10 03:44:28,452 [main] INFO userevent.system.EventSystemI - Done creating proxies...
+2014-12-10 03:44:28,459 [main] INFO com.projectgoth.fusion.userevent.system.EventSystem - Configured endpoint [tcp -p 21500 -t 7000]
+2014-12-10 03:44:29,371 [main] INFO com.projectgoth.fusion.userevent.system.EventSystem - Connecting to [Registry -t:tcp -p 10000 -t 10000]
+2014-12-10 03:44:29,529 [main] INFO com.projectgoth.fusion.userevent.system.EventSystem - Service started

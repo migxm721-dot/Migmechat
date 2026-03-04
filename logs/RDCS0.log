@@ -1,0 +1,8 @@
+2014-12-10 03:44:02,028 [main] INFO recommendation.collector.RecommendationDataCollectionServiceMain - RecommendationDataCollectionServiceMain version @version@
+2014-12-10 03:44:02,170 [main] INFO recommendation.collector.RecommendationDataCollectionServiceMain - Copyright (c) 2005-2008 Project Goth Inc. All rights reserved
+2014-12-10 03:44:04,207 [main] INFO recommendation.collector.RecommendationDataCollectionServiceMain - Using custom configuration file: RDCS0.cfg
+2014-12-10 03:44:10,941 [main] INFO common.BasicIceServerApp|RDCSIceServerApp(RDCS0) - Activating endpoint adapter:[RecommendationDataCollectionServiceAdapter]
+2014-12-10 03:44:10,946 [main] INFO common.BasicIceServerApp|RDCSIceServerApp(RDCS0) - Endpoint adapter:[RecommendationDataCollectionServiceAdapter] activated.
+2014-12-10 03:44:10,947 [main] INFO common.BasicIceServerApp|RDCSIceServerApp(RDCS0) - Activating endpoint adapter:[RecommendationDataCollectionServiceAdminAdapter]
+2014-12-10 03:44:10,948 [main] INFO common.BasicIceServerApp|RDCSIceServerApp(RDCS0) - Endpoint adapter:[RecommendationDataCollectionServiceAdminAdapter] activated.
+2014-12-10 03:44:10,948 [main] INFO common.BasicIceServerApp|RDCSIceServerApp(RDCS0) - Services started.

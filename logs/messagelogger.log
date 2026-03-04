@@ -1,0 +1,4 @@
+2014-12-10 03:43:44,959 [main] INFO messagelogger.MessageLogger - MessageLogger version @version@
+2014-12-10 03:43:45,027 [main] INFO messagelogger.MessageLogger - Copyright (c) 2005-2008 Project Goth Inc. All rights reserved
+2014-12-10 03:43:52,581 [main] INFO messagelogger.MessageLoggerI - Message stats will be written to the DB every 600 seconds
+2014-12-10 03:43:52,954 [main] INFO messagelogger.MessageLogger - Service started

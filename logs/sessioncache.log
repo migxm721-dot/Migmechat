@@ -1,0 +1,1000 @@
+2014-12-10 03:43:49,224 [main] INFO sessioncache.Main - SessionCache version @version@
+2014-12-10 03:43:49,340 [main] INFO sessioncache.Main - Copyright (c) 2005-2008 Project Goth Inc. All rights reserved
+2014-12-10 03:44:12,085 [main] INFO com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2014-12-10 03:44:14,340 [main] INFO com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-12-10 03:44:18,677 [main] INFO common.MemCachedUtils - memcached.properties has 11 indicated pool names
+2014-12-10 03:44:18,678 [main] INFO common.MemCachedUtils - configured 11 dummy memcached clients
+2014-12-10 03:44:18,678 [main] INFO common.MemCachedUtils - configuring client [contactList]
+2014-12-10 03:44:18,687 [main] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:44:18,698 [main] INFO common.MemCachedUtils - Creating pool [contactList]
+2014-12-10 03:44:19,088 [main] INFO common.MemCachedUtils - Configuring memcached client for pool [contactList]
+2014-12-10 03:44:25,314 [main] INFO com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 0, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt96dyejsd1wurjv2|49addecc, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt96dyejsd1wurjv2|49addecc, idleConnectionTestPeriod -> 0, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://db1:3306/ods?rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 30, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 3, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-12-10 03:44:29,346 [main] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/dao.properties
+2014-12-10 03:44:29,362 [main] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_read.properties
+2014-12-10 03:44:29,383 [main] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_write.properties
+2014-12-10 03:44:30,468 [main] INFO com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt96dyejsd1wurjv2|1ddb404e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt96dyejsd1wurjv2|1ddb404e, idleConnectionTestPeriod -> 3000, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://db1:3306/fusion, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 3600, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-12-10 03:44:31,380 [main] INFO sessioncache.SessionCacheI - class com.projectgoth.fusion.sessioncache.DailyTableTask scheduled for [Thu Dec 11 00:00:00 UTC 2014]
+2014-12-10 03:44:31,380 [main] INFO sessioncache.SessionCacheI - class com.projectgoth.fusion.sessioncache.PersistUniqueSummariesTask scheduled for [Thu Dec 11 00:00:00 UTC 2014]
+2014-12-10 03:44:31,388 [main] INFO sessioncache.SessionCacheI - class com.projectgoth.fusion.sessioncache.PersistTotalSummariesTask scheduled for [Wed Dec 10 03:49:31 UTC 2014]
+2014-12-10 03:44:31,389 [main] INFO sessioncache.SessionCacheI - class com.projectgoth.fusion.sessioncache.ArchiveSSOSessionsTask scheduled for [Wed Dec 10 03:45:31 UTC 2014]
+2014-12-10 03:44:33,054 [main] INFO sessioncache.SessionCache - Configured endpoint [tcp -h localhost -p 11023]
+2014-12-10 03:44:34,595 [main] INFO sessioncache.SessionCache - Service started
+2014-12-10 03:45:31,226 [Timer-4] INFO sessioncache.PersistUniqueSummariesTask - persisting summary uniques, startupRun [true]
+2014-12-10 03:45:31,338 [Timer-4] INFO com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt96dyejsd1wurjv2|58f663e4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt96dyejsd1wurjv2|58f663e4, idleConnectionTestPeriod -> 120, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://db1:3306/fusion?rewriteBatchedStatements=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-12-10 03:45:31,521 [Timer-4] INFO sessioncache.PersistUniqueSummariesTask - Examing 3 periods
+2014-12-10 03:45:31,557 [Timer-4] INFO com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt96dyejsd1wurjv2|2b47ab92, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt96dyejsd1wurjv2|2b47ab92, idleConnectionTestPeriod -> 120, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://db1:3306/fusion, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> select 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> true, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-12-10 03:45:31,625 [Timer-4] INFO sessioncache.PersistUniqueSummariesTask - Got 0 country login records for period 1
+2014-12-10 03:45:31,631 [Timer-4] INFO sessioncache.PersistUniqueSummariesTask - Got 0 country login records for period 7
+2014-12-10 03:45:31,634 [Timer-4] INFO sessioncache.PersistUniqueSummariesTask - Got 0 country login records for period 30
+2014-12-10 03:45:31,796 [Timer-4] INFO sessioncache.PersistUniqueSummariesTask - done persisting summary uniques, it took 0 minutes
+2014-12-10 03:45:31,858 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:45:31,903 [Timer-4] INFO common.Redis - Loading Redis configuration file /etc/fusion/etc/redis.properties
+2014-12-10 03:45:31,917 [Timer-4] INFO common.Redis - Shard directory master: redis:6379
+2014-12-10 03:45:31,917 [Timer-4] INFO common.Redis - Shard directory slave: redis:6379
+2014-12-10 03:45:31,917 [Timer-4] INFO common.Redis - Leaderboards master: redis:6379
+2014-12-10 03:45:31,918 [Timer-4] INFO common.Redis - Leaderboards slave: redis:6379
+2014-12-10 03:45:31,918 [Timer-4] INFO common.Redis - Games master: redis:6379
+2014-12-10 03:45:31,918 [Timer-4] INFO common.Redis - Games slave: redis:6379
+2014-12-10 03:45:31,918 [Timer-4] INFO common.Redis - Queues master: redis:6379
+2014-12-10 03:45:31,918 [Timer-4] INFO common.Redis - Queues slave: redis:6379
+2014-12-10 03:45:31,918 [Timer-4] INFO common.Redis - Web resources master: redis:6379
+2014-12-10 03:45:31,918 [Timer-4] INFO common.Redis - Web resources slave: redis:6379
+2014-12-10 03:45:31,918 [Timer-4] INFO common.Redis - Redis configuration successfully loaded
+2014-12-10 03:45:31,940 [Timer-4] INFO common.RedisConnectionManager - adding key in pool cache: redis:6379 Current number of JedisPool created: 0{}
+2014-12-10 03:45:31,940 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 03:45:31,997 [Timer-4] INFO com.projectgoth.fusion.jedis.FusionJedisPool - JedisPool props refreshed for pool=com.projectgoth.fusion.jedis.FusionJedisPool@76cf71a5
+2014-12-10 03:45:32,113 [Timer-4] INFO common.SharedRedisConnectionRegistry - SharedRedisConnection [redis:6379] registered
+2014-12-10 03:45:32,124 [Timer-4] INFO common.SharedRedisConnectionRegistry - SharedRedisConnection [redis:6379] registered
+2014-12-10 03:45:32,132 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:45:32,132 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:45:32,133 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.28] seconds
+2014-12-10 03:45:32,226 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:45:32,243 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:45:32,258 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:46:31,801 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:46:31,820 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:46:31,820 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:46:31,820 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:46:32,261 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:46:32,263 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:46:32,298 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:47:31,802 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:47:31,821 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:47:31,821 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:47:31,821 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:47:32,299 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:47:32,301 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:47:32,324 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:48:31,804 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:48:31,899 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:48:31,899 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:48:31,900 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:48:32,328 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:48:32,329 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:48:32,344 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:49:31,224 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 03:49:31,812 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:49:31,814 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:49:31,814 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:49:31,815 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:49:32,345 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:49:32,348 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:49:32,366 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:50:31,805 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:50:31,834 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:50:31,835 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:50:31,835 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:50:32,367 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:50:32,369 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:50:32,377 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:51:31,803 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:51:31,812 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:51:31,812 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:51:31,813 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:51:32,378 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:51:32,381 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:51:32,389 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:52:31,805 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:52:31,813 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:52:31,813 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:52:31,813 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:52:32,389 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:52:32,391 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:52:32,398 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:53:31,805 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:53:31,829 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:53:31,829 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:53:31,829 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:53:32,398 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:53:32,401 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:53:32,409 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:54:31,225 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 03:54:31,805 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:54:31,806 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:54:31,806 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:54:31,806 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:54:32,410 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:54:32,412 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:54:32,429 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:55:31,808 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:55:31,826 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:55:31,826 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:55:31,827 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:55:31,946 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 03:55:32,432 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:55:32,434 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:55:32,442 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:56:31,805 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:56:31,838 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 2 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:56:31,887 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: contactList
+2014-12-10 03:56:31,888 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: broadcastList
+2014-12-10 03:56:31,888 [Timer-4] INFO common.MemCachedUtils - configuring client [broadcastList]
+2014-12-10 03:56:31,888 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,889 [Timer-4] INFO common.MemCachedUtils - Creating pool [broadcastList]
+2014-12-10 03:56:31,890 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [broadcastList]
+2014-12-10 03:56:31,890 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: profiles
+2014-12-10 03:56:31,890 [Timer-4] INFO common.MemCachedUtils - configuring client [profiles]
+2014-12-10 03:56:31,891 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,892 [Timer-4] INFO common.MemCachedUtils - Creating pool [profiles]
+2014-12-10 03:56:31,892 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [profiles]
+2014-12-10 03:56:31,892 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: userDisplayPictureAndStatus
+2014-12-10 03:56:31,892 [Timer-4] INFO common.MemCachedUtils - configuring client [userDisplayPictureAndStatus]
+2014-12-10 03:56:31,893 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,893 [Timer-4] INFO common.MemCachedUtils - Creating pool [userDisplayPictureAndStatus]
+2014-12-10 03:56:31,894 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [userDisplayPictureAndStatus]
+2014-12-10 03:56:31,894 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: captcha
+2014-12-10 03:56:31,894 [Timer-4] INFO common.MemCachedUtils - configuring client [captcha]
+2014-12-10 03:56:31,894 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,895 [Timer-4] INFO common.MemCachedUtils - Creating pool [captcha]
+2014-12-10 03:56:31,897 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [captcha]
+2014-12-10 03:56:31,897 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: common
+2014-12-10 03:56:31,897 [Timer-4] INFO common.MemCachedUtils - configuring client [common]
+2014-12-10 03:56:31,897 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,898 [Timer-4] INFO common.MemCachedUtils - Creating pool [common]
+2014-12-10 03:56:31,899 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [common]
+2014-12-10 03:56:31,899 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: rateLimit
+2014-12-10 03:56:31,899 [Timer-4] INFO common.MemCachedUtils - configuring client [rateLimit]
+2014-12-10 03:56:31,899 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,900 [Timer-4] INFO common.MemCachedUtils - Creating pool [rateLimit]
+2014-12-10 03:56:31,901 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [rateLimit]
+2014-12-10 03:56:31,902 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: bclPersisted
+2014-12-10 03:56:31,902 [Timer-4] INFO common.MemCachedUtils - configuring client [bclPersisted]
+2014-12-10 03:56:31,902 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,905 [Timer-4] INFO common.MemCachedUtils - Creating pool [bclPersisted]
+2014-12-10 03:56:31,906 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [bclPersisted]
+2014-12-10 03:56:31,907 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: surgeMail
+2014-12-10 03:56:31,907 [Timer-4] INFO common.MemCachedUtils - configuring client [surgeMail]
+2014-12-10 03:56:31,907 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,908 [Timer-4] INFO common.MemCachedUtils - Creating pool [surgeMail]
+2014-12-10 03:56:31,908 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [surgeMail]
+2014-12-10 03:56:31,909 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: recentChatRooms
+2014-12-10 03:56:31,909 [Timer-4] INFO common.MemCachedUtils - configuring client [recentChatRooms]
+2014-12-10 03:56:31,909 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,910 [Timer-4] INFO common.MemCachedUtils - Creating pool [recentChatRooms]
+2014-12-10 03:56:31,910 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [recentChatRooms]
+2014-12-10 03:56:31,911 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: chatRoomSearch
+2014-12-10 03:56:31,911 [Timer-4] INFO common.MemCachedUtils - configuring client [chatRoomSearch]
+2014-12-10 03:56:31,911 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,911 [Timer-4] INFO common.MemCachedUtils - Creating pool [chatRoomSearch]
+2014-12-10 03:56:31,912 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [chatRoomSearch]
+2014-12-10 03:56:31,912 [Timer-4] INFO common.MemCachedClientWrapper - Setting up MemCachedClientWrapper for instance: authenticationService
+2014-12-10 03:56:31,912 [Timer-4] INFO common.MemCachedUtils - configuring client [authenticationService]
+2014-12-10 03:56:31,912 [Timer-4] INFO common.MemCachedUtils - reloading properties
+2014-12-10 03:56:31,913 [Timer-4] INFO common.MemCachedUtils - Creating pool [authenticationService]
+2014-12-10 03:56:31,913 [Timer-4] INFO common.MemCachedUtils - Configuring memcached client for pool [authenticationService]
+2014-12-10 03:56:31,950 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - SSO Sessions Breakdown: Total [2], Live [1], Expired [1], Pending Scan [0]
+2014-12-10 03:56:31,991 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [1] SSO sessions in [0.15] seconds
+2014-12-10 03:56:32,443 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:56:32,445 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:56:32,459 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:57:31,807 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:57:31,828 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:57:31,828 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:57:31,828 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:57:32,459 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:57:32,461 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:57:32,468 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:58:31,809 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:58:31,852 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:58:31,852 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:58:31,853 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:58:32,469 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:58:32,472 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:58:32,476 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 03:59:31,225 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 03:59:31,814 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 03:59:31,814 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 03:59:31,815 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 03:59:31,815 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 03:59:32,476 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 03:59:32,480 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 03:59:32,486 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:00:31,812 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:00:31,820 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:00:31,820 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:00:31,821 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:00:32,487 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:00:32,489 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:00:32,500 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:01:31,808 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:01:31,820 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:01:31,820 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:01:31,821 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:01:32,504 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:01:32,506 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:01:32,515 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:02:31,808 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:02:31,843 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:02:31,844 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:02:31,844 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:02:32,519 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:02:32,521 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:02:32,526 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:03:31,809 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:03:31,823 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:03:31,823 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:03:31,824 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:03:32,527 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:03:32,530 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:03:32,536 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:04:31,226 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 04:04:31,809 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:04:31,810 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:04:31,810 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:04:31,810 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:04:32,537 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:04:32,540 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:04:32,543 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:05:31,809 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:05:31,823 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:05:31,823 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:05:31,824 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:05:31,948 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 04:05:32,544 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:05:32,546 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:05:32,550 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:06:31,811 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:06:31,824 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:06:31,825 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:06:31,825 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:06:32,550 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:06:32,552 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:06:32,556 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:07:31,811 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:07:31,824 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:07:31,824 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:07:31,824 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:07:32,556 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:07:32,558 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:07:32,570 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:08:31,813 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:08:31,825 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:08:31,825 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:08:31,825 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:08:32,571 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:08:32,573 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:08:32,584 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:09:31,226 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 04:09:31,812 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:09:31,813 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:09:31,814 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:09:31,814 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:09:32,585 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:09:32,587 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:09:32,589 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:10:31,813 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:10:31,833 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:10:31,833 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:10:31,833 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.01] seconds
+2014-12-10 04:10:32,592 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:10:32,594 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:10:32,597 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:11:31,812 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:11:31,828 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:11:31,828 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:11:31,832 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:11:32,597 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:11:32,599 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:11:32,602 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:12:31,811 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:12:31,839 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:12:31,839 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:12:31,839 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:12:32,603 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:12:32,604 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:12:32,608 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:13:31,813 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:13:31,840 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:13:31,840 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:13:31,841 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:13:32,609 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:13:32,610 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:13:32,613 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:14:31,226 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 04:14:31,815 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:14:31,821 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:14:31,821 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:14:31,821 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:14:32,614 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:14:32,618 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:14:32,628 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:15:31,815 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:15:31,819 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:15:31,819 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:15:31,819 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:15:31,951 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 04:15:32,629 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:15:32,631 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:15:32,634 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:16:31,819 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:16:31,831 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:16:31,831 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:16:31,831 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:16:32,635 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:16:32,637 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:16:32,639 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:17:31,814 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:17:31,832 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:17:31,832 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:17:31,833 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:17:32,639 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:17:32,642 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:17:32,646 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:18:31,815 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:18:31,833 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:18:31,833 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:18:31,834 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:18:32,647 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:18:32,648 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:18:32,651 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:19:31,227 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 04:19:31,816 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:19:31,817 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:19:31,817 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:19:31,818 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:19:32,652 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:19:32,654 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:19:32,657 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:20:31,816 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:20:31,823 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:20:31,823 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:20:31,824 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:20:32,658 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:20:32,662 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:20:32,664 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 04:21:31,817 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 04:21:31,973 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 04:21:31,973 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 04:21:31,973 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 04:21:32,665 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 04:21:32,668 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 04:21:32,671 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:01:40,129 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:01:40,180 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:01:40,181 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:01:40,183 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:01:40,186 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:01:40,965 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:01:40,969 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:01:40,970 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:02:40,111 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:02:40,146 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:02:40,147 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:02:40,148 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.02] seconds
+2014-12-10 05:02:40,970 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:02:40,972 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:02:40,973 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:03:40,112 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:03:40,113 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:03:40,113 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:03:40,114 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:03:40,973 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:03:40,975 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:03:40,980 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:04:40,115 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:04:40,119 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:04:40,121 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:04:40,122 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:04:40,245 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:04:40,982 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:04:40,984 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:04:41,002 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:05:40,118 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:05:40,121 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:05:40,122 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:05:40,122 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:05:41,009 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:05:41,011 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:05:41,016 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:06:40,112 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:06:40,114 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:06:40,114 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:06:40,114 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:06:40,191 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:06:41,016 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:06:41,018 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:06:41,022 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:07:40,114 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:07:40,138 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:07:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:07:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:07:41,024 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:07:41,026 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:07:41,029 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:08:40,113 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:08:40,129 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:08:40,129 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:08:40,129 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:08:41,030 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:08:41,032 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:08:41,037 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:09:40,115 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:09:40,128 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:09:40,128 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:09:40,128 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:09:41,037 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:09:41,039 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:09:41,043 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:10:40,115 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:10:40,123 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:10:40,124 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:10:40,124 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:10:41,043 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:10:41,046 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:10:41,053 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:11:40,117 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:11:40,143 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:11:40,144 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:11:40,144 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:11:40,192 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:11:41,055 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:11:41,057 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:11:41,065 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:12:40,117 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:12:40,163 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:12:40,163 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:12:40,164 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:12:41,065 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:12:41,067 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:12:41,072 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:13:40,118 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:13:40,140 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:13:40,140 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:13:40,140 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:13:41,073 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:13:41,075 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:13:41,083 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:14:40,118 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:14:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:14:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:14:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:14:40,247 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:14:41,084 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:14:41,087 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:14:41,106 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:15:40,117 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:15:40,141 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:15:40,141 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:15:40,142 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:15:41,108 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:15:41,110 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:15:41,114 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:16:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:16:40,151 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:16:40,152 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:16:40,152 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:16:40,192 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:16:41,114 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:16:41,116 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:16:41,124 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:17:40,137 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:17:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:17:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:17:40,156 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:17:41,125 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:17:41,127 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:17:41,131 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:18:40,137 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:18:40,154 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:18:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:18:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:18:41,132 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:18:41,133 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:18:41,139 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:19:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:19:40,163 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:19:40,163 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:19:40,163 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:19:41,140 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:19:41,142 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:19:41,148 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:20:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:20:40,156 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:20:40,156 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:20:40,156 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:20:41,148 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:20:41,151 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:20:41,155 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:21:40,140 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:21:40,179 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:21:40,179 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:21:40,179 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:21:40,192 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:21:41,156 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:21:41,159 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:21:41,167 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:22:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:22:40,157 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:22:40,157 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:22:40,158 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:22:41,168 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:22:41,169 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:22:41,175 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:23:40,142 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:23:40,196 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:23:40,197 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:23:40,197 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:23:41,176 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:23:41,179 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:23:41,184 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:24:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:24:40,149 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:24:40,149 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:24:40,149 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:24:40,249 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:24:41,186 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:24:41,189 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:24:41,192 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:25:40,145 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:25:40,149 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:25:40,149 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:25:40,149 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:25:41,193 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:25:41,195 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:25:41,198 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:26:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:26:40,151 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:26:40,151 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:26:40,152 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:26:40,192 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:26:41,199 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:26:41,201 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:26:41,206 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:27:40,141 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:27:40,207 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:27:40,208 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:27:40,208 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:27:41,207 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:27:41,209 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:27:41,212 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:28:40,139 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:28:40,329 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:28:40,330 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:28:40,330 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:28:41,213 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:28:41,219 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:28:41,223 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:29:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:29:40,186 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:29:40,186 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:29:40,187 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:29:41,223 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:29:41,235 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:29:41,240 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:30:40,173 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:30:40,198 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:30:40,198 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:30:40,200 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:30:41,241 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:30:41,243 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:30:41,247 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:31:40,162 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:31:40,200 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:31:40,200 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:31:40,202 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:31:40,202 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:31:41,248 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:31:41,251 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:31:41,253 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:32:40,186 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:32:40,199 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:32:40,200 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:32:40,200 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:32:41,255 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:32:41,258 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:32:41,261 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:33:40,148 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:33:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:33:40,156 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:33:40,157 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:33:41,261 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:33:41,263 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:33:41,265 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:34:40,148 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:34:40,199 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:34:40,201 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:34:40,201 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.01] seconds
+2014-12-10 05:34:40,250 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:34:41,267 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:34:41,269 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:34:41,271 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:35:40,147 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:35:40,157 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:35:40,157 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:35:40,158 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:35:41,272 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:35:41,274 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:35:41,276 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:36:40,148 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:36:40,158 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:36:40,158 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:36:40,158 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:36:40,241 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:36:41,277 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:36:41,279 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:36:41,281 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:37:40,149 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:37:40,158 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:37:40,159 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:37:40,159 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:37:41,282 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:37:41,284 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:37:41,287 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:38:40,150 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:38:40,159 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:38:40,160 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:38:40,160 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:38:41,287 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:38:41,289 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:38:41,291 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:39:40,151 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:39:40,160 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:39:40,160 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:39:40,160 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:39:41,293 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:39:41,295 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:39:41,298 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:40:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:40:40,172 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:40:40,172 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:40:40,173 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:40:41,300 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:40:41,302 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:40:41,304 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:41:40,153 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:41:40,173 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:41:40,173 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:41:40,174 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:41:40,242 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:41:41,305 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:41:41,306 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:41:41,310 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:42:40,153 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:42:40,164 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:42:40,164 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:42:40,164 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:42:41,312 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:42:41,313 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:42:41,315 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:43:40,157 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:43:40,169 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:43:40,169 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:43:40,169 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:43:41,317 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:43:41,318 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:43:41,321 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:44:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:44:40,173 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:44:40,173 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:44:40,173 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:44:40,254 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:44:41,322 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:44:41,325 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:44:41,327 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:45:40,159 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:45:40,210 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:45:40,210 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:45:40,211 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:45:41,328 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:45:41,331 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:45:41,334 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:46:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:46:40,170 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:46:40,170 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:46:40,170 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:46:40,243 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:46:41,336 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:46:41,350 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:46:41,353 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:47:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:47:40,196 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:47:40,197 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:47:40,197 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:47:41,355 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:47:41,361 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:47:41,368 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:48:40,160 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:48:40,189 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:48:40,190 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:48:40,191 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:48:41,369 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:48:41,371 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:48:41,375 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:49:40,155 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:49:40,171 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:49:40,171 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:49:40,171 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:49:41,377 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:49:41,379 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:49:41,382 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:50:40,157 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:50:40,186 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:50:40,187 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:50:40,187 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:50:41,385 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:50:41,387 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:50:41,396 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:51:40,158 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:51:40,168 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:51:40,168 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:51:40,168 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:51:40,243 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:51:41,398 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:51:41,400 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:51:41,402 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:52:40,158 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:52:40,184 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:52:40,185 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:52:40,185 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:52:41,404 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:52:41,406 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:52:41,409 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:53:40,158 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:53:40,173 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:53:40,173 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:53:40,174 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:53:41,410 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:53:41,413 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:53:41,416 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:54:40,159 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:54:40,175 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:54:40,175 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:54:40,176 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:54:40,255 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 05:54:41,416 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:54:41,418 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:54:41,422 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:55:40,159 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:55:40,175 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:55:40,175 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:55:40,176 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:55:41,423 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:55:41,425 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:55:41,428 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:56:40,161 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:56:40,180 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:56:40,180 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:56:40,180 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:56:40,244 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 05:56:41,428 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:56:41,431 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:56:41,433 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:57:40,163 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:57:40,184 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:57:40,184 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:57:40,185 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:57:41,435 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:57:41,438 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:57:41,440 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:58:40,162 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:58:40,177 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:58:40,177 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:58:40,177 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:58:41,442 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:58:41,443 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:58:41,446 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 05:59:40,164 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 05:59:40,170 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 05:59:40,170 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 05:59:40,170 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 05:59:41,447 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 05:59:41,449 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 05:59:41,452 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:00:40,182 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:00:40,205 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:00:40,205 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:00:40,206 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:00:41,454 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:00:41,456 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:00:41,465 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:01:40,190 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:01:40,212 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:01:40,213 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:01:40,214 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:01:40,244 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 06:01:41,467 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:01:41,469 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:01:41,472 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:02:40,180 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:02:40,194 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:02:40,194 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:02:40,194 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:02:41,474 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:02:41,478 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:02:41,483 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:03:40,181 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:03:40,198 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:03:40,199 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:03:40,199 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:03:41,484 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:03:41,486 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:03:41,489 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:04:40,185 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:04:40,204 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:04:40,205 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:04:40,206 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:04:40,257 [pool-2-thread-1] INFO common.RedisConnectionManager - Refreshed jedis pool config: 
+ maxTotal=200
+ maxIdle=100
+ minIdle=1
+ testOnBorrow=true
+ testOnReturn=false
+ testWhileIdle=true
+ numTestsPerEvictionRun=200
+ timeBetweenEvictionRunMillis=30000
+ MinEvictableIdleTimeMillis=60000
+ maxWait=3000
+2014-12-10 06:04:41,490 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:04:41,492 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:04:41,494 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:05:40,183 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:05:40,195 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:05:40,196 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:05:40,196 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:05:41,495 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:05:41,497 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:05:41,500 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:06:40,184 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:06:40,196 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:06:40,198 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:06:40,199 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:06:40,244 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 06:06:41,501 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:06:41,503 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:06:41,505 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:07:40,186 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:07:40,197 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:07:40,197 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:07:40,198 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:07:41,505 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:07:41,509 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:07:41,511 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:08:40,184 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:08:40,231 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:08:40,231 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:08:40,232 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:08:41,513 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:08:41,515 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:08:41,517 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:09:40,189 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:09:40,203 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:09:40,203 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:09:40,203 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:09:41,518 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:09:41,534 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:09:41,540 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:10:40,185 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:10:40,218 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:10:40,218 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:10:40,218 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:10:41,544 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:10:41,546 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:10:41,548 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms
+2014-12-10 06:11:40,187 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Archiving SSO sessions metrics...
+2014-12-10 06:11:40,200 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Found 0 entries in SSO sessions index [SSOM:INDEX]
+2014-12-10 06:11:40,200 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - No session entries found in SSO sessions index
+2014-12-10 06:11:40,200 [Timer-4] INFO sessioncache.ArchiveSSOSessionsTask - Done archiving [0] SSO sessions in [0.00] seconds
+2014-12-10 06:11:40,245 [Timer-4] INFO sessioncache.PersistTotalSummariesTask - persisting totals summary
+2014-12-10 06:11:41,550 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [2] registered connections
+2014-12-10 06:11:41,552 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run. Found [0] dead connections for removal
+2014-12-10 06:11:41,554 [pool-3-thread-1] INFO common.SharedRedisConnectionRegistry - SharedRedisConnectionRegistry maintenance run complete. scheduling next run in [60000] ms

@@ -1,0 +1,19 @@
+2014-12-10 03:43:42,005 [main] INFO registry.Registry - Registry version @version@
+2014-12-10 03:43:42,081 [main] INFO registry.Registry - Copyright (c) 2005-2008 Project Goth Inc. All rights reserved
+2014-12-10 03:43:42,088 [main] INFO registry.Registry - Using custom configuration file: Registry1.cfg
+2014-12-10 03:43:50,872 [main] INFO registry.RegistryNodeI - Converging with cluster
+2014-12-10 03:43:50,883 [main] INFO registry.RegistryNodeI - Converged with 0 other Registries
+2014-12-10 03:43:50,884 [main] INFO registry.Registry - Service started
+2014-12-10 03:44:32,929 [Ice.ThreadPool.Server-2] INFO registry.RegistryI - New ObjectCache [ObjectCache -t:tcp -h 192.168.56.101 -p 11001 -t 55000:tcp -h 10.0.2.15 -p 11001 -t 55000] registered
+2014-12-10 03:44:33,375 [Ice.ThreadPool.Server-2] ERROR registry.ObjectCacheRef - Unable to query for objectcache stats.
+2014-12-10 03:44:35,393 [Ice.ThreadPool.Server-3] INFO registry.RegistryI - New BotService [BotService -t:tcp -h 192.168.56.101 -p 5991:tcp -h 10.0.2.15 -p 5991] registered
+2014-12-10 03:44:36,242 [Timer-0] WARN registry.RegistryI - Have lost connection to BotService [BotService -t:tcp -h 192.168.56.101 -p 5991:tcp -h 10.0.2.15 -p 5991]
+2014-12-10 03:44:40,050 [Timer-0] INFO registry.RegistryI - Connection to BotService [BotService -t:tcp -h 192.168.56.101 -p 5991:tcp -h 10.0.2.15 -p 5991] restored
+2014-12-10 03:56:03,987 [Ice.ThreadPool.Server-2] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/dao.properties
+2014-12-10 03:56:04,054 [Ice.ThreadPool.Server-2] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_read.properties
+2014-12-10 03:56:04,073 [Ice.ThreadPool.Server-2] INFO com.projectgoth.configuration.PropertiesFileConfigurationNamespace - Loading configuration from: /usr/fusion/etc/fusion_db_write.properties
+2014-12-10 03:56:04,234 [Ice.ThreadPool.Server-2] INFO com.mchange.v2.log.MLog - MLog clients using log4j logging.
+2014-12-10 03:56:04,739 [Ice.ThreadPool.Server-2] INFO com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2014-12-10 03:56:05,317 [Ice.ThreadPool.Server-2] INFO com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kflt96dytsayxcy6x|a274d1c, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt96dytsayxcy6x|a274d1c, idleConnectionTestPeriod -> 3000, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://db1:3306/fusion, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 3600, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> SELECT 1, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2014-12-10 04:13:40,198 [Timer-0] WARN registry.RegistryI - Have lost connection to BotService [BotService -t:tcp -h 192.168.56.101 -p 5991:tcp -h 10.0.2.15 -p 5991]
+2014-12-10 04:13:40,999 [Timer-0] INFO registry.RegistryI - Connection to BotService [BotService -t:tcp -h 192.168.56.101 -p 5991:tcp -h 10.0.2.15 -p 5991] restored
