@@ -1,0 +1,31 @@
+# internal-artifact-mapping.txt
+# Mapping of internal/vendor JARs for CI installation via install-internal-deps.sh
+#
+# Format (space-separated):
+#   groupId  artifactId  version  libs/jarfile.jar
+#
+# Lines starting with '#' are comments and are ignored by the install script.
+#
+# How it works:
+#   - For each active (uncommented) entry the script tries to install the
+#     specified JAR into the local Maven repository.
+#   - If the JAR file is missing the script creates a TEMPORARY dummy JAR and
+#     installs that instead, so that the Maven build can continue in CI.
+#   - Dummy JARs MUST be replaced with real artifacts before production use.
+#   - See CONTRIBUTING.md for guidance on replacing dummy JARs.
+
+# --- Artifacts present in libs/ ---
+com.projectgoth  common-lib    0.0.3   libs/common-lib-0.0.3.jar
+com.projectgoth  hashtag       0.0.2   libs/hashtag-0.0.2.jar
+com.projectgoth  leto-common   0.27.0  libs/leto-common-0.27.0.jar
+com.projectgoth  s3uploader    0.0.1   libs/s3uploader-0.0.1.jar
+com.zeroc.linux  Ice           3.3.1   libs/Ice.jar
+jpcap            jpcap         0.7     libs/jpcap-0.7.jar
+mibli            mibli         1.0     libs/mibli-1.0.jar
+
+# --- Missing artifacts (real JARs not yet available in this repository) ---
+# When the real JAR is obtained, add it to libs/, uncomment the line below,
+# and remove the corresponding dummy from any CI cache.
+#
+# com.projectgoth  configuration         1.0.5  libs/configuration-1.0.5.jar
+# com.mig33        mig33rabbitmq-client  0.5.0  libs/mig33rabbitmq-client-0.5.0.jar
