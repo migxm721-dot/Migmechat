@@ -35,10 +35,17 @@ a **temporary dummy JAR** — a minimal ZIP archive containing only
 
 ### Adding a New Internal Artifact
 
-1. Add the JAR to `libs/`.
-2. Add a new line to `.github/internal-artifact-mapping.txt` in the format:
+1. Place the JAR under `libs/` (e.g. `libs/mylib-1.0.0.jar`).
+2. Add a new line to `.github/internal-artifact-mapping.txt` using the
+   pipe-separated format:
    ```
-   groupId  artifactId  version  libs/filename.jar
+   libs/mylib-1.0.0.jar|com.example|mylib|1.0.0|jar|
    ```
-3. Re-run `.github/scripts/install-internal-deps.sh` locally to verify the
+   Fields: `relative-path|groupId|artifactId|version|packaging|classifier`
+   (leave the classifier field empty if not needed).
+3. Uncomment the line if it was previously commented out.
+4. Re-run `.github/scripts/install-internal-deps.sh` locally to verify the
    installation succeeds.
+5. Open a pull request with only the updated mapping file.
+   **Do not commit binary JARs** unless they are small and genuinely required;
+   prefer linking to an internal artifact registry instead.

@@ -16,6 +16,10 @@
 # The script exits non-zero only when an actual `mvn install:install-file`
 # invocation fails; creating or installing a dummy JAR is considered a
 # successful (though degraded) outcome.
+#
+# Mapping file format (pipe-separated, 6 fields per line):
+#   relative-path|groupId|artifactId|version|packaging|classifier
+# The classifier field is optional and may be left empty.
 
 set -u
 
@@ -82,7 +86,7 @@ with zipfile.ZipFile(out_jar, 'w', zipfile.ZIP_DEFLATED) as zf:
 EOPY
         _rc=$?
     else
-        echo "  ERROR: Cannot create dummy JAR – neither 'jar' nor 'python3'/'python' found." >&2
+        echo "  ERROR: Cannot create dummy JAR - neither 'jar' nor 'python3'/'python' found." >&2
         _rc=1
     fi
 
@@ -93,7 +97,7 @@ EOPY
 # ---------------------------------------------------------------------------
 # Main loop: read the mapping file and install each artifact.
 # ---------------------------------------------------------------------------
-echo "Installing internal/vendor JARs from ${MAPPING_FILE} …"
+echo "Installing internal/vendor JARs from ${MAPPING_FILE} ..."
 echo ""
 
 while IFS= read -r _line; do
@@ -103,14 +107,22 @@ while IFS= read -r _line; do
         ''|'#'*) continue ;;
     esac
 
-    # Parse the four fields (whitespace-separated).
-    _group_id="$(printf '%s' "${_line}"    | awk '{print $1}')"
-    _artifact_id="$(printf '%s' "${_line}" | awk '{print $2}')"
-    _version="$(printf '%s' "${_line}"     | awk '{print $3}')"
-    _jar_rel="$(printf '%s' "${_line}"     | awk '{print $4}')"
+    # Parse the pipe-separated fields:
+    #   relative-path|groupId|artifactId|version|packaging|classifier
+    _jar_rel="$(    printf '%s' "${_line}" | cut -d'|' -f1)"
+    _group_id="$(   printf '%s' "${_line}" | cut -d'|' -f2)"
+    _artifact_id="$(printf '%s' "${_line}" | cut -d'|' -f3)"
+    _version="$(    printf '%s' "${_line}" | cut -d'|' -f4)"
+    _packaging="$(  printf '%s' "${_line}" | cut -d'|' -f5)"
+    _classifier="$( printf '%s' "${_line}" | cut -d'|' -f6)"
 
-    if [ -z "${_group_id}" ] || [ -z "${_artifact_id}" ] || \
-       [ -z "${_version}" ]  || [ -z "${_jar_rel}" ]; then
+    # Default packaging to "jar" if not specified.
+    if [ -z "${_packaging}" ]; then
+        _packaging="jar"
+    fi
+
+    if [ -z "${_jar_rel}" ] || [ -z "${_group_id}" ] || \
+       [ -z "${_artifact_id}" ] || [ -z "${_version}" ]; then
         echo "  WARN: Skipping malformed mapping line: ${_line}" >&2
         continue
     fi
@@ -120,14 +132,14 @@ while IFS= read -r _line; do
     _is_dummy=0
 
     if [ -f "${_jar_abs}" ]; then
-        # Real JAR found – install it directly.
-        echo "[REAL ] ${_group_id}:${_artifact_id}:${_version}  ← ${_jar_rel}"
+        # Real JAR found - install it directly.
+        echo "[REAL ] ${_group_id}:${_artifact_id}:${_version}  <- ${_jar_rel}"
         _install_file="${_jar_abs}"
         REAL_COUNT=$((REAL_COUNT + 1))
     else
-        # JAR missing – create and install a temporary dummy.
+        # JAR missing - create and install a temporary dummy.
         # This is intentional CI behaviour; see file header for details.
-        echo "[DUMMY] ${_group_id}:${_artifact_id}:${_version}  (${_jar_rel} not found – using dummy)"
+        echo "[DUMMY] ${_group_id}:${_artifact_id}:${_version}  (${_jar_rel} not found - using dummy)"
         _dummy_jar="${REPO_ROOT}/libs/${_artifact_id}-${_version}-dummy.jar"
 
         if ! create_dummy_jar "${_dummy_jar}" \
@@ -143,18 +155,36 @@ while IFS= read -r _line; do
     fi
 
     # Install into the local Maven repository.
-    if mvn --batch-mode install:install-file \
-            -DgroupId="${_group_id}" \
-            -DartifactId="${_artifact_id}" \
-            -Dversion="${_version}" \
-            -Dpackaging=jar \
-            -Dfile="${_install_file}" \
-            -DgeneratePom=true \
-            -q; then
-        echo "  ✓ Installed ${_group_id}:${_artifact_id}:${_version}"
+    # Classifier is passed as an extra argument only when set to avoid eval.
+    if [ -n "${_classifier}" ]; then
+        if mvn --batch-mode org.apache.maven.plugins:maven-install-plugin:3.1.0:install-file \
+                -DgroupId="${_group_id}" \
+                -DartifactId="${_artifact_id}" \
+                -Dversion="${_version}" \
+                -Dpackaging="${_packaging}" \
+                -Dfile="${_install_file}" \
+                -DgeneratePom=true \
+                -Dclassifier="${_classifier}" \
+                -q; then
+            echo "  OK: Installed ${_group_id}:${_artifact_id}:${_version}:${_classifier}"
+        else
+            echo "  ERROR: mvn install-file failed for ${_group_id}:${_artifact_id}:${_version}" >&2
+            FAIL_COUNT=$((FAIL_COUNT + 1))
+        fi
     else
-        echo "  ERROR: mvn install:install-file failed for ${_group_id}:${_artifact_id}:${_version}" >&2
-        FAIL_COUNT=$((FAIL_COUNT + 1))
+        if mvn --batch-mode org.apache.maven.plugins:maven-install-plugin:3.1.0:install-file \
+                -DgroupId="${_group_id}" \
+                -DartifactId="${_artifact_id}" \
+                -Dversion="${_version}" \
+                -Dpackaging="${_packaging}" \
+                -Dfile="${_install_file}" \
+                -DgeneratePom=true \
+                -q; then
+            echo "  OK: Installed ${_group_id}:${_artifact_id}:${_version}"
+        else
+            echo "  ERROR: mvn install-file failed for ${_group_id}:${_artifact_id}:${_version}" >&2
+            FAIL_COUNT=$((FAIL_COUNT + 1))
+        fi
     fi
 
     # Remove the temporary dummy JAR from disk after installation.
@@ -165,9 +195,9 @@ while IFS= read -r _line; do
 done < "${MAPPING_FILE}"
 
 echo ""
-echo "─────────────────────────────────────────────────"
+echo "-------------------------------------------------"
 echo "Summary: ${REAL_COUNT} real, ${DUMMY_COUNT} dummy (temporary), ${FAIL_COUNT} failed"
-echo "─────────────────────────────────────────────────"
+echo "-------------------------------------------------"
 
 if [ "${DUMMY_COUNT}" -gt 0 ]; then
     echo "WARNING: ${DUMMY_COUNT} artifact(s) installed as dummy JARs." \
