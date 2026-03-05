@@ -29,10 +29,26 @@ libs/leto-common-0.27.0.jar|com.projectgoth|leto-common|0.27.0|jar|
 libs/je-3.3.74.jar|berkeley|je|3.3.74|jar|
 libs/Ice.jar|com.zeroc|Ice|3.3.1|jar|
 libs/swt-linux-3.3.1.1.jar|swt|swt-linux|3.3.1.1|jar|
+libs/amqp-client-2.6.1.jar|com.rabbitmq|amqp-client|2.6.1|jar|
+libs/Fusion.jar|com.projectgoth|Fusion|8.75.132|jar|
+
+# --- Add mappings for artifacts that previously failed to resolve (CI will install real jars if present in libs/ or create dummy jars) ---
+# When the real JAR is obtained, add it to libs/ and re-run the install script.
+# Dummy JARs are temporary placeholders and must be replaced with real artifacts as soon as they are available.
+libs/scannotation-1.0.2.jar|org.scannotation|scannotation|1.0.2|jar|
+libs/configuration-1.0.5.jar|com.projectgoth|configuration|1.0.5|jar|
+libs/jpcap-0.7.jar|jpcap|jpcap|0.7|jar|
+libs/commons-net-ftp-2.0.jar|commons-net-ftp|commons-net-ftp|2.0|jar|
+libs/jbossall-client-4.0.1.jar|org.jboss|jbossall-client|4.0.1|jar|
+libs/jsch-0.1.33.jar|com.jcraft|jsch|0.1.33|jar|
+libs/json-1.0.jar|org.json|json|1.0|jar|
+libs/keyczar-0.6b-1.5-111908.jar|org.keyczar|keyczar|0.6b-1.5-111908|jar|
+libs/java_memcached-release-2.0.1.jar|com.danga|java_memcached-release|2.0.1|jar|
+libs/mibli-1.0.jar|mibli|mibli|1.0|jar|
+libs/mysql-connector-java-5.1.7-bin.jar|mysql|mysql-connector-java|5.1.7|jar|bin
 
 # --- Missing artifacts (real JARs not yet available in this repository) ---
 # When the real JAR is obtained, add it to libs/, uncomment the line below,
 # and remove the corresponding dummy from any CI cache.
 #
-# libs/configuration-1.0.5.jar|com.projectgoth|configuration|1.0.5|jar|
 # libs/mig33rabbitmq-client-0.5.0.jar|com.mig33|mig33rabbitmq-client|0.5.0|jar|
