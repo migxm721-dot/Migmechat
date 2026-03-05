@@ -1,27 +1,9 @@
-# internal-artifact-mapping.txt
-# Mapping of internal/vendor JARs for CI installation via install-internal-deps.sh
-#
-# Format (pipe-separated, 6 fields):
-#   relative-path|groupId|artifactId|version|packaging|classifier
-#
-# - relative-path : path to the JAR relative to the repository root
-# - groupId       : Maven groupId
-# - artifactId    : Maven artifactId
-# - version       : Maven version
-# - packaging     : artifact type (usually "jar")
-# - classifier    : optional Maven classifier (leave empty if not needed)
-#
-# Lines starting with '#' are comments and are ignored by the install script.
-#
-# How it works:
-#   - For each active (uncommented) entry the script tries to install the
-#     specified JAR into the local Maven repository.
-#   - If the JAR file is missing the script creates a TEMPORARY dummy JAR and
-#     installs that instead, so that the Maven build can continue in CI.
-#   - Dummy JARs MUST be replaced with real artifacts before production use.
-#   - See CONTRIBUTING.md for guidance on replacing dummy JARs.
+# Mapping file: relative-path|groupId|artifactId|version|packaging|classifier(optional)
+# CI will install mapped jars into local Maven repo. If a mapped jar is missing,
+# the CI script will create a small dummy JAR as a temporary placeholder.
+# Replace dummy artifacts with real jars as soon as possible.
 
-# --- Artifacts present in libs/ ---
+# existing vendor jars (keep these if already present)
 libs/common-lib-0.0.3.jar|com.projectgoth|common-lib|0.0.3|jar|
 libs/hashtag-0.0.2.jar|com.projectgoth|hashtag|0.0.2|jar|
 libs/s3uploader-0.0.1.jar|com.projectgoth|s3uploader|0.0.1|jar|
@@ -32,9 +14,7 @@ libs/swt-linux-3.3.1.1.jar|swt|swt-linux|3.3.1.1|jar|
 libs/amqp-client-2.6.1.jar|com.rabbitmq|amqp-client|2.6.1|jar|
 libs/Fusion.jar|com.projectgoth|Fusion|8.75.132|jar|
 
-# --- Add mappings for artifacts that previously failed to resolve (CI will install real jars if present in libs/ or create dummy jars) ---
-# When the real JAR is obtained, add it to libs/ and re-run the install script.
-# Dummy JARs are temporary placeholders and must be replaced with real artifacts as soon as they are available.
+# Add mappings for artifacts that previously failed to resolve (CI will install real jars if present in libs/ or create dummy jars)
 libs/scannotation-1.0.2.jar|org.scannotation|scannotation|1.0.2|jar|
 libs/configuration-1.0.5.jar|com.projectgoth|configuration|1.0.5|jar|
 libs/jpcap-0.7.jar|jpcap|jpcap|0.7|jar|
@@ -45,10 +25,8 @@ libs/json-1.0.jar|org.json|json|1.0|jar|
 libs/keyczar-0.6b-1.5-111908.jar|org.keyczar|keyczar|0.6b-1.5-111908|jar|
 libs/java_memcached-release-2.0.1.jar|com.danga|java_memcached-release|2.0.1|jar|
 libs/mibli-1.0.jar|mibli|mibli|1.0|jar|
+# mysql connector uses classifier "bin" in this project (adjust filename if different)
 libs/mysql-connector-java-5.1.7-bin.jar|mysql|mysql-connector-java|5.1.7|jar|bin
 
-# --- Missing artifacts (real JARs not yet available in this repository) ---
-# When the real JAR is obtained, add it to libs/, uncomment the line below,
-# and remove the corresponding dummy from any CI cache.
-#
-# libs/mig33rabbitmq-client-0.5.0.jar|com.mig33|mig33rabbitmq-client|0.5.0|jar|
+# If you obtain real jars later, replace the dummy behavior by ensuring the jar is present in libs/
+# and keep the mapping line (CI will then install the real jar).
