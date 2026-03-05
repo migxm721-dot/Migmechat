@@ -1,0 +1,1388 @@
+Summary for target/Fusion-8.75.132.jar
+Decompiled with CFR 0.152
+
+
+com.projectgoth.fusion.app.dao.db.fusiondb.FusionDbCampaignDataDAOChain
+----------------------------
+
+insertCampaignParticipantData(com.projectgoth.fusion.data.CampaignParticipantData )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Started 3 blocks at once
+
+
+com.projectgoth.fusion.app.dao.db.fusiondb.FusionDbChatRoomDAOChain
+----------------------------
+
+getChatRoomsV2(int java.lang.String java.lang.String boolean boolean )
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.chatnewsfeed.util.FileUtil
+----------------------------
+
+deleteOldRemoteFiles(java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.util.List<java.lang.String> java.util.List<java.lang.String> )
+  Loose catch block
+
+
+com.projectgoth.fusion.common.URLUtil
+----------------------------
+
+purgeVanishCache(java.lang.String )
+  Loose catch block
+
+
+com.projectgoth.fusion.common.Redis
+----------------------------
+
+getNewShardID(java.lang.String redis.clients.jedis.Jedis )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [15[FORLOOP]], but top level block is 6[TRYBLOCK]
+
+
+com.projectgoth.fusion.ejb.AccountBean
+----------------------------
+
+createAccountEntry(java.sql.Connection com.projectgoth.fusion.data.AccountEntryData com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+sendLowBalanceAlertIfRequired(java.sql.Connection com.projectgoth.fusion.data.AccountEntryData$TypeEnum java.lang.String double com.projectgoth.fusion.data.AccountEntrySourceData )
+  Unable to fully structure code
+getAccountEntry(long )
+  Loose catch block
+getAccountEntryFromSlave(long )
+  Loose catch block
+userTransferReversedAlready(long )
+  Loose catch block
+getAccountEntryFromReference(com.projectgoth.fusion.data.AccountEntryData$TypeEnum java.lang.String )
+  Loose catch block
+getMoneyTransferEntry(int )
+  Loose catch block
+getMoneyTransferEntries(java.lang.String )
+  Loose catch block
+creditReferrer(com.projectgoth.fusion.data.UserReferralData com.projectgoth.fusion.data.AccountEntrySourceData )
+  Unable to fully structure code
+createSweepstakesCode(java.sql.Connection int java.lang.String )
+  Loose catch block
+transferPartnerCredit(int java.lang.String double java.lang.String com.projectgoth.fusion.data.AccountEntryData$TypeEnum com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+isChargeableWithCreditTransferFee(int )
+  Loose catch block
+chargeCreditTransferFee(java.lang.String java.lang.String com.projectgoth.fusion.data.AccountEntryData java.sql.Connection )
+  Unable to fully structure code
+transferCredit(java.lang.String java.lang.String double boolean java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getMerchantTagFromUsername_NestedQuery(java.sql.Connection java.lang.String boolean )
+  Loose catch block
+getMerchantTagFromUsername_NonNestedQuery(java.sql.Connection java.lang.String boolean )
+  Loose catch block
+getInactiveMerchantTagBetweenUsers(java.sql.Connection int int boolean )
+  Loose catch block
+tagMerchant(java.sql.Connection int java.lang.String int java.lang.String com.projectgoth.fusion.data.MerchantTagData java.util.Date java.lang.Long java.lang.Integer )
+  Loose catch block
+untagMerchant(java.sql.Connection com.projectgoth.fusion.data.MerchantTagData java.lang.String )
+  Loose catch block
+untagMerchant(java.sql.Connection java.util.List<com.projectgoth.fusion.data.MerchantTagUserData> )
+  Loose catch block
+incrementMerchantTagStat(java.sql.Connection com.projectgoth.fusion.common.Enums$MerchantTagStatEnum )
+  Loose catch block
+fixNullAccountentryInMerchantTag(java.sql.Connection com.projectgoth.fusion.data.MerchantTagData )
+  Loose catch block
+activatePendingMerchantTag(java.sql.Connection java.lang.String )
+  Loose catch block
+reverseTTCredit(long java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+refundUserForSMS(int java.lang.String java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+updateWholesaleCost(com.projectgoth.fusion.data.AccountEntryData$TypeEnum java.lang.String double )
+  Loose catch block
+moneyTransferTopup(com.projectgoth.fusion.data.MoneyTransferData )
+  Loose catch block
+creditCardPayment(com.projectgoth.fusion.data.CreditCardPaymentData com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+isOnCreditCardWhiteList(java.sql.Connection java.lang.String java.lang.String )
+  Loose catch block
+getCreditCardPayment(int )
+  Loose catch block
+creditCardRefund(int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+creditCardChargeBack(java.lang.String java.util.Date java.lang.String )
+  Loose catch block
+updateCreditCardPaymentStatus(com.projectgoth.fusion.data.CreditCardPaymentData com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+creditUserFromCreditCardPayment(com.projectgoth.fusion.data.CreditCardPaymentData com.projectgoth.fusion.data.AccountEntrySourceData java.sql.Connection )
+  Loose catch block
+getCreditCardTransactions(java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String int )
+  Loose catch block
+getCreditCardHMLTransactions(java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String int )
+  Loose catch block
+setUsersLocalCurrency(java.lang.String java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getPaymentType(java.lang.String )
+  Loose catch block
+getPaymentsByMetaData(com.projectgoth.fusion.payment.PaymentData$TypeEnum com.projectgoth.fusion.payment.PaymentMetaDetails[] )
+  Loose catch block
+bankTransfer(com.projectgoth.fusion.data.BankTransferIntentData )
+  Loose catch block
+updateBankTransferStatus(com.projectgoth.fusion.data.BankTransferReceivedData com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getEligibleDiscountTiers(com.projectgoth.fusion.common.Enums$PaymentEnum java.lang.String com.projectgoth.fusion.data.CurrencyData )
+  Loose catch block
+getService(int )
+  Loose catch block
+getSubscription(int )
+  Loose catch block
+getSubscriptions(java.lang.String java.lang.Integer )
+  Loose catch block
+getExpiringSubscriptions(int int )
+  Loose catch block
+getExpiredSubscriptions(int int )
+  Loose catch block
+getPendingSubscriptions(int int )
+  Loose catch block
+subscribeService(java.lang.String int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Unable to fully structure code
+updateSubscriptionBillingStatus(java.lang.String int boolean com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+cancelSubscription(java.lang.String int )
+  Loose catch block
+expireSubscription(java.lang.String int )
+  Loose catch block
+sendSubscriptionExpiryReminderSMS(java.lang.String int java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+userCanAffordCost(java.lang.String double java.lang.String java.sql.Connection )
+  Loose catch block
+userCanAffordToEnterPot(java.lang.String double java.lang.String java.lang.String )
+  Loose catch block
+enterUserIntoPot(java.lang.String int int java.lang.String double java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+removeUserFromPot(int )
+  Loose catch block
+performPayout(java.lang.String int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+cancelPot(int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+cancelAllPots(com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+convertCurrency(double java.lang.String java.lang.String )
+  Loose catch block
+getUnpaidUserReferrals(int )
+  Loose catch block
+getMerchantRevenueTrailReport(java.util.Date java.util.Date )
+  Loose catch block
+getMerchantRevenueGameTrailReport(java.util.Date java.util.Date )
+  Loose catch block
+getMerchantRevenueThirdPartyTrailReport(java.util.Date java.util.Date )
+  Loose catch block
+getExpiredNonTopMerchantTags(int int )
+  Loose catch block
+getExpiredTopMerchantTags(int int )
+  Loose catch block
+getSuperMerchantRevenueTrailReport(java.util.Date java.util.Date )
+  Loose catch block
+createPayment(com.projectgoth.fusion.payment.PaymentData )
+  Loose catch block
+storePaymentDetails(com.projectgoth.fusion.payment.PaymentData java.sql.Connection )
+  Loose catch block
+getPaymentById(int )
+  Loose catch block
+getPaymentByVoucher(int java.lang.Integer java.lang.String java.util.Date int )
+  Loose catch block
+getPendingPaymentTransactionsForRequery(int java.lang.Integer )
+  Loose catch block
+getPaymentTransactions(java.lang.String java.lang.Integer java.lang.Integer java.lang.Integer )
+  Loose catch block
+updatePayment(com.projectgoth.fusion.payment.PaymentData com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+isPaymentAllowedToUser(int int )
+  Loose catch block
+getPendingPaymentsCount(int java.lang.Integer )
+  Loose catch block
+getPaymentSummaryByUserType(int int int java.util.Date java.util.Date )
+  Loose catch block
+getPaymentSummaryByCountryAndUserType(int java.lang.Integer int int java.util.Date java.util.Date )
+  Loose catch block
+getPaymentSummaryByUserID(int int int java.util.Date java.util.Date )
+  Loose catch block
+getPaymentSummaryByMetaDetails(int int int java.lang.String java.util.Date java.util.Date )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.ContactBean
+----------------------------
+
+getContact(int )
+  Loose catch block
+getContact(java.lang.String java.lang.String )
+  Loose catch block
+isFriend(java.lang.String java.lang.String )
+  Loose catch block
+isFriend(int int )
+  Loose catch block
+getGroup(int )
+  Loose catch block
+getMaskedFusionContact(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+addFusionUserAsContact(int com.projectgoth.fusion.data.ContactData boolean )
+  Loose catch block
+removeFusionUserFromContact(int java.lang.String int boolean )
+  Unable to fully structure code
+addPendingFusionContact(int com.projectgoth.fusion.data.ContactData )
+  Loose catch block
+acceptContactRequest(int com.projectgoth.fusion.data.ContactData boolean )
+  Loose catch block
+makeReferrerAndReferreeFriends(int java.lang.String java.lang.String int java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+addIMContact(int com.projectgoth.fusion.data.ContactData boolean )
+  Loose catch block
+removeContact(int java.lang.String int )
+  Unable to fully structure code
+updateContactDetail(int com.projectgoth.fusion.data.ContactData )
+  Loose catch block
+unblockContact(java.lang.String java.lang.String boolean )
+  Loose catch block
+blockContact(int java.lang.String java.lang.String )
+  Loose catch block
+rejectContactRequest(int java.lang.String java.lang.String )
+  Loose catch block
+getContactListVersion(int java.sql.Connection )
+  Loose catch block
+getContactList(java.lang.String )
+  Loose catch block
+getPendingContacts(java.lang.String )
+  Loose catch block
+addGroup(int com.projectgoth.fusion.data.ContactGroupData boolean )
+  Loose catch block
+removeGroup(int java.lang.String int )
+  Loose catch block
+updateGroupDetail(int com.projectgoth.fusion.data.ContactGroupData )
+  Loose catch block
+getGroupList(java.lang.String )
+  Loose catch block
+moveContactToGroup(int java.lang.String int java.lang.Integer )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.ContentBean
+----------------------------
+
+loadEmoticons()
+  Loose catch block
+loadEmoticonHotkeys()
+  Loose catch block
+loadEmoticonPacks()
+  Loose catch block
+loadStickerPacks()
+  Loose catch block
+getEmoticonPacksForUser(java.lang.String )
+  Loose catch block
+getSecurityQeustions()
+  Loose catch block
+getTopContent(com.projectgoth.fusion.data.ContentData$TypeEnum int )
+  Loose catch block
+getEmotes()
+  Loose catch block
+updateEmoticonPackStatus(java.lang.String int int )
+  Loose catch block
+buyEmoticonPack(java.lang.String int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+saveMobileContentItem(com.projectgoth.fusion.data.ContentData java.lang.String int )
+  Loose catch block
+buyMobileContentItem(java.lang.String int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getDownloadURLFromOplayo(java.sql.Connection java.lang.String java.lang.String java.lang.String int )
+  Loose catch block
+getDownloadURLFromElasitas(java.sql.Connection java.lang.String java.lang.String int )
+  Loose catch block
+getLatestContentPurchasedWithNoDownloadURL(java.lang.String )
+  Loose catch block
+updateMobileContentDownloadURL(java.lang.String java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+updateMobileContentNumDownloads(java.lang.String java.lang.String int )
+  Loose catch block
+refundMobileContentItem(java.lang.String java.lang.String com.projectgoth.fusion.data.ContentPurchasedData$RefundReasonEnum com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+refundMobileContentItemFromMIS(java.lang.String int java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+sendMobileContentDownloadURLInSMS(java.lang.String int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getVirtualGifts(java.lang.String int int )
+  Loose catch block
+getVirtualGiftCategoryNames()
+  Loose catch block
+getVirtualGiftForCategory(java.lang.String java.lang.String int int )
+  Loose catch block
+getCustomVirtualGifts(java.lang.String java.lang.String[] int int )
+  Unable to fully structure code
+searchVirtualGifts(java.lang.String int java.lang.String int boolean )
+  Loose catch block
+getRecentGiftsReceivedBy(java.lang.String java.lang.String int int )
+  Loose catch block
+getRecentGiftsSentBy(java.lang.String java.lang.String int int )
+  Loose catch block
+getVirtualGiftDetails(com.projectgoth.fusion.data.VirtualGiftData )
+  Loose catch block
+getVirtualGiftByHotKey(java.lang.String )
+  Loose catch block
+getVirtualGift(java.lang.Integer java.lang.String java.lang.String )
+  Loose catch block
+buyVirtualGift(java.lang.String java.lang.String int int boolean java.lang.String java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+buyVirtualGiftForMultipleUsers(java.lang.String java.util.List<java.lang.String> com.projectgoth.fusion.data.VirtualGiftData int boolean java.lang.String boolean boolean com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+rateVirtualGift(int java.lang.String int )
+  Loose catch block
+buyAvatarItem(int int int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getStoreItem(int )
+  Loose catch block
+getRewardProgramProcessorMapping()
+  Loose catch block
+getRewardPrograms()
+  Loose catch block
+getRewardProgramParameters(int )
+  Loose catch block
+getRewardProgramsCompletionCount(int int )
+  Loose catch block
+giveStickerOrEmoticonPackReward(int com.projectgoth.fusion.data.UserData com.projectgoth.fusion.data.StoreItemData long java.util.Collection<com.projectgoth.fusion.data.RewardedStoreItemData> )
+  Loose catch block
+giveScoreRewardOld(java.lang.Integer java.lang.Integer com.projectgoth.fusion.data.UserData long java.util.Collection<com.projectgoth.fusion.data.RewardedReputationData> )
+  Loose catch block
+giveLevelRewardOld(int com.projectgoth.fusion.data.UserData java.lang.Integer long java.util.Collection<com.projectgoth.fusion.data.RewardedReputationData> )
+  Loose catch block
+updateUserOwnedRoomSize(java.lang.String int java.sql.Connection )
+  Loose catch block
+buyPaidEmote(java.lang.String com.projectgoth.fusion.data.PaidEmoteData int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Unable to fully structure code
+enforceFreeGiftToReferrerRules(java.lang.String java.lang.String )
+  Loose catch block
+recordVirtualGift(java.lang.String java.lang.String com.projectgoth.fusion.data.VirtualGiftData int boolean java.lang.String )
+  Loose catch block
+billVirtualGiftForMultipleUsers(java.lang.String com.projectgoth.fusion.data.VirtualGiftData java.util.HashMap<java.lang.String, java.lang.Integer> com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getStoreItem(java.lang.String int )
+  Unable to fully structure code
+getVirtualGift(java.lang.Integer java.lang.String )
+  Loose catch block
+getAvatarItem(int )
+  Loose catch block
+getThemeById(int )
+  Loose catch block
+getVirtualGiftReceived(java.lang.String java.lang.String int )
+  Loose catch block
+getVirtualGiftsReceived(java.lang.String java.lang.String int int )
+  Loose catch block
+searchStoreItems_old(java.lang.String java.lang.String com.projectgoth.fusion.data.StoreItemData$TypeEnum java.lang.Integer double double java.lang.String java.lang.String int int boolean )
+  Loose catch block
+getStoreItemsByType_old(java.lang.String int java.lang.String java.lang.String int int boolean )
+  Loose catch block
+getStoreCategories_old(int boolean )
+  Loose catch block
+getStoreItemsByCategory_old(java.lang.String int java.lang.String java.lang.String int int boolean )
+  Loose catch block
+searchStoreItems(java.lang.String java.lang.String com.projectgoth.fusion.data.StoreItemData$TypeEnum java.lang.Integer double double java.lang.String java.lang.String int int boolean )
+  Loose catch block
+getStoreItemsByType(java.lang.String int java.lang.String java.lang.String int int boolean )
+  Loose catch block
+getStoreCategories(int int boolean )
+  Loose catch block
+getStoreCategory(int int boolean )
+  Loose catch block
+getStoreItemsByCategory(java.lang.String int java.lang.String java.lang.String int int boolean )
+  Loose catch block
+addStoreItemsInventory(java.util.Map<java.lang.Integer, java.lang.Integer> int com.projectgoth.fusion.data.StoreItemInventoryData$StoreItemInventoryLocationEnum )
+  Loose catch block
+addStoreItemInventoryReceived(long int java.lang.Integer com.projectgoth.fusion.data.StoreItemData$TypeEnum )
+  Loose catch block
+getStoreItemInventory(int int )
+  Loose catch block
+getStoreItemsInventory(int int )
+  Loose catch block
+getStoreItemsInventoryByType(int com.projectgoth.fusion.data.StoreItemData$TypeEnum )
+  Loose catch block
+giveVirtualGiftForMultipleUsers(java.lang.String java.util.List<java.lang.String> com.projectgoth.fusion.data.StoreItemData int boolean java.lang.String )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.GroupBean
+----------------------------
+
+getGroupMembers(int )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.GuardsetBean
+----------------------------
+
+getMinimumClientVersionForAccess(int int )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.MerchantsBean
+----------------------------
+
+getMerchantsByCountry(int int int int boolean )
+  Loose catch block
+getMerchantsByCountry(int java.lang.String int int boolean )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.MessageBean
+----------------------------
+
+getIDDCodesAllowZeroVector()
+  Loose catch block
+getIDDCodesHashMap()
+  Loose catch block
+getAdultWordFilter()
+  Loose catch block
+getFixedSMSCost(int )
+  Loose catch block
+saveSentMessage(com.projectgoth.fusion.data.MessageData )
+  Loose catch block
+saveReceivedMessage(com.projectgoth.fusion.data.MessageData java.lang.Integer )
+  Loose catch block
+sendSystemSMS(com.projectgoth.fusion.data.SystemSMSData long com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+systemSMSFailed(int java.lang.Integer java.lang.String )
+  Loose catch block
+smsFailed(int java.lang.Integer java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getSystemSMSCount(com.projectgoth.fusion.data.SystemSMSData$SubTypeEnum java.lang.String java.lang.String )
+  Loose catch block
+getMobilePrefixData(int int )
+  Loose catch block
+getMinimumMobileNumberLength(int )
+  Loose catch block
+isMobileNumber(java.lang.String boolean )
+  Loose catch block
+changePendingSystemSMSToSent(int int int java.lang.String int java.lang.String java.lang.String boolean )
+  Loose catch block
+changePendingMessageToSent(com.projectgoth.fusion.fdl.enums.MessageType int int java.lang.Integer java.lang.Integer java.lang.String java.lang.String )
+  Loose catch block
+getMessage(int )
+  Loose catch block
+getMessages(java.lang.String java.lang.Integer java.lang.Integer java.util.Date java.lang.Integer java.lang.Integer )
+  Loose catch block
+getSystemSMS(java.lang.String java.lang.String )
+  Loose catch block
+getSystemSMS(java.lang.String java.lang.Integer java.util.Date java.lang.Integer )
+  Loose catch block
+getSMSGateways()
+  Loose catch block
+getSimpleChatRoomData(java.lang.Integer java.sql.Connection )
+  Loose catch block
+getSimpleChatRoomData(java.lang.String java.sql.Connection )
+  Unable to fully structure code
+getLoginChatroomCategories()
+  Loose catch block
+getChatroomNamesPerCategory(boolean )
+  Loose catch block
+getChatroomNamesInCategory(int boolean )
+  Loose catch block
+getChatRoom(java.lang.String )
+  Loose catch block
+updateRoomExtraData(com.projectgoth.fusion.data.ChatRoomData )
+  Loose catch block
+updateRoomDetails(java.lang.String java.lang.String java.lang.String java.lang.String )
+  Unable to fully structure code
+updateRoomKickingRule(java.lang.String java.lang.String boolean )
+  Loose catch block
+updateRoomAdultOnlyFlag(java.lang.String java.lang.String boolean )
+  Loose catch block
+updateRoomKeywords(java.lang.String java.lang.String java.lang.String int )
+  Loose catch block
+getChatRooms(int java.lang.String java.lang.String boolean boolean )
+  Loose catch block
+getChatRoomsV2(int java.lang.String java.lang.String boolean boolean )
+  Unable to fully structure code
+getFavouriteChatRooms(java.lang.String )
+  Loose catch block
+getRecentChatRooms(java.lang.String )
+  Loose catch block
+getRecentlyAccessedChatRoomCount()
+  Loose catch block
+getActiveGroupsCount()
+  Loose catch block
+createChatRoom(com.projectgoth.fusion.data.ChatRoomData java.lang.String )
+  Loose catch block
+addChatRoomKeywords(int java.lang.String java.sql.Connection )
+  Loose catch block
+chatRoomAccessed(int java.lang.String java.lang.Integer java.lang.Integer )
+  Loose catch block
+addFavouriteChatRoom(java.lang.String java.lang.String )
+  Loose catch block
+removeFavouriteChatRoom(java.lang.String java.lang.String )
+  Loose catch block
+logMessageStats(java.util.Date int int int int int int int int int int int int int int int int int )
+  Loose catch block
+sendEmail(java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String )
+  Unable to fully structure code
+updateRoomDescriptions(java.lang.String[] java.lang.String )
+  Loose catch block
+getGroupChatRooms(int )
+  Loose catch block
+announceMessageToChatrooms(java.lang.String[] java.lang.String int )
+  Loose catch block
+announceMessageToUserOwnedChatrooms(java.lang.String int )
+  Loose catch block
+sendChangeRoomOwnerEmail(java.lang.String java.lang.String java.lang.String )
+  Unable to fully structure code
+changeRoomOwner(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+addRoomModerator(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+resetRoomModerators(java.lang.String )
+  Loose catch block
+removeRoomModerator(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+banGroupMember(java.lang.String com.projectgoth.fusion.data.GroupData java.lang.String )
+  Unable to fully structure code
+unbanGroupMember(java.lang.String com.projectgoth.fusion.data.GroupData java.lang.String )
+  Loose catch block
+isUserBlackListedInGroup(java.lang.String int )
+  Loose catch block
+isModeratorOfChatRoom(java.lang.String java.lang.String )
+  Loose catch block
+addChatRoomEmoteLog(com.projectgoth.fusion.data.ChatRoomEmoteLogData )
+  Loose catch block
+updateChatroomBannedList(java.lang.String java.lang.String )
+  Loose catch block
+unbanUserFromRoom(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+getBots()
+  Loose catch block
+getBot(int )
+  Loose catch block
+getBotFromCommandName(java.lang.String )
+  Loose catch block
+getEmailTemplateData(int )
+  Loose catch block
+setChatRoomMaxSize(java.lang.String int )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.MISBean
+----------------------------
+
+getApplicationMenuOptions(int )
+  Loose catch block
+getApplicationMenuVersion(int short java.lang.String )
+  Loose catch block
+loadClientText()
+  Loose catch block
+getCountriesList()
+  Loose catch block
+getCurrencyList()
+  Loose catch block
+getMenuList()
+  Loose catch block
+getSystemProperties()
+  Loose catch block
+updateSystemProperty(java.lang.String java.lang.String )
+  Loose catch block
+getCountriesSupportedHashtag(javax.sql.DataSource )
+  Loose catch block
+getCountryByLocation(int )
+  Loose catch block
+getCountryFromIPNumber(java.lang.Double )
+  Loose catch block
+getCurrency(java.lang.String )
+  Loose catch block
+setCurrency(com.projectgoth.fusion.data.CurrencyData )
+  Loose catch block
+addToMailList(java.lang.String )
+  Loose catch block
+isVASBuild(java.lang.String )
+  Loose catch block
+getCashReceiptData(int )
+  Loose catch block
+createCashReceipt_OldIDRetrieval(com.projectgoth.fusion.data.CashReceiptData com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+deleteCashReceipt(java.lang.String )
+  Loose catch block
+logMISLogin(java.lang.String java.lang.String boolean )
+  Loose catch block
+allowUserToReRegister(java.lang.String )
+  Loose catch block
+getAlertMessageData(java.lang.String )
+  Loose catch block
+createAlertMessage(com.projectgoth.fusion.data.AlertMessageData )
+  Loose catch block
+updateAlertMessage(com.projectgoth.fusion.data.AlertMessageData )
+  Loose catch block
+getResellerData(java.lang.String )
+  Loose catch block
+createReseller(com.projectgoth.fusion.data.ResellerData )
+  Loose catch block
+updateReseller(com.projectgoth.fusion.data.ResellerData )
+  Loose catch block
+updateCountry(com.projectgoth.fusion.data.CountryData )
+  Loose catch block
+changeStaffPassword(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+getFile(java.lang.String )
+  Loose catch block
+saveFile(com.projectgoth.fusion.data.FileData java.lang.String )
+  Loose catch block
+saveFileToScrapbooks(java.lang.String java.lang.String[] java.lang.String java.lang.String )
+  Loose catch block
+updateFileFromScrapbook(com.projectgoth.fusion.data.ScrapbookData )
+  Loose catch block
+publishFileFromScrapbook(java.lang.String int java.lang.String boolean )
+  Loose catch block
+unpublishFileFromScrapbook(java.lang.String int )
+  Loose catch block
+deleteFileFromScrapbook(java.lang.String int )
+  Loose catch block
+setFileReportedFromScrapbook(java.lang.String int )
+  Loose catch block
+setFilePrivateFromScrapbook(java.lang.String )
+  Loose catch block
+removeAllInstancesOfFile(java.lang.String )
+  Loose catch block
+getGallery(java.lang.String java.lang.String )
+  Loose catch block
+getScrapbook(java.lang.Integer java.lang.String com.projectgoth.fusion.data.ScrapbookData$StatusEnum[] )
+  Loose catch block
+getScrapbookSize(java.lang.String )
+  Loose catch block
+getHandsetVendors()
+  Loose catch block
+getHandsetInstructions()
+  Loose catch block
+getHandsetInstruction(int )
+  Loose catch block
+getHandsetVendorPrefixes()
+  Loose catch block
+getHandsetDetails(java.lang.String )
+  Loose catch block
+getDefaultHandsetDetails()
+  Loose catch block
+getHandsetDetail(java.lang.String java.lang.String )
+  Loose catch block
+getHandsetDetail(java.lang.Integer )
+  Loose catch block
+createHandset(com.projectgoth.fusion.data.HandsetData )
+  Loose catch block
+updateHandsetDetail(com.projectgoth.fusion.data.HandsetData )
+  Loose catch block
+createHandsetInstructions(com.projectgoth.fusion.data.HandsetInstructionsData )
+  Loose catch block
+updateHandsetInstructions(com.projectgoth.fusion.data.HandsetInstructionsData )
+  Loose catch block
+removeMerchantPinAuthentication(int )
+  Loose catch block
+getMerchantPinEmail(int )
+  Loose catch block
+getEmoteCommands()
+  Loose catch block
+getAuthenticatedAccessControlData()
+  Loose catch block
+updatePromotedPost(java.util.List<com.projectgoth.fusion.data.PromotedPostData> )
+  Loose catch block
+getPromotedPost(int boolean int )
+  Loose catch block
+getReputationLevelDataForLevel(int )
+  Loose catch block
+getMaximumSystemMigLevel()
+  Loose catch block
+logMig33UserAction(int com.projectgoth.fusion.common.Enums$Mig33UserActionMisLogEnum java.lang.String )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.UserBean
+----------------------------
+
+getUserDataFromUserRegistrationTable(java.lang.String com.projectgoth.fusion.data.UserData )
+  Loose catch block
+getVerificationDataFromUserRegistrationTable(java.lang.String )
+  Loose catch block
+getMobilePhoneCount(java.sql.Connection java.lang.String )
+  Loose catch block
+getActivatedNumberCount(java.sql.Connection java.lang.String )
+  Loose catch block
+createPrepaidCardUser(java.lang.String java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getRecentMobileActivationCountsWithMobilePrefixByIPAddress(java.lang.String int )
+  Loose catch block
+createUser(com.projectgoth.fusion.data.UserData com.projectgoth.fusion.data.UserProfileData boolean com.projectgoth.fusion.data.UserRegistrationContextData com.projectgoth.fusion.data.AccountEntrySourceData boolean boolean boolean )
+  Loose catch block
+postCreateUser(com.projectgoth.fusion.data.UserData com.projectgoth.fusion.data.UserProfileData boolean com.projectgoth.fusion.data.AccountEntrySourceData com.projectgoth.fusion.data.UserRegistrationContextData boolean )
+  Loose catch block
+usernameExists(java.sql.Connection java.lang.String )
+  Loose catch block
+emailAddressExists(java.sql.Connection java.lang.String )
+  Loose catch block
+insertPartnerUser(int int )
+  Loose catch block
+loadStaff(java.lang.String )
+  Loose catch block
+checkUserAliasByUserid(int java.lang.String boolean java.sql.Connection )
+  Loose catch block
+setUserAliasByUserid(int java.lang.String )
+  Loose catch block
+getUserAliasByUsername(java.lang.String java.sql.Connection )
+  Loose catch block
+getUsernameByAlias(java.lang.String java.sql.Connection )
+  Loose catch block
+getUseridByAlias(java.lang.String java.sql.Connection )
+  Loose catch block
+getSecurityQuestion(int )
+  Loose catch block
+getUserAliasByUserid(int java.sql.Connection )
+  Loose catch block
+getUsernameByUserid(int java.sql.Connection )
+  Unable to fully structure code
+isBounceEmailAddress(java.lang.String )
+  Loose catch block
+doCreateInvitation(java.util.List<java.lang.String> int int int )
+  Loose catch block
+doCreateMetadataForInvitation(java.util.Collection<java.lang.Integer> com.projectgoth.fusion.invitation.InvitationMetadata )
+  Loose catch block
+getInvitationData(int boolean java.sql.Connection )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Started 3 blocks at once
+getThirdPartyApplicationData(int java.sql.Connection )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Started 3 blocks at once
+getInvitationIdForFBInvite(java.lang.String java.lang.String java.sql.Connection )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Started 3 blocks at once
+getUserID(java.lang.String java.sql.Connection boolean )
+  Unable to fully structure code
+getLastLoggedInUsersWithVerifiedEmail(com.projectgoth.fusion.data.UserEmailAddressData$UserEmailAddressTypeEnum java.sql.Timestamp java.sql.Timestamp java.sql.Connection )
+  Loose catch block
+loadUserByUsernameOrAlias(java.lang.String boolean boolean )
+  Loose catch block
+loadUser(java.lang.String boolean boolean )
+  Unable to fully structure code
+loadUserFromID(int )
+  Loose catch block
+loadUserFromMobilePhone(java.lang.String )
+  Loose catch block
+updateUserDetail(com.projectgoth.fusion.data.UserData )
+  Loose catch block
+updateOtherIMDetail(java.lang.String com.projectgoth.fusion.fdl.enums.ImType java.lang.String java.lang.String )
+  Loose catch block
+updateStatusMessage(int java.lang.String java.lang.String com.projectgoth.fusion.fdl.enums.ClientType com.projectgoth.fusion.restapi.data.SSOEnums$View )
+  Unable to fully structure code
+updateDisplayPicture(java.lang.String java.lang.String )
+  Loose catch block
+removeDisplayPicture(java.lang.String )
+  Loose catch block
+getUserProfileStatus(java.lang.String )
+  Loose catch block
+getUserProfile(java.lang.String java.lang.String boolean )
+  Unable to fully structure code
+updateUserProfile(com.projectgoth.fusion.data.UserProfileData )
+  Loose catch block
+activateAccount(java.lang.String java.lang.String boolean com.projectgoth.fusion.data.AccountEntrySourceData )
+  Unable to fully structure code
+inviteFriend(java.lang.String java.lang.String java.lang.String java.lang.Integer java.lang.String java.lang.String java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+resendVerificationCode(java.lang.String java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+sendEmailVerification(int java.lang.String )
+  Loose catch block
+changeMobilePhone(java.lang.String java.lang.String boolean com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+postChangeMobilePhone(com.projectgoth.fusion.data.UserData java.lang.String java.lang.String java.lang.String java.lang.String boolean com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+cancelChangeMobilePhoneRequest(java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Unable to fully structure code
+forgotPasswordViaEmail(java.lang.String java.lang.String )
+  Loose catch block
+forgotPasswordViaSMS(java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+allowForgotPasswordViaSMS(java.lang.String )
+  Unable to fully structure code
+logForgotPasswordViaSMS(java.lang.String )
+  Loose catch block
+forgotPasswordWithMobileNumberOrEmail(java.lang.String boolean com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+changePassword(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+loginSucceeded(java.lang.String java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+loginFailed(java.lang.String )
+  Loose catch block
+activateAccountFailed(java.lang.String )
+  Loose catch block
+getLatestAlertMessage(int com.projectgoth.fusion.data.AlertMessageData$TypeEnum int java.util.Date com.projectgoth.fusion.fdl.enums.AlertContentType int )
+  Unable to fully structure code
+setAccountStatus(java.lang.String boolean )
+  Loose catch block
+setFailedActivationAttempts(java.lang.String int )
+  Loose catch block
+bannedFromChatRoom(java.lang.String java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+decrementChatroomBanCounter(java.lang.String )
+  Loose catch block
+processEmailNotification(java.lang.String java.lang.String java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+setEmailAlertSent(java.lang.String boolean )
+  Loose catch block
+sendLookouts(java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+midletRegistrationDisabled(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+getGroupMember(java.lang.String int )
+  Loose catch block
+getGroup(int )
+  Loose catch block
+isUserMobileVerified(java.lang.String )
+  Loose catch block
+checkIsUserMobileOrEmailVerifiedFromDB(java.lang.String )
+  Loose catch block
+checkIsUserEmailVerified(java.lang.String )
+  Loose catch block
+getUserAuthenticatedAccessControlParameter(java.lang.String )
+  Unable to fully structure code
+userAttemptedVerification(java.lang.String int )
+  Loose catch block
+getUserSetting_beforeWW519(java.lang.String com.projectgoth.fusion.data.UserSettingData$TypeEnum )
+  Loose catch block
+updateUserSetting(java.lang.String com.projectgoth.fusion.data.UserSettingData$TypeEnum int )
+  Loose catch block
+addReputationScore(int int java.sql.Connection )
+  Loose catch block
+getReputationScoreAndLevelForUsers(java.util.List<java.lang.Integer> java.sql.Connection )
+  Loose catch block
+createLookout(java.lang.String java.lang.String )
+  Loose catch block
+getPriceInUserCurrency(double java.lang.String java.lang.String )
+  Loose catch block
+getAdminLabelV1(java.lang.String )
+  Loose catch block
+getUserLabels(java.lang.String )
+  Loose catch block
+getMerchantLabel(java.lang.String )
+  Loose catch block
+getBasicMerchantDetails(java.lang.String )
+  Loose catch block
+isMerchantMentor(java.lang.String )
+  Loose catch block
+getUserReferralSuccessRate(java.lang.String boolean )
+  Unable to fully structure code
+isUserInMigboAccessList(int int int )
+  Loose catch block
+isUserLevelAllowedMigboAccess(int int )
+  Loose catch block
+addUserEmailAddress(int java.lang.String com.projectgoth.fusion.data.UserEmailAddressData$UserEmailAddressTypeEnum )
+  Loose catch block
+removeUserEmailAddressByType(int com.projectgoth.fusion.data.UserEmailAddressData$UserEmailAddressTypeEnum )
+  Loose catch block
+removeUserEmailAddress(int java.lang.String )
+  Loose catch block
+updateUserEmailAddress(int java.lang.String java.lang.String com.projectgoth.fusion.data.UserEmailAddressData$UserEmailAddressTypeEnum )
+  Loose catch block
+verifyEmailRegistration(java.lang.String java.lang.String )
+  Loose catch block
+isEmailRegistrationNotVerifiedForUsername(java.lang.String )
+  Unable to fully structure code
+isEmailRegistrationNotVerifiedForUsername(java.lang.String java.lang.String )
+  Unable to fully structure code
+isExternalEmailVerified(int java.lang.String )
+  Loose catch block
+getUserEmailAddressByType(int com.projectgoth.fusion.data.UserEmailAddressData$UserEmailAddressTypeEnum )
+  Loose catch block
+getUsernameByEmailAddress(java.lang.String com.projectgoth.fusion.data.UserEmailAddressData$UserEmailAddressTypeEnum )
+  Loose catch block
+getUsersInUserCategory(int )
+  Loose catch block
+getUserCategoryNames(int )
+  Loose catch block
+blacklistUser(int )
+  Loose catch block
+removeUserFromBlacklist(int )
+  Loose catch block
+banUser(int )
+  Loose catch block
+getChatroomsOwnedCount(int )
+  Loose catch block
+getGiftsReceivedCount(int )
+  Loose catch block
+getGroupsJoinedCount(int )
+  Loose catch block
+getPhotosUploadedCount(int )
+  Loose catch block
+getRegistrationContextData(int )
+  Loose catch block
+getTaggedUsers(int int int )
+  Loose catch block
+getExpiringTaggedUsers(int int )
+  Loose catch block
+getMerchantTagDetailsData(java.util.List<java.lang.String> java.lang.String )
+  Unable to fully structure code
+setMerchantColorType(java.lang.Integer com.projectgoth.fusion.data.MerchantDetailsData$UserNameColorTypeEnum )
+  Loose catch block
+doResponseToInvitationForAlert(java.sql.Connection int int com.projectgoth.fusion.invitation.InvitationResponseData$ResponseType java.lang.String[] )
+  Loose catch block
+addMutualFollowingAndTriggerMigAlertsToAllInviters(com.projectgoth.fusion.invitation.InvitationData com.projectgoth.fusion.data.UserData )
+  Loose catch block
+getDisplayPicture(java.lang.String )
+  Loose catch block
+getJoinMig33Inviter(int )
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [0[TRYBLOCK], 1[TRYBLOCK]], but top level block is 8[TRYBLOCK]
+
+
+com.projectgoth.fusion.ejb.VoiceBean
+----------------------------
+
+getDIDNumber(int )
+  Loose catch block
+evaluatePhoneCall(com.projectgoth.fusion.data.CallData )
+  Loose catch block
+initiatePhoneCall(com.projectgoth.fusion.data.CallData )
+  Loose catch block
+getCallEntryWithCost(int )
+  Loose catch block
+getCallEntriesWithCost(java.lang.String )
+  Loose catch block
+getCallEntries(java.lang.String java.lang.Integer )
+  Loose catch block
+updateCallDetail(com.projectgoth.fusion.data.CallData )
+  Loose catch block
+chargeCall(com.projectgoth.fusion.data.CallData com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+getVoiceGateways()
+  Loose catch block
+getVoiceGateways(int )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.VoucherBean
+----------------------------
+
+getVoucherBatch(int )
+  Loose catch block
+cancelVoucherBatch(java.lang.String int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+cancelVoucher(java.lang.String int com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+redeemVoucher(java.lang.String java.lang.String com.projectgoth.fusion.data.AccountEntrySourceData )
+  Loose catch block
+voucherRechargeFailed(java.lang.String )
+  Loose catch block
+retrieveVouchers(java.lang.String int int )
+  Loose catch block
+searchForVoucher(java.lang.String java.lang.String )
+  Loose catch block
+getVoucher(java.lang.String )
+  Loose catch block
+retrieveVoucherBatches(java.lang.String int )
+  Loose catch block
+activateVoucher(java.lang.String )
+  Loose catch block
+affiliateOverview(java.lang.String )
+  Loose catch block
+recentActivities(java.lang.String int )
+  Loose catch block
+recentRedeem(java.lang.String int )
+  Loose catch block
+
+
+com.projectgoth.fusion.ejb.WebBean
+----------------------------
+
+getRateGrid()
+  Loose catch block
+setEmailAlert(java.lang.String boolean )
+  Loose catch block
+getContactList(java.lang.String )
+  Loose catch block
+getContactListEmailActivated(java.lang.String boolean )
+  Loose catch block
+getAccountEntries(java.lang.String int int )
+  Loose catch block
+getMoneyTransferEntries(java.lang.String int int )
+  Loose catch block
+getSMSHistory(java.lang.String int int )
+  Loose catch block
+getCallHistory(java.lang.String int int )
+  Loose catch block
+getUsersWhoViewed(java.lang.String )
+  Loose catch block
+getWall(java.lang.String int int boolean )
+  Loose catch block
+saveExistingFileToScrapbooks(java.lang.String java.lang.String[] java.lang.String java.lang.String )
+  Loose catch block
+getVoucherBatches(java.lang.String int int int )
+  Loose catch block
+getAllVoucherBatches(java.lang.String )
+  Loose catch block
+getVouchers(java.lang.String int int int int java.lang.String java.lang.String )
+  Loose catch block
+changeActiveVoucherToInactive(java.lang.String int )
+  Loose catch block
+changeInactiveVoucherToActive(java.lang.String int )
+  Loose catch block
+changeActiveVouchersInBatchToInactive(java.lang.String int )
+  Loose catch block
+changeInactiveVouchersInBatchToActive(java.lang.String int )
+  Loose catch block
+updateVoucherBatchNotes(java.lang.String int java.lang.String )
+  Loose catch block
+parseAndLogMobileOriginatedSMS(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+registerMerchant(java.lang.String[] java.lang.String[] )
+  Unable to fully structure code
+loadMerchant(java.lang.String )
+  Loose catch block
+isBuzzPossible(java.lang.String int )
+  Loose catch block
+sendBuzz(java.lang.String int java.lang.String java.lang.String java.lang.String java.lang.String java.lang.String )
+  Unable to fully structure code
+isLookoutPossible(java.lang.String java.lang.String )
+  Unable to fully structure code
+lookoutExists(java.lang.String java.lang.String )
+  Loose catch block
+removeLookout(java.lang.String java.lang.String )
+  Loose catch block
+getLookouts(java.lang.String )
+  Loose catch block
+setAllowBuzz(java.lang.String boolean )
+  Loose catch block
+getPossibleTransferRecipients(java.lang.String )
+  Loose catch block
+getResellerStates(int )
+  Loose catch block
+getResellersInState(int java.lang.String )
+  Loose catch block
+getResellers(int )
+  Loose catch block
+getFixedCallRates(int )
+  Loose catch block
+getEmoticonPacks(java.lang.String boolean int int )
+  Unable to fully structure code
+getEmoticonsInPack(int )
+  Loose catch block
+getEmoticonPack(java.lang.String int )
+  Loose catch block
+getMobileContentCategories(java.lang.String int int int int )
+  Unable to fully structure code
+getMobileContent(java.lang.String int int int int )
+  Unable to fully structure code
+getMobileContentItem(java.lang.String int boolean )
+  Loose catch block
+getMobileContentDownloadURL(java.lang.String int )
+  Loose catch block
+getPurchasedContent(java.lang.String int int )
+  Unable to fully structure code
+getSmallProfile(java.lang.String java.lang.String )
+  Loose catch block
+getCallRates(int int boolean java.lang.String )
+  Loose catch block
+getUserProfilePrivacySetting(java.lang.String )
+  Loose catch block
+getUserBlockedListCount(java.lang.String )
+  Loose catch block
+getUserBlockedList(java.lang.String java.lang.String int int boolean boolean )
+  Loose catch block
+isContact(java.lang.String java.lang.String )
+  Loose catch block
+isContactFriend(java.lang.String java.lang.String )
+  Loose catch block
+unblockAllUsers(java.lang.String )
+  Loose catch block
+editPhotoCaption(java.lang.String int java.lang.String )
+  Loose catch block
+getThemes(java.lang.String int int )
+  Loose catch block
+changeTheme(java.lang.String int )
+  Loose catch block
+getLocationsWithMerchantsInCountry(int )
+  Loose catch block
+getLocationsWithMerchantsInParentLocation(int )
+  Loose catch block
+getCountriesWithMerchants()
+  Loose catch block
+getLocationPath(int )
+  Loose catch block
+getMerchantsInLocation(int )
+  Loose catch block
+getMerchantLocation(int )
+  Loose catch block
+countryHasMerchantLocations(int )
+  Loose catch block
+getMerchantsUserMayPurchaseFrom(java.lang.String )
+  Loose catch block
+getSMSCost(java.lang.String java.lang.String )
+  Loose catch block
+getSMSCostTable(java.lang.String int int )
+  Loose catch block
+getTransactionSummaryByMonth(java.lang.String int int java.lang.String )
+  Loose catch block
+getAccountEntriesForCustomerByDate(java.lang.String java.lang.String java.util.Date java.util.Date java.lang.String )
+  Loose catch block
+getTransactionsByDate(java.lang.String java.util.Date java.util.Date int int java.lang.String )
+  Loose catch block
+getUserReferralCountByMonth(java.lang.String int int )
+  Loose catch block
+getUserReferralCount(java.lang.String )
+  Loose catch block
+getUserReferral(java.lang.String java.util.Date java.util.Date int int )
+  Loose catch block
+getPreviousMobileNumber(java.lang.String )
+  Loose catch block
+getUserVirtualGift(java.lang.String java.lang.String int )
+  Loose catch block
+removeUserVirtualGift(java.lang.String int )
+  Loose catch block
+getVirtualGiftForUser(java.lang.String java.lang.String int int )
+  Loose catch block
+getVirtualGiftReceivedSummary(java.lang.String java.lang.String )
+  Loose catch block
+getExternalClientDownloadDetail(java.lang.String )
+  Loose catch block
+getUnredeemedVoucherValue(java.lang.String )
+  Loose catch block
+getMerchantCustomersAndFriends(java.lang.String int int )
+  Loose catch block
+getMerchantCustomers(java.lang.String int int )
+  Loose catch block
+getMerchantCustomerTransactions(java.lang.String java.lang.String int int )
+  Loose catch block
+getGroupAnnouncements(int int int )
+  Loose catch block
+getGroupAnnouncement(int )
+  Loose catch block
+createGroupAnnouncement(java.lang.String int java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+updateGroupAnnouncement(int java.lang.String int java.lang.String java.lang.String )
+  Loose catch block
+getGroupChatroomCategoriesAndStadiums(int int int int )
+  Loose catch block
+getGroupChatrooms(int int int int )
+  Loose catch block
+joinGroup(java.lang.String int int java.lang.String java.lang.String java.lang.String java.lang.String boolean boolean boolean boolean boolean boolean )
+  Unable to fully structure code
+joinGroupWithoutValidation(com.projectgoth.fusion.data.UserData int int java.lang.String java.lang.String java.lang.String java.lang.String boolean boolean boolean boolean boolean boolean )
+  Unable to fully structure code
+leaveGroup(java.lang.String int )
+  Loose catch block
+declineAllGroupInvitations(java.lang.String )
+  Loose catch block
+declineGroupInvitation(java.lang.String int )
+  Loose catch block
+setGroupMemberOptions(java.lang.String int int boolean boolean boolean boolean boolean boolean )
+  Loose catch block
+inviteUserToGroup(java.lang.String java.lang.String int )
+  Unable to fully structure code
+updateStadiumDescription(java.lang.String java.lang.String )
+  Loose catch block
+getLocations(int int int int )
+  Loose catch block
+getLocation(int )
+  Loose catch block
+getContactList(java.lang.String int int int )
+  Loose catch block
+getGroupModules(int )
+  Loose catch block
+getGroupEvents(int int int )
+  Loose catch block
+getGroupModule(int )
+  Loose catch block
+getGroupPost(int )
+  Loose catch block
+getGroupPosts(int int int )
+  Loose catch block
+createGroupPost(java.lang.String int java.lang.String java.lang.String int )
+  Loose catch block
+updateGroupPost(int java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+publishGroupPost(int java.lang.String )
+  Loose catch block
+deleteGroupPost(int java.lang.String )
+  Loose catch block
+createGroupModule(java.lang.String int java.lang.String int )
+  Loose catch block
+updateGroupModule(int java.lang.String java.lang.String int )
+  Loose catch block
+deleteGroupModule(int java.lang.String )
+  Loose catch block
+createGroupUserPost(java.lang.String int java.lang.String int )
+  Loose catch block
+createGroupUserPostTransaction(int com.projectgoth.fusion.data.UserPostData )
+  Loose catch block
+getGroupUserPosts(int int int )
+  Loose catch block
+getUserPost(int )
+  Loose catch block
+getUserPostReplies(int int int )
+  Loose catch block
+deleteGroupUserPost(int int java.lang.String )
+  Loose catch block
+getRoomModerators(java.lang.String java.lang.String )
+  Loose catch block
+getRoomBannedUsers(java.lang.String java.lang.String int int )
+  Loose catch block
+getChatroom(java.lang.String )
+  Loose catch block
+getUserOwnedChatrooms(java.lang.String int int )
+  Loose catch block
+getPendingContactCount(java.lang.String )
+  Loose catch block
+getActiveSubscriptions(java.lang.String )
+  Loose catch block
+getGroupHasExclusiveContent(int )
+  Loose catch block
+getLanguages()
+  Loose catch block
+getBotList(int int )
+  Loose catch block
+
+
+com.projectgoth.fusion.emailalert.EmailNotificationProcessor
+----------------------------
+
+run()
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.eventqueue.EventQueue
+----------------------------
+
+enqueueSingleEvent(com.projectgoth.fusion.eventqueue.Event )
+  Loose catch block
+enqueueMultipleEvents(java.util.List<com.projectgoth.fusion.eventqueue.Event> )
+  Loose catch block
+
+
+com.projectgoth.fusion.eventqueue.WorkerI
+----------------------------
+
+run()
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.expirecredit.ExpireCredit
+----------------------------
+
+run(java.lang.String[] )
+  Loose catch block
+processUser(java.lang.String )
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.expirecredit.WriteOffCredit
+----------------------------
+
+run(java.lang.String[] )
+  Loose catch block
+processUser(java.lang.String )
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.expirecredit.WriteOffNegativeCredit
+----------------------------
+
+run(java.lang.String[] )
+  Loose catch block
+processUser(java.lang.String )
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.gateway.packet.FusionPktError
+----------------------------
+
+<init>(short com.projectgoth.fusion.gateway.packet.FusionPktError$Code int )
+  Loose catch block
+
+
+com.projectgoth.fusion.maintenance.LoginBot
+----------------------------
+
+sendFusionPkt(java.lang.String com.projectgoth.fusion.packet.FusionPacket boolean )
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.movedeletedcontacts.MoveDeletedContacts
+----------------------------
+
+main(java.lang.String[] )
+  Loose catch block
+
+
+com.projectgoth.fusion.packet.FusionField
+----------------------------
+
+getStringVal()
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.reputation.UpdateScoreTable
+----------------------------
+
+process(java.lang.String )
+  Unable to fully structure code
+updateUserOwnedRoomSize(java.lang.String int java.sql.Connection )
+  Loose catch block
+
+
+com.projectgoth.fusion.restapi.resource.EventResource
+----------------------------
+
+createGroupInvitationEventResponse(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+createFriendInvitationEventResponse(java.lang.String java.lang.String java.lang.String )
+  Loose catch block
+
+
+com.projectgoth.fusion.rewardsystem.RewardDispatcher
+----------------------------
+
+run()
+  Unable to fully structure code
+main(java.lang.String[] )
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.sessioncache.MigrateSessionHistoryTable
+----------------------------
+
+main(java.lang.String[] )
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.smsengine.HTTPGateway
+----------------------------
+
+dispatchMessage(com.projectgoth.fusion.smsengine.SMSMessage )
+  Loose catch block
+
+
+com.projectgoth.fusion.smsengine.SMPPGateway
+----------------------------
+
+run()
+  Loose catch block
+
+
+com.projectgoth.fusion.uns.AlertQueueWorkerThread
+----------------------------
+
+run()
+  Unable to fully structure code
+
+
+com.projectgoth.fusion.userevent.DumpEvents
+----------------------------
+
+dump(java.lang.String )
+  Loose catch block
+
+
+com.projectgoth.fusion.userevent.DumpGeneratorEvents
+----------------------------
+
+dump(int )
+  Loose catch block
+
+
+com.projectgoth.fusion.userevent.DumpTranslateGeneratorEvents
+----------------------------
+
+dump()
+  Loose catch block
+
+
+com.projectgoth.fusion.voiceengine.FastAGIWorker
+----------------------------
+
+run()
+  Loose catch block
