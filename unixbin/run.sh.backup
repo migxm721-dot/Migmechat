@@ -1,0 +1,21 @@
+#!/bin/sh
+
+SOURCE_TREE_BASE=../..
+FUSION_BASE=..
+
+# CLASSPATH yang benar - TAMBAHKAN lib/*
+CLASSPATH=$FUSION_BASE/etc
+CLASSPATH=$CLASSPATH:$FUSION_BASE/lib/*
+CLASSPATH=$CLASSPATH:$FUSION_BASE/lib/external/*
+CLASSPATH=$CLASSPATH:$FUSION_BASE
+CLASSPATH=$CLASSPATH:.
+
+# debug optional
+echo "CLASSPATH=$CLASSPATH"
+
+ulimit -n 8192
+
+# tambahkan flag log4j.configuration
+JAVA_OPTS="$JAVA_ARGS -server -Xmx256m -Dlog4j.configuration=file:$FUSION_BASE/etc/log4j.properties -Dlog.dir=$FUSION_BASE/logs/ -Dconfig.dir=$FUSION_BASE/etc/"
+
+java $JAVA_OPTS -classpath "$CLASSPATH" $@

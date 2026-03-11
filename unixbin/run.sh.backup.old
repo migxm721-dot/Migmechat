@@ -1,0 +1,89 @@
+d ~/fusion/unixbin
+
+# 1. Create run.sh
+cat > run.sh << 'EOF'
+#!/bin/sh
+
+FUSION_BASE=..
+
+# Build CLASSPATH - fusion-1.0.jar PERTAMA
+CLASSPATH="$FUSION_BASE/fusion-1.0.jar"
+
+# TAMBAHKAN SEMUA JAR DI ROOT DIRECTORY
+for jar in $FUSION_BASE/*.jar; do
+    if [ -f "$jar" ] && [ "$jar" != "$FUSION_BASE/fusion-1.0.jar" ]; then
+        CLASSPATH="$CLASSPATH:$jar"
+    fi
+done
+
+# Add etc untuk config files
+CLASSPATH="$CLASSPATH:$FUSION_BASE/etc"
+
+# Add lib/memcached
+if [ -f "$FUSION_BASE/lib/memcached-client-1.0.jar" ]; then
+    CLASSPATH="$CLASSPATH:$FUSION_BASE/lib/memcached-client-1.0.jar"
+fi
+
+# Add other libs if exist
+for jar in $FUSION_BASE/lib/*.jar; do
+    [ -f "$jar" ] && CLASSPATH="$CLASSPATH:$jar"
+done
+
+for jar in $FUSION_BASE/lib/external/*.jar; do
+    [ -f "$jar" ] && CLASSPATH="$CLASSPATH:$jar"
+done
+
+# Add Ice JAR
+if [ -f "$FUSION_BASE/Ice-3.3.1/lib/Ice.jar" ]; then
+    CLASSPATH="$CLASSPATH:$FUSION_BASE/Ice-3.3.1/lib/Ice.jar"
+fi
+
+CLASSPATH="$CLASSPATH:$FUSION_BASE"
+CLASSPATH="$CLASSPATH:."
+
+echo "======================================"
+echo "Starting Fusion Gateway..."
+echo "======================================"
+
+ulimit -n 8192
+
+JAVA_OPTS="$JAVA_ARGS -server -Xmx512m"
+JAVA_OPTS="$JAVA_OPTS -Dlog4j.configuration=file:$FUSION_BASE/etc/log4j.properties"
+JAVA_OPTS="$JAVA_OPTS -Dlog.dir=$FUSION_BASE/logs/"
+JAVA_OPTS="$JAVA_OPTS -Dconfig.dir=$FUSION_BASE/etc/"
+
+exec java $JAVA_OPTS -classpath "$CLASSPATH" "$@"
+EOF
+
+# 2. Create gatewaytcp.sh
+cat > gatewaytcp.sh << 'EOF'
+#!/bin/sh
+
+# Get script directory
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Change to script directory
+cd "$SCRIPT_DIR"
+
+# Run gateway with config
+./run.sh com.projectgoth.fusion.gateway.Gateway ../etc/GatewayTCP_9120.cfg
+EOF
+
+# 3. Set permissions
+chmod +x run.sh gatewaytcp.sh
+
+# 4. Verify
+echo "=== Files created ==="
+ls -lh run.sh gatewaytcp.sh
+
+echo ""
+echo "=== run.sh content (first 20 lines) ==="
+head -20 run.sh
+
+echo ""
+echo "=== gatewaytcp.sh content ==="
+cat gatewaytcp.sh
+
+echo ""
+echo "=== Starting Gateway ==="
+./gatewaytcp.sh
