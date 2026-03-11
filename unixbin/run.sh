@@ -16,5 +16,5 @@ CLASSPATH=$CLASSPATH:$COMMON_BASE/Ice-3.3.1-mac/lib/Ice.jar:$COMMON_BASE/swt/swt
 #echo "CLASSPATH = $CLASSPATH"
 
 #echo java $JAVA_ARGS -server -Xmx1536m -Dlog.dir=logs/ -Dconfig.dir=$FUSION_BASE/config -classpath $CLASSPATH $@
-ulimit -n 8192; java $JAVA_ARGS -server -Xmx256m -Dlog.dir=$FUSION_BASE/logs/ -Dconfig.dir=$FUSION_BASE/etc/ -classpath $CLASSPATH $@
+ulimit -n 8192; java $JAVA_ARGS -server -Xmx256m -Dlog4j.configuration=file:$FUSION_BASE/unixbin/log4j.properties -Dlog.dir=$FUSION_BASE/logs/ -Dconfig.dir=$FUSION_BASE/etc/ -classpath $CLASSPATH $@
 
