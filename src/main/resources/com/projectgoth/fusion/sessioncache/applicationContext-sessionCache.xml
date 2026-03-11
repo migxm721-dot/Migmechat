@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+    <!-- Data Source Configuration -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="maxActive" value="100"/>
+        <property name="maxIdle" value="30"/>
+        <property name="maxWait" value="10000"/>
+        <property name="validationQuery" value="SELECT 1"/>
+        <property name="testOnBorrow" value="true"/>
+    </bean>
+
+    <!-- Transaction Manager -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- Daily Variable Table Name -->
+    <bean id="archiveTableName" class="com.projectgoth.fusion.dao.impl.DailyVariableTableName">
+        <property name="tableName" value="session_archive"/>
+    </bean>
+
+    <!-- DAO Beans -->
+    <bean id="sessionArchiveDAO" class="com.projectgoth.fusion.dao.impl.SessionArchiveDAOJDBC">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="sessionSummaryDAO" class="com.projectgoth.fusion.dao.impl.SessionSummaryDAOJDBC">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <bean id="userDAO" class="com.projectgoth.fusion.dao.impl.UserDAOJDBC">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- Ice Proxy Finder -->
+    <bean id="icePrxFinder" class="com.projectgoth.fusion.common.IcePrxFinder">
+    </bean>
+
+    <!-- SessionCacheI Servant -->
+    <bean id="sessionCacheServant" class="com.projectgoth.fusion.sessioncache.SessionCacheI">
+        <constructor-arg ref="transactionManager"/>
+        <constructor-arg ref="archiveTableName"/>
+        <property name="sessionArchiveDAO" ref="sessionArchiveDAO"/>
+        <property name="sessionSummaryDAO" ref="sessionSummaryDAO"/>
+        <property name="userDAO" ref="userDAO"/>
+        <property name="requestCounterInterval" value="60"/>
+        <property name="archiveBatchSize" value="100"/>
+        <property name="archiveMaxWaitTimeInSeconds" value="30"/>
+        <property name="queueSize" value="10000"/>
+        <property name="periods">
+            <list>
+                <value>60</value>
+                <value>300</value>
+                <value>900</value>
+                <value>3600</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- SessionCache Application -->
+    <bean id="sessionCache" class="com.projectgoth.fusion.sessioncache.SessionCache">
+        <property name="sessionCacheServant" ref="sessionCacheServant"/>
+    </bean>
+
+</beans>

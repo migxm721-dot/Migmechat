@@ -5,3 +5,4 @@
 # Compiled files
 *.class
 com/
+!src/main/resources/com/
